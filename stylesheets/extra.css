@@ -23,6 +23,6 @@ iframe {
     margin-right: auto;
 }
 
-div.jup h1 {
-    color: red;
+div.jup {
+    background-color: red;
 } 
