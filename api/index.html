@@ -229,22 +229,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#partie-a-" class="md-nav__link">
-    Partie A - ...
+  <a href="#interrogation-de-lapi" class="md-nav__link">
+    Interrogation de l'API
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#partie-b-" class="md-nav__link">
-    Partie B - ...
+  <a href="#traitement-de-la-reponse-renvoyee-par-lapi" class="md-nav__link">
+    Traitement de la réponse renvoyée par l'API
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#activites" class="md-nav__link">
-    Activités
+  <a href="#exercices-et-activites" class="md-nav__link">
+    Exercices et activités
   </a>
   
 </li>
@@ -466,21 +466,241 @@
                 
                 
                 <h1 id="chapitre-1-interfaces-de-programmation-dapplications">Chapitre 1 : Interfaces de programmation d'applications</h1>
-<h2 id="partie-a-">Partie A - ...</h2>
-<h2 id="partie-b-">Partie B - ...</h2>
-<h2 id="activites">Activités</h2>
-<details class="activité"><summary>La station spatiale internationale</summary><p>L'objectif de l'activité est d'utiliser une API pour suivre les déplacements
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/cours_01.ipynb">ici</a></p>
+</div>
+<p>Une <strong>API</strong> (<em>Application Programming Interface</em>), ou une <strong>interface de programmation d’applications</strong>, est un ensemble de classes, fonctions, constantes grâce auquel un programme <em>fournisseur</em> met à disposition diverses fonctionnalités pour des programmes <em>consommateurs</em>.</p>
+<p>C'est le programme fournisseur qui définit de quelle façon les fonctionnalités sont mises à disposition des consommateurs, en imposant éventuellement un certain nombre de contraintes d'accès à l'API.</p>
+<p>On s'intéresse ici à la <em>Base Adresse Nationale</em> qui est une API gratuite du gouvernement français permettant d'obtenir un certain nombre d'informations à partir d'une adresse postale.</p>
+<h2 id="interrogation-de-lapi">Interrogation de l'API</h2>
+<p>On souhaite, grâce à l'API, obtenir des informations sur l'adresse postale du lycée Louis Armand. Pour interroger l'API, il suffit d'envoyer une requête GET à l'adresse <a href="https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130">https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130</a>. </p>
+<p>On remarque que l'adresse postale sur laquelle on souhaite interroger l'API est indiquée dans l'URL. La réponse renvoyée par l'API est la suivante :</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;FeatureCollection&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;version&quot;</span><span class="p">:</span> <span class="s2">&quot;draft&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;features&quot;</span><span class="p">:</span> <span class="p">[{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+               <span class="nt">&quot;geometry&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;Point&quot;</span><span class="p">,</span>
+                            <span class="nt">&quot;coordinates&quot;</span><span class="p">:</span> <span class="p">[</span><span class="mf">2.491306</span><span class="p">,</span> <span class="mf">48.846716</span><span class="p">]},</span>
+               <span class="nt">&quot;properties&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;label&quot;</span><span class="p">:</span> <span class="s2">&quot;173 Boulevard de Strasbourg 94130 Nogent-sur-Marne&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;score&quot;</span><span class="p">:</span> <span class="mf">0.88381</span><span class="p">,</span>
+                              <span class="nt">&quot;housenumber&quot;</span><span class="p">:</span> <span class="s2">&quot;173&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;94052_8560_00173&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;173 Boulevard de Strasbourg&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;postcode&quot;</span><span class="p">:</span> <span class="s2">&quot;94130&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;citycode&quot;</span><span class="p">:</span> <span class="s2">&quot;94052&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;x&quot;</span><span class="p">:</span> <span class="mf">662668.4</span><span class="p">,</span>
+                              <span class="nt">&quot;y&quot;</span><span class="p">:</span> <span class="mf">6860861.49</span><span class="p">,</span>
+                              <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Nogent-sur-Marne&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;context&quot;</span><span class="p">:</span> <span class="s2">&quot;94, Val-de-Marne, Île-de-France&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;type&quot;</span><span class="p">:</span> <span class="s2">&quot;housenumber&quot;</span><span class="p">,</span>
+                              <span class="nt">&quot;importance&quot;</span><span class="p">:</span> <span class="mf">0.72191</span><span class="p">,</span>
+                              <span class="nt">&quot;street&quot;</span><span class="p">:</span> <span class="s2">&quot;Boulevard de Strasbourg&quot;</span><span class="p">}}],</span>
+ <span class="nt">&quot;attribution&quot;</span><span class="p">:</span> <span class="s2">&quot;BAN&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;licence&quot;</span><span class="p">:</span> <span class="s2">&quot;ETALAB-2.0&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;query&quot;</span><span class="p">:</span> <span class="s2">&quot;173-boulevard-de-strasbourg&quot;</span><span class="p">,</span>
+ <span class="nt">&quot;filters&quot;</span><span class="p">:</span> <span class="p">{</span><span class="nt">&quot;postcode&quot;</span><span class="p">:</span> <span class="s2">&quot;94130&quot;</span><span class="p">},</span>
+ <span class="nt">&quot;limit&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">}</span>
+</code></pre></div>
+</td></tr></table>
+<p>La réponse reçue est au format JSON (<em>JavaScript Object Notation</em>). La signification des champs de la réponse est donnée dans la
+<a href="https://geo.api.gouv.fr/adresse">documentation</a> de l'API.</p>
+<p>L'interrogation de l'API peut être réalisée grâce au code Python ci-dessous. Lors de son exécution, la réponse renvoyée par l'API est stockée dans la variable <code>reponse</code>.</p>
+<div class="admonition python">
+<p class="admonition-title">Implémentation</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s2">&quot;https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130&quot;</span>
+<span class="n">reponse</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="n">reponse</span> <span class="o">=</span> <span class="n">reponse</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<p>La fonction <code>get</code> du module <code>requests</code> permet d'envoyer une requête GET à l'URL spécifiée et ensuite de récupérer la réponse.</p>
+<p>La commande <code>reponse.json()</code> extrait de la réponse les données encodées dans le format JSON, qui est un format de données textuelles que l'on peut traiter comme s'il s'agissait d'un dictionnaire Python.</p>
+<h2 id="traitement-de-la-reponse-renvoyee-par-lapi">Traitement de la réponse renvoyée par l'API</h2>
+<p>Il est possible de définir une fonction qui interroge l'API à partir d'une adresse postale au choix, passée en paramètre.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Première version : données complètes</label><div class="tabbed-content">
+<div class="admonition fonc">
+<p class="admonition-title">Fonction <code>interroger_API_BAN</code></p>
+<details class="info"><summary>Interroge l'API <em>Base Adresse Nationale</em>.</summary><div class="admonition entrée">
+<p class="admonition-title">Entrées</p>
+<ul>
+<li><code>adresse</code> : chaîne de caractères</li>
+<li><code>code_postal</code> : entier ou chaîne de caractères</li>
+</ul>
+</div>
+<div class="admonition sortie">
+<p class="admonition-title">Sortie</p>
+<ul>
+<li><code>reponse</code> : dictionnaire contenant l'ensemble des données renvoyées par l'API</li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Penser à importer le module <code>requests</code> !</p>
+</div>
+</details>
+<div class="admonition python">
+<p class="admonition-title">Implémentation</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">interroger_API_BAN</span><span class="p">(</span><span class="n">adresse</span><span class="p">,</span> <span class="n">code_postal</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://api-adresse.data.gouv.fr/search/?q=</span><span class="si">{</span><span class="n">adresse</span><span class="si">}</span><span class="s2">&amp;postcode=</span><span class="si">{</span><span class="n">code_postal</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">reponse</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">reponse</span> <span class="o">=</span> <span class="n">reponse</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="k">return</span> <span class="n">reponse</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<p>Ici, la fonction renvoie l'ensemble des données récupérées via l'API. La plupart du temps, on souhaite néanmoins isoler les données qui nous intéressent et elles seules.</p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Seconde version : données sélectionnées</label><div class="tabbed-content">
+<div class="admonition fonc">
+<p class="admonition-title">Fonction <code>interroger_API_BAN</code></p>
+<details class="info"><summary>Renvoie les coordonnées géographiques d'un lieu après interrogation de l'API <em>Base Adresse Nationale</em>.</summary><div class="admonition entrée">
+<p class="admonition-title">Entrées</p>
+<ul>
+<li><code>adresse</code> : chaîne de caractères</li>
+<li><code>code_postal</code> : entier ou chaîne de caractères</li>
+</ul>
+</div>
+<div class="admonition sortie">
+<p class="admonition-title">Sortie</p>
+<ul>
+<li><code>(lat, long)</code> : couple de coordonnées géographiques</li>
+</ul>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Penser à importer le module <code>requests</code> !</p>
+</div>
+</details>
+<div class="admonition python">
+<p class="admonition-title">Implémentation</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">interroger_API_BAN</span><span class="p">(</span><span class="n">adresse</span><span class="p">,</span> <span class="n">code_postal</span><span class="p">):</span>
+    <span class="n">url</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;https://api-adresse.data.gouv.fr/search/?q=</span><span class="si">{</span><span class="n">adresse</span><span class="si">}</span><span class="s2">&amp;postcode=</span><span class="si">{</span><span class="n">code_postal</span><span class="si">}</span><span class="s2">&quot;</span>
+    <span class="n">reponse</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+    <span class="n">reponse</span> <span class="o">=</span> <span class="n">reponse</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+    <span class="n">coord</span> <span class="o">=</span> <span class="n">reponse</span><span class="p">[</span><span class="s1">&#39;features&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;geometry&#39;</span><span class="p">][</span><span class="s1">&#39;coordinates&#39;</span><span class="p">]</span>
+    <span class="n">long</span> <span class="o">=</span> <span class="n">coord</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+    <span class="n">lat</span> <span class="o">=</span> <span class="n">coord</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="p">(</span><span class="n">lat</span><span class="p">,</span> <span class="n">long</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+<p>L'utilisation d'une f-string pour l'écriture de l'URL permet d'y intégrer simplement et lisiblement les paramètres d'entrée de la fonction.</p>
+<p>Une fois la réponse de l'API transformée en dictionnaire, il suffit de <em>naviguer</em> pour récupérer les données qui nous intéressent, comme par exemple les coordonnées géographiques de l'adresse passée en paramètre.</p>
+<ul>
+<li><code>reponse</code> est un dictionnaire possédant huit clés : <code>'type'</code>, <code>'version'</code>, <code>'features'</code>, <code>'attribution'</code>, <code>'licence'</code>, <code>'query'</code>, <code>'filters'</code> et <code>'limit'</code>.</li>
+<li><code>reponse['features']</code> est un tableau contenant un ou plusieurs éléments de type dictionnaire : chaque dictionnaire correspond à une adresse potentielle, la première (indice <code>0</code>) étant la plus susceptible de correspondre à notre demande.</li>
+<li><code>reponse['features'][0]</code> est un dictionnaire possédant trois clés : <code>'type'</code>, <code>'geometry'</code> et <code>'properties'</code>.</li>
+<li><code>reponse['features'][0]['geometry']</code> est un dictionnaire possédant deux clés : <code>'type'</code> et <code>'coordinates'</code>.</li>
+<li><code>reponse['features'][0]['geometry']['coordinates']</code> est un tableau contenant deux éléments de type flottant : la longitude (indice <code>0</code>) et la latitude (indice <code>1</code>) du lieu.</li>
+</ul>
+</div>
+</div>
+<h2 id="exercices-et-activites">Exercices et activités</h2>
+<details class="exo"><summary>Exercices</summary><div class="tabbed-set" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Astéroïdes à surveiller</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/XXXX-XXXXX">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_asteroides.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_asteroides_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Bulletin météo</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/90ad-34553">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_bulletin_meteo.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_bulletin_meteo_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Composition des produits alimentaires</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/XXXX-XXXXX">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_openfoodfacts.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_openfoodfacts_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4">Découpage administratif</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/XXXX-XXXXX">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_decoupage_admin.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_decoupage_admin_corr.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</details>
+<details class="activité"><summary>Activités</summary><div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Carte de vigilance météorologique</label><div class="tabbed-content">
+<p>L'objectif de l'activité est d'utiliser une API pour réaliser une carte de vigilance météorologique.</p>
+<p><img alt="Carte de vigilance météo du 26/12/1999" src="https://ntoulzac.github.io/Cours-NSI-Terminale/api/images/vigilance_1999-12-26.svg" style="display:inline-block; margin-left:5%" width="40%" />
+<img alt="Carte de vigilance météo du 27/12/1999" src="https://ntoulzac.github.io/Cours-NSI-Terminale/api/images/vigilance_1999-12-27.svg" style="display:inline-block; margin-left:10%" width="40%" /></p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/act_vigilance_meteo.zip">ici</a></p>
+<p>⚠️ Le fichier <code>carte_france.py</code> doit être placé dans le même répertoire que le carnet <code>act_vigilance_meteo.ipynb</code>. </p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_vigilance_meteo_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Centres de vaccination anti-Covid</label><div class="tabbed-content">
+<p>L'objectif de l'activité est d'utiliser une API pour cartographier les
+centres de vaccination anti-Covid d'un département.</p>
+<p><img alt="Vaccination anti-Covid" class="center" src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/11/1bad04b3-8d3c-4a95-b1ac-ea62195646c8/838_gettyimages-1252382017.jpg" width="50%" /></p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/a0a8-34518">CAPYTALE</a> ou à télécharger <a href="notebooks/act_vaccination.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_vaccination_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Station spatiale internationale</label><div class="tabbed-content">
+<p>L'objectif de l'activité est d'utiliser une API pour suivre les déplacements
 de la station spatiale internationale.</p>
 <p><img alt="Station spatiale internationale" class="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/ISS-56_International_Space_Station_fly-around_%2805%29.jpg/1024px-ISS-56_International_Space_Station_fly-around_%2805%29.jpg" width="50%" /></p>
 <div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/52f9-34500">CAPYTALE</a> ou à télécharger <a href="notebooks/act_01_1_ISS.ipynb">ici</a></p>
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/52f9-34500">CAPYTALE</a> ou à télécharger <a href="notebooks/act_ISS.ipynb">ici</a></p>
 </div>
-</details>
-<details class="activité"><summary>Les centres de vaccination anti-Covid</summary><p>L'objectif de l'activité est d'utiliser une API pour cartographier les
-centres de vaccination anti-Covid d'un département.</p>
-<p><img alt="Station spatiale internationale" class="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/ISS-56_International_Space_Station_fly-around_%2805%29.jpg/1024px-ISS-56_International_Space_Station_fly-around_%2805%29.jpg" width="50%" /></p>
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/a0a8-34518">CAPYTALE</a> ou à télécharger <a href="notebooks/act_01_2_vaccination.ipynb">ici</a></p>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_ISS_corr.ipynb">ici</a></p>
+</div>
+</div>
 </div>
 </details>
                 

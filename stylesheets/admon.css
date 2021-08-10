@@ -145,16 +145,16 @@
 }
 .md-typeset .admonition.exo,
 .md-typeset details.exo {
-  border-color: rgb(0, 0, 255);
+  border-color: rgb(227, 168, 182);
 }
 .md-typeset .exo > .admonition-title,
 .md-typeset .exo > summary {
-  background-color: rgba(0, 0, 255, 0.25);
-  border-color: rgb(0, 0, 255);
+  background-color: rgb(227, 168, 182, 0.25);
+  border-color: rgb(227, 168, 182);
 }
 .md-typeset .exo > .admonition-title::before,
 .md-typeset .exo > summary::before {
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(227, 168, 182);
   animation: battement 2000ms infinite;
   -webkit-mask-image: var(--md-admonition-icon--exo);
           mask-image: var(--md-admonition-icon--exo);
@@ -166,16 +166,16 @@
 }
 .md-typeset .admonition.exo2,
 .md-typeset details.exo2 {
-  border-color: rgb(0, 0, 255);
+  border-color: rgb(227, 168, 182);
 }
 .md-typeset .exo2 > .admonition-title,
 .md-typeset .exo2 > summary {
-  background-color: rgba(0, 0, 255, 0.25);
-  border-color: rgb(0, 0, 255);
+  background-color: rgba(227, 168, 182, 0.25);
+  border-color: rgb(227, 168, 182);
 }
 .md-typeset .exo2 > .admonition-title::before,
 .md-typeset .exo2 > summary::before {
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(227, 168, 182);
   animation: battement 2000ms infinite;
   -webkit-mask-image: var(--md-admonition-icon--exo2);
           mask-image: var(--md-admonition-icon--exo2);
@@ -207,16 +207,16 @@
 }
 .md-typeset .admonition.activité,
 .md-typeset details.activité {
-  border-color: rgb(0, 0, 255);
+  border-color: rgb(135, 206, 235);
 }
 .md-typeset .activité > .admonition-title,
 .md-typeset .activité > summary {
-  background-color: rgba(0, 0, 255, 0.25);
-  border-color: rgb(0, 0, 255);
+  background-color: rgba(135, 206, 235, 0.25);
+  border-color: rgb(135, 206, 235);
 }
 .md-typeset .activité > .admonition-title::before,
 .md-typeset .activité > summary::before {
-  background-color: rgb(0, 0, 255);
+  background-color: rgb(135, 206, 235);
   animation: rotation 2000ms infinite;
   -webkit-mask-image: var(--md-admonition-icon--activité);
           mask-image: var(--md-admonition-icon--activité);
