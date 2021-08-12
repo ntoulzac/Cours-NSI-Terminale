@@ -280,8 +280,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../modularite.md" class="md-nav__link">
-        Modularité
+      <a href="../prog_objet.md" class="md-nav__link">
+        Programmation objet
       </a>
     </li>
   
@@ -295,8 +295,8 @@
   
   
     <li class="md-nav__item">
-      <a href="../prog_objet.md" class="md-nav__link">
-        Programmation objet
+      <a href="../modularite.md" class="md-nav__link">
+        Modularité
       </a>
     </li>
   
@@ -473,7 +473,7 @@
 <p>C'est le programme fournisseur qui définit de quelle façon les fonctionnalités sont mises à disposition des consommateurs, en imposant éventuellement un certain nombre de contraintes d'accès à l'API.</p>
 <p>On s'intéresse ici à la <em>Base Adresse Nationale</em> qui est une API gratuite du gouvernement français permettant d'obtenir un certain nombre d'informations à partir d'une adresse postale.</p>
 <h2 id="interrogation-de-lapi">Interrogation de l'API</h2>
-<p>On souhaite, grâce à l'API, obtenir des informations sur l'adresse postale du lycée Louis Armand. Pour interroger l'API, il suffit d'envoyer une requête GET à l'adresse <a href="https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130">https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130</a>. </p>
+<p>On souhaite, grâce à l'API, obtenir des informations sur l'adresse postale du lycée Louis Armand. Pour interroger l'API, il suffit d'envoyer une requête GET à l'URL <a href="https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130">https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130</a>. </p>
 <p>On remarque que l'adresse postale sur laquelle on souhaite interroger l'API est indiquée dans l'URL. La réponse renvoyée par l'API est la suivante :</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
  2
@@ -578,6 +578,7 @@
 </td></tr></table>
 </div>
 </div>
+<p>L'utilisation d'une f-string pour l'écriture de l'URL permet d'y intégrer simplement et lisiblement les paramètres d'entrée de la fonction.</p>
 <p>Ici, la fonction renvoie l'ensemble des données récupérées via l'API. La plupart du temps, on souhaite néanmoins isoler les données qui nous intéressent et elles seules.</p>
 </div>
 <input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Seconde version : données sélectionnées</label><div class="tabbed-content">
@@ -621,7 +622,6 @@
 </td></tr></table>
 </div>
 </div>
-<p>L'utilisation d'une f-string pour l'écriture de l'URL permet d'y intégrer simplement et lisiblement les paramètres d'entrée de la fonction.</p>
 <p>Une fois la réponse de l'API transformée en dictionnaire, il suffit de <em>naviguer</em> pour récupérer les données qui nous intéressent, comme par exemple les coordonnées géographiques de l'adresse passée en paramètre.</p>
 <ul>
 <li><code>reponse</code> est un dictionnaire possédant huit clés : <code>'type'</code>, <code>'version'</code>, <code>'features'</code>, <code>'attribution'</code>, <code>'licence'</code>, <code>'query'</code>, <code>'filters'</code> et <code>'limit'</code>.</li>
