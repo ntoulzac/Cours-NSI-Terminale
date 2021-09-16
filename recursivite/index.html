@@ -412,72 +412,10 @@
                 
                 
                 <h1 id="chapitre-2-recursivite">Chapitre 2 : Récursivité</h1>
-<h2 id="partie-a-notion-de-fonction-recursive">Partie A - Notion de fonction récursive</h2>
+<h2 id="notion-de-fonction-recursive">Notion de fonction récursive</h2>
 <p>Le but de ce chapitre est d'introduire le concept de <strong>fonction récursive</strong>.
 Il s'agit d'une fonction qui fait appel à elle-même lors de son exécution.</p>
-<h3 id="premier-exemple-calcul-de-x-puissance-n">Premier exemple : calcul de <code>x</code> puissance <code>n</code></h3>
-<p>On suppose que <code>x</code> est un nombre et que <code>n</code> est un entier positif et on
-souhaite définir une fonction <code>puissance</code> qui calcule <code>x</code> puissance <code>n</code>.</p>
-<div class="admonition fonc">
-<p class="admonition-title">Fonction <code>puissance</code></p>
-<details class="info"><summary>Détermine la valeur de <code>x</code> puissance <code>n</code>.</summary><div class="admonition entrée">
-<p class="admonition-title">Entrées</p>
-<ul>
-<li><code>x</code> : entier ou flottant</li>
-<li><code>n</code> : entier positif</li>
-</ul>
-</div>
-<div class="admonition sortie">
-<p class="admonition-title">Sortie</p>
-<ul>
-<li><code>val</code> : même type que le paramètre d'entrée <code>x</code></li>
-</ul>
-</div>
-</details>
-<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Version itérative</label><div class="tabbed-content">
-<p>Une première façon de faire est d'utiliser une boucle pour :
-on obtient une <strong>version itérative</strong> de la fonction.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="n">val</span> <span class="o">=</span> <span class="mi">1</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
-        <span class="n">val</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">val</span>
-    <span class="k">return</span> <span class="n">val</span>
-</code></pre></div>
-</td></tr></table>
-</div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Version récursive</label><div class="tabbed-content">
-<p>En remarquant que <span class="arithmatex">\(x ^ 0=1\)</span> et que, si <span class="arithmatex">\(n ≥ 1\)</span>, alors
-<span class="arithmatex">\(x ^ n = x \times x ^{n−1}\)</span>, on peut écrire une
-<strong>version récursive</strong> de la fonction.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
-2
-3
-4
-5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">return</span> <span class="mi">1</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
-<p>Ainsi définie, la fonction est une fonction récursive parce
-qu'elle s'appelle elle-même dans le cas où <code>n</code> est non nul.</p>
-</div>
-</div>
-</details>
-</div>
-<p>On distingue deux parties dans l'écriture d'une fonction récursive :</p>
-<ul>
-<li>un (ou plusieurs) <strong>cas résursif(s)</strong>, dans lesquels la fonction
-    fait appel à elle-même avec de nouveaux arguments,</li>
-<li>un (ou plusieurs) <strong>cas de base</strong>, qui permet(tent) de mettre un terme
-    aux appels récursifs successifs.</li>
-</ul>
-<h3 id="deuxieme-exemple-calcul-de-la-somme-des-entiers-compris-entre-a-et-b">Deuxième exemple : calcul de la somme des entiers compris entre <code>a</code> et <code>b</code></h3>
+<h3 id="premier-exemple-calcul-de-la-somme-des-entiers-compris-entre-a-et-b">Premier exemple : calcul de la somme des entiers compris entre <code>a</code> et <code>b</code></h3>
 <p>On suppose que <code>a</code> est inférieur à <code>b</code> et on souhaite définir une fonction
 <code>somme</code> qui calcule la somme des entiers compris entre <code>a</code> et <code>b</code>.</p>
 <div class="admonition fonc">
@@ -486,7 +424,7 @@ qu'elle s'appelle elle-même dans le cas où <code>n</code> est non nul.</p>
 <p class="admonition-title">Entrées</p>
 <ul>
 <li><code>a</code> : entier</li>
-<li><code>b</code> : entier supérieur à <code>a</code></li>
+<li><code>b</code> : entier supérieur ou égal à <code>a</code></li>
 </ul>
 </div>
 <div class="admonition sortie">
@@ -496,7 +434,9 @@ qu'elle s'appelle elle-même dans le cas où <code>n</code> est non nul.</p>
 </ul>
 </div>
 </details>
-<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Version itérative</label><div class="tabbed-content">
+<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Version itérative</label><div class="tabbed-content">
+<p>Une première façon de faire est d'utiliser une boucle pour :
+on obtient une <strong>version itérative</strong> de la fonction.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -509,13 +449,13 @@ qu'elle s'appelle elle-même dans le cas où <code>n</code> est non nul.</p>
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Version récursive</label><div class="tabbed-content">
-<p>Deux cas sont à envisager :</p>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Version récursive</label><div class="tabbed-content">
+<p>Une autre façon de faire est de constater qu'il y a deux cas à envisager :</p>
 <ul>
-<li>Si <code>a == b</code> (cas de base), cela signifie qu'il y a un seul
+<li>Si <code>a == b</code>, cela signifie qu'il y a un seul
 nombre dans la liste des nombres à additionner : le nombre <code>a</code>.
 On renvoie donc sa valeur.</li>
-<li>Si <code>a &lt; b</code> (cas récursif), on calcule récursivement la somme
+<li>Si <code>a &lt; b</code>, on calcule récursivement la somme
 des entiers compris entre <code>a+1</code> et <code>b</code>, on y ajoute la valeur
 de <code>a</code> et on renvoie le total.</li>
 </ul>
@@ -532,11 +472,20 @@ de <code>a</code> et on renvoie le total.</li>
     <span class="k">return</span> <span class="n">total</span>
 </code></pre></div>
 </td></tr></table>
+<p>Ainsi définie, la fonction est une fonction récursive parce
+qu'elle s'appelle elle-même dans le cas où <code>a</code> est différent de <code>b</code>.</p>
 </div>
 </div>
 </details>
 </div>
-<h3 id="troisieme-exemple-calcul-du-produit-des-entiers-compris-entre-1-et-n">Troisième exemple : calcul du produit des entiers compris entre 1 et <code>n</code></h3>
+<p>On distingue deux parties dans l'écriture d'une fonction récursive :</p>
+<ul>
+<li>un (ou plusieurs) <strong>cas résursif(s)</strong>, dans lesquels la fonction 
+fait appel à elle-même avec de nouveaux arguments,</li>
+<li>un (ou plusieurs) <strong>cas de base</strong>, qui permet(tent) de mettre un terme
+aux appels récursifs successifs.</li>
+</ul>
+<h3 id="deuxieme-exemple-calcul-du-produit-des-entiers-compris-entre-1-et-n">Deuxième exemple : calcul du produit des entiers compris entre 1 et <code>n</code></h3>
 <p>On suppose que <code>n</code> est un entier strictement positif et on souhaite définir
 une fonction <code>factorielle</code> qui calcule le produit des entiers compris entre
 1 et <code>n</code>.</p>
@@ -555,7 +504,7 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 </ul>
 </div>
 </details>
-<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Version itérative</label><div class="tabbed-content">
+<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Version itérative</label><div class="tabbed-content">
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -568,7 +517,16 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 </code></pre></div>
 </td></tr></table>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Version récursive</label><div class="tabbed-content">
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Version récursive</label><div class="tabbed-content">
+<p>Pour l'écriture de la fonction récursive, deux cas à sont traiter :</p>
+<ul>
+<li>Si <code>n == 1</code>, cela signifie qu'il y a un seul
+nombre dans la liste des nombres à multiplier : le nombre 1.
+On renvoie donc sa valeur. C'est le <em>cas de base</em>.</li>
+<li>Si <code>n &gt; 1</code>, on calcule récursivement le produit
+des entiers compris entre 1 et <code>n-1</code>, on multiplie le résultat
+par la valeur de <code>n</code> et on renvoie le total. C'est le <em>cas récursif</em>.</li>
+</ul>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -586,15 +544,136 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 </div>
 </details>
 </div>
-<h2 id="partie-b-pile-dappels-recursifs">Partie B - Pile d'appels récursifs</h2>
+<h3 id="troiseme-exemple-calcul-de-x-puissance-n">Troisème exemple : calcul de <code>x</code> puissance <code>n</code></h3>
+<p>On suppose que <code>x</code> est un nombre et que <code>n</code> est un entier positif et on
+souhaite définir une fonction <code>puissance</code> qui calcule <code>x</code> puissance <code>n</code>.</p>
+<div class="admonition fonc">
+<p class="admonition-title">Fonction <code>puissance</code></p>
+<details class="info"><summary>Détermine la valeur de <code>x</code> puissance <code>n</code>.</summary><div class="admonition entrée">
+<p class="admonition-title">Entrées</p>
+<ul>
+<li><code>x</code> : entier ou flottant</li>
+<li><code>n</code> : entier positif</li>
+</ul>
+</div>
+<div class="admonition sortie">
+<p class="admonition-title">Sortie</p>
+<ul>
+<li><code>val</code> : même type que le paramètre d'entrée <code>x</code></li>
+</ul>
+</div>
+</details>
+<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Version itérative</label><div class="tabbed-content">
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="n">val</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+        <span class="n">val</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">val</span>
+    <span class="k">return</span> <span class="n">val</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Version récursive</label><div class="tabbed-content">
+<p>Pour l'écriture de la fonction récursive, deux cas à sont traiter :</p>
+<ul>
+<li>Si <code>n == 0</code>, on utilise la propriété <span class="arithmatex">\(x^0 = 1\)</span> : on renvoie la valeur 1.
+C'est le <em>cas de base</em>.</li>
+<li>Si <code>n &gt; 0</code>, on utilise la propriété <span class="arithmatex">\(x^n = x \times x^{n-1}\)</span> : on calcule récursivement
+<span class="arithmatex">\(x^{n-1}\)</span>, on multiplie le résultat par la valeur de <code>x</code> et on renvoie le total.
+C'est le <em>cas récursif</em>.</li>
+</ul>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">return</span> <span class="mi">1</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+</div>
+</div>
+</details>
+</div>
+<h2 id="pile-dappels-recursifs">Pile d'appels récursifs</h2>
+<p>À l'aide de <em>Tutor Magic</em>, on visualise les appels successifs de la fonction récursive <code>puissance</code>
+lors de l'appel <code>puissance(2, 3)</code> :</p>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html">
+
+        <iframe
+            width="110%"
+            height="680"
+            src="http://pythontutor.com/iframe-embed.html#code=def%20puissance%28a%2C%20n%29%3A%0A%20%20%20%20if%20n%20%3D%3D%200%3A%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20a%20%2A%20puissance%28a%2C%20n-1%29%0Aprint%28puissance%282%2C%203%29%29%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&curInstr=0&&verticalStack=false&py=3&rawInputLstJSON=%5B%5D&codeDivWidth=50%25&codeDivHeight=100%25"
+            frameborder="1"
+            allowfullscreen
+        ></iframe>
+
+</div>
+
+<p>On peut représenter la pile des quatre appels de la fonction <code>puissance</code>, et les paramètres
+correspondant à chaque appel, sous la forme d'un arbre.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8
+9</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+    <span class="o">|</span>
+    <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+                   <span class="o">|</span>
+                   <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+                                  <span class="o">|</span>
+                                  <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+                                                 <span class="o">|</span>
+                                                 <span class="k">return</span> <span class="mi">1</span>
+</code></pre></div>
+</td></tr></table>
+<p>Le nombre d'appels simultanés de fonctions est limité. On peut en connaître le nombre maximal
+grâce à la fonction <code>getrecursionlimit</code> du module <code>sys</code>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">getrecursionlimit</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">getrecursionlimit</span><span class="p">())</span>
+</code></pre></div>
+</td></tr></table>
+<p>Une erreur apparaît si on essaie de réaliser plus d'appels récursifs que la limite autorisée.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ne">RecursionError</span><span class="p">:</span> <span class="n">maximum</span> <span class="n">recursion</span> <span class="n">depth</span> <span class="n">exceeded</span> <span class="ow">in</span> <span class="n">comparison</span>
+</code></pre></div>
+</td></tr></table>
+<p>La limite du nombre d'appels simultanés de fonctions peut être modifié grâce à la fonction
+<code>setrecursionlimit</code>du module <code>sys</code>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">setrecursionlimit</span>
+<span class="n">setrecursionlimit</span><span class="p">(</span><span class="mi">4000</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+<p>Il faut néanmoins être raisonnable en cas de modification de cette limite, car un nombre excessif
+de récursions provoque le crash du programme à cause d'une erreur de débordement de pile d'exécution
+(<em>stack overflow</em>).</p>
 <h2 id="tours-de-hanoi">Tours de Hanoï</h2>
+<p>Les <em>tours de Hanoï</em> sont un jeu de réflexion consistant à déplacer des disques de diamètres
+différents d'une tour gauche à une tour droite en passant par une tour centrale, et ceci en
+un minimum de coups, tout en respectant les règles suivantes :</p>
+<ul>
+<li>on ne peut pas déplacer plus d'un disque à la fois,</li>
+<li>on ne peut placer un disque que sur un autre disque plus grand ou sur un emplacement vide.</li>
+</ul>
 <iframe title="Version jouable de la Tour de Hanoï" src="Hanoï.html" width="800px" height="450px"></iframe>
 
 <h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire</h2>
-<h2 id="-">-</h2>
-<p>-</p>
+<ul>
+<li>Ecrire une fonction récursive, en identifiant le(s) cas de base et le(s) cas récursif(s).</li>
+<li>Dessiner un arbre d'appels récursifs.</li>
+</ul>
 <h2 id="exercices-et-activites">Exercices et activités</h2>
-<details class="exo"><summary>Exercices</summary><div class="tabbed-set" data-tabs="4:3"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Algorithme d'Euclide</label><div class="tabbed-content">
+<details class="exo"><summary>Exercices</summary><div class="tabbed-set" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Algorithme d'Euclide</label><div class="tabbed-content">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/b075-42299" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_algorithme_Euclide.ipynb">ici</a></p>
 </div>
@@ -602,7 +681,15 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 <p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_algorithme_Euclide_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Exponentiation rapide</label><div class="tabbed-content">
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Décomposition d'un entier...</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/5242-51657" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_decomposition_quatre_carres.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_decomposition_quatre_carres_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Exponentiation rapide</label><div class="tabbed-content">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/70ed-42353" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_exponentiation_rapide.ipynb">ici</a></p>
 </div>
@@ -610,7 +697,7 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 <p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_exponentiation_rapide_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Palindromes</label><div class="tabbed-content">
+<input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><label for="__tabbed_4_4">Palindromes</label><div class="tabbed-content">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/776c-40730" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_palindromes.ipynb">ici</a></p>
 </div>
@@ -618,26 +705,44 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 <p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_palindromes_corr.ipynb">ici</a></p>
 </div>
 </div>
+<input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><label for="__tabbed_4_5">Suite de Fibonacci</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/44c7-52635" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_fibonacci.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_fibonacci_corr.ipynb">ici</a></p>
+</div>
+</div>
 </div>
 </details>
-<details class="activité"><summary>Activités</summary><div class="tabbed-set" data-tabs="5:2"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Cercles tangents</label><div class="tabbed-content">
+<details class="activité"><summary>Activités</summary><div class="tabbed-set" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">Cercles tangents</label><div class="tabbed-content">
 <p>L'objectif de l'activité d'écrire des procédures récursives pour dessiner des figures géométriques avec le module <code>turtle</code>.</p>
 <p><img alt="Cercles tangents" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/recursivite/images/cercles_tangents_2.png" /></p>
 <div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/8167-42247" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/act_cercles_tangents.ipynb">ici</a></p>
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/act_cercles_tangents.ipynb">ici</a></p>
 </div>
 <div class="admonition solution">
 <p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_cercles_tangents_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Le compte est bon !</label><div class="tabbed-content">
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Figures fractales</label><div class="tabbed-content">
+<p>L'objectif de l'activité d'écrire des procédures récursives pour dessiner des figures fractales avec le module <code>turtle</code>.</p>
+<p><img alt="Cercles tangents" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/recursivite/images/cercles_tangents_2.png" /></p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/act_fractales.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_fractales_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">Le compte est bon !</label><div class="tabbed-content">
 <p>L'objectif de l'activité est de créer un <em>solveur</em> du jeu <em>Le compte est bon</em>.</p>
 <p><img alt="Le compte est bon !" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/recursivite/images/le_compte_est_bon.png" width="50%" /></p>
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/e4db-42246" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/act_le_compte_est_bon.ipynb">ici</a></p>
 </div>
 <div class="admonition solution">
-<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/aact_le_compte_est_bon_corr.ipynb">ici</a></p>
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_le_compte_est_bon_corr.ipynb">ici</a></p>
 </div>
 </div>
 </div>
