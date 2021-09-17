@@ -14,7 +14,7 @@
     
     
       
-        <title>Chapitre 2 : Récursivité - Cours de Terminale NSI</title>
+        <title>Récursivité - Cours de Terminale NSI</title>
       
     
     
@@ -91,7 +91,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chapitre 2 : Récursivité
+              Récursivité
             
           </span>
         </div>
@@ -209,11 +209,106 @@
 
   
   
+    
   
-    <li class="md-nav__item">
-      <a href="../patience/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Récursivité
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         Récursivité
       </a>
+      
+        
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notion-de-fonction-recursive" class="md-nav__link">
+    Notion de fonction récursive
+  </a>
+  
+    <nav class="md-nav" aria-label="Notion de fonction récursive">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#premier-exemple-calcul-de-la-somme-des-entiers-compris-entre-a-et-b" class="md-nav__link">
+    Premier exemple : calcul de la somme des entiers compris entre a et b
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#deuxieme-exemple-calcul-du-produit-des-entiers-compris-entre-1-et-n" class="md-nav__link">
+    Deuxième exemple : calcul du produit des entiers compris entre 1 et n
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#troisieme-exemple-calcul-de-x-puissance-n" class="md-nav__link">
+    Troisième exemple : calcul de x puissance n
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pile-dappels-recursifs" class="md-nav__link">
+    Pile d'appels récursifs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tours-de-hanoi" class="md-nav__link">
+    Tours de Hanoï
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices-et-activites" class="md-nav__link">
+    Exercices et activités
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -226,7 +321,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../prog_objet/" class="md-nav__link">
+      <a href="../patience/" class="md-nav__link">
         Programmation objet
       </a>
     </li>
@@ -412,9 +507,15 @@
                 
                 
                 <h1 id="chapitre-2-recursivite">Chapitre 2 : Récursivité</h1>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/cours_02.ipynb">ici</a></p>
+</div>
+<div class="admonition joint">
+<p class="admonition-title">Cahier à télécharger <a href="cahier_02.pdf" target="_blank">ici</a></p>
+</div>
+<p>Le but de ce chapitre est d'introduire le concept de <strong>fonction récursive</strong>.</p>
 <h2 id="notion-de-fonction-recursive">Notion de fonction récursive</h2>
-<p>Le but de ce chapitre est d'introduire le concept de <strong>fonction récursive</strong>.
-Il s'agit d'une fonction qui fait appel à elle-même lors de son exécution.</p>
+<p>Il s'agit d'une fonction qui fait appel à elle-même lors de son exécution.</p>
 <h3 id="premier-exemple-calcul-de-la-somme-des-entiers-compris-entre-a-et-b">Premier exemple : calcul de la somme des entiers compris entre <code>a</code> et <code>b</code></h3>
 <p>On suppose que <code>a</code> est inférieur à <code>b</code> et on souhaite définir une fonction
 <code>somme</code> qui calcule la somme des entiers compris entre <code>a</code> et <code>b</code>.</p>
@@ -518,7 +619,7 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 </td></tr></table>
 </div>
 <input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Version récursive</label><div class="tabbed-content">
-<p>Pour l'écriture de la fonction récursive, deux cas à sont traiter :</p>
+<p>Pour l'écriture de la fonction récursive, deux cas à sont envisager :</p>
 <ul>
 <li>Si <code>n == 1</code>, cela signifie qu'il y a un seul
 nombre dans la liste des nombres à multiplier : le nombre 1.
@@ -544,7 +645,7 @@ par la valeur de <code>n</code> et on renvoie le total. C'est le <em>cas récurs
 </div>
 </details>
 </div>
-<h3 id="troiseme-exemple-calcul-de-x-puissance-n">Troisème exemple : calcul de <code>x</code> puissance <code>n</code></h3>
+<h3 id="troisieme-exemple-calcul-de-x-puissance-n">Troisième exemple : calcul de <code>x</code> puissance <code>n</code></h3>
 <p>On suppose que <code>x</code> est un nombre et que <code>n</code> est un entier positif et on
 souhaite définir une fonction <code>puissance</code> qui calcule <code>x</code> puissance <code>n</code>.</p>
 <div class="admonition fonc">
@@ -577,7 +678,7 @@ souhaite définir une fonction <code>puissance</code> qui calcule <code>x</code>
 </td></tr></table>
 </div>
 <input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Version récursive</label><div class="tabbed-content">
-<p>Pour l'écriture de la fonction récursive, deux cas à sont traiter :</p>
+<p>Pour l'écriture de la fonction récursive, deux cas à sont envisager :</p>
 <ul>
 <li>Si <code>n == 0</code>, on utilise la propriété <span class="arithmatex">\(x^0 = 1\)</span> : on renvoie la valeur 1.
 C'est le <em>cas de base</em>.</li>
@@ -601,22 +702,8 @@ C'est le <em>cas récursif</em>.</li>
 </details>
 </div>
 <h2 id="pile-dappels-recursifs">Pile d'appels récursifs</h2>
-<p>À l'aide de <em>Tutor Magic</em>, on visualise les appels successifs de la fonction récursive <code>puissance</code>
-lors de l'appel <code>puissance(2, 3)</code> :</p>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output" data-mime-type="text/html">
-
-        <iframe
-            width="110%"
-            height="680"
-            src="http://pythontutor.com/iframe-embed.html#code=def%20puissance%28a%2C%20n%29%3A%0A%20%20%20%20if%20n%20%3D%3D%200%3A%0A%20%20%20%20%20%20%20%20return%201%0A%20%20%20%20else%3A%0A%20%20%20%20%20%20%20%20return%20a%20%2A%20puissance%28a%2C%20n-1%29%0Aprint%28puissance%282%2C%203%29%29%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&curInstr=0&&verticalStack=false&py=3&rawInputLstJSON=%5B%5D&codeDivWidth=50%25&codeDivHeight=100%25"
-            frameborder="1"
-            allowfullscreen
-        ></iframe>
-
-</div>
-
-<p>On peut représenter la pile des quatre appels de la fonction <code>puissance</code>, et les paramètres
-correspondant à chaque appel, sous la forme d'un arbre.</p>
+<p>Si on effectue l'appel <code>puissance(2, 3)</code>, on peut représenter la pile des quatre appels
+de la fonction <code>puissance</code>, et les paramètres correspondant à chaque appel, sous la forme d'un arbre.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2
 3
@@ -665,11 +752,12 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <li>on ne peut pas déplacer plus d'un disque à la fois,</li>
 <li>on ne peut placer un disque que sur un autre disque plus grand ou sur un emplacement vide.</li>
 </ul>
+<p>Ce jeu est un exemple de problème qui peut être résolu par une approche récursive.</p>
 <iframe title="Version jouable de la Tour de Hanoï" src="Hanoï.html" width="800px" height="450px"></iframe>
 
 <h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire</h2>
 <ul>
-<li>Ecrire une fonction récursive, en identifiant le(s) cas de base et le(s) cas récursif(s).</li>
+<li>Écrire une fonction récursive, en identifiant le(s) cas de base et le(s) cas récursif(s).</li>
 <li>Dessiner un arbre d'appels récursifs.</li>
 </ul>
 <h2 id="exercices-et-activites">Exercices et activités</h2>
@@ -725,9 +813,9 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_cercles_tangents_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Figures fractales</label><div class="tabbed-content">
+<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">Fractales</label><div class="tabbed-content">
 <p>L'objectif de l'activité d'écrire des procédures récursives pour dessiner des figures fractales avec le module <code>turtle</code>.</p>
-<p><img alt="Cercles tangents" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/recursivite/images/cercles_tangents_2.png" /></p>
+<p><img alt="Triangle de Sierpinski" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/recursivite/images/triang_sierp.gif" width="40%" /></p>
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/act_fractales.ipynb">ici</a></p>
 </div>
@@ -766,6 +854,39 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
       
         
 <footer class="md-footer">
+  
+    <nav class="md-footer__inner md-grid" aria-label="Footer">
+      
+        <a href="../api/" class="md-footer__link md-footer__link--prev" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Précédent
+              </span>
+              Interfaces de programmation d'applications
+            </div>
+          </div>
+        </a>
+      
+      
+        <a href="../patience/" class="md-footer__link md-footer__link--next" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Suivant
+              </span>
+              Programmation objet
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
