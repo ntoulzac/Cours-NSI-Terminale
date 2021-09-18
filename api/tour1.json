@@ -1,0 +1,7066 @@
+{
+  "tour1": [
+    {
+      "dep": "01",
+      "dep_nom": "Ain",
+      "inscrits": 415886,
+      "abstentions": 81507,
+      "votants": 334379,
+      "blancs nuls": 8580,
+      "exprimés": 325799,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 81455,
+          "taux": 25
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 73692,
+          "taux": 22.62
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 69805,
+          "taux": 21.43
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 51736,
+          "taux": 15.88
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 19788,
+          "taux": 6.07
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 16711,
+          "taux": 5.13
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3612,
+          "taux": 1.11
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3465,
+          "taux": 1.06
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3098,
+          "taux": 0.95
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1842,
+          "taux": 0.57
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 595,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "02",
+      "dep_nom": "Aisne",
+      "inscrits": 375752,
+      "abstentions": 80183,
+      "votants": 295569,
+      "blancs nuls": 7429,
+      "exprimés": 288140,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 102770,
+          "taux": 35.67
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 51680,
+          "taux": 17.94
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 48950,
+          "taux": 16.99
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 46969,
+          "taux": 16.3
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14651,
+          "taux": 5.08
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 12230,
+          "taux": 4.24
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3156,
+          "taux": 1.1
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2763,
+          "taux": 0.96
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2264,
+          "taux": 0.79
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2171,
+          "taux": 0.75
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 536,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "03",
+      "dep_nom": "Allier",
+      "inscrits": 253508,
+      "abstentions": 54275,
+      "votants": 199233,
+      "blancs nuls": 6773,
+      "exprimés": 192460,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 45651,
+          "taux": 23.72
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 43004,
+          "taux": 22.34
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 38311,
+          "taux": 19.91
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 36457,
+          "taux": 18.94
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 10619,
+          "taux": 5.52
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 9795,
+          "taux": 5.09
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2986,
+          "taux": 1.55
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2322,
+          "taux": 1.21
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1540,
+          "taux": 0.8
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1422,
+          "taux": 0.74
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 353,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "04",
+      "dep_nom": "Alpes-de-Haute-Provence",
+      "inscrits": 126578,
+      "abstentions": 24323,
+      "votants": 102255,
+      "blancs nuls": 2541,
+      "exprimés": 99714,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 24463,
+          "taux": 24.53
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 22448,
+          "taux": 22.51
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 19960,
+          "taux": 20.02
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 18442,
+          "taux": 18.49
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 4983,
+          "taux": 5
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 4861,
+          "taux": 4.87
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1721,
+          "taux": 1.73
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1178,
+          "taux": 1.18
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 932,
+          "taux": 0.93
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 521,
+          "taux": 0.52
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 205,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "05",
+      "dep_nom": "Hautes-Alpes",
+      "inscrits": 109907,
+      "abstentions": 20821,
+      "votants": 89086,
+      "blancs nuls": 2159,
+      "exprimés": 86927,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 18948,
+          "taux": 21.8
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 18796,
+          "taux": 21.62
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 18474,
+          "taux": 21.25
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 16645,
+          "taux": 19.15
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 5109,
+          "taux": 5.88
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 4938,
+          "taux": 5.68
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1609,
+          "taux": 1.85
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1049,
+          "taux": 1.21
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 783,
+          "taux": 0.9
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 411,
+          "taux": 0.47
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 165,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "06",
+      "dep_nom": "Alpes-Maritimes",
+      "inscrits": 761761,
+      "abstentions": 161903,
+      "votants": 599858,
+      "blancs nuls": 11926,
+      "exprimés": 587932,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 163141,
+          "taux": 27.75
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 161036,
+          "taux": 27.39
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 111953,
+          "taux": 19.04
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 87941,
+          "taux": 14.96
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 25175,
+          "taux": 4.28
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 21067,
+          "taux": 3.58
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 6067,
+          "taux": 1.03
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5262,
+          "taux": 0.9
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3622,
+          "taux": 0.62
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1729,
+          "taux": 0.29
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 939,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "07",
+      "dep_nom": "Ardèche",
+      "inscrits": 249258,
+      "abstentions": 46618,
+      "votants": 202640,
+      "blancs nuls": 7084,
+      "exprimés": 195556,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 45305,
+          "taux": 23.17
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 42622,
+          "taux": 21.8
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 42320,
+          "taux": 21.64
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 33835,
+          "taux": 17.3
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 11757,
+          "taux": 6.01
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 9926,
+          "taux": 5.08
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3546,
+          "taux": 1.81
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2602,
+          "taux": 1.33
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1969,
+          "taux": 1.01
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1303,
+          "taux": 0.67
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 371,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "08",
+      "dep_nom": "Ardennes",
+      "inscrits": 194379,
+      "abstentions": 44076,
+      "votants": 150303,
+      "blancs nuls": 3500,
+      "exprimés": 146803,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 47578,
+          "taux": 32.41
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 26912,
+          "taux": 18.33
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 26172,
+          "taux": 17.83
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 25273,
+          "taux": 17.22
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 7810,
+          "taux": 5.32
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 7234,
+          "taux": 4.93
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1693,
+          "taux": 1.15
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1406,
+          "taux": 0.96
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1378,
+          "taux": 0.94
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1080,
+          "taux": 0.74
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 267,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "09",
+      "dep_nom": "Ariège",
+      "inscrits": 117409,
+      "abstentions": 21392,
+      "votants": 96017,
+      "blancs nuls": 2711,
+      "exprimés": 93306,
+      "candidats": [
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 24970,
+          "taux": 26.76
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 20247,
+          "taux": 21.7
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 19523,
+          "taux": 20.92
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 11892,
+          "taux": 12.75
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 7326,
+          "taux": 7.85
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 3369,
+          "taux": 3.61
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3304,
+          "taux": 3.54
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1180,
+          "taux": 1.26
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 799,
+          "taux": 0.86
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 556,
+          "taux": 0.6
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 140,
+          "taux": 0.15
+        }
+      ]
+    },
+    {
+      "dep": "10",
+      "dep_nom": "Aube",
+      "inscrits": 203847,
+      "abstentions": 38951,
+      "votants": 164896,
+      "blancs nuls": 3828,
+      "exprimés": 161068,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 48846,
+          "taux": 30.33
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 37122,
+          "taux": 23.05
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 30565,
+          "taux": 18.98
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 22496,
+          "taux": 13.97
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 10235,
+          "taux": 6.35
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 6545,
+          "taux": 4.06
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1387,
+          "taux": 0.86
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1317,
+          "taux": 0.82
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1159,
+          "taux": 0.72
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1107,
+          "taux": 0.69
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 289,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "11",
+      "dep_nom": "Aude",
+      "inscrits": 272695,
+      "abstentions": 52553,
+      "votants": 220142,
+      "blancs nuls": 5781,
+      "exprimés": 214361,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 60585,
+          "taux": 28.26
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 46126,
+          "taux": 21.52
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 43015,
+          "taux": 20.07
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 32281,
+          "taux": 15.06
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 13614,
+          "taux": 6.35
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 8265,
+          "taux": 3.86
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4642,
+          "taux": 2.17
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2507,
+          "taux": 1.17
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1783,
+          "taux": 0.83
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1195,
+          "taux": 0.56
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 348,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "12",
+      "dep_nom": "Aveyron",
+      "inscrits": 218276,
+      "abstentions": 36378,
+      "votants": 181898,
+      "blancs nuls": 5435,
+      "exprimés": 176463,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 45584,
+          "taux": 25.83
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 36664,
+          "taux": 20.78
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 34689,
+          "taux": 19.66
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 28588,
+          "taux": 16.2
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 10878,
+          "taux": 6.16
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 8554,
+          "taux": 4.85
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6461,
+          "taux": 3.66
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2322,
+          "taux": 1.32
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1304,
+          "taux": 0.74
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1106,
+          "taux": 0.63
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 313,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "13",
+      "dep_nom": "Bouches-du-Rhône",
+      "inscrits": 1372394,
+      "abstentions": 300146,
+      "votants": 1072248,
+      "blancs nuls": 22550,
+      "exprimés": 1049698,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 286397,
+          "taux": 27.28
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 231194,
+          "taux": 22.02
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 207466,
+          "taux": 19.76
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 203312,
+          "taux": 19.37
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 47564,
+          "taux": 4.53
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 40447,
+          "taux": 3.85
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 10040,
+          "taux": 0.96
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 9418,
+          "taux": 0.9
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 8006,
+          "taux": 0.76
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 4114,
+          "taux": 0.39
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1740,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "14",
+      "dep_nom": "Calvados",
+      "inscrits": 501153,
+      "abstentions": 90313,
+      "votants": 410840,
+      "blancs nuls": 9218,
+      "exprimés": 401622,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 99720,
+          "taux": 24.83
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 82340,
+          "taux": 20.5
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 81770,
+          "taux": 20.36
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 75620,
+          "taux": 18.83
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 27293,
+          "taux": 6.8
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 20079,
+          "taux": 5
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5269,
+          "taux": 1.31
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3099,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2911,
+          "taux": 0.72
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2830,
+          "taux": 0.7
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 691,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "15",
+      "dep_nom": "Cantal",
+      "inscrits": 117425,
+      "abstentions": 22767,
+      "votants": 94658,
+      "blancs nuls": 3092,
+      "exprimés": 91566,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 24477,
+          "taux": 26.73
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 21589,
+          "taux": 23.58
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 16641,
+          "taux": 18.17
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 14566,
+          "taux": 15.91
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 4810,
+          "taux": 5.25
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 4047,
+          "taux": 4.42
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2840,
+          "taux": 3.1
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1179,
+          "taux": 1.29
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 692,
+          "taux": 0.76
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 527,
+          "taux": 0.58
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 198,
+          "taux": 0.22
+        }
+      ]
+    },
+    {
+      "dep": "16",
+      "dep_nom": "Charente",
+      "inscrits": 259954,
+      "abstentions": 54980,
+      "votants": 204974,
+      "blancs nuls": 5961,
+      "exprimés": 199013,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 49889,
+          "taux": 25.07
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 42598,
+          "taux": 21.4
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 40755,
+          "taux": 20.48
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 33744,
+          "taux": 16.96
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 12569,
+          "taux": 6.32
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 10008,
+          "taux": 5.03
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3085,
+          "taux": 1.55
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2724,
+          "taux": 1.37
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1651,
+          "taux": 0.83
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1540,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 450,
+          "taux": 0.23
+        }
+      ]
+    },
+    {
+      "dep": "17",
+      "dep_nom": "Charente-Maritime",
+      "inscrits": 491369,
+      "abstentions": 99351,
+      "votants": 392018,
+      "blancs nuls": 9953,
+      "exprimés": 382065,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 91355,
+          "taux": 23.91
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 80764,
+          "taux": 21.14
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 78659,
+          "taux": 20.59
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 72491,
+          "taux": 18.97
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 22023,
+          "taux": 5.76
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 20333,
+          "taux": 5.32
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5276,
+          "taux": 1.38
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4876,
+          "taux": 1.28
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3020,
+          "taux": 0.79
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2576,
+          "taux": 0.67
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 692,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "18",
+      "dep_nom": "Cher",
+      "inscrits": 228983,
+      "abstentions": 50910,
+      "votants": 178073,
+      "blancs nuls": 5387,
+      "exprimés": 172686,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 41753,
+          "taux": 24.18
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 38076,
+          "taux": 22.05
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 33694,
+          "taux": 19.51
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 32967,
+          "taux": 19.09
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 9554,
+          "taux": 5.53
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 9157,
+          "taux": 5.3
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2106,
+          "taux": 1.22
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1925,
+          "taux": 1.11
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1630,
+          "taux": 0.94
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1479,
+          "taux": 0.86
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 345,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "19",
+      "dep_nom": "Corrèze",
+      "inscrits": 185277,
+      "abstentions": 34299,
+      "votants": 150978,
+      "blancs nuls": 5365,
+      "exprimés": 145613,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 39218,
+          "taux": 26.93
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 30357,
+          "taux": 20.85
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 25427,
+          "taux": 17.46
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 25253,
+          "taux": 17.34
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 9263,
+          "taux": 6.36
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 7049,
+          "taux": 4.84
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4253,
+          "taux": 2.92
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2319,
+          "taux": 1.59
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1094,
+          "taux": 0.75
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1051,
+          "taux": 0.72
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 329,
+          "taux": 0.23
+        }
+      ]
+    },
+    {
+      "dep": "2A",
+      "dep_nom": "Corse-du-Sud",
+      "inscrits": 108781,
+      "abstentions": 33758,
+      "votants": 75023,
+      "blancs nuls": 2155,
+      "exprimés": 72868,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 20858,
+          "taux": 28.62
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 18714,
+          "taux": 25.68
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 13022,
+          "taux": 17.87
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 10085,
+          "taux": 13.84
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3948,
+          "taux": 5.42
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 2546,
+          "taux": 3.49
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 2218,
+          "taux": 3.04
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 657,
+          "taux": 0.9
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 485,
+          "taux": 0.67
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 218,
+          "taux": 0.3
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 117,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "2B",
+      "dep_nom": "Haute-Corse",
+      "inscrits": 124875,
+      "abstentions": 40907,
+      "votants": 83968,
+      "blancs nuls": 2460,
+      "exprimés": 81508,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 22183,
+          "taux": 27.22
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 20739,
+          "taux": 25.44
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 15506,
+          "taux": 19.02
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 11229,
+          "taux": 13.78
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4763,
+          "taux": 5.84
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 3234,
+          "taux": 3.97
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 2244,
+          "taux": 2.75
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 717,
+          "taux": 0.88
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 480,
+          "taux": 0.59
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 277,
+          "taux": 0.34
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 136,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "21",
+      "dep_nom": "Côte-d'Or",
+      "inscrits": 360658,
+      "abstentions": 68680,
+      "votants": 291978,
+      "blancs nuls": 6854,
+      "exprimés": 285124,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 67436,
+          "taux": 23.65
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 64200,
+          "taux": 22.52
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 60625,
+          "taux": 21.26
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 50859,
+          "taux": 17.84
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 16810,
+          "taux": 5.9
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14980,
+          "taux": 5.25
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2818,
+          "taux": 0.99
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2635,
+          "taux": 0.92
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2457,
+          "taux": 0.86
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1795,
+          "taux": 0.63
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 509,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "22",
+      "dep_nom": "Côtes-d'Armor",
+      "inscrits": 455958,
+      "abstentions": 71617,
+      "votants": 384341,
+      "blancs nuls": 9372,
+      "exprimés": 374969,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 104969,
+          "taux": 27.99
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 76013,
+          "taux": 20.27
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 68916,
+          "taux": 18.38
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 61703,
+          "taux": 16.46
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 32260,
+          "taux": 8.6
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 15958,
+          "taux": 4.26
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5468,
+          "taux": 1.46
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3554,
+          "taux": 0.95
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3028,
+          "taux": 0.81
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2479,
+          "taux": 0.66
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 621,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "23",
+      "dep_nom": "Creuse",
+      "inscrits": 93113,
+      "abstentions": 19917,
+      "votants": 73196,
+      "blancs nuls": 2945,
+      "exprimés": 70251,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 15807,
+          "taux": 22.5
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 14827,
+          "taux": 21.11
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 13966,
+          "taux": 19.88
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 12637,
+          "taux": 17.99
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 5494,
+          "taux": 7.82
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 3521,
+          "taux": 5.01
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1352,
+          "taux": 1.92
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1209,
+          "taux": 1.72
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 684,
+          "taux": 0.97
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 580,
+          "taux": 0.83
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 174,
+          "taux": 0.25
+        }
+      ]
+    },
+    {
+      "dep": "24",
+      "dep_nom": "Dordogne",
+      "inscrits": 314020,
+      "abstentions": 57520,
+      "votants": 256500,
+      "blancs nuls": 7790,
+      "exprimés": 248710,
+      "candidats": [
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 57132,
+          "taux": 22.97
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 55945,
+          "taux": 22.49
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 52044,
+          "taux": 20.93
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 42510,
+          "taux": 17.09
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 15783,
+          "taux": 6.35
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 11424,
+          "taux": 4.59
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6050,
+          "taux": 2.43
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3578,
+          "taux": 1.44
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2128,
+          "taux": 0.86
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1626,
+          "taux": 0.65
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 490,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "25",
+      "dep_nom": "Doubs",
+      "inscrits": 368401,
+      "abstentions": 76199,
+      "votants": 292202,
+      "blancs nuls": 8023,
+      "exprimés": 284179,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 66635,
+          "taux": 23.45
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 63954,
+          "taux": 22.5
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 59929,
+          "taux": 21.09
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 50803,
+          "taux": 17.88
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 16318,
+          "taux": 5.74
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14733,
+          "taux": 5.18
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3565,
+          "taux": 1.25
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3129,
+          "taux": 1.1
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2532,
+          "taux": 0.89
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2051,
+          "taux": 0.72
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 530,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "26",
+      "dep_nom": "Drôme",
+      "inscrits": 369489,
+      "abstentions": 73210,
+      "votants": 296279,
+      "blancs nuls": 7538,
+      "exprimés": 288741,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 68996,
+          "taux": 23.9
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 63164,
+          "taux": 21.88
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 58037,
+          "taux": 20.1
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 53403,
+          "taux": 18.5
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 17385,
+          "taux": 6.02
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14997,
+          "taux": 5.19
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3868,
+          "taux": 1.34
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3174,
+          "taux": 1.1
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2988,
+          "taux": 1.03
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2196,
+          "taux": 0.76
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 533,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "27",
+      "dep_nom": "Eure",
+      "inscrits": 427533,
+      "abstentions": 82215,
+      "votants": 345318,
+      "blancs nuls": 8541,
+      "exprimés": 336777,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 98719,
+          "taux": 29.31
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 66986,
+          "taux": 19.89
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 63436,
+          "taux": 18.84
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 58844,
+          "taux": 17.47
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 19096,
+          "taux": 5.67
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 16999,
+          "taux": 5.05
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3933,
+          "taux": 1.17
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2927,
+          "taux": 0.87
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2633,
+          "taux": 0.78
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2602,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 602,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "28",
+      "dep_nom": "Eure-et-Loir",
+      "inscrits": 301466,
+      "abstentions": 60474,
+      "votants": 240992,
+      "blancs nuls": 6213,
+      "exprimés": 234779,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 58886,
+          "taux": 25.08
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 51275,
+          "taux": 21.84
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 51038,
+          "taux": 21.74
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 38035,
+          "taux": 16.2
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14103,
+          "taux": 6.01
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 12317,
+          "taux": 5.25
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2659,
+          "taux": 1.13
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2253,
+          "taux": 0.96
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1942,
+          "taux": 0.83
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1817,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 454,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "29",
+      "dep_nom": "Finistère",
+      "inscrits": 690571,
+      "abstentions": 120636,
+      "votants": 569935,
+      "blancs nuls": 12750,
+      "exprimés": 557185,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 164095,
+          "taux": 29.45
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 109607,
+          "taux": 19.67
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 99965,
+          "taux": 17.94
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 77366,
+          "taux": 13.89
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 60781,
+          "taux": 10.91
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 22737,
+          "taux": 4.08
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 8250,
+          "taux": 1.48
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6192,
+          "taux": 1.11
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3697,
+          "taux": 0.66
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3638,
+          "taux": 0.65
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 857,
+          "taux": 0.15
+        }
+      ]
+    },
+    {
+      "dep": "30",
+      "dep_nom": "Gard",
+      "inscrits": 537939,
+      "abstentions": 107277,
+      "votants": 430662,
+      "blancs nuls": 9980,
+      "exprimés": 420682,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 123273,
+          "taux": 29.3
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 90905,
+          "taux": 21.61
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 79006,
+          "taux": 18.78
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 72366,
+          "taux": 17.2
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 20473,
+          "taux": 4.87
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 17808,
+          "taux": 4.23
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5946,
+          "taux": 1.41
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 4096,
+          "taux": 0.97
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4044,
+          "taux": 0.96
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2092,
+          "taux": 0.5
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 673,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "31",
+      "dep_nom": "Haute-Garonne",
+      "inscrits": 906653,
+      "abstentions": 170785,
+      "votants": 735868,
+      "blancs nuls": 16475,
+      "exprimés": 719393,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 190128,
+          "taux": 26.43
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 170446,
+          "taux": 23.69
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 120225,
+          "taux": 16.71
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 118608,
+          "taux": 16.49
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 60180,
+          "taux": 8.37
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 27833,
+          "taux": 3.87
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 14445,
+          "taux": 2.01
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 7116,
+          "taux": 0.99
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5955,
+          "taux": 0.83
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3166,
+          "taux": 0.44
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1291,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "32",
+      "dep_nom": "Gers",
+      "inscrits": 144959,
+      "abstentions": 23027,
+      "votants": 121932,
+      "blancs nuls": 3249,
+      "exprimés": 118683,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 27775,
+          "taux": 23.4
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 23387,
+          "taux": 19.71
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 23089,
+          "taux": 19.45
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 21312,
+          "taux": 17.96
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 9527,
+          "taux": 8.03
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 5378,
+          "taux": 4.53
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5059,
+          "taux": 4.26
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1254,
+          "taux": 1.06
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1037,
+          "taux": 0.87
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 677,
+          "taux": 0.57
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 188,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "33",
+      "dep_nom": "Gironde",
+      "inscrits": 1086982,
+      "abstentions": 216602,
+      "votants": 870380,
+      "blancs nuls": 19560,
+      "exprimés": 850820,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 222287,
+          "taux": 26.13
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 185888,
+          "taux": 21.85
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 155319,
+          "taux": 18.26
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 145283,
+          "taux": 17.08
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 64300,
+          "taux": 7.56
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 35530,
+          "taux": 4.18
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 16460,
+          "taux": 1.93
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 13233,
+          "taux": 1.56
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 7013,
+          "taux": 0.82
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3980,
+          "taux": 0.47
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1527,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "34",
+      "dep_nom": "Hérault",
+      "inscrits": 800394,
+      "abstentions": 159370,
+      "votants": 641024,
+      "blancs nuls": 14180,
+      "exprimés": 626844,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 161119,
+          "taux": 25.7
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 143996,
+          "taux": 22.97
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 128621,
+          "taux": 20.52
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 110339,
+          "taux": 17.6
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 36180,
+          "taux": 5.77
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 23159,
+          "taux": 3.69
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 8461,
+          "taux": 1.35
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5919,
+          "taux": 0.94
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5660,
+          "taux": 0.9
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2496,
+          "taux": 0.4
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 894,
+          "taux": 0.14
+        }
+      ]
+    },
+    {
+      "dep": "35",
+      "dep_nom": "Ille-et-Vilaine",
+      "inscrits": 730142,
+      "abstentions": 116705,
+      "votants": 613437,
+      "blancs nuls": 14096,
+      "exprimés": 599341,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 181373,
+          "taux": 30.26
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 118096,
+          "taux": 19.7
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 114034,
+          "taux": 19.03
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 84648,
+          "taux": 14.12
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 53418,
+          "taux": 8.91
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 26822,
+          "taux": 4.48
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 7065,
+          "taux": 1.18
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4531,
+          "taux": 0.76
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 4339,
+          "taux": 0.72
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3994,
+          "taux": 0.67
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1021,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "36",
+      "dep_nom": "Indre",
+      "inscrits": 170409,
+      "abstentions": 34911,
+      "votants": 135498,
+      "blancs nuls": 4564,
+      "exprimés": 130934,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 31985,
+          "taux": 24.43
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 27301,
+          "taux": 20.85
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 25476,
+          "taux": 19.46
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 24938,
+          "taux": 19.05
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 7786,
+          "taux": 5.95
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 7177,
+          "taux": 5.48
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1757,
+          "taux": 1.34
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1728,
+          "taux": 1.32
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1390,
+          "taux": 1.06
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1098,
+          "taux": 0.84
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 298,
+          "taux": 0.23
+        }
+      ]
+    },
+    {
+      "dep": "37",
+      "dep_nom": "Indre-et-Loire",
+      "inscrits": 428871,
+      "abstentions": 80171,
+      "votants": 348700,
+      "blancs nuls": 8795,
+      "exprimés": 339905,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 83165,
+          "taux": 24.47
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 72196,
+          "taux": 21.24
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 65931,
+          "taux": 19.4
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 64522,
+          "taux": 18.98
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 22898,
+          "taux": 6.74
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 18452,
+          "taux": 5.43
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3907,
+          "taux": 1.15
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2929,
+          "taux": 0.86
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2620,
+          "taux": 0.77
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2606,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 679,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "38",
+      "dep_nom": "Isère",
+      "inscrits": 856366,
+      "abstentions": 178004,
+      "votants": 678362,
+      "blancs nuls": 15848,
+      "exprimés": 662514,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 164091,
+          "taux": 24.77
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 147910,
+          "taux": 22.33
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 135949,
+          "taux": 20.52
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 112927,
+          "taux": 17.05
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 43652,
+          "taux": 6.59
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 33773,
+          "taux": 5.1
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 6558,
+          "taux": 0.99
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6537,
+          "taux": 0.99
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6382,
+          "taux": 0.96
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3595,
+          "taux": 0.54
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1140,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "39",
+      "dep_nom": "Jura",
+      "inscrits": 190332,
+      "abstentions": 36524,
+      "votants": 153808,
+      "blancs nuls": 4239,
+      "exprimés": 149569,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 36110,
+          "taux": 24.14
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 31896,
+          "taux": 21.33
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 30331,
+          "taux": 20.28
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 28373,
+          "taux": 18.97
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 8533,
+          "taux": 5.71
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 7589,
+          "taux": 5.07
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1994,
+          "taux": 1.33
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1980,
+          "taux": 1.32
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1330,
+          "taux": 0.89
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1148,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 285,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "40",
+      "dep_nom": "Landes",
+      "inscrits": 310197,
+      "abstentions": 55411,
+      "votants": 254786,
+      "blancs nuls": 6920,
+      "exprimés": 247866,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 61043,
+          "taux": 24.63
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 49949,
+          "taux": 20.15
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 44956,
+          "taux": 18.14
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 42464,
+          "taux": 17.13
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 21550,
+          "taux": 8.69
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 11021,
+          "taux": 4.45
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 10485,
+          "taux": 4.23
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2875,
+          "taux": 1.16
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1916,
+          "taux": 0.77
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1235,
+          "taux": 0.5
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 372,
+          "taux": 0.15
+        }
+      ]
+    },
+    {
+      "dep": "41",
+      "dep_nom": "Loir-et-Cher",
+      "inscrits": 245321,
+      "abstentions": 46325,
+      "votants": 198996,
+      "blancs nuls": 5258,
+      "exprimés": 193738,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 48662,
+          "taux": 25.12
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 42756,
+          "taux": 22.07
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 40639,
+          "taux": 20.98
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 31576,
+          "taux": 16.3
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 11646,
+          "taux": 6.01
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 10956,
+          "taux": 5.66
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2198,
+          "taux": 1.13
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1843,
+          "taux": 0.95
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1542,
+          "taux": 0.8
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1516,
+          "taux": 0.78
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 404,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "42",
+      "dep_nom": "Loire",
+      "inscrits": 510809,
+      "abstentions": 108838,
+      "votants": 401971,
+      "blancs nuls": 10604,
+      "exprimés": 391367,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 94222,
+          "taux": 24.08
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 90677,
+          "taux": 23.17
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 73388,
+          "taux": 18.75
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 71848,
+          "taux": 18.36
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 22698,
+          "taux": 5.8
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 22689,
+          "taux": 5.8
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5041,
+          "taux": 1.29
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4107,
+          "taux": 1.05
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3483,
+          "taux": 0.89
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2547,
+          "taux": 0.65
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 667,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "43",
+      "dep_nom": "Haute-Loire",
+      "inscrits": 177158,
+      "abstentions": 32875,
+      "votants": 144283,
+      "blancs nuls": 4706,
+      "exprimés": 139577,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 32821,
+          "taux": 23.51
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 32185,
+          "taux": 23.06
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 25956,
+          "taux": 18.6
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 25419,
+          "taux": 18.21
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 8346,
+          "taux": 5.98
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 7435,
+          "taux": 5.33
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3112,
+          "taux": 2.23
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1928,
+          "taux": 1.38
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1050,
+          "taux": 0.75
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1043,
+          "taux": 0.75
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 282,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "44",
+      "dep_nom": "Loire-Atlantique",
+      "inscrits": 993538,
+      "abstentions": 162597,
+      "votants": 830941,
+      "blancs nuls": 19484,
+      "exprimés": 811457,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 232602,
+          "taux": 28.66
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 178357,
+          "taux": 21.98
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 159703,
+          "taux": 19.68
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 111194,
+          "taux": 13.7
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 65140,
+          "taux": 8.03
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 36546,
+          "taux": 4.5
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 9618,
+          "taux": 1.19
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 6129,
+          "taux": 0.76
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6029,
+          "taux": 0.74
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 4785,
+          "taux": 0.59
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1354,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "45",
+      "dep_nom": "Loiret",
+      "inscrits": 452607,
+      "abstentions": 87974,
+      "votants": 364633,
+      "blancs nuls": 9061,
+      "exprimés": 355572,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 83662,
+          "taux": 23.53
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 83506,
+          "taux": 23.48
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 75655,
+          "taux": 21.28
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 58134,
+          "taux": 16.35
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 21128,
+          "taux": 5.94
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 20438,
+          "taux": 5.75
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3655,
+          "taux": 1.03
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3203,
+          "taux": 0.9
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3109,
+          "taux": 0.87
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2380,
+          "taux": 0.67
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 702,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "46",
+      "dep_nom": "Lot",
+      "inscrits": 136322,
+      "abstentions": 22347,
+      "votants": 113975,
+      "blancs nuls": 3188,
+      "exprimés": 110787,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 29527,
+          "taux": 26.65
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 26014,
+          "taux": 23.48
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 18459,
+          "taux": 16.66
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 17865,
+          "taux": 16.13
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 7951,
+          "taux": 7.18
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 4550,
+          "taux": 4.11
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3073,
+          "taux": 2.77
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1528,
+          "taux": 1.38
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 871,
+          "taux": 0.79
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 723,
+          "taux": 0.65
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 226,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "47",
+      "dep_nom": "Lot-et-Garonne",
+      "inscrits": 240931,
+      "abstentions": 46805,
+      "votants": 194126,
+      "blancs nuls": 5304,
+      "exprimés": 188822,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 47271,
+          "taux": 25.03
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 39253,
+          "taux": 20.79
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 36018,
+          "taux": 19.08
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 34828,
+          "taux": 18.44
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 10639,
+          "taux": 5.63
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 9407,
+          "taux": 4.98
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6083,
+          "taux": 3.22
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2292,
+          "taux": 1.21
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1660,
+          "taux": 0.88
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1044,
+          "taux": 0.55
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 327,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "48",
+      "dep_nom": "Lozère",
+      "inscrits": 59508,
+      "abstentions": 9949,
+      "votants": 49559,
+      "blancs nuls": 1412,
+      "exprimés": 48147,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 10986,
+          "taux": 22.82
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 10463,
+          "taux": 21.73
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 9483,
+          "taux": 19.7
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 9097,
+          "taux": 18.89
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 2733,
+          "taux": 5.68
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 2197,
+          "taux": 4.56
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1764,
+          "taux": 3.66
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 683,
+          "taux": 1.42
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 354,
+          "taux": 0.74
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 294,
+          "taux": 0.61
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 93,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "49",
+      "dep_nom": "Maine-et-Loire",
+      "inscrits": 569425,
+      "abstentions": 97038,
+      "votants": 472387,
+      "blancs nuls": 13429,
+      "exprimés": 458958,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 121685,
+          "taux": 26.51
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 108888,
+          "taux": 23.73
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 78293,
+          "taux": 17.06
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 77935,
+          "taux": 16.98
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 29553,
+          "taux": 6.44
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 25321,
+          "taux": 5.52
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5696,
+          "taux": 1.24
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3860,
+          "taux": 0.84
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3483,
+          "taux": 0.76
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3439,
+          "taux": 0.75
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 805,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "50",
+      "dep_nom": "Manche",
+      "inscrits": 379104,
+      "abstentions": 70202,
+      "votants": 308902,
+      "blancs nuls": 8456,
+      "exprimés": 300446,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 74683,
+          "taux": 24.86
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 64909,
+          "taux": 21.6
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 61620,
+          "taux": 20.51
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 51026,
+          "taux": 16.98
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 19238,
+          "taux": 6.4
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 17052,
+          "taux": 5.68
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4134,
+          "taux": 1.38
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2593,
+          "taux": 0.86
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2520,
+          "taux": 0.84
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2048,
+          "taux": 0.68
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 623,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "51",
+      "dep_nom": "Marne",
+      "inscrits": 381696,
+      "abstentions": 81265,
+      "votants": 300431,
+      "blancs nuls": 6662,
+      "exprimés": 293769,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 82473,
+          "taux": 28.07
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 65081,
+          "taux": 22.15
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 60958,
+          "taux": 20.75
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 44424,
+          "taux": 15.12
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 16896,
+          "taux": 5.75
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 13683,
+          "taux": 4.66
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2762,
+          "taux": 0.94
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2441,
+          "taux": 0.83
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2350,
+          "taux": 0.8
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2176,
+          "taux": 0.74
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 525,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "52",
+      "dep_nom": "Haute-Marne",
+      "inscrits": 134148,
+      "abstentions": 28769,
+      "votants": 105379,
+      "blancs nuls": 2939,
+      "exprimés": 102440,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 34027,
+          "taux": 33.22
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 19590,
+          "taux": 19.12
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 18438,
+          "taux": 18
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 15380,
+          "taux": 15.01
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 6417,
+          "taux": 6.26
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 4292,
+          "taux": 4.19
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1233,
+          "taux": 1.2
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1126,
+          "taux": 1.1
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 926,
+          "taux": 0.9
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 813,
+          "taux": 0.79
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 198,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "53",
+      "dep_nom": "Mayenne",
+      "inscrits": 222325,
+      "abstentions": 36392,
+      "votants": 185933,
+      "blancs nuls": 5701,
+      "exprimés": 180232,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 48772,
+          "taux": 27.06
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 46938,
+          "taux": 26.04
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 30465,
+          "taux": 16.9
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 26798,
+          "taux": 14.87
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 10247,
+          "taux": 5.69
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 10107,
+          "taux": 5.61
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2242,
+          "taux": 1.24
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1627,
+          "taux": 0.9
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1525,
+          "taux": 0.85
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1182,
+          "taux": 0.66
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 329,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "54",
+      "dep_nom": "Meurthe-et-Moselle",
+      "inscrits": 495091,
+      "abstentions": 106495,
+      "votants": 388596,
+      "blancs nuls": 8830,
+      "exprimés": 379766,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 98194,
+          "taux": 25.86
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 83703,
+          "taux": 22.04
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 77400,
+          "taux": 20.38
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 62654,
+          "taux": 16.5
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 23632,
+          "taux": 6.22
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 19331,
+          "taux": 5.09
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4483,
+          "taux": 1.18
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3458,
+          "taux": 0.91
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3236,
+          "taux": 0.85
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2942,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 733,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "55",
+      "dep_nom": "Meuse",
+      "inscrits": 137629,
+      "abstentions": 27849,
+      "votants": 109780,
+      "blancs nuls": 2735,
+      "exprimés": 107045,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 34602,
+          "taux": 32.32
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 20713,
+          "taux": 19.35
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 19287,
+          "taux": 18.02
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 16020,
+          "taux": 14.97
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 6802,
+          "taux": 6.35
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 4918,
+          "taux": 4.59
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1430,
+          "taux": 1.34
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1294,
+          "taux": 1.21
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 886,
+          "taux": 0.83
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 856,
+          "taux": 0.8
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 237,
+          "taux": 0.22
+        }
+      ]
+    },
+    {
+      "dep": "56",
+      "dep_nom": "Morbihan",
+      "inscrits": 577012,
+      "abstentions": 96113,
+      "votants": 480899,
+      "blancs nuls": 12064,
+      "exprimés": 468835,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 130639,
+          "taux": 27.86
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 97900,
+          "taux": 20.88
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 82927,
+          "taux": 17.69
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 82020,
+          "taux": 17.49
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 34368,
+          "taux": 7.33
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 22411,
+          "taux": 4.78
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6309,
+          "taux": 1.35
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4820,
+          "taux": 1.03
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3291,
+          "taux": 0.7
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 3249,
+          "taux": 0.69
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 901,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "57",
+      "dep_nom": "Moselle",
+      "inscrits": 751271,
+      "abstentions": 177500,
+      "votants": 573771,
+      "blancs nuls": 14554,
+      "exprimés": 559217,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 158542,
+          "taux": 28.35
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 117738,
+          "taux": 21.05
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 100118,
+          "taux": 17.9
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 96003,
+          "taux": 17.17
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 32525,
+          "taux": 5.82
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 29480,
+          "taux": 5.27
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6975,
+          "taux": 1.25
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5977,
+          "taux": 1.07
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5763,
+          "taux": 1.03
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 4929,
+          "taux": 0.88
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1167,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "58",
+      "dep_nom": "Nièvre",
+      "inscrits": 159425,
+      "abstentions": 35457,
+      "votants": 123968,
+      "blancs nuls": 3534,
+      "exprimés": 120434,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 29817,
+          "taux": 24.76
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 27356,
+          "taux": 22.71
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 23079,
+          "taux": 19.16
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 20773,
+          "taux": 17.25
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 7854,
+          "taux": 6.52
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 6446,
+          "taux": 5.35
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1547,
+          "taux": 1.28
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1365,
+          "taux": 1.13
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1004,
+          "taux": 0.83
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 959,
+          "taux": 0.8
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 234,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "59",
+      "dep_nom": "Nord",
+      "inscrits": 1804668,
+      "abstentions": 417073,
+      "votants": 1387595,
+      "blancs nuls": 33792,
+      "exprimés": 1353803,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 382030,
+          "taux": 28.22
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 288115,
+          "taux": 21.28
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 268723,
+          "taux": 19.85
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 226710,
+          "taux": 16.75
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 76531,
+          "taux": 5.65
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 65245,
+          "taux": 4.82
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 13151,
+          "taux": 0.97
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 11450,
+          "taux": 0.85
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 10975,
+          "taux": 0.81
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 8535,
+          "taux": 0.63
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 2338,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "60",
+      "dep_nom": "Oise",
+      "inscrits": 562085,
+      "abstentions": 113254,
+      "votants": 448831,
+      "blancs nuls": 11038,
+      "exprimés": 437793,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 135188,
+          "taux": 30.88
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 86680,
+          "taux": 19.8
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 77415,
+          "taux": 17.68
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 76783,
+          "taux": 17.54
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 23936,
+          "taux": 5.47
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 20525,
+          "taux": 4.69
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4682,
+          "taux": 1.07
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 4666,
+          "taux": 1.07
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3677,
+          "taux": 0.84
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3414,
+          "taux": 0.78
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 827,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "61",
+      "dep_nom": "Orne",
+      "inscrits": 208734,
+      "abstentions": 38340,
+      "votants": 170394,
+      "blancs nuls": 4337,
+      "exprimés": 166057,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 41084,
+          "taux": 24.74
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 39532,
+          "taux": 23.81
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 35815,
+          "taux": 21.57
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 24542,
+          "taux": 14.78
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 9644,
+          "taux": 5.81
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 8659,
+          "taux": 5.21
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2147,
+          "taux": 1.29
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1513,
+          "taux": 0.91
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1480,
+          "taux": 0.89
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1291,
+          "taux": 0.78
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 350,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "62",
+      "dep_nom": "Pas-de-Calais",
+      "inscrits": 1090368,
+      "abstentions": 234194,
+      "votants": 856174,
+      "blancs nuls": 23022,
+      "exprimés": 833152,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 286147,
+          "taux": 34.35
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 159342,
+          "taux": 19.13
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 153682,
+          "taux": 18.45
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 119077,
+          "taux": 14.29
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 43084,
+          "taux": 5.17
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 41427,
+          "taux": 4.97
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 9002,
+          "taux": 1.08
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 8667,
+          "taux": 1.04
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5832,
+          "taux": 0.7
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5484,
+          "taux": 0.66
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1408,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "63",
+      "dep_nom": "Puy-de-Dôme",
+      "inscrits": 460939,
+      "abstentions": 93363,
+      "votants": 367576,
+      "blancs nuls": 11009,
+      "exprimés": 356567,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 96797,
+          "taux": 27.15
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 78417,
+          "taux": 21.99
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 63030,
+          "taux": 17.68
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 58432,
+          "taux": 16.39
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 25814,
+          "taux": 7.24
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 15635,
+          "taux": 4.38
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 7348,
+          "taux": 2.06
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4730,
+          "taux": 1.33
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2910,
+          "taux": 0.82
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2699,
+          "taux": 0.76
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 755,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "64",
+      "dep_nom": "Pyrénées-Atlantiques",
+      "inscrits": 502378,
+      "abstentions": 97357,
+      "votants": 405021,
+      "blancs nuls": 9368,
+      "exprimés": 395653,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 103958,
+          "taux": 26.28
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 78803,
+          "taux": 19.92
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 71858,
+          "taux": 18.16
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 54376,
+          "taux": 13.74
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 30589,
+          "taux": 7.73
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 29882,
+          "taux": 7.55
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14727,
+          "taux": 3.72
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6371,
+          "taux": 1.61
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2782,
+          "taux": 0.7
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1799,
+          "taux": 0.45
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 508,
+          "taux": 0.13
+        }
+      ]
+    },
+    {
+      "dep": "65",
+      "dep_nom": "Hautes-Pyrénées",
+      "inscrits": 177690,
+      "abstentions": 34275,
+      "votants": 143415,
+      "blancs nuls": 3726,
+      "exprimés": 139689,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 35070,
+          "taux": 25.11
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 32148,
+          "taux": 23.01
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 25947,
+          "taux": 18.57
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 20220,
+          "taux": 14.48
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 9935,
+          "taux": 7.11
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6928,
+          "taux": 4.96
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 5876,
+          "taux": 4.21
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1575,
+          "taux": 1.13
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1023,
+          "taux": 0.73
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 767,
+          "taux": 0.55
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 200,
+          "taux": 0.14
+        }
+      ]
+    },
+    {
+      "dep": "66",
+      "dep_nom": "Pyrénées-Orientales",
+      "inscrits": 347914,
+      "abstentions": 73984,
+      "votants": 273930,
+      "blancs nuls": 7143,
+      "exprimés": 266787,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 80169,
+          "taux": 30.05
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 56392,
+          "taux": 21.14
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 49245,
+          "taux": 18.46
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 45865,
+          "taux": 17.19
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 13455,
+          "taux": 5.04
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 9741,
+          "taux": 3.65
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4634,
+          "taux": 1.74
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3053,
+          "taux": 1.14
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2303,
+          "taux": 0.86
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1477,
+          "taux": 0.55
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 453,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "67",
+      "dep_nom": "Bas-Rhin",
+      "inscrits": 766539,
+      "abstentions": 154037,
+      "votants": 612502,
+      "blancs nuls": 14397,
+      "exprimés": 598105,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 147714,
+          "taux": 24.7
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 133347,
+          "taux": 22.29
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 131564,
+          "taux": 22
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 88420,
+          "taux": 14.78
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 39299,
+          "taux": 6.57
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 31931,
+          "taux": 5.34
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 6841,
+          "taux": 1.14
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6549,
+          "taux": 1.09
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6420,
+          "taux": 1.07
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 4823,
+          "taux": 0.81
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1197,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "68",
+      "dep_nom": "Haut-Rhin",
+      "inscrits": 526190,
+      "abstentions": 110496,
+      "votants": 415694,
+      "blancs nuls": 11784,
+      "exprimés": 403910,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 109704,
+          "taux": 27.16
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 90237,
+          "taux": 22.34
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 79798,
+          "taux": 19.76
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 57856,
+          "taux": 14.32
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 28562,
+          "taux": 7.07
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 18694,
+          "taux": 4.63
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5217,
+          "taux": 1.29
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5004,
+          "taux": 1.24
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4727,
+          "taux": 1.17
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3101,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1010,
+          "taux": 0.25
+        }
+      ]
+    },
+    {
+      "dep": "69",
+      "dep_nom": "Rhône",
+      "inscrits": 1155604,
+      "abstentions": 249073,
+      "votants": 906531,
+      "blancs nuls": 18019,
+      "exprimés": 888512,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 236137,
+          "taux": 26.58
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 205781,
+          "taux": 23.16
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 175051,
+          "taux": 19.7
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 144476,
+          "taux": 16.26
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 60094,
+          "taux": 6.76
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 38429,
+          "taux": 4.33
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 9188,
+          "taux": 1.03
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 7146,
+          "taux": 0.8
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6703,
+          "taux": 0.75
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 4061,
+          "taux": 0.46
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1446,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "70",
+      "dep_nom": "Haute-Saône",
+      "inscrits": 179214,
+      "abstentions": 34976,
+      "votants": 144238,
+      "blancs nuls": 4716,
+      "exprimés": 139522,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 43753,
+          "taux": 31.36
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 27332,
+          "taux": 19.59
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 25184,
+          "taux": 18.05
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 22150,
+          "taux": 15.88
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 8176,
+          "taux": 5.86
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 6596,
+          "taux": 4.73
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2021,
+          "taux": 1.45
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1512,
+          "taux": 1.08
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1325,
+          "taux": 0.95
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1206,
+          "taux": 0.86
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 267,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "71",
+      "dep_nom": "Saône-et-Loire",
+      "inscrits": 406418,
+      "abstentions": 86784,
+      "votants": 319634,
+      "blancs nuls": 9683,
+      "exprimés": 309951,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 75258,
+          "taux": 24.28
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 69212,
+          "taux": 22.33
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 60100,
+          "taux": 19.39
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 55249,
+          "taux": 17.83
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 19184,
+          "taux": 6.19
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 18961,
+          "taux": 6.12
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3588,
+          "taux": 1.16
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3153,
+          "taux": 1.02
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2535,
+          "taux": 0.82
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2201,
+          "taux": 0.71
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 510,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "72",
+      "dep_nom": "Sarthe",
+      "inscrits": 405440,
+      "abstentions": 73577,
+      "votants": 331863,
+      "blancs nuls": 9419,
+      "exprimés": 322444,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 92261,
+          "taux": 28.61
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 67083,
+          "taux": 20.8
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 64618,
+          "taux": 20.04
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 56851,
+          "taux": 17.63
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 17195,
+          "taux": 5.33
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 13657,
+          "taux": 4.24
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3565,
+          "taux": 1.11
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2452,
+          "taux": 0.76
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2141,
+          "taux": 0.66
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2074,
+          "taux": 0.64
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 547,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "73",
+      "dep_nom": "Savoie",
+      "inscrits": 310237,
+      "abstentions": 62746,
+      "votants": 247491,
+      "blancs nuls": 5932,
+      "exprimés": 241559,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 55871,
+          "taux": 23.13
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 52448,
+          "taux": 21.71
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 50815,
+          "taux": 21.04
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 45013,
+          "taux": 18.63
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 13752,
+          "taux": 5.69
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 13673,
+          "taux": 5.66
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3152,
+          "taux": 1.3
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2608,
+          "taux": 1.08
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2578,
+          "taux": 1.07
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1219,
+          "taux": 0.5
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 430,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "74",
+      "dep_nom": "Haute-Savoie",
+      "inscrits": 540033,
+      "abstentions": 116275,
+      "votants": 423758,
+      "blancs nuls": 10260,
+      "exprimés": 413498,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 105057,
+          "taux": 25.41
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 100174,
+          "taux": 24.23
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 77919,
+          "taux": 18.84
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 67079,
+          "taux": 16.22
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 24785,
+          "taux": 5.99
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 21805,
+          "taux": 5.27
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5021,
+          "taux": 1.21
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4649,
+          "taux": 1.12
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4263,
+          "taux": 1.03
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1919,
+          "taux": 0.46
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 827,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "75",
+      "dep_nom": "Paris",
+      "inscrits": 1301637,
+      "abstentions": 210200,
+      "votants": 1091437,
+      "blancs nuls": 14878,
+      "exprimés": 1076559,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 375006,
+          "taux": 34.83
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 284744,
+          "taux": 26.45
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 210548,
+          "taux": 19.56
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 109550,
+          "taux": 10.18
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 53719,
+          "taux": 4.99
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 17997,
+          "taux": 1.67
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 8337,
+          "taux": 0.77
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6799,
+          "taux": 0.63
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5490,
+          "taux": 0.51
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2897,
+          "taux": 0.27
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1472,
+          "taux": 0.14
+        }
+      ]
+    },
+    {
+      "dep": "76",
+      "dep_nom": "Seine-Maritime",
+      "inscrits": 881658,
+      "abstentions": 177294,
+      "votants": 704364,
+      "blancs nuls": 17838,
+      "exprimés": 686526,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 170945,
+          "taux": 24.9
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 152394,
+          "taux": 22.2
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 145756,
+          "taux": 21.23
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 118336,
+          "taux": 17.24
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 41516,
+          "taux": 6.05
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 33036,
+          "taux": 4.81
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 8321,
+          "taux": 1.21
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 5356,
+          "taux": 0.78
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5205,
+          "taux": 0.76
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4383,
+          "taux": 0.64
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1278,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "77",
+      "dep_nom": "Seine-et-Marne",
+      "inscrits": 881558,
+      "abstentions": 183302,
+      "votants": 698256,
+      "blancs nuls": 17665,
+      "exprimés": 680591,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 157314,
+          "taux": 23.11
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 155521,
+          "taux": 22.85
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 141827,
+          "taux": 20.84
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 120968,
+          "taux": 17.77
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 41505,
+          "taux": 6.1
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 38772,
+          "taux": 5.7
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 8195,
+          "taux": 1.2
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6354,
+          "taux": 0.93
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5182,
+          "taux": 0.76
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3706,
+          "taux": 0.54
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1247,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "78",
+      "dep_nom": "Yvelines",
+      "inscrits": 951148,
+      "abstentions": 177485,
+      "votants": 773663,
+      "blancs nuls": 14729,
+      "exprimés": 758934,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 219063,
+          "taux": 28.86
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 206835,
+          "taux": 27.25
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 126345,
+          "taux": 16.65
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 98024,
+          "taux": 12.92
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 52564,
+          "taux": 6.93
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 32906,
+          "taux": 4.34
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 8148,
+          "taux": 1.07
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5448,
+          "taux": 0.72
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 5371,
+          "taux": 0.71
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2872,
+          "taux": 0.38
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1358,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "79",
+      "dep_nom": "Deux-Sèvres",
+      "inscrits": 272385,
+      "abstentions": 51156,
+      "votants": 221229,
+      "blancs nuls": 6831,
+      "exprimés": 214398,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 57826,
+          "taux": 26.97
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 41609,
+          "taux": 19.41
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 40195,
+          "taux": 18.75
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 38640,
+          "taux": 18.02
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 14950,
+          "taux": 6.97
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 11356,
+          "taux": 5.3
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3483,
+          "taux": 1.62
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2599,
+          "taux": 1.21
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1869,
+          "taux": 0.87
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1478,
+          "taux": 0.69
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 393,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "80",
+      "dep_nom": "Somme",
+      "inscrits": 409014,
+      "abstentions": 80489,
+      "votants": 328525,
+      "blancs nuls": 8889,
+      "exprimés": 319636,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 97081,
+          "taux": 30.37
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 69520,
+          "taux": 21.75
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 59491,
+          "taux": 18.61
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 51834,
+          "taux": 16.22
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 15462,
+          "taux": 4.84
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 14260,
+          "taux": 4.46
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3661,
+          "taux": 1.15
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3111,
+          "taux": 0.97
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2365,
+          "taux": 0.74
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2272,
+          "taux": 0.71
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 579,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "81",
+      "dep_nom": "Tarn",
+      "inscrits": 291194,
+      "abstentions": 50507,
+      "votants": 240687,
+      "blancs nuls": 6930,
+      "exprimés": 233757,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 52402,
+          "taux": 22.42
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 51755,
+          "taux": 22.14
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 48094,
+          "taux": 20.57
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 41052,
+          "taux": 17.56
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 15530,
+          "taux": 6.64
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 11440,
+          "taux": 4.89
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 7105,
+          "taux": 3.04
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2721,
+          "taux": 1.16
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1822,
+          "taux": 0.78
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1397,
+          "taux": 0.6
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 439,
+          "taux": 0.19
+        }
+      ]
+    },
+    {
+      "dep": "82",
+      "dep_nom": "Tarn-et-Garonne",
+      "inscrits": 183341,
+      "abstentions": 32623,
+      "votants": 150718,
+      "blancs nuls": 3917,
+      "exprimés": 146801,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 39183,
+          "taux": 26.69
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 30319,
+          "taux": 20.65
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 27841,
+          "taux": 18.97
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 25992,
+          "taux": 17.71
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 8567,
+          "taux": 5.84
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 7233,
+          "taux": 4.93
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3660,
+          "taux": 2.49
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1573,
+          "taux": 1.07
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1337,
+          "taux": 0.91
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 830,
+          "taux": 0.57
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 266,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "83",
+      "dep_nom": "Var",
+      "inscrits": 794777,
+      "abstentions": 169107,
+      "votants": 625670,
+      "blancs nuls": 13232,
+      "exprimés": 612438,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 186376,
+          "taux": 30.43
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 152316,
+          "taux": 24.87
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 108597,
+          "taux": 17.73
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 94184,
+          "taux": 15.38
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 29177,
+          "taux": 4.76
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 21089,
+          "taux": 3.44
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 6933,
+          "taux": 1.13
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5860,
+          "taux": 0.96
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4655,
+          "taux": 0.76
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2274,
+          "taux": 0.37
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 977,
+          "taux": 0.16
+        }
+      ]
+    },
+    {
+      "dep": "84",
+      "dep_nom": "Vaucluse",
+      "inscrits": 402323,
+      "abstentions": 80602,
+      "votants": 321721,
+      "blancs nuls": 7493,
+      "exprimés": 314228,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 95930,
+          "taux": 30.53
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 60852,
+          "taux": 19.37
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 59619,
+          "taux": 18.97
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 58208,
+          "taux": 18.52
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14452,
+          "taux": 4.6
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 13553,
+          "taux": 4.31
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3989,
+          "taux": 1.27
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2890,
+          "taux": 0.92
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2804,
+          "taux": 0.89
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1388,
+          "taux": 0.44
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 543,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "85",
+      "dep_nom": "Vendée",
+      "inscrits": 514442,
+      "abstentions": 82867,
+      "votants": 431575,
+      "blancs nuls": 12745,
+      "exprimés": 418830,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 109989,
+          "taux": 26.26
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 106804,
+          "taux": 25.5
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 77590,
+          "taux": 18.53
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 63156,
+          "taux": 15.08
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 24211,
+          "taux": 5.78
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 21356,
+          "taux": 5.1
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5219,
+          "taux": 1.25
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3810,
+          "taux": 0.91
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3294,
+          "taux": 0.79
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2705,
+          "taux": 0.65
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 696,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "86",
+      "dep_nom": "Vienne",
+      "inscrits": 307014,
+      "abstentions": 62127,
+      "votants": 244887,
+      "blancs nuls": 7139,
+      "exprimés": 237748,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 59146,
+          "taux": 24.88
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 49061,
+          "taux": 20.64
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 47024,
+          "taux": 19.78
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 42703,
+          "taux": 17.96
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 16861,
+          "taux": 7.09
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 11920,
+          "taux": 5.01
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3642,
+          "taux": 1.53
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2861,
+          "taux": 1.2
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2074,
+          "taux": 0.87
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1896,
+          "taux": 0.8
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 560,
+          "taux": 0.24
+        }
+      ]
+    },
+    {
+      "dep": "87",
+      "dep_nom": "Haute-Vienne",
+      "inscrits": 266322,
+      "abstentions": 50623,
+      "votants": 215699,
+      "blancs nuls": 7284,
+      "exprimés": 208415,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 55577,
+          "taux": 26.67
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 46549,
+          "taux": 22.33
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 37937,
+          "taux": 18.2
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 32522,
+          "taux": 15.6
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 16136,
+          "taux": 7.74
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 9285,
+          "taux": 4.46
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3518,
+          "taux": 1.69
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3044,
+          "taux": 1.46
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1850,
+          "taux": 0.89
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1557,
+          "taux": 0.75
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 440,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "88",
+      "dep_nom": "Vosges",
+      "inscrits": 282612,
+      "abstentions": 56393,
+      "votants": 226219,
+      "blancs nuls": 6717,
+      "exprimés": 219502,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 63924,
+          "taux": 29.12
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 43604,
+          "taux": 19.86
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 39579,
+          "taux": 18.03
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 36524,
+          "taux": 16.64
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 14323,
+          "taux": 6.53
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 10887,
+          "taux": 4.96
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3229,
+          "taux": 1.47
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2750,
+          "taux": 1.25
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2223,
+          "taux": 1.01
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2004,
+          "taux": 0.91
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 455,
+          "taux": 0.21
+        }
+      ]
+    },
+    {
+      "dep": "89",
+      "dep_nom": "Yonne",
+      "inscrits": 241918,
+      "abstentions": 52739,
+      "votants": 189179,
+      "blancs nuls": 4626,
+      "exprimés": 184553,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 52640,
+          "taux": 28.52
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 36739,
+          "taux": 19.91
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 36234,
+          "taux": 19.63
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 30815,
+          "taux": 16.7
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 11668,
+          "taux": 6.32
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 8846,
+          "taux": 4.79
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2128,
+          "taux": 1.15
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1987,
+          "taux": 1.08
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1775,
+          "taux": 0.96
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1380,
+          "taux": 0.75
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 341,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "90",
+      "dep_nom": "Territoire de Belfort",
+      "inscrits": 95290,
+      "abstentions": 21638,
+      "votants": 73652,
+      "blancs nuls": 2078,
+      "exprimés": 71574,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 19249,
+          "taux": 26.89
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 14771,
+          "taux": 20.64
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 13672,
+          "taux": 19.1
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 12668,
+          "taux": 17.7
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 4189,
+          "taux": 5.85
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 3770,
+          "taux": 5.27
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 941,
+          "taux": 1.31
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 886,
+          "taux": 1.24
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 669,
+          "taux": 0.93
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 592,
+          "taux": 0.83
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 167,
+          "taux": 0.23
+        }
+      ]
+    },
+    {
+      "dep": "91",
+      "dep_nom": "Essonne",
+      "inscrits": 795227,
+      "abstentions": 157440,
+      "votants": 637787,
+      "blancs nuls": 14300,
+      "exprimés": 623487,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 163389,
+          "taux": 26.21
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 136392,
+          "taux": 21.88
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 112478,
+          "taux": 18.04
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 102461,
+          "taux": 16.43
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 44793,
+          "taux": 7.18
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 42072,
+          "taux": 6.75
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 7514,
+          "taux": 1.21
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5755,
+          "taux": 0.92
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4468,
+          "taux": 0.72
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2924,
+          "taux": 0.47
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1241,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "92",
+      "dep_nom": "Hauts-de-Seine",
+      "inscrits": 986730,
+      "abstentions": 176715,
+      "votants": 810015,
+      "blancs nuls": 15257,
+      "exprimés": 794758,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 256687,
+          "taux": 32.3
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 231553,
+          "taux": 29.14
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 145289,
+          "taux": 18.28
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 60731,
+          "taux": 7.64
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 57114,
+          "taux": 7.19
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 21359,
+          "taux": 2.69
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 8453,
+          "taux": 1.06
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5033,
+          "taux": 0.63
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 4747,
+          "taux": 0.6
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2447,
+          "taux": 0.31
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1345,
+          "taux": 0.17
+        }
+      ]
+    },
+    {
+      "dep": "93",
+      "dep_nom": "Seine-Saint-Denis",
+      "inscrits": 766894,
+      "abstentions": 210952,
+      "votants": 555942,
+      "blancs nuls": 14740,
+      "exprimés": 541202,
+      "candidats": [
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 184123,
+          "taux": 34.02
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 130103,
+          "taux": 24.04
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 73534,
+          "taux": 13.59
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 69063,
+          "taux": 12.76
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 45506,
+          "taux": 8.41
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 16601,
+          "taux": 3.07
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 8739,
+          "taux": 1.61
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 6050,
+          "taux": 1.12
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 3235,
+          "taux": 0.6
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3160,
+          "taux": 0.58
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1088,
+          "taux": 0.2
+        }
+      ]
+    },
+    {
+      "dep": "94",
+      "dep_nom": "Val-de-Marne",
+      "inscrits": 785540,
+      "abstentions": 164068,
+      "votants": 621472,
+      "blancs nuls": 13685,
+      "exprimés": 607787,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 172202,
+          "taux": 28.33
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 149112,
+          "taux": 24.53
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 122814,
+          "taux": 20.21
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 69878,
+          "taux": 11.5
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 47228,
+          "taux": 7.77
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 26252,
+          "taux": 4.32
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 7303,
+          "taux": 1.2
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5226,
+          "taux": 0.86
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3957,
+          "taux": 0.65
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2749,
+          "taux": 0.45
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1066,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "95",
+      "dep_nom": "Val-d'Oise",
+      "inscrits": 730497,
+      "abstentions": 167560,
+      "votants": 562937,
+      "blancs nuls": 14799,
+      "exprimés": 548138,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 138752,
+          "taux": 25.31
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 131342,
+          "taux": 23.96
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 101131,
+          "taux": 18.45
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 94158,
+          "taux": 17.18
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 37518,
+          "taux": 6.84
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 24790,
+          "taux": 4.52
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 7702,
+          "taux": 1.41
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 5040,
+          "taux": 0.92
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 3975,
+          "taux": 0.73
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2752,
+          "taux": 0.5
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 978,
+          "taux": 0.18
+        }
+      ]
+    },
+    {
+      "dep": "971",
+      "dep_nom": "Guadeloupe",
+      "inscrits": 316345,
+      "abstentions": 189694,
+      "votants": 126651,
+      "blancs nuls": 14409,
+      "exprimés": 112242,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 33930,
+          "taux": 30.23
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 27081,
+          "taux": 24.13
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 16305,
+          "taux": 14.53
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 15159,
+          "taux": 13.51
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 11165,
+          "taux": 9.95
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 2300,
+          "taux": 2.05
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 2042,
+          "taux": 1.82
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1972,
+          "taux": 1.76
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1312,
+          "taux": 1.17
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 650,
+          "taux": 0.58
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 326,
+          "taux": 0.29
+        }
+      ]
+    },
+    {
+      "dep": "972",
+      "dep_nom": "Martinique",
+      "inscrits": 310812,
+      "abstentions": 186855,
+      "votants": 123957,
+      "blancs nuls": 14693,
+      "exprimés": 109264,
+      "candidats": [
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 29903,
+          "taux": 27.37
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 27893,
+          "taux": 25.53
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 18400,
+          "taux": 16.84
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 11949,
+          "taux": 10.94
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 10661,
+          "taux": 9.76
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3217,
+          "taux": 2.94
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 2338,
+          "taux": 2.14
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 2253,
+          "taux": 2.06
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1407,
+          "taux": 1.29
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 870,
+          "taux": 0.8
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 373,
+          "taux": 0.34
+        }
+      ]
+    },
+    {
+      "dep": "973",
+      "dep_nom": "Guyane",
+      "inscrits": 92935,
+      "abstentions": 61010,
+      "votants": 31925,
+      "blancs nuls": 5086,
+      "exprimés": 26839,
+      "candidats": [
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 6633,
+          "taux": 24.71
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 6521,
+          "taux": 24.3
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 5031,
+          "taux": 18.75
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 3935,
+          "taux": 14.66
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 1529,
+          "taux": 5.7
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1405,
+          "taux": 5.23
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 480,
+          "taux": 1.79
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 472,
+          "taux": 1.76
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 462,
+          "taux": 1.72
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 273,
+          "taux": 1.02
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 98,
+          "taux": 0.37
+        }
+      ]
+    },
+    {
+      "dep": "974",
+      "dep_nom": "La Réunion",
+      "inscrits": 639481,
+      "abstentions": 264229,
+      "votants": 375252,
+      "blancs nuls": 24772,
+      "exprimés": 350480,
+      "candidats": [
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 85987,
+          "taux": 24.53
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 82219,
+          "taux": 23.46
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 66292,
+          "taux": 18.91
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 60508,
+          "taux": 17.26
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 26872,
+          "taux": 7.67
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 10123,
+          "taux": 2.89
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 6029,
+          "taux": 1.72
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 5190,
+          "taux": 1.48
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 4377,
+          "taux": 1.25
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 1939,
+          "taux": 0.55
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 944,
+          "taux": 0.27
+        }
+      ]
+    },
+    {
+      "dep": "976",
+      "dep_nom": "Mayotte",
+      "inscrits": 83047,
+      "abstentions": 46860,
+      "votants": 36187,
+      "blancs nuls": 3057,
+      "exprimés": 33130,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 10808,
+          "taux": 32.62
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 9008,
+          "taux": 27.19
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 6364,
+          "taux": 19.21
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 2789,
+          "taux": 8.42
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 1434,
+          "taux": 4.33
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 1019,
+          "taux": 3.08
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 621,
+          "taux": 1.87
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 408,
+          "taux": 1.23
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 334,
+          "taux": 1.01
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 182,
+          "taux": 0.55
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 163,
+          "taux": 0.49
+        }
+      ]
+    },
+    {
+      "dep": "988",
+      "dep_nom": "Nouvelle-Calédonie",
+      "inscrits": 189483,
+      "abstentions": 98257,
+      "votants": 91226,
+      "blancs nuls": 4280,
+      "exprimés": 86946,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 27065,
+          "taux": 31.13
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 25290,
+          "taux": 29.09
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 11089,
+          "taux": 12.75
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 8125,
+          "taux": 9.34
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 7703,
+          "taux": 8.86
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 2521,
+          "taux": 2.9
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 2098,
+          "taux": 2.41
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 1284,
+          "taux": 1.48
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 836,
+          "taux": 0.96
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 695,
+          "taux": 0.8
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 240,
+          "taux": 0.28
+        }
+      ]
+    },
+    {
+      "dep": "987",
+      "dep_nom": "Polynésie française",
+      "inscrits": 203940,
+      "abstentions": 124527,
+      "votants": 79413,
+      "blancs nuls": 3791,
+      "exprimés": 75622,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 26679,
+          "taux": 35.28
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 24604,
+          "taux": 32.54
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 11119,
+          "taux": 14.7
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 5952,
+          "taux": 7.87
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 2203,
+          "taux": 2.91
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 1767,
+          "taux": 2.34
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 1206,
+          "taux": 1.59
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 755,
+          "taux": 1
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 689,
+          "taux": 0.91
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 447,
+          "taux": 0.59
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 201,
+          "taux": 0.27
+        }
+      ]
+    },
+    {
+      "dep": "975",
+      "dep_nom": "Saint-Pierre-et-Miquelon",
+      "inscrits": 4966,
+      "abstentions": 2238,
+      "votants": 2728,
+      "blancs nuls": 96,
+      "exprimés": 2632,
+      "candidats": [
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 933,
+          "taux": 35.45
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 478,
+          "taux": 18.16
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 473,
+          "taux": 17.97
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 261,
+          "taux": 9.92
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 217,
+          "taux": 8.24
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 79,
+          "taux": 3
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 64,
+          "taux": 2.43
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 54,
+          "taux": 2.05
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 36,
+          "taux": 1.37
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 28,
+          "taux": 1.06
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 9,
+          "taux": 0.34
+        }
+      ]
+    },
+    {
+      "dep": "986",
+      "dep_nom": "Wallis et Futuna",
+      "inscrits": 8464,
+      "abstentions": 3053,
+      "votants": 5411,
+      "blancs nuls": 63,
+      "exprimés": 5348,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 1630,
+          "taux": 30.48
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 1526,
+          "taux": 28.53
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 1349,
+          "taux": 25.22
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 380,
+          "taux": 7.11
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 192,
+          "taux": 3.59
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 79,
+          "taux": 1.48
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 54,
+          "taux": 1.01
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 50,
+          "taux": 0.93
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 41,
+          "taux": 0.77
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 29,
+          "taux": 0.54
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 18,
+          "taux": 0.34
+        }
+      ]
+    },
+    {
+      "dep": "977-978",
+      "dep_nom": "Saint-Martin/Saint-Barthélemy",
+      "inscrits": 25385,
+      "abstentions": 17202,
+      "votants": 8183,
+      "blancs nuls": 318,
+      "exprimés": 7865,
+      "candidats": [
+        {
+          "nom": "François FILLON",
+          "voix": 2518,
+          "taux": 32.02
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 1834,
+          "taux": 23.32
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 1572,
+          "taux": 19.99
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 1153,
+          "taux": 14.66
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 247,
+          "taux": 3.14
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 216,
+          "taux": 2.75
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 112,
+          "taux": 1.42
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 92,
+          "taux": 1.17
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 68,
+          "taux": 0.86
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 35,
+          "taux": 0.45
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 18,
+          "taux": 0.23
+        }
+      ]
+    },
+    {
+      "dep": "00",
+      "dep_nom": "Français établis hors de France",
+      "inscrits": 1264113,
+      "abstentions": 704383,
+      "votants": 559730,
+      "blancs nuls": 5611,
+      "exprimés": 554119,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 223879,
+          "taux": 40.4
+        },
+        {
+          "nom": "François FILLON",
+          "voix": 145829,
+          "taux": 26.32
+        },
+        {
+          "nom": "Jean-Luc MÉLENCHON",
+          "voix": 87692,
+          "taux": 15.83
+        },
+        {
+          "nom": "Benoît HAMON",
+          "voix": 38092,
+          "taux": 6.87
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 35926,
+          "taux": 6.48
+        },
+        {
+          "nom": "Nicolas DUPONT-AIGNAN",
+          "voix": 8837,
+          "taux": 1.59
+        },
+        {
+          "nom": "François ASSELINEAU",
+          "voix": 5578,
+          "taux": 1.01
+        },
+        {
+          "nom": "Philippe POUTOU",
+          "voix": 3414,
+          "taux": 0.62
+        },
+        {
+          "nom": "Jean LASSALLE",
+          "voix": 2530,
+          "taux": 0.46
+        },
+        {
+          "nom": "Nathalie ARTHAUD",
+          "voix": 1312,
+          "taux": 0.24
+        },
+        {
+          "nom": "Jacques CHEMINADE",
+          "voix": 1030,
+          "taux": 0.19
+        }
+      ]
+    }
+  ]
+}

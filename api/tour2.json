@@ -1,0 +1,2230 @@
+{
+  "tour2": [
+    {
+      "dep": "01",
+      "dep_nom": "Ain",
+      "inscrits": 415952,
+      "abstentions": 93135,
+      "votants": 322817,
+      "blancs nuls": 37589,
+      "exprimés": 285228,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 173832,
+          "taux": 60.94
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 111396,
+          "taux": 39.06
+        }
+      ]
+    },
+    {
+      "dep": "02",
+      "dep_nom": "Aisne",
+      "inscrits": 375791,
+      "abstentions": 90745,
+      "votants": 285046,
+      "blancs nuls": 31905,
+      "exprimés": 253141,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 133939,
+          "taux": 52.91
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 119202,
+          "taux": 47.09
+        }
+      ]
+    },
+    {
+      "dep": "03",
+      "dep_nom": "Allier",
+      "inscrits": 253481,
+      "abstentions": 59297,
+      "votants": 194184,
+      "blancs nuls": 27418,
+      "exprimés": 166766,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 106568,
+          "taux": 63.9
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 60198,
+          "taux": 36.1
+        }
+      ]
+    },
+    {
+      "dep": "04",
+      "dep_nom": "Alpes-de-Haute-Provence",
+      "inscrits": 126458,
+      "abstentions": 29254,
+      "votants": 97204,
+      "blancs nuls": 13395,
+      "exprimés": 83809,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 48993,
+          "taux": 58.46
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 34816,
+          "taux": 41.54
+        }
+      ]
+    },
+    {
+      "dep": "05",
+      "dep_nom": "Hautes-Alpes",
+      "inscrits": 109889,
+      "abstentions": 24892,
+      "votants": 84997,
+      "blancs nuls": 11369,
+      "exprimés": 73628,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 47211,
+          "taux": 64.12
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 26417,
+          "taux": 35.88
+        }
+      ]
+    },
+    {
+      "dep": "06",
+      "dep_nom": "Alpes-Maritimes",
+      "inscrits": 761772,
+      "abstentions": 198486,
+      "votants": 563286,
+      "blancs nuls": 59579,
+      "exprimés": 503707,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 278937,
+          "taux": 55.38
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 224770,
+          "taux": 44.62
+        }
+      ]
+    },
+    {
+      "dep": "07",
+      "dep_nom": "Ardèche",
+      "inscrits": 249216,
+      "abstentions": 54463,
+      "votants": 194753,
+      "blancs nuls": 27060,
+      "exprimés": 167693,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 104588,
+          "taux": 62.37
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 63105,
+          "taux": 37.63
+        }
+      ]
+    },
+    {
+      "dep": "08",
+      "dep_nom": "Ardennes",
+      "inscrits": 194348,
+      "abstentions": 49888,
+      "votants": 144460,
+      "blancs nuls": 17466,
+      "exprimés": 126994,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 64423,
+          "taux": 50.73
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 62571,
+          "taux": 49.27
+        }
+      ]
+    },
+    {
+      "dep": "09",
+      "dep_nom": "Ariège",
+      "inscrits": 117406,
+      "abstentions": 26697,
+      "votants": 90709,
+      "blancs nuls": 14605,
+      "exprimés": 76104,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 48015,
+          "taux": 63.09
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 28089,
+          "taux": 36.91
+        }
+      ]
+    },
+    {
+      "dep": "10",
+      "dep_nom": "Aube",
+      "inscrits": 203800,
+      "abstentions": 45670,
+      "votants": 158130,
+      "blancs nuls": 18141,
+      "exprimés": 139989,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 75806,
+          "taux": 54.15
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 64183,
+          "taux": 45.85
+        }
+      ]
+    },
+    {
+      "dep": "11",
+      "dep_nom": "Aude",
+      "inscrits": 272651,
+      "abstentions": 61807,
+      "votants": 210844,
+      "blancs nuls": 28504,
+      "exprimés": 182340,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 100897,
+          "taux": 55.33
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 81443,
+          "taux": 44.67
+        }
+      ]
+    },
+    {
+      "dep": "12",
+      "dep_nom": "Aveyron",
+      "inscrits": 218179,
+      "abstentions": 43933,
+      "votants": 174246,
+      "blancs nuls": 24068,
+      "exprimés": 150178,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 109340,
+          "taux": 72.81
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 40838,
+          "taux": 27.19
+        }
+      ]
+    },
+    {
+      "dep": "13",
+      "dep_nom": "Bouches-du-Rhône",
+      "inscrits": 1370059,
+      "abstentions": 364023,
+      "votants": 1006036,
+      "blancs nuls": 108246,
+      "exprimés": 897790,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 519335,
+          "taux": 57.85
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 378455,
+          "taux": 42.15
+        }
+      ]
+    },
+    {
+      "dep": "14",
+      "dep_nom": "Calvados",
+      "inscrits": 501062,
+      "abstentions": 109700,
+      "votants": 391362,
+      "blancs nuls": 44309,
+      "exprimés": 347053,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 232952,
+          "taux": 67.12
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 114101,
+          "taux": 32.88
+        }
+      ]
+    },
+    {
+      "dep": "15",
+      "dep_nom": "Cantal",
+      "inscrits": 117394,
+      "abstentions": 25279,
+      "votants": 92115,
+      "blancs nuls": 12766,
+      "exprimés": 79349,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 55411,
+          "taux": 69.83
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 23938,
+          "taux": 30.17
+        }
+      ]
+    },
+    {
+      "dep": "16",
+      "dep_nom": "Charente",
+      "inscrits": 259951,
+      "abstentions": 60540,
+      "votants": 199411,
+      "blancs nuls": 25795,
+      "exprimés": 173616,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 113700,
+          "taux": 65.49
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 59916,
+          "taux": 34.51
+        }
+      ]
+    },
+    {
+      "dep": "17",
+      "dep_nom": "Charente-Maritime",
+      "inscrits": 491299,
+      "abstentions": 111825,
+      "votants": 379474,
+      "blancs nuls": 47155,
+      "exprimés": 332319,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 215465,
+          "taux": 64.84
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 116854,
+          "taux": 35.16
+        }
+      ]
+    },
+    {
+      "dep": "18",
+      "dep_nom": "Cher",
+      "inscrits": 228981,
+      "abstentions": 58016,
+      "votants": 170965,
+      "blancs nuls": 23230,
+      "exprimés": 147735,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 90377,
+          "taux": 61.18
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 57358,
+          "taux": 38.82
+        }
+      ]
+    },
+    {
+      "dep": "19",
+      "dep_nom": "Corrèze",
+      "inscrits": 185245,
+      "abstentions": 38166,
+      "votants": 147079,
+      "blancs nuls": 23095,
+      "exprimés": 123984,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 88029,
+          "taux": 71
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 35955,
+          "taux": 29
+        }
+      ]
+    },
+    {
+      "dep": "2A",
+      "dep_nom": "Corse-du-Sud",
+      "inscrits": 108760,
+      "abstentions": 38422,
+      "votants": 70338,
+      "blancs nuls": 8783,
+      "exprimés": 61555,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 31140,
+          "taux": 50.59
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 30415,
+          "taux": 49.41
+        }
+      ]
+    },
+    {
+      "dep": "2B",
+      "dep_nom": "Haute-Corse",
+      "inscrits": 124873,
+      "abstentions": 45642,
+      "votants": 79231,
+      "blancs nuls": 10167,
+      "exprimés": 69064,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 36101,
+          "taux": 52.27
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 32963,
+          "taux": 47.73
+        }
+      ]
+    },
+    {
+      "dep": "21",
+      "dep_nom": "Côte-d'Or",
+      "inscrits": 360646,
+      "abstentions": 77255,
+      "votants": 283391,
+      "blancs nuls": 34667,
+      "exprimés": 248724,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 159610,
+          "taux": 64.17
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 89114,
+          "taux": 35.83
+        }
+      ]
+    },
+    {
+      "dep": "22",
+      "dep_nom": "Côtes-d'Armor",
+      "inscrits": 455837,
+      "abstentions": 87667,
+      "votants": 368170,
+      "blancs nuls": 45663,
+      "exprimés": 322507,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 236953,
+          "taux": 73.47
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 85554,
+          "taux": 26.53
+        }
+      ]
+    },
+    {
+      "dep": "23",
+      "dep_nom": "Creuse",
+      "inscrits": 93122,
+      "abstentions": 21738,
+      "votants": 71384,
+      "blancs nuls": 11717,
+      "exprimés": 59667,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 39239,
+          "taux": 65.76
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 20428,
+          "taux": 34.24
+        }
+      ]
+    },
+    {
+      "dep": "24",
+      "dep_nom": "Dordogne",
+      "inscrits": 313904,
+      "abstentions": 65760,
+      "votants": 248144,
+      "blancs nuls": 37276,
+      "exprimés": 210868,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 135563,
+          "taux": 64.29
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 75305,
+          "taux": 35.71
+        }
+      ]
+    },
+    {
+      "dep": "25",
+      "dep_nom": "Doubs",
+      "inscrits": 368314,
+      "abstentions": 84624,
+      "votants": 283690,
+      "blancs nuls": 35451,
+      "exprimés": 248239,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 158304,
+          "taux": 63.77
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 89935,
+          "taux": 36.23
+        }
+      ]
+    },
+    {
+      "dep": "26",
+      "dep_nom": "Drôme",
+      "inscrits": 369464,
+      "abstentions": 82120,
+      "votants": 287344,
+      "blancs nuls": 35044,
+      "exprimés": 252300,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 157990,
+          "taux": 62.62
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 94310,
+          "taux": 37.38
+        }
+      ]
+    },
+    {
+      "dep": "27",
+      "dep_nom": "Eure",
+      "inscrits": 427522,
+      "abstentions": 97300,
+      "votants": 330222,
+      "blancs nuls": 37951,
+      "exprimés": 292271,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 158856,
+          "taux": 54.35
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 133415,
+          "taux": 45.65
+        }
+      ]
+    },
+    {
+      "dep": "28",
+      "dep_nom": "Eure-et-Loir",
+      "inscrits": 301455,
+      "abstentions": 71216,
+      "votants": 230239,
+      "blancs nuls": 27127,
+      "exprimés": 203112,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 122420,
+          "taux": 60.27
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 80692,
+          "taux": 39.73
+        }
+      ]
+    },
+    {
+      "dep": "29",
+      "dep_nom": "Finistère",
+      "inscrits": 690439,
+      "abstentions": 144538,
+      "votants": 545901,
+      "blancs nuls": 65679,
+      "exprimés": 480222,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 371332,
+          "taux": 77.33
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 108890,
+          "taux": 22.67
+        }
+      ]
+    },
+    {
+      "dep": "30",
+      "dep_nom": "Gard",
+      "inscrits": 537834,
+      "abstentions": 130426,
+      "votants": 407408,
+      "blancs nuls": 51304,
+      "exprimés": 356104,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 194989,
+          "taux": 54.76
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 161115,
+          "taux": 45.24
+        }
+      ]
+    },
+    {
+      "dep": "31",
+      "dep_nom": "Haute-Garonne",
+      "inscrits": 906832,
+      "abstentions": 220547,
+      "votants": 686285,
+      "blancs nuls": 82679,
+      "exprimés": 603606,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 436940,
+          "taux": 72.39
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 166666,
+          "taux": 27.61
+        }
+      ]
+    },
+    {
+      "dep": "32",
+      "dep_nom": "Gers",
+      "inscrits": 144954,
+      "abstentions": 27641,
+      "votants": 117313,
+      "blancs nuls": 16322,
+      "exprimés": 100991,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 67568,
+          "taux": 66.9
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 33423,
+          "taux": 33.1
+        }
+      ]
+    },
+    {
+      "dep": "33",
+      "dep_nom": "Gironde",
+      "inscrits": 1086565,
+      "abstentions": 251778,
+      "votants": 834787,
+      "blancs nuls": 98991,
+      "exprimés": 735796,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 515527,
+          "taux": 70.06
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 220269,
+          "taux": 29.94
+        }
+      ]
+    },
+    {
+      "dep": "34",
+      "dep_nom": "Hérault",
+      "inscrits": 800266,
+      "abstentions": 197631,
+      "votants": 602635,
+      "blancs nuls": 74980,
+      "exprimés": 527655,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 312481,
+          "taux": 59.22
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 215174,
+          "taux": 40.78
+        }
+      ]
+    },
+    {
+      "dep": "35",
+      "dep_nom": "Ille-et-Vilaine",
+      "inscrits": 730055,
+      "abstentions": 148946,
+      "votants": 581109,
+      "blancs nuls": 61874,
+      "exprimés": 519235,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 403293,
+          "taux": 77.67
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 115942,
+          "taux": 22.33
+        }
+      ]
+    },
+    {
+      "dep": "36",
+      "dep_nom": "Indre",
+      "inscrits": 170405,
+      "abstentions": 39923,
+      "votants": 130482,
+      "blancs nuls": 18045,
+      "exprimés": 112437,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 68483,
+          "taux": 60.91
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 43954,
+          "taux": 39.09
+        }
+      ]
+    },
+    {
+      "dep": "37",
+      "dep_nom": "Indre-et-Loire",
+      "inscrits": 428836,
+      "abstentions": 98508,
+      "votants": 330328,
+      "blancs nuls": 39694,
+      "exprimés": 290634,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 201199,
+          "taux": 69.23
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 89435,
+          "taux": 30.77
+        }
+      ]
+    },
+    {
+      "dep": "38",
+      "dep_nom": "Isère",
+      "inscrits": 856335,
+      "abstentions": 202648,
+      "votants": 653687,
+      "blancs nuls": 71398,
+      "exprimés": 582289,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 383196,
+          "taux": 65.81
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 199093,
+          "taux": 34.19
+        }
+      ]
+    },
+    {
+      "dep": "39",
+      "dep_nom": "Jura",
+      "inscrits": 190318,
+      "abstentions": 41064,
+      "votants": 149254,
+      "blancs nuls": 20099,
+      "exprimés": 129155,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 79268,
+          "taux": 61.37
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 49887,
+          "taux": 38.63
+        }
+      ]
+    },
+    {
+      "dep": "40",
+      "dep_nom": "Landes",
+      "inscrits": 310094,
+      "abstentions": 62785,
+      "votants": 247309,
+      "blancs nuls": 34029,
+      "exprimés": 213280,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 146619,
+          "taux": 68.74
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 66661,
+          "taux": 31.26
+        }
+      ]
+    },
+    {
+      "dep": "41",
+      "dep_nom": "Loir-et-Cher",
+      "inscrits": 245294,
+      "abstentions": 54567,
+      "votants": 190727,
+      "blancs nuls": 24054,
+      "exprimés": 166673,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 100778,
+          "taux": 60.46
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 65895,
+          "taux": 39.54
+        }
+      ]
+    },
+    {
+      "dep": "42",
+      "dep_nom": "Loire",
+      "inscrits": 510896,
+      "abstentions": 123355,
+      "votants": 387541,
+      "blancs nuls": 45226,
+      "exprimés": 342315,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 218602,
+          "taux": 63.86
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 123713,
+          "taux": 36.14
+        }
+      ]
+    },
+    {
+      "dep": "43",
+      "dep_nom": "Haute-Loire",
+      "inscrits": 177116,
+      "abstentions": 37641,
+      "votants": 139475,
+      "blancs nuls": 19132,
+      "exprimés": 120343,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 76233,
+          "taux": 63.35
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 44110,
+          "taux": 36.65
+        }
+      ]
+    },
+    {
+      "dep": "44",
+      "dep_nom": "Loire-Atlantique",
+      "inscrits": 993397,
+      "abstentions": 214727,
+      "votants": 778670,
+      "blancs nuls": 91077,
+      "exprimés": 687593,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 530409,
+          "taux": 77.14
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 157184,
+          "taux": 22.86
+        }
+      ]
+    },
+    {
+      "dep": "45",
+      "dep_nom": "Loiret",
+      "inscrits": 452626,
+      "abstentions": 103649,
+      "votants": 348977,
+      "blancs nuls": 40239,
+      "exprimés": 308738,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 195003,
+          "taux": 63.16
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 113735,
+          "taux": 36.84
+        }
+      ]
+    },
+    {
+      "dep": "46",
+      "dep_nom": "Lot",
+      "inscrits": 136265,
+      "abstentions": 27297,
+      "votants": 108968,
+      "blancs nuls": 16229,
+      "exprimés": 92739,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 66874,
+          "taux": 72.11
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 25865,
+          "taux": 27.89
+        }
+      ]
+    },
+    {
+      "dep": "47",
+      "dep_nom": "Lot-et-Garonne",
+      "inscrits": 240864,
+      "abstentions": 52235,
+      "votants": 188629,
+      "blancs nuls": 24824,
+      "exprimés": 163805,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 97415,
+          "taux": 59.47
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 66390,
+          "taux": 40.53
+        }
+      ]
+    },
+    {
+      "dep": "48",
+      "dep_nom": "Lozère",
+      "inscrits": 59496,
+      "abstentions": 11884,
+      "votants": 47612,
+      "blancs nuls": 7343,
+      "exprimés": 40269,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 26994,
+          "taux": 67.03
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 13275,
+          "taux": 32.97
+        }
+      ]
+    },
+    {
+      "dep": "49",
+      "dep_nom": "Maine-et-Loire",
+      "inscrits": 569235,
+      "abstentions": 121568,
+      "votants": 447667,
+      "blancs nuls": 51069,
+      "exprimés": 396598,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 288817,
+          "taux": 72.82
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 107781,
+          "taux": 27.18
+        }
+      ]
+    },
+    {
+      "dep": "50",
+      "dep_nom": "Manche",
+      "inscrits": 379039,
+      "abstentions": 82804,
+      "votants": 296235,
+      "blancs nuls": 33410,
+      "exprimés": 262825,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 176692,
+          "taux": 67.23
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 86133,
+          "taux": 32.77
+        }
+      ]
+    },
+    {
+      "dep": "51",
+      "dep_nom": "Marne",
+      "inscrits": 381661,
+      "abstentions": 95123,
+      "votants": 286538,
+      "blancs nuls": 32472,
+      "exprimés": 254066,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 144840,
+          "taux": 57.01
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 109226,
+          "taux": 42.99
+        }
+      ]
+    },
+    {
+      "dep": "52",
+      "dep_nom": "Haute-Marne",
+      "inscrits": 134122,
+      "abstentions": 32081,
+      "votants": 102041,
+      "blancs nuls": 12518,
+      "exprimés": 89523,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 45192,
+          "taux": 50.48
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 44331,
+          "taux": 49.52
+        }
+      ]
+    },
+    {
+      "dep": "53",
+      "dep_nom": "Mayenne",
+      "inscrits": 222328,
+      "abstentions": 46225,
+      "votants": 176103,
+      "blancs nuls": 20331,
+      "exprimés": 155772,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 112191,
+          "taux": 72.02
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 43581,
+          "taux": 27.98
+        }
+      ]
+    },
+    {
+      "dep": "54",
+      "dep_nom": "Meurthe-et-Moselle",
+      "inscrits": 495089,
+      "abstentions": 124771,
+      "votants": 370318,
+      "blancs nuls": 42666,
+      "exprimés": 327652,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 198751,
+          "taux": 60.66
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 128901,
+          "taux": 39.34
+        }
+      ]
+    },
+    {
+      "dep": "55",
+      "dep_nom": "Meuse",
+      "inscrits": 137552,
+      "abstentions": 31478,
+      "votants": 106074,
+      "blancs nuls": 12504,
+      "exprimés": 93570,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 48299,
+          "taux": 51.62
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 45271,
+          "taux": 48.38
+        }
+      ]
+    },
+    {
+      "dep": "56",
+      "dep_nom": "Morbihan",
+      "inscrits": 576899,
+      "abstentions": 117229,
+      "votants": 459670,
+      "blancs nuls": 55000,
+      "exprimés": 404670,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 289594,
+          "taux": 71.56
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 115076,
+          "taux": 28.44
+        }
+      ]
+    },
+    {
+      "dep": "57",
+      "dep_nom": "Moselle",
+      "inscrits": 751260,
+      "abstentions": 201751,
+      "votants": 549509,
+      "blancs nuls": 59200,
+      "exprimés": 490309,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 282724,
+          "taux": 57.66
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 207585,
+          "taux": 42.34
+        }
+      ]
+    },
+    {
+      "dep": "58",
+      "dep_nom": "Nièvre",
+      "inscrits": 159394,
+      "abstentions": 38186,
+      "votants": 121208,
+      "blancs nuls": 16545,
+      "exprimés": 104663,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 62719,
+          "taux": 59.92
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 41944,
+          "taux": 40.08
+        }
+      ]
+    },
+    {
+      "dep": "59",
+      "dep_nom": "Nord",
+      "inscrits": 1804404,
+      "abstentions": 483133,
+      "votants": 1321271,
+      "blancs nuls": 143703,
+      "exprimés": 1177568,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 670033,
+          "taux": 56.9
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 507535,
+          "taux": 43.1
+        }
+      ]
+    },
+    {
+      "dep": "60",
+      "dep_nom": "Oise",
+      "inscrits": 562002,
+      "abstentions": 133759,
+      "votants": 428243,
+      "blancs nuls": 48185,
+      "exprimés": 380058,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 202476,
+          "taux": 53.28
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 177582,
+          "taux": 46.72
+        }
+      ]
+    },
+    {
+      "dep": "61",
+      "dep_nom": "Orne",
+      "inscrits": 208691,
+      "abstentions": 45577,
+      "votants": 163114,
+      "blancs nuls": 19560,
+      "exprimés": 143554,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 88484,
+          "taux": 61.64
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 55070,
+          "taux": 38.36
+        }
+      ]
+    },
+    {
+      "dep": "62",
+      "dep_nom": "Pas-de-Calais",
+      "inscrits": 1090441,
+      "abstentions": 262199,
+      "votants": 828242,
+      "blancs nuls": 92882,
+      "exprimés": 735360,
+      "candidats": [
+        {
+          "nom": "Marine LE PEN",
+          "voix": 382788,
+          "taux": 52.05
+        },
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 352572,
+          "taux": 47.95
+        }
+      ]
+    },
+    {
+      "dep": "63",
+      "dep_nom": "Puy-de-Dôme",
+      "inscrits": 460924,
+      "abstentions": 105055,
+      "votants": 355869,
+      "blancs nuls": 48237,
+      "exprimés": 307632,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 219454,
+          "taux": 71.34
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 88178,
+          "taux": 28.66
+        }
+      ]
+    },
+    {
+      "dep": "64",
+      "dep_nom": "Pyrénées-Atlantiques",
+      "inscrits": 502323,
+      "abstentions": 110333,
+      "votants": 391990,
+      "blancs nuls": 52996,
+      "exprimés": 338994,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 253617,
+          "taux": 74.81
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 85377,
+          "taux": 25.19
+        }
+      ]
+    },
+    {
+      "dep": "65",
+      "dep_nom": "Hautes-Pyrénées",
+      "inscrits": 177681,
+      "abstentions": 40635,
+      "votants": 137046,
+      "blancs nuls": 20030,
+      "exprimés": 117016,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 79792,
+          "taux": 68.19
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 37224,
+          "taux": 31.81
+        }
+      ]
+    },
+    {
+      "dep": "66",
+      "dep_nom": "Pyrénées-Orientales",
+      "inscrits": 347862,
+      "abstentions": 86708,
+      "votants": 261154,
+      "blancs nuls": 34686,
+      "exprimés": 226468,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 119755,
+          "taux": 52.88
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 106713,
+          "taux": 47.12
+        }
+      ]
+    },
+    {
+      "dep": "67",
+      "dep_nom": "Bas-Rhin",
+      "inscrits": 766700,
+      "abstentions": 183299,
+      "votants": 583401,
+      "blancs nuls": 58672,
+      "exprimés": 524729,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 330940,
+          "taux": 63.07
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 193789,
+          "taux": 36.93
+        }
+      ]
+    },
+    {
+      "dep": "68",
+      "dep_nom": "Haut-Rhin",
+      "inscrits": 526161,
+      "abstentions": 128800,
+      "votants": 397361,
+      "blancs nuls": 46166,
+      "exprimés": 351195,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 203596,
+          "taux": 57.97
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 147599,
+          "taux": 42.03
+        }
+      ]
+    },
+    {
+      "dep": "69",
+      "dep_nom": "Rhône",
+      "inscrits": 1155475,
+      "abstentions": 289823,
+      "votants": 865652,
+      "blancs nuls": 87890,
+      "exprimés": 777762,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 572295,
+          "taux": 73.58
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 205467,
+          "taux": 26.42
+        }
+      ]
+    },
+    {
+      "dep": "70",
+      "dep_nom": "Haute-Saône",
+      "inscrits": 179186,
+      "abstentions": 37286,
+      "votants": 141900,
+      "blancs nuls": 19022,
+      "exprimés": 122878,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 63540,
+          "taux": 51.71
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 59338,
+          "taux": 48.29
+        }
+      ]
+    },
+    {
+      "dep": "71",
+      "dep_nom": "Saône-et-Loire",
+      "inscrits": 406331,
+      "abstentions": 94638,
+      "votants": 311693,
+      "blancs nuls": 40803,
+      "exprimés": 270890,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 166948,
+          "taux": 61.63
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 103942,
+          "taux": 38.37
+        }
+      ]
+    },
+    {
+      "dep": "72",
+      "dep_nom": "Sarthe",
+      "inscrits": 405628,
+      "abstentions": 94504,
+      "votants": 311124,
+      "blancs nuls": 42448,
+      "exprimés": 268676,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 170153,
+          "taux": 63.33
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 98523,
+          "taux": 36.67
+        }
+      ]
+    },
+    {
+      "dep": "73",
+      "dep_nom": "Savoie",
+      "inscrits": 310186,
+      "abstentions": 72297,
+      "votants": 237889,
+      "blancs nuls": 29173,
+      "exprimés": 208716,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 135118,
+          "taux": 64.74
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 73598,
+          "taux": 35.26
+        }
+      ]
+    },
+    {
+      "dep": "74",
+      "dep_nom": "Haute-Savoie",
+      "inscrits": 538161,
+      "abstentions": 127886,
+      "votants": 410275,
+      "blancs nuls": 47430,
+      "exprimés": 362845,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 249127,
+          "taux": 68.66
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 113718,
+          "taux": 31.34
+        }
+      ]
+    },
+    {
+      "dep": "75",
+      "dep_nom": "Paris",
+      "inscrits": 1301537,
+      "abstentions": 279898,
+      "votants": 1021639,
+      "blancs nuls": 74618,
+      "exprimés": 947021,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 849251,
+          "taux": 89.68
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 97770,
+          "taux": 10.32
+        }
+      ]
+    },
+    {
+      "dep": "76",
+      "dep_nom": "Seine-Maritime",
+      "inscrits": 880755,
+      "abstentions": 211615,
+      "votants": 669140,
+      "blancs nuls": 81036,
+      "exprimés": 588104,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 355280,
+          "taux": 60.41
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 232824,
+          "taux": 39.59
+        }
+      ]
+    },
+    {
+      "dep": "77",
+      "dep_nom": "Seine-et-Marne",
+      "inscrits": 881094,
+      "abstentions": 228164,
+      "votants": 652930,
+      "blancs nuls": 73947,
+      "exprimés": 578983,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 369762,
+          "taux": 63.86
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 209221,
+          "taux": 36.14
+        }
+      ]
+    },
+    {
+      "dep": "78",
+      "dep_nom": "Yvelines",
+      "inscrits": 950853,
+      "abstentions": 225209,
+      "votants": 725644,
+      "blancs nuls": 72852,
+      "exprimés": 652792,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 503655,
+          "taux": 77.15
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 149137,
+          "taux": 22.85
+        }
+      ]
+    },
+    {
+      "dep": "79",
+      "dep_nom": "Deux-Sèvres",
+      "inscrits": 272389,
+      "abstentions": 57584,
+      "votants": 214805,
+      "blancs nuls": 24939,
+      "exprimés": 189866,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 135827,
+          "taux": 71.54
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 54039,
+          "taux": 28.46
+        }
+      ]
+    },
+    {
+      "dep": "80",
+      "dep_nom": "Somme",
+      "inscrits": 408950,
+      "abstentions": 90521,
+      "votants": 318429,
+      "blancs nuls": 35642,
+      "exprimés": 282787,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 153242,
+          "taux": 54.19
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 129545,
+          "taux": 45.81
+        }
+      ]
+    },
+    {
+      "dep": "81",
+      "dep_nom": "Tarn",
+      "inscrits": 291156,
+      "abstentions": 62267,
+      "votants": 228889,
+      "blancs nuls": 31442,
+      "exprimés": 197447,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 125591,
+          "taux": 63.61
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 71856,
+          "taux": 36.39
+        }
+      ]
+    },
+    {
+      "dep": "82",
+      "dep_nom": "Tarn-et-Garonne",
+      "inscrits": 183328,
+      "abstentions": 39522,
+      "votants": 143806,
+      "blancs nuls": 18653,
+      "exprimés": 125153,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 71987,
+          "taux": 57.52
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 53166,
+          "taux": 42.48
+        }
+      ]
+    },
+    {
+      "dep": "83",
+      "dep_nom": "Var",
+      "inscrits": 794665,
+      "abstentions": 202027,
+      "votants": 592638,
+      "blancs nuls": 68146,
+      "exprimés": 524492,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 266724,
+          "taux": 50.85
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 257768,
+          "taux": 49.15
+        }
+      ]
+    },
+    {
+      "dep": "84",
+      "dep_nom": "Vaucluse",
+      "inscrits": 402313,
+      "abstentions": 94115,
+      "votants": 308198,
+      "blancs nuls": 35123,
+      "exprimés": 273075,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 145963,
+          "taux": 53.45
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 127112,
+          "taux": 46.55
+        }
+      ]
+    },
+    {
+      "dep": "85",
+      "dep_nom": "Vendée",
+      "inscrits": 514408,
+      "abstentions": 103133,
+      "votants": 411275,
+      "blancs nuls": 47149,
+      "exprimés": 364126,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 254602,
+          "taux": 69.92
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 109524,
+          "taux": 30.08
+        }
+      ]
+    },
+    {
+      "dep": "86",
+      "dep_nom": "Vienne",
+      "inscrits": 306976,
+      "abstentions": 68710,
+      "votants": 238266,
+      "blancs nuls": 29299,
+      "exprimés": 208967,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 143712,
+          "taux": 68.77
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 65255,
+          "taux": 31.23
+        }
+      ]
+    },
+    {
+      "dep": "87",
+      "dep_nom": "Haute-Vienne",
+      "inscrits": 266280,
+      "abstentions": 57263,
+      "votants": 209017,
+      "blancs nuls": 30836,
+      "exprimés": 178181,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 126418,
+          "taux": 70.95
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 51763,
+          "taux": 29.05
+        }
+      ]
+    },
+    {
+      "dep": "88",
+      "dep_nom": "Vosges",
+      "inscrits": 282532,
+      "abstentions": 63279,
+      "votants": 219253,
+      "blancs nuls": 27232,
+      "exprimés": 192021,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 106097,
+          "taux": 55.25
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 85924,
+          "taux": 44.75
+        }
+      ]
+    },
+    {
+      "dep": "89",
+      "dep_nom": "Yonne",
+      "inscrits": 241891,
+      "abstentions": 56992,
+      "votants": 184899,
+      "blancs nuls": 22234,
+      "exprimés": 162665,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 89529,
+          "taux": 55.04
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 73136,
+          "taux": 44.96
+        }
+      ]
+    },
+    {
+      "dep": "90",
+      "dep_nom": "Territoire de Belfort",
+      "inscrits": 95279,
+      "abstentions": 23202,
+      "votants": 72077,
+      "blancs nuls": 9616,
+      "exprimés": 62461,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 36340,
+          "taux": 58.18
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 26121,
+          "taux": 41.82
+        }
+      ]
+    },
+    {
+      "dep": "91",
+      "dep_nom": "Essonne",
+      "inscrits": 795234,
+      "abstentions": 199451,
+      "votants": 595783,
+      "blancs nuls": 65624,
+      "exprimés": 530159,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 382650,
+          "taux": 72.18
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 147509,
+          "taux": 27.82
+        }
+      ]
+    },
+    {
+      "dep": "92",
+      "dep_nom": "Hauts-de-Seine",
+      "inscrits": 983522,
+      "abstentions": 226846,
+      "votants": 756676,
+      "blancs nuls": 66683,
+      "exprimés": 689993,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 590961,
+          "taux": 85.65
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 99032,
+          "taux": 14.35
+        }
+      ]
+    },
+    {
+      "dep": "93",
+      "dep_nom": "Seine-Saint-Denis",
+      "inscrits": 766977,
+      "abstentions": 249214,
+      "votants": 517763,
+      "blancs nuls": 50084,
+      "exprimés": 467679,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 368561,
+          "taux": 78.81
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 99118,
+          "taux": 21.19
+        }
+      ]
+    },
+    {
+      "dep": "94",
+      "dep_nom": "Val-de-Marne",
+      "inscrits": 785586,
+      "abstentions": 207455,
+      "votants": 578131,
+      "blancs nuls": 56313,
+      "exprimés": 521818,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 419145,
+          "taux": 80.32
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 102673,
+          "taux": 19.68
+        }
+      ]
+    },
+    {
+      "dep": "95",
+      "dep_nom": "Val-d'Oise",
+      "inscrits": 730335,
+      "abstentions": 204202,
+      "votants": 526133,
+      "blancs nuls": 54598,
+      "exprimés": 471535,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 342000,
+          "taux": 72.53
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 129535,
+          "taux": 27.47
+        }
+      ]
+    },
+    {
+      "dep": "971",
+      "dep_nom": "Guadeloupe",
+      "inscrits": 316062,
+      "abstentions": 160452,
+      "votants": 155610,
+      "blancs nuls": 21665,
+      "exprimés": 133945,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 100635,
+          "taux": 75.13
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 33310,
+          "taux": 24.87
+        }
+      ]
+    },
+    {
+      "dep": "972",
+      "dep_nom": "Martinique",
+      "inscrits": 310673,
+      "abstentions": 154539,
+      "votants": 156134,
+      "blancs nuls": 21632,
+      "exprimés": 134502,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 104307,
+          "taux": 77.55
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 30195,
+          "taux": 22.45
+        }
+      ]
+    },
+    {
+      "dep": "973",
+      "dep_nom": "Guyane",
+      "inscrits": 92252,
+      "abstentions": 53572,
+      "votants": 38680,
+      "blancs nuls": 5134,
+      "exprimés": 33546,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 21769,
+          "taux": 64.89
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 11777,
+          "taux": 35.11
+        }
+      ]
+    },
+    {
+      "dep": "974",
+      "dep_nom": "La Réunion",
+      "inscrits": 639391,
+      "abstentions": 237169,
+      "votants": 402222,
+      "blancs nuls": 50252,
+      "exprimés": 351970,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 212097,
+          "taux": 60.26
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 139873,
+          "taux": 39.74
+        }
+      ]
+    },
+    {
+      "dep": "976",
+      "dep_nom": "Mayotte",
+      "inscrits": 82494,
+      "abstentions": 44752,
+      "votants": 37742,
+      "blancs nuls": 4031,
+      "exprimés": 33711,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 19267,
+          "taux": 57.15
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 14444,
+          "taux": 42.85
+        }
+      ]
+    },
+    {
+      "dep": "988",
+      "dep_nom": "Nouvelle-Calédonie",
+      "inscrits": 189368,
+      "abstentions": 89370,
+      "votants": 99998,
+      "blancs nuls": 8879,
+      "exprimés": 91119,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 47902,
+          "taux": 52.57
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 43217,
+          "taux": 47.43
+        }
+      ]
+    },
+    {
+      "dep": "987",
+      "dep_nom": "Polynésie française",
+      "inscrits": 203973,
+      "abstentions": 108330,
+      "votants": 95643,
+      "blancs nuls": 5946,
+      "exprimés": 89697,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 52378,
+          "taux": 58.39
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 37319,
+          "taux": 41.61
+        }
+      ]
+    },
+    {
+      "dep": "975",
+      "dep_nom": "Saint-Pierre-et-Miquelon",
+      "inscrits": 4963,
+      "abstentions": 2184,
+      "votants": 2779,
+      "blancs nuls": 461,
+      "exprimés": 2318,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 1467,
+          "taux": 63.29
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 851,
+          "taux": 36.71
+        }
+      ]
+    },
+    {
+      "dep": "986",
+      "dep_nom": "Wallis et Futuna",
+      "inscrits": 8464,
+      "abstentions": 2369,
+      "votants": 6095,
+      "blancs nuls": 137,
+      "exprimés": 5958,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 4715,
+          "taux": 79.14
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 1243,
+          "taux": 20.86
+        }
+      ]
+    },
+    {
+      "dep": "977-978",
+      "dep_nom": "Saint-Martin/Saint-Barthélemy",
+      "inscrits": 25447,
+      "abstentions": 16454,
+      "votants": 8993,
+      "blancs nuls": 871,
+      "exprimés": 8122,
+      "candidats": [
+        {
+          "nom": "Emmanuel MACRON",
+          "voix": 5282,
+          "taux": 65.03
+        },
+        {
+          "nom": "Marine LE PEN",
+          "voix": 2840,
+          "taux": 34.97
+        }
+      ]
+    }
+  ]
+}
