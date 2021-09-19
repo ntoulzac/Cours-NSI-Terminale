@@ -1,4 +1,6 @@
-{"tour2": [{"dep": "01",
+{"couleurs": {"François HOLLANDE": "#ff7070",
+     		  "Nicolas SARKOZY": "#0000ff"},
+"tour2": [{"dep": "01",
    "dep_nom": "AIN",
    "inscrits": 393866,
    "abstentions": 67279,
