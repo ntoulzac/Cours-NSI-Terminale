@@ -1,4 +1,14 @@
-{
+{"couleurs": {"Emmanuel MACRON": "#e48c22",
+            "Marine LE PEN": "#000040",
+            "François FILLON": "#0000ff",
+            "Jean-Luc MÉLENCHON": "#ff0000",
+            "Benoît HAMON": "#ff7070",
+            "Nicolas DUPONT-AIGNAN": "#000080",
+            "Jean LASSALLE": "#583400",
+            "Philippe POUTOU": "#b80000",
+            "François ASSELINEAU": "#8c22bd",
+            "Nathalie ARTHAUD": "#580000",
+            "Jacques CHEMINADE": "#a2a2a2"},
   "tour1": [
     {
       "dep": "01",
