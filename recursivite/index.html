@@ -581,9 +581,9 @@ qu'elle s'appelle elle-même dans le cas où <code>a</code> est différent de <c
 </div>
 <p>On distingue deux parties dans l'écriture d'une fonction récursive :</p>
 <ul>
-<li>un (ou plusieurs) <strong>cas résursif(s)</strong>, dans lesquels la fonction 
+<li>un ou plusieurs <strong>cas résursif(s)</strong>, dans lesquels la fonction 
 fait appel à elle-même avec de nouveaux arguments,</li>
-<li>un (ou plusieurs) <strong>cas de base</strong>, qui permet(tent) de mettre un terme
+<li>un ou plusieurs <strong>cas de base</strong>, qui permettent de mettre un terme
 aux appels récursifs successifs.</li>
 </ul>
 <h3 id="deuxieme-exemple-calcul-du-produit-des-entiers-compris-entre-1-et-n">Deuxième exemple : calcul du produit des entiers compris entre 1 et <code>n</code></h3>
@@ -734,7 +734,7 @@ grâce à la fonction <code>getrecursionlimit</code> du module <code>sys</code>.
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ne">RecursionError</span><span class="p">:</span> <span class="n">maximum</span> <span class="n">recursion</span> <span class="n">depth</span> <span class="n">exceeded</span> <span class="ow">in</span> <span class="n">comparison</span>
 </code></pre></div>
 </td></tr></table>
-<p>La limite du nombre d'appels simultanés de fonctions peut être modifié grâce à la fonction
+<p>La limite du nombre d'appels simultanés de fonctions peut être modifiée grâce à la fonction
 <code>setrecursionlimit</code>du module <code>sys</code>.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
 2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">setrecursionlimit</span>
@@ -742,7 +742,7 @@ grâce à la fonction <code>getrecursionlimit</code> du module <code>sys</code>.
 </code></pre></div>
 </td></tr></table>
 <p>Il faut néanmoins être raisonnable en cas de modification de cette limite, car un nombre excessif
-de récursions provoque le crash du programme à cause d'une erreur de débordement de pile d'exécution
+de récursions provoque le plantage du programme à cause d'une erreur de débordement de pile d'exécution
 (<em>stack overflow</em>).</p>
 <h2 id="tours-de-hanoi">Tours de Hanoï</h2>
 <p>Les <em>tours de Hanoï</em> sont un jeu de réflexion consistant à déplacer des disques de diamètres
@@ -755,6 +755,55 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <p>Ce jeu est un exemple de problème qui peut être résolu par une approche récursive.</p>
 <iframe title="Version jouable de la Tour de Hanoï" src="Hanoï.html" width="800px" height="450px"></iframe>
 
+<div class="admonition fonc">
+<p class="admonition-title">Fonction <code>solution_hanoi</code></p>
+<details class="info"><summary>Affiche les mouvements à effectuer pour résoudre le problème des tours de Hanoï à  <code>n</code> disques.</summary><div class="admonition entrée">
+<p class="admonition-title">Entrées</p>
+<ul>
+<li><code>n</code> : entier positif (nombre de disques)</li>
+<li><code>depart</code> : chaîne de caractères (nom de la tour de départ)</li>
+<li><code>intermediaire</code> : chaîne de caractères (nom de la tour intermédiaire)</li>
+<li><code>arrivee</code> : chaîne de caractères (nom de la tour d'arrivée)</li>
+</ul>
+</div>
+<p><em>Effet de bord :</em> affichage de texte à l'écran</p>
+</details>
+<details class="python" open="open"><summary>Implémentation</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">solution_hanoi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">depart</span><span class="p">,</span> <span class="n">intermediaire</span><span class="p">,</span> <span class="n">arrivee</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">solution_hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">depart</span><span class="p">,</span> <span class="n">arrivee</span><span class="p">,</span> <span class="n">intermediaire</span><span class="p">)</span>
+        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Déplacer un disque de </span><span class="si">{</span><span class="n">depart</span><span class="si">}</span><span class="s2"> vers </span><span class="si">{</span><span class="n">arrivee</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
+        <span class="n">solution_hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">intermediaire</span><span class="p">,</span> <span class="n">depart</span><span class="p">,</span> <span class="n">arrivee</span><span class="p">)</span>
+</code></pre></div>
+</td></tr></table>
+</details>
+</div>
+<p>Le cas de base est celui où il n'y a aucun disque : on ne fait rien du tout.</p>
+<p>Pour déplacer <code>n</code> disques de la tour <code>depart</code> vers la tour <code>arrivee</code>, on procède en trois temps :</p>
+<ul>
+<li>on déplace récursivement <code>n-1</code> disques de la tour <code>depart</code> vers la tour <code>intermediaire</code>,</li>
+<li>on déplace un disque (le plus grand) de la tour <code>depart</code> vers la tour <code>arrivee</code>,</li>
+<li>on déplace récursivement <code>n-1</code> disques de la tour <code>intermediaire</code> vers la tour <code>arrivee</code>.</li>
+</ul>
+<p>L'appel <code>hanoi(3, 'GAUCHE', 'CENTRE', 'DROITE')</code> entraîne les sept affichages suivants :</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Déplacer un disque de GAUCHE vers DROITE.
+Déplacer un disque de GAUCHE vers CENTRE.
+Déplacer un disque de DROITE vers CENTRE.
+Déplacer un disque de GAUCHE vers DROITE.
+Déplacer un disque de CENTRE vers GAUCHE.
+Déplacer un disque de CENTRE vers DROITE.
+Déplacer un disque de GAUCHE vers DROITE.
+</code></pre></div>
+</td></tr></table>
 <h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire</h2>
 <ul>
 <li>Écrire une fonction récursive, en identifiant le(s) cas de base et le(s) cas récursif(s).</li>
@@ -766,7 +815,7 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/b075-42299" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_algorithme_Euclide.ipynb">ici</a></p>
 </div>
 <div class="admonition solution">
-<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_algorithme_Euclide_corr.ipynb">ici</a></p>
+<p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_algorithme_Euclide_corr.ipynb">ici</a></p>
 </div>
 </div>
 <input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Décomposition d'un entier...</label><div class="tabbed-content">
@@ -774,7 +823,7 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/5242-51657" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_decomposition_quatre_carres.ipynb">ici</a></p>
 </div>
 <div class="admonition solution">
-<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_decomposition_quatre_carres_corr.ipynb">ici</a></p>
+<p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_decomposition_quatre_carres_corr.ipynb">ici</a></p>
 </div>
 </div>
 <input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Exponentiation rapide</label><div class="tabbed-content">
@@ -782,7 +831,7 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/70ed-42353" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_exponentiation_rapide.ipynb">ici</a></p>
 </div>
 <div class="admonition solution">
-<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_exponentiation_rapide_corr.ipynb">ici</a></p>
+<p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_exponentiation_rapide_corr.ipynb">ici</a></p>
 </div>
 </div>
 <input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><label for="__tabbed_4_4">Palindromes</label><div class="tabbed-content">
@@ -798,7 +847,7 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/44c7-52635" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_fibonacci.ipynb">ici</a></p>
 </div>
 <div class="admonition solution">
-<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_fibonacci_corr.ipynb">ici</a></p>
+<p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_fibonacci_corr.ipynb">ici</a></p>
 </div>
 </div>
 </div>
