@@ -412,6 +412,327 @@
                 
                 
                 <h1 id="chapitre-3-programmation-objet">Chapitre 3 : Programmation objet</h1>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/cours_03.ipynb">ici</a></p>
+</div>
+<div class="admonition joint">
+<p class="admonition-title">Cahier à télécharger <a href="cahier_03.pdf" target="_blank">ici</a></p>
+</div>
+<p>Parmi les <strong>types</strong> de base étudiés en Première et que nous avons l'habitude de manipuler, on peut citer :</p>
+<ul>
+<li>des types simples comme les types numériques entier (<code>int</code>) et flottant (<code>float</code>), le type booléen (<code>bool</code>)
+ou le type chaîne de caractères (<code>str</code>),</li>
+<li>des types construits comme les types tableau (<code>list</code>), p-uplet (<code>tuple</code>) et dictionnaire (<code>dict</code>).</li>
+</ul>
+<p>Le type d'un objet détermine ce qu'on peut faire avec, par exemple :</p>
+<ul>
+<li>l'opérateur <code>+</code> peut s'utiliser entre deux nombres, entre deux chaînes, entre deux tableaux, mais pas entre
+un nombre et une chaîne...</li>
+<li><code>append</code> peut s'utiliser pour ajouter un élément à la fin d'un tableau, mais pas à la fin d'une chaîne
+ou d'un puplet...</li>
+<li><code>len</code> donne la longueur d'une chaîne, d'un tableau, d'un p-uplet ou d'un dictionnaire, mais pas
+d'un nombre ou d'un booléen...</li>
+<li><em>etc</em>.</li>
+</ul>
+<p>Le but de ce chapitre est d'apprendre à définir et utiliser des <strong>classes</strong>. Il s'agit, en quelque sorte,
+de types personnalisés dont nous pourrons décider de la structure et des utilisations possibles.</p>
+<h2 id="creation-dune-classe">Création d'une classe</h2>
+<p>On crée une classe appelée <code>Montre</code> en écrivant <code>class Montre:</code>. Par convention, les noms de classes
+sont de la forme <code>NomDeClasse</code>, avec une majuscule au début de chaque mot, sans espace entre les mots.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+    <span class="sd">&quot;&quot;&quot;Pour l&#39;instant, la classe est vide et ne sert à rien...&quot;&quot;&quot;</span>
+</code></pre></div>
+</td></tr></table>
+<p>On peut désormais créer une variable <code>ma_montre</code> de "type" <code>Montre</code>. Plus précisément, on dit que <code>ma_montre</code>
+est une <strong>instance</strong> de la classe <code>Montre</code>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">ma_montre</span> <span class="o">=</span> <span class="n">Montre</span><span class="p">()</span>
+</code></pre></div>
+</td></tr></table>
+<p>L'intérêt d'une classe est que ses instances peuvent posséder des <strong>attributs</strong>, qui permettent de stocker
+des données, et des <strong>méthodes</strong>, qui permettent de modifier ces données.</p>
+<p>On souhaite que les instances de la classe <code>Montre</code> possèdent trois attributs <code>h</code>, <code>m</code> et <code>s</code>.
+Pour cela, on va définir une méthode, dite méthode <strong>constructeur</strong> et nommée <code>__init__</code>, qui sera appelée
+automatiquement lors de la création d'une instance de la classe.</p>
+<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Instanciation avec valeurs par défaut pour les attributs</label><div class="tabbed-content">
+<p>L'initialisation des attributs peut se faire avec des valeurs par défaut, par exemple 0.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs à la valeur par défaut 0.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+
+<span class="n">ma_montre</span> <span class="o">=</span> <span class="n">Montre</span><span class="p">()</span> <span class="c1"># création d&#39;une instance de la classe Montre</span>
+</code></pre></div>
+</td></tr></table>
+<p>La première ligne d'une méthode est semblable à celle d'une fonction : <code>def nom_methode(parametres):</code>.</p>
+<p>Le paramètre <code>self</code> est toujours le premier paramètre d'entrée d'une méthode (et c'est parfois le seul,
+comme ici). Il représente l'instance sur laquelle la méthode est appelée.</p>
+<p>Pour accéder à la valeur d'un attribut, la syntaxe à utiliser est <code>instance.attribut</code>.</p>
+<p><iframe
+        width="100%"
+        height="380"
+        src="http://pythontutor.com/iframe-embed.html#code=class%20Montre%3A%0A%20%20%20%20def%20__init__%28self%29%3A%0A%20%20%20%20%20%20%20%20self.h%20%3D%200%0A%20%20%20%20%20%20%20%20self.m%20%3D%200%0A%20%20%20%20%20%20%20%20self.s%20%3D%200%0A%20%20%20%20%20%20%20%20%0Ama_montre%20%3D%20Montre%28%29%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&curInstr=0&&verticalStack=false&py=3&rawInputLstJSON=%5B%5D&codeDivWidth=50%25&codeDivHeight=100%25"
+        frameborder="0"
+        allowfullscreen
+    ></iframe></p>
+</div>
+<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Instanciation avec valeurs passées en arguments pour les attributs</label><div class="tabbed-content">
+<p>L'initialisation des attributs peut se faire avec des valeurs choisies au moment de la création
+de l'instance de classe.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
+
+<span class="n">ma_montre</span> <span class="o">=</span> <span class="n">Montre</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># création d&#39;une instance de la classe Montre</span>
+</code></pre></div>
+</td></tr></table>
+<p>La méthode <code>__init__</code> possède ici quatre paramètres d'entrée, le premier étant <code>self</code>. On remarque
+néanmoins que, lors de la création de l'instance <code>ma_montre</code>, seules trois valeurs (qui correspondent
+à <code>h</code>, <code>m</code> et <code>s</code> sont passées en arguments.</p>
+<p><iframe
+        width="100%"
+        height="380"
+        src="http://pythontutor.com/iframe-embed.html#code=class%20Montre%3A%0A%20%20%20%20def%20__init__%28self%2C%20h%2C%20m%2C%20s%29%3A%0A%20%20%20%20%20%20%20%20self.h%20%3D%20h%0A%20%20%20%20%20%20%20%20self.m%20%3D%20m%0A%20%20%20%20%20%20%20%20self.s%20%3D%20s%0A%20%20%20%20%20%20%20%20%0Ama_montre%20%3D%20Montre%2813%2C%2030%2C%200%29%0A&origin=opt-frontend.js&cumulative=false&heapPrimitives=false&textReferences=false&curInstr=0&&verticalStack=false&py=3&rawInputLstJSON=%5B%5D&codeDivWidth=50%25&codeDivHeight=100%25"
+        frameborder="0"
+        allowfullscreen
+    ></iframe></p>
+</div>
+</div>
+<h2 id="definition-dune-methode">Définition d'une méthode</h2>
+<p>On peut modifier la définition de la classe <code>Montre</code> pour y ajouter des méthodes.</p>
+<div class="tabbed-set" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Méthode <code>incrémenter</code></label><div class="tabbed-content">
+<p>Le rôle de la méthode <code>incrémenter</code> est d'avancer la montre d'une seconde.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">localtime</span>
+
+<span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
+
+    <span class="k">def</span> <span class="nf">incrementer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Avance la montre d&#39;une seconde.&quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">&lt;</span> <span class="mi">59</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">+=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
+            <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">&lt;</span> <span class="mi">59</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">+=</span> <span class="mi">1</span>
+            <span class="k">else</span><span class="p">:</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
+                <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">&lt;</span> <span class="mi">23</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="k">else</span><span class="p">:</span>
+                    <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
+</code></pre></div>
+</td></tr></table>
+<p>Lorsque la méthode <code>incrementer</code> est appelée pour une instance de la classe <code>Montre</code>, la valeur de
+l'attribut <code>s</code> est modifiée pour cette instance. La valeur des attributs <code>m</code> et <code>h</code> peut être
+modifiée également.</p>
+<p>La syntaxe <code>instance.methode(arguments)</code> permet d'appeler une méthode avec d'éventuels arguments entre parenthèses.</p>
+</div>
+<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Méthode <code>synchroniser</code></label><div class="tabbed-content">
+<p>La fonction <code>localtime</code> du module <code>time</code> permet de connaître l'heure locale au moment de l'appel de la fonction.
+L'objet renvoyé possède (entre autres) trois attributs <code>tm_hour</code>, <code>tm_min</code> et <code>tm_sec</code> qui donnent respectivement
+l'heure, les minutes et les secondes de l'heure locale.</p>
+<p>On peut modifier la définition de la classe <code>Montre</code> pour y ajouter une méthode <code>synchroniser</code> dont le rôle est
+de mettre la montre à l'heure.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">localtime</span>
+
+<span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
+
+    <span class="k">def</span> <span class="nf">synchroniser</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Synchronise la montre à l&#39;heure locale du moment de l&#39;appel.&quot;&quot;&quot;</span>
+        <span class="n">heure_locale</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">heure_locale</span><span class="o">.</span><span class="n">tm_hour</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">heure_locale</span><span class="o">.</span><span class="n">tm_min</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">heure_locale</span><span class="o">.</span><span class="n">tm_sec</span>
+</code></pre></div>
+</td></tr></table>
+<p>Lorsque la méthode <code>synchroniser</code> est appelée pour une instance de la classe <code>Montre</code>, la valeur des attributs
+<code>h</code>, <code>m</code> et <code>s</code> est modifiée pour cette instance.</p>
+<p>La syntaxe <code>instance.methode(arguments)</code> permet d'appeler une méthode avec d'éventuels arguments entre parenthèses.</p>
+</div>
+<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Méthode spéciale <code>__str__</code></label><div class="tabbed-content">
+<p>Si on souhaite afficher à l'écran l'heure de la montre, on peut se demander ce que donnerait
+l'instruction <code>print(ma_montre)</code>.</p>
+<p>L'affichage obtenu <code>&lt;__main__.Montre object at 0x7f45dc1f9350&gt;</code> n'est pas lisible, hormis la
+référence au fait que <code>ma_montre</code> est un objet de "type" <code>Montre</code>.</p>
+<p>Il est néanmoins possible de faire apparaître un affichage personnalisé beaucoup plus lisible de 
+l'objet en définissant une méthode spéciale nommée <code>__str__</code>.</p>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10</pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="sd">&quot;&quot;&quot;Affiche l&#39;heure de la montre au format HH:MM:SS.&quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">m</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="si">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+</td></tr></table>
+<p>La méthode spéciale <code>__str__</code> est crée pour être appelée par la fonction <code>print</code>. Elle doit donc
+renvoyer une chaîne de caractères.</p>
+</div>
+</div>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire</h2>
+<ul>
+<li>Connaître le vocabulaire de la programmation objet, en particulier la notion de classe, d'instance,
+d'attribut et de méthode.</li>
+<li>Utiliser la notation pointée <code>instance.attribut</code> et <code>instance.methode(arguments)</code>.</li>
+<li>Définir une classe, créer une instance et gérer l'initialisation des attributs d'instance grâce à
+la méthode <code>__init__</code>.</li>
+<li>Définir une méthode et comprendre l'utilisation du paramètre <code>self</code>.</li>
+</ul>
+<h2 id="exercices-et-activites">Exercices et activités</h2>
+<details class="exo"><summary>Exercices</summary><div class="tabbed-set" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Compte bancaire</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/xxxx-xxxxx" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_dominos.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_dominos_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Date</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/xxxx-xxxxx" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_dominos.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_dominos_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Dominos</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/xxxx-xxxxx" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_dominos.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_dominos_corr.ipynb">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><label for="__tabbed_3_4">Labyrinthe</label><div class="tabbed-content">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/ex_labyrinthe.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/ex_labyrinthe_corr.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</details>
+<details class="activité"><summary>Activités</summary><div class="tabbed-set" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Balle rebondissante</label><div class="tabbed-content">
+<p>L'objectif de l'activité est xxxxxxxxx.</p>
+<p><img alt="Balle rebondissante" border="2px solid black" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/balle.gif" width="50%" /></p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/act_balle_rebondissante.zip">ici</a></p>
+<p>⚠️ Le fichier <code>balle_pygame.py</code> doit être placé dans le même répertoire que le carnet <code>act_balle_rebondissante.ipynb</code>. </p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_balle_rebondissante_corr.zip">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Ensembles de Mandelbrot et de Julia</label><div class="tabbed-content">
+<p>L'objectif de l'activité est xxxxxxxx.</p>
+<p><img alt="Ensemble de Mandelbrot" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/mandelbrot.png" width="50%" /></p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/xxxx-xxxxx" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/act_mandelbrot_julia.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_mandelbrot_julia_corr.zip">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Fractions</label><div class="tabbed-content">
+<p>L'objectif de l'activité est xxxxxxxx.</p>
+<p><img alt="Fractions égyptiennes" border="2px solid black" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/fractions_egyptiennes.jpg" width="50%" /></p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/xxxx-xxxxx" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/act_fractions.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_fractions_corr.zip">ici</a></p>
+</div>
+</div>
+<input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><label for="__tabbed_4_4">Paquet de cartes</label><div class="tabbed-content">
+<p>L'objectif de l'activité est xxxxxxxx.</p>
+<p><img alt="Paquet de cartes" border="2px solid black" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/paquet_cartes.png" width="50%" /></p>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/xxxx-xxxxx" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/act_paquet_cartes.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé bientôt disponible <a href="notebooks/corr/act_paquet_cartes_corr.zip">ici</a></p>
+</div>
+</div>
+</div>
+</details>
                 
               
               
