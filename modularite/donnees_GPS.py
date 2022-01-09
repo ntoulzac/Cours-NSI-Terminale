@@ -19,24 +19,23 @@ def extraire_donnees_GPS(emplacement_image, type_emplacement='local'):
 	largeur, hauteur = image.size
 	image.verify()
 	exif = image._getexif()
+	dico = {}
 	for (cle, valeur) in exif.items():
 		if TAGS.get(cle) == 'GPSInfo':
 			dico = valeur
-	latitude = round(float(_triplet_vers_angle(dico[2], dico[1])), 5)
-	longitude = round(float(_triplet_vers_angle(dico[4], dico[3])), 5)
-	if 6 in dico:
-		altitude = round(float(dico[6]), 1)
-	else:
-		altitude = None
-	if 16 in dico and 17 in dico:
-		orientation = round(dico[17]) if dico[16] == 'T' else None
-	else:
-		orientation = None
-	donnees = {'lat' : latitude, 'long' : longitude, 'alt' : altitude, 'orient' : orientation, 'larg' : largeur, 'haut' : hauteur}
-	return donnees
-	
+	latitude = round(float(_triplet_vers_angle(dico[2], dico[1])), 5) if 1 in dico and 2 in dico else None
+	longitude = round(float(_triplet_vers_angle(dico[4], dico[3])), 5) if 3 in dico and 4 in dico else None
+	altitude = round(float(dico[6]), 1) if 6 in dico else None
+	orientation = round(dico[17]) if 16 in dico and 17 in dico and dico[16] == 'T' else None
+	return {'lat' : latitude,
+	        'long' : longitude,
+	        'alt' : altitude,
+	        'orient' : orientation,
+	        'larg' : largeur,
+	        'haut' : hauteur}
+		
 if __name__ == '__main__':
-	for k in range(13):
+	for k in range(15):
 		try:
 			print(f'PHOTO {k}\n', extraire_donnees_GPS(f'images/EXIF/{k}.jpg'), '\n')
 		except:
