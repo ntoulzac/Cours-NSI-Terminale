@@ -35,8 +35,5 @@ def extraire_donnees_GPS(emplacement_image, type_emplacement='local'):
 	        'haut' : hauteur}
 		
 if __name__ == '__main__':
-	for k in range(15):
-		try:
-			print(f'PHOTO {k}\n', extraire_donnees_GPS(f'images/EXIF/{k}.jpg'), '\n')
-		except:
-			print(f'Erreur sur la photo {k} !')
+	for k in range(16):
+		print(f'PHOTO {k}\n', extraire_donnees_GPS(f'https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/images/EXIF/{k}.jpg', 'url'), '\n')
