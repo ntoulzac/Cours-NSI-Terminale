@@ -79,21 +79,28 @@ class Labyrinthe:
             
         _creer_grille_vide()
         _placer_entree_sortie((2*(NB_L//2)+1, 0), (2*(NB_L//2)+1, 2*NB_C))
-        _ouvrir_chemins()         
-
+        _ouvrir_chemins()
+        
     def creer_png(self, nom_de_fichier):
         """
-        Enregistre l'image du labyrinthe dans un fichier PNG.
+        Enregistre l'image du labyrinthe (murs fins) dans un fichier PNG.
         - Entrée : nom_de_fichier (chaîne de caractères)
         """
-        TAILLE_CASE = 8
+        TAILLE_CASE = 16
         image_laby = Image.new('1', (self.nb_c*TAILLE_CASE, self.nb_l*TAILLE_CASE), color=1)
-        for L in range(self.nb_l):
-            for C in range(self.nb_c):
-                if self.grille[L][C] == 1:
-                    for x in range(C*TAILLE_CASE, (C+1)*TAILLE_CASE):
-                        for y in range(L*TAILLE_CASE, (L+1)*TAILLE_CASE):
-                            image_laby.putpixel((x, y), 0)
+        for L in range(0, self.nb_l):
+            for C in range(0, self.nb_c):
+                if self.grille[L][C] == 1 and (L + C) % 2 == 1:
+                    if L % 2 == 0:
+                        for x in range(round((C-0.65)*TAILLE_CASE), round((C+1.65)*TAILLE_CASE)):
+                            for y in range(round((L+0.35)*TAILLE_CASE), round((L+0.65)*TAILLE_CASE)):
+                                if x in range(self.nb_c*TAILLE_CASE) and y in range(self.nb_l*TAILLE_CASE):
+                                    image_laby.putpixel((x, y), 0)
+                    else:
+                        for x in range(round((C+0.35)*TAILLE_CASE), round((C+0.65)*TAILLE_CASE)):
+                            for y in range(round((L-0.65)*TAILLE_CASE), round((L+1.65)*TAILLE_CASE)):
+                                if x in range(self.nb_c*TAILLE_CASE) and y in range(self.nb_l*TAILLE_CASE):
+                                    image_laby.putpixel((x, y), 0)
         image_laby.save(f"{nom_de_fichier}.png")
 
 class FenetreLaby:
@@ -118,7 +125,13 @@ class FenetreLaby:
         Ferme la fenêtre pygame.
         """
         pygame.display.quit()
-        
+    
+    def effacer(self):
+        """
+        Efface le contenu de la fenêtre en la remplissant de blanc.
+        """
+        self.fen.fill(BLANC)
+    
     def actualiser(self):
         """
         Actualise la fenêtre en réalisant les modifications demandées
@@ -156,10 +169,14 @@ class FenetreLaby:
         - Entrée : laby (instance de la classe Labyrinthe)
         Attention : penser à actualiser la fenêtre !
         """
+        self.effacer()                
         for L in range(laby.nb_l):
             for C in range(laby.nb_c):
-                coul = _COULEURS[laby.grille[L][C]]
-                pygame.draw.rect(self.fen, coul, (C*self.t_c, L*self.t_c, self.t_c, self.t_c))
+                if laby.grille[L][C] == 1 and (L + C) % 2 == 1:
+                    if L % 2 == 0:
+                        pygame.draw.rect(self.fen, NOIR, ((C-0.65)*self.t_c, (L+0.35)*self.t_c, 2.3*self.t_c, 0.3*self.t_c))
+                    else:
+                        pygame.draw.rect(self.fen, NOIR, ((C+0.35)*self.t_c, (L-0.65)*self.t_c, 0.3*self.t_c, 2.3*self.t_c))
     
     def afficher_pion(self, pion):
         """
@@ -200,7 +217,7 @@ class Pion:
             self.pos = (L+1, C)
 
 if __name__ == "__main__":
-    laby = Labyrinthe(8, 12, nom_fichier='laby')
+    laby = Labyrinthe(9, 13, nom_fichier='laby')
     pion = Pion(laby.entree, BLEU)
     fenetre = FenetreLaby(laby)
     direction = "aucune"
