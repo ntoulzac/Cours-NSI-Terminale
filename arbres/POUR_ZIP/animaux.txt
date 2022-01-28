@@ -1,7 +1,0 @@
-Est-ce un animal domestique ?
-A-t-il quatre pattes ?
-Est-ce un animal terrestre ?
-un chien
-une poule
-un lion
-une baleine
