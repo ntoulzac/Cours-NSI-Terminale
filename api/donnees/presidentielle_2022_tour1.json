@@ -1,0 +1,6111 @@
+﻿{"couleurs": {"Emmanuel MACRON": "#e48c22",
+            "Marine LE PEN": "#000040",
+            "Jean-Luc MÉLENCHON": "#ff0000",
+            "Éric ZEMMOUR": "#000020",
+            "Valérie PÉCRESSE": "#0000ff",
+            "Yannick JADOT": "#00ff00",
+            "Jean LASSALLE": "#583400",
+            "Fabien ROUSSEL": "#ff2020",
+            "Nicolas DUPONT-AIGNAN": "#000080",
+            "Anne HIDALGO": "#ff7070",
+            "Philippe POUTOU": "#b80000"
+            "Nathalie ARTHAUD": "#580000"},
+"tour1": [{"dep": "01",
+	"dep_nom": "AIN",
+	"inscrits": 438109,
+	"abstentions": 97541,
+	"votants": 340568,
+	"blancs nuls": 7544,
+	"exprimés": 333024,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 92206,
+		"taux": 27.69
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 86755,
+		"taux": 26.05
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 57832,
+		"taux": 17.37
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 27530,
+		"taux": 8.27
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 17572,
+		"taux": 5.28
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 15843,
+		"taux": 4.76
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 10876,
+		"taux": 3.27
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 8998,
+		"taux": 2.7
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5938,
+		"taux": 1.78
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5644,
+		"taux": 1.69
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2172,
+		"taux": 0.65
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1658,
+		"taux": 0.5
+		}]
+	},{
+	"dep": "02",
+	"dep_nom": "AISNE",
+	"inscrits": 373544,
+	"abstentions": 101089,
+	"votants": 272455,
+	"blancs nuls": 6595,
+	"exprimés": 265860,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 104342,
+		"taux": 39.25
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 58721,
+		"taux": 22.09
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 41172,
+		"taux": 15.49
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 18266,
+		"taux": 6.87
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 10920,
+		"taux": 4.11
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7074,
+		"taux": 2.66
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 6468,
+		"taux": 2.43
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5968,
+		"taux": 2.24
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 5790,
+		"taux": 2.18
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2983,
+		"taux": 1.12
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2118,
+		"taux": 0.8
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2038,
+		"taux": 0.77
+		}]
+	},{
+	"dep": "03",
+	"dep_nom": "ALLIER",
+	"inscrits": 249991,
+	"abstentions": 58497,
+	"votants": 191494,
+	"blancs nuls": 5539,
+	"exprimés": 185955,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 50315,
+		"taux": 27.06
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 49706,
+		"taux": 26.73
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 31013,
+		"taux": 16.68
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 12361,
+		"taux": 6.65
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 10319,
+		"taux": 5.55
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8119,
+		"taux": 4.37
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7782,
+		"taux": 4.18
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5982,
+		"taux": 3.22
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4216,
+		"taux": 2.27
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3280,
+		"taux": 1.76
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1503,
+		"taux": 0.81
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1359,
+		"taux": 0.73
+		}]
+	},{
+	"dep": "04",
+	"dep_nom": "ALPES DE HAUTE PROVENCE",
+	"inscrits": 128075,
+	"abstentions": 29290,
+	"votants": 98785,
+	"blancs nuls": 2102,
+	"exprimés": 96683,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 26010,
+		"taux": 26.9
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 21856,
+		"taux": 22.61
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 20800,
+		"taux": 21.51
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 7926,
+		"taux": 8.2
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4309,
+		"taux": 4.46
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 3957,
+		"taux": 4.09
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 3834,
+		"taux": 3.97
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 2721,
+		"taux": 2.81
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2504,
+		"taux": 2.59
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1396,
+		"taux": 1.44
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 865,
+		"taux": 0.89
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 505,
+		"taux": 0.52
+		}]
+	},{
+	"dep": "05",
+	"dep_nom": "HAUTES ALPES",
+	"inscrits": 113519,
+	"abstentions": 25357,
+	"votants": 88162,
+	"blancs nuls": 1927,
+	"exprimés": 86235,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 20507,
+		"taux": 23.78
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 19718,
+		"taux": 22.87
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 19696,
+		"taux": 22.84
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 6164,
+		"taux": 7.15
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5013,
+		"taux": 5.81
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4511,
+		"taux": 5.23
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 3871,
+		"taux": 4.49
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2142,
+		"taux": 2.48
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 1925,
+		"taux": 2.23
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1459,
+		"taux": 1.69
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 801,
+		"taux": 0.93
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 428,
+		"taux": 0.5
+		}]
+	},{
+	"dep": "06",
+	"dep_nom": "ALPES MARITIMES",
+	"inscrits": 778582,
+	"abstentions": 208250,
+	"votants": 570332,
+	"blancs nuls": 11557,
+	"exprimés": 558775,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 148919,
+		"taux": 26.65
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 139707,
+		"taux": 25.0
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 92345,
+		"taux": 16.53
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 78208,
+		"taux": 14.0
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 31260,
+		"taux": 5.59
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 23374,
+		"taux": 4.18
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 13307,
+		"taux": 2.38
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 12767,
+		"taux": 2.28
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8858,
+		"taux": 1.59
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5414,
+		"taux": 0.97
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2989,
+		"taux": 0.53
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1627,
+		"taux": 0.29
+		}]
+	},{
+	"dep": "07",
+	"dep_nom": "ARDECHE",
+	"inscrits": 255859,
+	"abstentions": 54114,
+	"votants": 201745,
+	"blancs nuls": 4770,
+	"exprimés": 196975,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 49594,
+		"taux": 25.18
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 45353,
+		"taux": 23.02
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 42837,
+		"taux": 21.75
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 14199,
+		"taux": 7.21
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9553,
+		"taux": 4.85
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9033,
+		"taux": 4.59
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 8544,
+		"taux": 4.34
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5710,
+		"taux": 2.9
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4927,
+		"taux": 2.5
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4189,
+		"taux": 2.13
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1817,
+		"taux": 0.92
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1219,
+		"taux": 0.62
+		}]
+	},{
+	"dep": "08",
+	"dep_nom": "ARDENNES",
+	"inscrits": 186197,
+	"abstentions": 49368,
+	"votants": 136829,
+	"blancs nuls": 2893,
+	"exprimés": 133936,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 48242,
+		"taux": 36.02
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 31656,
+		"taux": 23.64
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 22281,
+		"taux": 16.64
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 8771,
+		"taux": 6.55
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 5556,
+		"taux": 4.15
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4084,
+		"taux": 3.05
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 3446,
+		"taux": 2.57
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3009,
+		"taux": 2.25
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2957,
+		"taux": 2.21
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1741,
+		"taux": 1.3
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1112,
+		"taux": 0.83
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1081,
+		"taux": 0.81
+		}]
+	},{
+	"dep": "09",
+	"dep_nom": "ARIEGE",
+	"inscrits": 119039,
+	"abstentions": 25028,
+	"votants": 94011,
+	"blancs nuls": 2307,
+	"exprimés": 91704,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 23908,
+		"taux": 26.07
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 21958,
+		"taux": 23.94
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 18071,
+		"taux": 19.71
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7532,
+		"taux": 8.21
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 5821,
+		"taux": 6.35
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3208,
+		"taux": 3.5
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 3020,
+		"taux": 3.29
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 2724,
+		"taux": 2.97
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 2701,
+		"taux": 2.95
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 1621,
+		"taux": 1.77
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 723,
+		"taux": 0.79
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 417,
+		"taux": 0.45
+		}]
+	},{
+	"dep": "10",
+	"dep_nom": "AUBE",
+	"inscrits": 205551,
+	"abstentions": 52384,
+	"votants": 153167,
+	"blancs nuls": 3497,
+	"exprimés": 149670,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 49316,
+		"taux": 32.95
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 38321,
+		"taux": 25.6
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 22483,
+		"taux": 15.02
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 11374,
+		"taux": 7.6
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 8923,
+		"taux": 5.96
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 4619,
+		"taux": 3.09
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3966,
+		"taux": 2.65
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 3787,
+		"taux": 2.53
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3094,
+		"taux": 2.07
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1720,
+		"taux": 1.15
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1062,
+		"taux": 0.71
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1005,
+		"taux": 0.67
+		}]
+	},{
+	"dep": "11",
+	"dep_nom": "AUDE",
+	"inscrits": 279927,
+	"abstentions": 62972,
+	"votants": 216955,
+	"blancs nuls": 4529,
+	"exprimés": 212426,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 64027,
+		"taux": 30.14
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 43104,
+		"taux": 20.29
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 42039,
+		"taux": 19.79
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 18434,
+		"taux": 8.68
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 12382,
+		"taux": 5.83
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 7350,
+		"taux": 3.46
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 6322,
+		"taux": 2.98
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6166,
+		"taux": 2.9
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5622,
+		"taux": 2.65
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4206,
+		"taux": 1.98
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1748,
+		"taux": 0.82
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1026,
+		"taux": 0.48
+		}]
+	},{
+	"dep": "12",
+	"dep_nom": "AVEYRON",
+	"inscrits": 219468,
+	"abstentions": 43833,
+	"votants": 175635,
+	"blancs nuls": 4733,
+	"exprimés": 170902,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 47430,
+		"taux": 27.75
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 34357,
+		"taux": 20.1
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 32734,
+		"taux": 19.15
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 14825,
+		"taux": 8.67
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 10112,
+		"taux": 5.92
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9988,
+		"taux": 5.84
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 6746,
+		"taux": 3.95
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4515,
+		"taux": 2.64
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4470,
+		"taux": 2.62
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3477,
+		"taux": 2.03
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1354,
+		"taux": 0.79
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 894,
+		"taux": 0.52
+		}]
+	},{
+	"dep": "13",
+	"dep_nom": "BOUCHES DU RHONE",
+	"inscrits": 1411184,
+	"abstentions": 383816,
+	"votants": 1027368,
+	"blancs nuls": 18748,
+	"exprimés": 1008620,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 264753,
+		"taux": 26.25
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 237971,
+		"taux": 23.59
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 229038,
+		"taux": 22.71
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 108617,
+		"taux": 10.77
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 42109,
+		"taux": 4.17
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 36229,
+		"taux": 3.59
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 24295,
+		"taux": 2.41
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 24256,
+		"taux": 2.4
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 20051,
+		"taux": 1.99
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 11760,
+		"taux": 1.17
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 5963,
+		"taux": 0.59
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3578,
+		"taux": 0.35
+		}]
+	},{
+	"dep": "14",
+	"dep_nom": "CALVADOS",
+	"inscrits": 512148,
+	"abstentions": 117799,
+	"votants": 394349,
+	"blancs nuls": 8118,
+	"exprimés": 386231,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 120366,
+		"taux": 31.16
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 91774,
+		"taux": 23.76
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 73950,
+		"taux": 19.15
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 22255,
+		"taux": 5.76
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 19621,
+		"taux": 5.08
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 18383,
+		"taux": 4.76
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9816,
+		"taux": 2.54
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8777,
+		"taux": 2.27
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7920,
+		"taux": 2.05
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6848,
+		"taux": 1.77
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3764,
+		"taux": 0.97
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2757,
+		"taux": 0.71
+		}]
+	},{
+	"dep": "15",
+	"dep_nom": "CANTAL",
+	"inscrits": 115745,
+	"abstentions": 25019,
+	"votants": 90726,
+	"blancs nuls": 2624,
+	"exprimés": 88102,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 25038,
+		"taux": 28.42
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 21570,
+		"taux": 24.48
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 12944,
+		"taux": 14.69
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 6987,
+		"taux": 7.93
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 6848,
+		"taux": 7.77
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 4906,
+		"taux": 5.57
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 2751,
+		"taux": 3.12
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 2496,
+		"taux": 2.83
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1810,
+		"taux": 2.05
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 1547,
+		"taux": 1.76
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 650,
+		"taux": 0.74
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 555,
+		"taux": 0.63
+		}]
+	},{
+	"dep": "16",
+	"dep_nom": "CHARENTE",
+	"inscrits": 257608,
+	"abstentions": 59909,
+	"votants": 197699,
+	"blancs nuls": 5033,
+	"exprimés": 192666,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 53126,
+		"taux": 27.57
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 50432,
+		"taux": 26.18
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 37305,
+		"taux": 19.36
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 10617,
+		"taux": 5.51
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8482,
+		"taux": 4.4
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 8343,
+		"taux": 4.33
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7557,
+		"taux": 3.92
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5374,
+		"taux": 2.79
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4345,
+		"taux": 2.26
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4003,
+		"taux": 2.08
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1763,
+		"taux": 0.92
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1319,
+		"taux": 0.68
+		}]
+	},{
+	"dep": "17",
+	"dep_nom": "CHARENTE MARITIME",
+	"inscrits": 519202,
+	"abstentions": 116437,
+	"votants": 402765,
+	"blancs nuls": 8698,
+	"exprimés": 394067,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 113753,
+		"taux": 28.87
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 99790,
+		"taux": 25.32
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 71633,
+		"taux": 18.18
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 24347,
+		"taux": 6.18
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 19316,
+		"taux": 4.9
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 19012,
+		"taux": 4.82
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 14335,
+		"taux": 3.64
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 10002,
+		"taux": 2.54
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9289,
+		"taux": 2.36
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6857,
+		"taux": 1.74
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3403,
+		"taux": 0.86
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2330,
+		"taux": 0.59
+		}]
+	},{
+	"dep": "18",
+	"dep_nom": "CHER",
+	"inscrits": 224570,
+	"abstentions": 59808,
+	"votants": 164762,
+	"blancs nuls": 4229,
+	"exprimés": 160533,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 44772,
+		"taux": 27.89
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 43497,
+		"taux": 27.1
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 27901,
+		"taux": 17.38
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 10822,
+		"taux": 6.74
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 8147,
+		"taux": 5.07
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5749,
+		"taux": 3.58
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 5495,
+		"taux": 3.42
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5028,
+		"taux": 3.13
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3770,
+		"taux": 2.35
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2585,
+		"taux": 1.61
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1463,
+		"taux": 0.91
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1304,
+		"taux": 0.81
+		}]
+	},{
+	"dep": "19",
+	"dep_nom": "CORREZE",
+	"inscrits": 185032,
+	"abstentions": 38430,
+	"votants": 146602,
+	"blancs nuls": 4002,
+	"exprimés": 142600,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 33125,
+		"taux": 23.23
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 31658,
+		"taux": 22.2
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 27731,
+		"taux": 19.45
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 12278,
+		"taux": 8.61
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 10177,
+		"taux": 7.14
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 8012,
+		"taux": 5.62
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 6292,
+		"taux": 4.41
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5040,
+		"taux": 3.53
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3605,
+		"taux": 2.53
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2618,
+		"taux": 1.84
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1179,
+		"taux": 0.83
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 885,
+		"taux": 0.62
+		}]
+	},{
+	"dep": "2A",
+	"dep_nom": "CORSE SUD",
+	"inscrits": 113918,
+	"abstentions": 42366,
+	"votants": 71552,
+	"blancs nuls": 2691,
+	"exprimés": 68861,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 20139,
+		"taux": 29.25
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 12932,
+		"taux": 18.78
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 9330,
+		"taux": 13.55
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 9199,
+		"taux": 13.36
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 6729,
+		"taux": 9.77
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 3772,
+		"taux": 5.48
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 2266,
+		"taux": 3.29
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 1850,
+		"taux": 2.69
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 1215,
+		"taux": 1.76
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 624,
+		"taux": 0.91
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 608,
+		"taux": 0.88
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 197,
+		"taux": 0.29
+		}]
+	},{
+	"dep": "2B",
+	"dep_nom": "HAUTE CORSE",
+	"inscrits": 129114,
+	"abstentions": 48263,
+	"votants": 80851,
+	"blancs nuls": 2340,
+	"exprimés": 78511,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 21998,
+		"taux": 28.02
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 13773,
+		"taux": 17.54
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 10368,
+		"taux": 13.21
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 9657,
+		"taux": 12.3
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8601,
+		"taux": 10.96
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 5555,
+		"taux": 7.08
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 2687,
+		"taux": 3.42
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 2520,
+		"taux": 3.21
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 1374,
+		"taux": 1.75
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 959,
+		"taux": 1.22
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 762,
+		"taux": 0.97
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 257,
+		"taux": 0.33
+		}]
+	},{
+	"dep": "21",
+	"dep_nom": "COTE D'OR",
+	"inscrits": 366859,
+	"abstentions": 77886,
+	"votants": 288973,
+	"blancs nuls": 6228,
+	"exprimés": 282745,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 80734,
+		"taux": 28.55
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 69110,
+		"taux": 24.44
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 53875,
+		"taux": 19.05
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 21651,
+		"taux": 7.66
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 14344,
+		"taux": 5.07
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 13462,
+		"taux": 4.76
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8183,
+		"taux": 2.89
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6478,
+		"taux": 2.29
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5721,
+		"taux": 2.02
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5126,
+		"taux": 1.81
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2286,
+		"taux": 0.81
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1775,
+		"taux": 0.63
+		}]
+	},{
+	"dep": "22",
+	"dep_nom": "COTES D'ARMOR",
+	"inscrits": 471752,
+	"abstentions": 96597,
+	"votants": 375155,
+	"blancs nuls": 8762,
+	"exprimés": 366393,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 113656,
+		"taux": 31.02
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 79850,
+		"taux": 21.79
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 74226,
+		"taux": 20.26
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 19349,
+		"taux": 5.28
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 17319,
+		"taux": 4.73
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 17235,
+		"taux": 4.7
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11949,
+		"taux": 3.26
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 11628,
+		"taux": 3.17
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 8279,
+		"taux": 2.26
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6404,
+		"taux": 1.75
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3895,
+		"taux": 1.06
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2603,
+		"taux": 0.71
+		}]
+	},{
+	"dep": "23",
+	"dep_nom": "CREUSE",
+	"inscrits": 90946,
+	"abstentions": 21967,
+	"votants": 68979,
+	"blancs nuls": 2131,
+	"exprimés": 66848,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 16772,
+		"taux": 25.09
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 15542,
+		"taux": 23.25
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 13679,
+		"taux": 20.46
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4391,
+		"taux": 6.57
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4275,
+		"taux": 6.4
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 3501,
+		"taux": 5.24
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 2430,
+		"taux": 3.64
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 1906,
+		"taux": 2.85
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1641,
+		"taux": 2.45
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 1556,
+		"taux": 2.33
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 665,
+		"taux": 0.99
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 490,
+		"taux": 0.73
+		}]
+	},{
+	"dep": "24",
+	"dep_nom": "DORDOGNE",
+	"inscrits": 318168,
+	"abstentions": 64856,
+	"votants": 253312,
+	"blancs nuls": 6756,
+	"exprimés": 246556,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 63327,
+		"taux": 25.68
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 58532,
+		"taux": 23.74
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 50054,
+		"taux": 20.3
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 15850,
+		"taux": 6.43
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 15800,
+		"taux": 6.41
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 11280,
+		"taux": 4.58
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8855,
+		"taux": 3.59
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 8563,
+		"taux": 3.47
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 5416,
+		"taux": 2.2
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5362,
+		"taux": 2.17
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2223,
+		"taux": 0.9
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1294,
+		"taux": 0.52
+		}]
+	},{
+	"dep": "25",
+	"dep_nom": "DOUBS",
+	"inscrits": 368379,
+	"abstentions": 84117,
+	"votants": 284262,
+	"blancs nuls": 7165,
+	"exprimés": 277097,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 76338,
+		"taux": 27.55
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 66703,
+		"taux": 24.07
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 55587,
+		"taux": 20.06
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 19486,
+		"taux": 7.03
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 15107,
+		"taux": 5.45
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 13096,
+		"taux": 4.73
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8688,
+		"taux": 3.14
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7775,
+		"taux": 2.81
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5001,
+		"taux": 1.8
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4902,
+		"taux": 1.77
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2345,
+		"taux": 0.85
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2069,
+		"taux": 0.75
+		}]
+	},{
+	"dep": "26",
+	"dep_nom": "DROME",
+	"inscrits": 382188,
+	"abstentions": 84289,
+	"votants": 297899,
+	"blancs nuls": 6475,
+	"exprimés": 291424,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 72228,
+		"taux": 24.78
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 70574,
+		"taux": 24.22
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 65258,
+		"taux": 22.39
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 22010,
+		"taux": 7.55
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 14234,
+		"taux": 4.88
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 13204,
+		"taux": 4.53
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9945,
+		"taux": 3.41
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7758,
+		"taux": 2.66
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 6752,
+		"taux": 2.32
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5311,
+		"taux": 1.82
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2109,
+		"taux": 0.72
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2041,
+		"taux": 0.7
+		}]
+	},{
+	"dep": "27",
+	"dep_nom": "EURE",
+	"inscrits": 432198,
+	"abstentions": 106463,
+	"votants": 325735,
+	"blancs nuls": 6874,
+	"exprimés": 318861,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 102952,
+		"taux": 32.29
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 83058,
+		"taux": 26.05
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 55571,
+		"taux": 17.43
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 20930,
+		"taux": 6.56
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 13552,
+		"taux": 4.25
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 11477,
+		"taux": 3.6
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7768,
+		"taux": 2.44
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7563,
+		"taux": 2.37
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7056,
+		"taux": 2.21
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4027,
+		"taux": 1.26
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2710,
+		"taux": 0.85
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2197,
+		"taux": 0.69
+		}]
+	},{
+	"dep": "28",
+	"dep_nom": "EURE ET LOIR",
+	"inscrits": 303888,
+	"abstentions": 78960,
+	"votants": 224928,
+	"blancs nuls": 4907,
+	"exprimés": 220021,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 61960,
+		"taux": 28.16
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 59869,
+		"taux": 27.21
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 40529,
+		"taux": 18.42
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 14803,
+		"taux": 6.73
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 13003,
+		"taux": 5.91
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7904,
+		"taux": 3.59
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 5731,
+		"taux": 2.6
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 5694,
+		"taux": 2.59
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4267,
+		"taux": 1.94
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3076,
+		"taux": 1.4
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1766,
+		"taux": 0.8
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1419,
+		"taux": 0.64
+		}]
+	},{
+	"dep": "29",
+	"dep_nom": "FINISTERE",
+	"inscrits": 709701,
+	"abstentions": 154870,
+	"votants": 554831,
+	"blancs nuls": 11912,
+	"exprimés": 542919,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 174894,
+		"taux": 32.21
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 116591,
+		"taux": 21.47
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 100890,
+		"taux": 18.58
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 33200,
+		"taux": 6.12
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 26541,
+		"taux": 4.89
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 25607,
+		"taux": 4.72
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 18320,
+		"taux": 3.37
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 15340,
+		"taux": 2.83
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 13077,
+		"taux": 2.41
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 8566,
+		"taux": 1.58
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 6266,
+		"taux": 1.15
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3627,
+		"taux": 0.67
+		}]
+	},{
+	"dep": "30",
+	"dep_nom": "GARD",
+	"inscrits": 555038,
+	"abstentions": 132723,
+	"votants": 422315,
+	"blancs nuls": 8336,
+	"exprimés": 413979,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 121480,
+		"taux": 29.34
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 88827,
+		"taux": 21.46
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 88278,
+		"taux": 21.32
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 38479,
+		"taux": 9.29
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 15460,
+		"taux": 3.73
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 15162,
+		"taux": 3.66
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 14974,
+		"taux": 3.62
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 12123,
+		"taux": 2.93
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 8137,
+		"taux": 1.97
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6585,
+		"taux": 1.59
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2706,
+		"taux": 0.65
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1768,
+		"taux": 0.43
+		}]
+	},{
+	"dep": "31",
+	"dep_nom": "HAUTE GARONNE",
+	"inscrits": 930321,
+	"abstentions": 183366,
+	"votants": 746955,
+	"blancs nuls": 15976,
+	"exprimés": 730979,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 196712,
+		"taux": 26.91
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 188867,
+		"taux": 25.84
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 133254,
+		"taux": 18.23
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 50613,
+		"taux": 6.92
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 42599,
+		"taux": 5.83
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 35479,
+		"taux": 4.85
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 27153,
+		"taux": 3.71
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 19658,
+		"taux": 2.69
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 16307,
+		"taux": 2.23
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 12443,
+		"taux": 1.7
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4888,
+		"taux": 0.67
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3006,
+		"taux": 0.41
+		}]
+	},{
+	"dep": "32",
+	"dep_nom": "GERS",
+	"inscrits": 147278,
+	"abstentions": 28267,
+	"votants": 119011,
+	"blancs nuls": 2612,
+	"exprimés": 116399,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 28970,
+		"taux": 24.89
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 26015,
+		"taux": 22.35
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 21353,
+		"taux": 18.34
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11720,
+		"taux": 10.07
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 8396,
+		"taux": 7.21
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 5126,
+		"taux": 4.4
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 4090,
+		"taux": 3.51
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3861,
+		"taux": 3.32
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3128,
+		"taux": 2.69
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2418,
+		"taux": 2.08
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 793,
+		"taux": 0.68
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 529,
+		"taux": 0.45
+		}]
+	},{
+	"dep": "33",
+	"dep_nom": "GIRONDE",
+	"inscrits": 1158548,
+	"abstentions": 249014,
+	"votants": 909534,
+	"blancs nuls": 17514,
+	"exprimés": 892020,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 256179,
+		"taux": 28.72
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 194775,
+		"taux": 21.84
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 191542,
+		"taux": 21.47
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 58321,
+		"taux": 6.54
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 46677,
+		"taux": 5.23
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 37725,
+		"taux": 4.23
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 37575,
+		"taux": 4.21
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 21522,
+		"taux": 2.41
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 19598,
+		"taux": 2.2
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 15693,
+		"taux": 1.76
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 8734,
+		"taux": 0.98
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3679,
+		"taux": 0.41
+		}]
+	},{
+	"dep": "34",
+	"dep_nom": "HERAULT",
+	"inscrits": 847365,
+	"abstentions": 195766,
+	"votants": 651599,
+	"blancs nuls": 12871,
+	"exprimés": 638728,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 165734,
+		"taux": 25.95
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 154819,
+		"taux": 24.24
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 142306,
+		"taux": 22.28
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 57751,
+		"taux": 9.04
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 28057,
+		"taux": 4.39
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 23230,
+		"taux": 3.64
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 22068,
+		"taux": 3.45
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 14165,
+		"taux": 2.22
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 12150,
+		"taux": 1.9
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 11475,
+		"taux": 1.8
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4393,
+		"taux": 0.69
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2580,
+		"taux": 0.4
+		}]
+	},{
+	"dep": "35",
+	"dep_nom": "ILLE ET VILAINE",
+	"inscrits": 771636,
+	"abstentions": 161427,
+	"votants": 610209,
+	"blancs nuls": 13377,
+	"exprimés": 596832,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 205882,
+		"taux": 34.5
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 132510,
+		"taux": 22.2
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 101797,
+		"taux": 17.06
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 42613,
+		"taux": 7.14
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 27463,
+		"taux": 4.6
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 26194,
+		"taux": 4.39
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 13985,
+		"taux": 2.34
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 13973,
+		"taux": 2.34
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 12696,
+		"taux": 2.13
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 10560,
+		"taux": 1.77
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 5376,
+		"taux": 0.9
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3783,
+		"taux": 0.63
+		}]
+	},{
+	"dep": "36",
+	"dep_nom": "INDRE",
+	"inscrits": 166100,
+	"abstentions": 41406,
+	"votants": 124694,
+	"blancs nuls": 3697,
+	"exprimés": 120997,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 34516,
+		"taux": 28.53
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 31498,
+		"taux": 26.03
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 20954,
+		"taux": 17.32
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 7438,
+		"taux": 6.15
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 6589,
+		"taux": 5.45
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4984,
+		"taux": 4.12
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 3726,
+		"taux": 3.08
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3702,
+		"taux": 3.06
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2886,
+		"taux": 2.39
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2464,
+		"taux": 2.04
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1155,
+		"taux": 0.95
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1085,
+		"taux": 0.9
+		}]
+	},{
+	"dep": "37",
+	"dep_nom": "INDRE ET LOIRE",
+	"inscrits": 440502,
+	"abstentions": 105536,
+	"votants": 334966,
+	"blancs nuls": 7476,
+	"exprimés": 327490,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 101503,
+		"taux": 30.99
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 70553,
+		"taux": 21.54
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 68012,
+		"taux": 20.77
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 19931,
+		"taux": 6.09
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 16279,
+		"taux": 4.97
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 16245,
+		"taux": 4.96
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8520,
+		"taux": 2.6
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7835,
+		"taux": 2.39
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7271,
+		"taux": 2.22
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6216,
+		"taux": 1.9
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2882,
+		"taux": 0.88
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2243,
+		"taux": 0.68
+		}]
+	},{
+	"dep": "38",
+	"dep_nom": "ISERE",
+	"inscrits": 885440,
+	"abstentions": 198676,
+	"votants": 686764,
+	"blancs nuls": 14468,
+	"exprimés": 672296,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 180533,
+		"taux": 26.85
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 154799,
+		"taux": 23.03
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 153474,
+		"taux": 22.83
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 47450,
+		"taux": 7.06
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 40378,
+		"taux": 6.01
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 28575,
+		"taux": 4.25
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 17025,
+		"taux": 2.53
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 14694,
+		"taux": 2.19
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 14327,
+		"taux": 2.13
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 12736,
+		"taux": 1.89
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4826,
+		"taux": 0.72
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3479,
+		"taux": 0.52
+		}]
+	},{
+	"dep": "39",
+	"dep_nom": "JURA",
+	"inscrits": 190597,
+	"abstentions": 41634,
+	"votants": 148963,
+	"blancs nuls": 3736,
+	"exprimés": 145227,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 38179,
+		"taux": 26.29
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 36139,
+		"taux": 24.88
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 28882,
+		"taux": 19.89
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 9657,
+		"taux": 6.65
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 7424,
+		"taux": 5.11
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 6388,
+		"taux": 4.4
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 6218,
+		"taux": 4.28
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4143,
+		"taux": 2.85
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3166,
+		"taux": 2.18
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2635,
+		"taux": 1.81
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1343,
+		"taux": 0.92
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1053,
+		"taux": 0.73
+		}]
+	},{
+	"dep": "40",
+	"dep_nom": "LANDES",
+	"inscrits": 329337,
+	"abstentions": 65654,
+	"votants": 263683,
+	"blancs nuls": 5633,
+	"exprimés": 258050,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 69459,
+		"taux": 26.92
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 58646,
+		"taux": 22.73
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 44548,
+		"taux": 17.26
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 24308,
+		"taux": 9.42
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 16817,
+		"taux": 6.52
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 10393,
+		"taux": 4.03
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 9071,
+		"taux": 3.52
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 8628,
+		"taux": 3.34
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8176,
+		"taux": 3.17
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4914,
+		"taux": 1.9
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1975,
+		"taux": 0.77
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1115,
+		"taux": 0.43
+		}]
+	},{
+	"dep": "41",
+	"dep_nom": "LOIR ET CHER",
+	"inscrits": 244718,
+	"abstentions": 59350,
+	"votants": 185368,
+	"blancs nuls": 4558,
+	"exprimés": 180810,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 50480,
+		"taux": 27.92
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 50212,
+		"taux": 27.77
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 30377,
+		"taux": 16.8
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 12703,
+		"taux": 7.03
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9586,
+		"taux": 5.3
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7097,
+		"taux": 3.93
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 5483,
+		"taux": 3.03
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4507,
+		"taux": 2.49
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4427,
+		"taux": 2.45
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3165,
+		"taux": 1.75
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1527,
+		"taux": 0.84
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1246,
+		"taux": 0.69
+		}]
+	},{
+	"dep": "42",
+	"dep_nom": "LOIRE",
+	"inscrits": 513794,
+	"abstentions": 118592,
+	"votants": 395202,
+	"blancs nuls": 9264,
+	"exprimés": 385938,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 104003,
+		"taux": 26.95
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 97764,
+		"taux": 25.33
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 78169,
+		"taux": 20.25
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 28706,
+		"taux": 7.44
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 18539,
+		"taux": 4.8
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 16656,
+		"taux": 4.32
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11928,
+		"taux": 3.09
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9029,
+		"taux": 2.34
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 9017,
+		"taux": 2.34
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6970,
+		"taux": 1.81
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2767,
+		"taux": 0.72
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2390,
+		"taux": 0.62
+		}]
+	},{
+	"dep": "43",
+	"dep_nom": "HAUTE LOIRE",
+	"inscrits": 180706,
+	"abstentions": 37000,
+	"votants": 143706,
+	"blancs nuls": 4051,
+	"exprimés": 139655,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 38629,
+		"taux": 27.66
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 32417,
+		"taux": 23.21
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 24332,
+		"taux": 17.42
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9560,
+		"taux": 6.85
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 9529,
+		"taux": 6.82
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7817,
+		"taux": 5.6
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5796,
+		"taux": 4.15
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3493,
+		"taux": 2.5
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3366,
+		"taux": 2.41
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2491,
+		"taux": 1.78
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1205,
+		"taux": 0.86
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1020,
+		"taux": 0.73
+		}]
+	},{
+	"dep": "44",
+	"dep_nom": "LOIRE ATLANTIQUE",
+	"inscrits": 1056693,
+	"abstentions": 236339,
+	"votants": 820354,
+	"blancs nuls": 17932,
+	"exprimés": 802422,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 256609,
+		"taux": 31.98
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 187977,
+		"taux": 23.43
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 135702,
+		"taux": 16.91
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 60072,
+		"taux": 7.49
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 42761,
+		"taux": 5.33
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 37541,
+		"taux": 4.68
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 18369,
+		"taux": 2.29
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 18322,
+		"taux": 2.28
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 18298,
+		"taux": 2.28
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 14779,
+		"taux": 1.84
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 7280,
+		"taux": 0.91
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 4712,
+		"taux": 0.59
+		}]
+	},{
+	"dep": "45",
+	"dep_nom": "LOIRET",
+	"inscrits": 457550,
+	"abstentions": 114468,
+	"votants": 343082,
+	"blancs nuls": 7660,
+	"exprimés": 335422,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 97004,
+		"taux": 28.92
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 85832,
+		"taux": 25.59
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 63486,
+		"taux": 18.93
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 22878,
+		"taux": 6.82
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 18086,
+		"taux": 5.39
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 14401,
+		"taux": 4.29
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8483,
+		"taux": 2.53
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7674,
+		"taux": 2.29
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7530,
+		"taux": 2.24
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5656,
+		"taux": 1.69
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2433,
+		"taux": 0.73
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1959,
+		"taux": 0.58
+		}]
+	},{
+	"dep": "46",
+	"dep_nom": "LOT",
+	"inscrits": 139278,
+	"abstentions": 27164,
+	"votants": 112114,
+	"blancs nuls": 2724,
+	"exprimés": 109390,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 27311,
+		"taux": 24.97
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 25932,
+		"taux": 23.71
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 21422,
+		"taux": 19.58
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8032,
+		"taux": 7.34
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 6123,
+		"taux": 5.6
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 5648,
+		"taux": 5.16
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 4603,
+		"taux": 4.21
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3559,
+		"taux": 3.25
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2766,
+		"taux": 2.53
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2400,
+		"taux": 2.19
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 976,
+		"taux": 0.89
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 618,
+		"taux": 0.56
+		}]
+	},{
+	"dep": "47",
+	"dep_nom": "LOT ET GARONNE",
+	"inscrits": 241304,
+	"abstentions": 52907,
+	"votants": 188397,
+	"blancs nuls": 4295,
+	"exprimés": 184102,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 50290,
+		"taux": 27.32
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 42568,
+		"taux": 23.12
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 34044,
+		"taux": 18.49
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 15646,
+		"taux": 8.5
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 13600,
+		"taux": 7.39
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 7703,
+		"taux": 4.18
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5686,
+		"taux": 3.09
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4970,
+		"taux": 2.7
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3912,
+		"taux": 2.12
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3357,
+		"taux": 1.82
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1437,
+		"taux": 0.78
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 889,
+		"taux": 0.48
+		}]
+	},{
+	"dep": "48",
+	"dep_nom": "LOZERE",
+	"inscrits": 59812,
+	"abstentions": 11680,
+	"votants": 48132,
+	"blancs nuls": 1136,
+	"exprimés": 46996,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 10739,
+		"taux": 22.85
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 10497,
+		"taux": 22.34
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 9153,
+		"taux": 19.48
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4722,
+		"taux": 10.05
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 3148,
+		"taux": 6.7
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 3039,
+		"taux": 6.47
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 1736,
+		"taux": 3.69
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 1343,
+		"taux": 2.86
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1045,
+		"taux": 2.22
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 913,
+		"taux": 1.94
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 426,
+		"taux": 0.91
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 235,
+		"taux": 0.5
+		}]
+	},{
+	"dep": "49",
+	"dep_nom": "MAINE ET LOIRE",
+	"inscrits": 589263,
+	"abstentions": 136866,
+	"votants": 452397,
+	"blancs nuls": 11055,
+	"exprimés": 441342,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 157063,
+		"taux": 35.59
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 89433,
+		"taux": 20.26
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 80616,
+		"taux": 18.27
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 26635,
+		"taux": 6.04
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 21704,
+		"taux": 4.92
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 21538,
+		"taux": 4.88
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11036,
+		"taux": 2.5
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9420,
+		"taux": 2.13
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 8801,
+		"taux": 1.99
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8362,
+		"taux": 1.89
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3663,
+		"taux": 0.83
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3071,
+		"taux": 0.7
+		}]
+	},{
+	"dep": "50",
+	"dep_nom": "MANCHE",
+	"inscrits": 384613,
+	"abstentions": 93460,
+	"votants": 291153,
+	"blancs nuls": 6695,
+	"exprimés": 284458,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 92642,
+		"taux": 32.57
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 69770,
+		"taux": 24.53
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 46940,
+		"taux": 16.5
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 14746,
+		"taux": 5.18
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 13990,
+		"taux": 4.92
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 11873,
+		"taux": 4.17
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9421,
+		"taux": 3.31
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7368,
+		"taux": 2.59
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6886,
+		"taux": 2.42
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5853,
+		"taux": 2.06
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2720,
+		"taux": 0.96
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2249,
+		"taux": 0.79
+		}]
+	},{
+	"dep": "51",
+	"dep_nom": "MARNE",
+	"inscrits": 380644,
+	"abstentions": 101010,
+	"votants": 279634,
+	"blancs nuls": 5528,
+	"exprimés": 274106,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 83756,
+		"taux": 30.56
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 78472,
+		"taux": 28.63
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 42858,
+		"taux": 15.64
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 19501,
+		"taux": 7.11
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 14357,
+		"taux": 5.24
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 9561,
+		"taux": 3.49
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 6921,
+		"taux": 2.52
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6159,
+		"taux": 2.25
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5307,
+		"taux": 1.94
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3542,
+		"taux": 1.29
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1894,
+		"taux": 0.69
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1778,
+		"taux": 0.65
+		}]
+	},{
+	"dep": "52",
+	"dep_nom": "HAUTE MARNE",
+	"inscrits": 129389,
+	"abstentions": 33273,
+	"votants": 96116,
+	"blancs nuls": 2308,
+	"exprimés": 93808,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 34331,
+		"taux": 36.6
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 21886,
+		"taux": 23.33
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 13228,
+		"taux": 14.1
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 6450,
+		"taux": 6.88
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4841,
+		"taux": 5.16
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 3327,
+		"taux": 3.55
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2584,
+		"taux": 2.75
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 2580,
+		"taux": 2.75
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 1833,
+		"taux": 1.95
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1305,
+		"taux": 1.39
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 747,
+		"taux": 0.8
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 696,
+		"taux": 0.74
+		}]
+	},{
+	"dep": "53",
+	"dep_nom": "MAYENNE",
+	"inscrits": 224722,
+	"abstentions": 52812,
+	"votants": 171910,
+	"blancs nuls": 5002,
+	"exprimés": 166908,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 60755,
+		"taux": 36.4
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 37376,
+		"taux": 22.39
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 25608,
+		"taux": 15.34
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9236,
+		"taux": 5.53
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 8042,
+		"taux": 4.82
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7934,
+		"taux": 4.75
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4673,
+		"taux": 2.8
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3858,
+		"taux": 2.31
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3468,
+		"taux": 2.08
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3313,
+		"taux": 1.98
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1372,
+		"taux": 0.82
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1273,
+		"taux": 0.76
+		}]
+	},{
+	"dep": "54",
+	"dep_nom": "MEURTHE ET MOSELLE",
+	"inscrits": 492057,
+	"abstentions": 130919,
+	"votants": 361138,
+	"blancs nuls": 7338,
+	"exprimés": 353800,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 97243,
+		"taux": 27.49
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 95252,
+		"taux": 26.92
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 73892,
+		"taux": 20.89
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 23518,
+		"taux": 6.65
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 14588,
+		"taux": 4.12
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 13387,
+		"taux": 3.78
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8739,
+		"taux": 2.47
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7961,
+		"taux": 2.25
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7271,
+		"taux": 2.06
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6362,
+		"taux": 1.8
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3214,
+		"taux": 0.91
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2373,
+		"taux": 0.67
+		}]
+	},{
+	"dep": "55",
+	"dep_nom": "MEUSE",
+	"inscrits": 134805,
+	"abstentions": 34092,
+	"votants": 100713,
+	"blancs nuls": 2200,
+	"exprimés": 98513,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 34588,
+		"taux": 35.11
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 24539,
+		"taux": 24.91
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 13559,
+		"taux": 13.76
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 7347,
+		"taux": 7.46
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4403,
+		"taux": 4.47
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 3500,
+		"taux": 3.55
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 3130,
+		"taux": 3.18
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2422,
+		"taux": 2.46
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 1957,
+		"taux": 1.99
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1483,
+		"taux": 1.51
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 883,
+		"taux": 0.9
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 702,
+		"taux": 0.71
+		}]
+	},{
+	"dep": "56",
+	"dep_nom": "MORBIHAN",
+	"inscrits": 608972,
+	"abstentions": 130520,
+	"votants": 478452,
+	"blancs nuls": 11078,
+	"exprimés": 467374,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 152740,
+		"taux": 32.68
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 102856,
+		"taux": 22.01
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 84200,
+		"taux": 18.02
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 27036,
+		"taux": 5.78
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 26595,
+		"taux": 5.69
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 22838,
+		"taux": 4.89
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 14399,
+		"taux": 3.08
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 11529,
+		"taux": 2.47
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9586,
+		"taux": 2.05
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 8267,
+		"taux": 1.77
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4376,
+		"taux": 0.94
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2952,
+		"taux": 0.63
+		}]
+	},{
+	"dep": "57",
+	"dep_nom": "MOSELLE",
+	"inscrits": 745914,
+	"abstentions": 210299,
+	"votants": 535615,
+	"blancs nuls": 11296,
+	"exprimés": 524319,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 159254,
+		"taux": 30.37
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 136366,
+		"taux": 26.01
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 100159,
+		"taux": 19.1
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 39369,
+		"taux": 7.51
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 19300,
+		"taux": 3.68
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 18931,
+		"taux": 3.61
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 14163,
+		"taux": 2.7
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 12651,
+		"taux": 2.41
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8750,
+		"taux": 1.67
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 7534,
+		"taux": 1.44
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4343,
+		"taux": 0.83
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3499,
+		"taux": 0.67
+		}]
+	},{
+	"dep": "58",
+	"dep_nom": "NIEVRE",
+	"inscrits": 154186,
+	"abstentions": 38850,
+	"votants": 115336,
+	"blancs nuls": 2895,
+	"exprimés": 112441,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 32838,
+		"taux": 29.2
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 28686,
+		"taux": 25.51
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 19930,
+		"taux": 17.72
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 7378,
+		"taux": 6.56
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 5172,
+		"taux": 4.6
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4281,
+		"taux": 3.81
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4106,
+		"taux": 3.65
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 3552,
+		"taux": 3.16
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2495,
+		"taux": 2.22
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2160,
+		"taux": 1.92
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1010,
+		"taux": 0.9
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 833,
+		"taux": 0.74
+		}]
+	},{
+	"dep": "59",
+	"dep_nom": "NORD",
+	"inscrits": 1813906,
+	"abstentions": 514033,
+	"votants": 1299873,
+	"blancs nuls": 25092,
+	"exprimés": 1274781,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 373127,
+		"taux": 29.27
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 336138,
+		"taux": 26.37
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 279785,
+		"taux": 21.95
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 73168,
+		"taux": 5.74
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 46962,
+		"taux": 3.68
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 45902,
+		"taux": 3.6
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 42470,
+		"taux": 3.33
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 22459,
+		"taux": 1.76
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 20617,
+		"taux": 1.62
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 18215,
+		"taux": 1.43
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 8265,
+		"taux": 0.65
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 7673,
+		"taux": 0.6
+		}]
+	},{
+	"dep": "60",
+	"dep_nom": "OISE",
+	"inscrits": 564121,
+	"abstentions": 142081,
+	"votants": 422040,
+	"blancs nuls": 10326,
+	"exprimés": 411714,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 132873,
+		"taux": 32.27
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 100043,
+		"taux": 24.3
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 79446,
+		"taux": 19.3
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 30333,
+		"taux": 7.37
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 17450,
+		"taux": 4.24
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 13785,
+		"taux": 3.35
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9393,
+		"taux": 2.28
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9179,
+		"taux": 2.23
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 9054,
+		"taux": 2.2
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4251,
+		"taux": 1.03
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3048,
+		"taux": 0.74
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2859,
+		"taux": 0.69
+		}]
+	},{
+	"dep": "61",
+	"dep_nom": "ORNE",
+	"inscrits": 205538,
+	"abstentions": 50935,
+	"votants": 154603,
+	"blancs nuls": 3653,
+	"exprimés": 150950,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 46005,
+		"taux": 30.48
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 41804,
+		"taux": 27.69
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 22993,
+		"taux": 15.23
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 8910,
+		"taux": 5.9
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 8838,
+		"taux": 5.85
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5513,
+		"taux": 3.65
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4895,
+		"taux": 3.24
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3826,
+		"taux": 2.53
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3261,
+		"taux": 2.16
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2368,
+		"taux": 1.57
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1334,
+		"taux": 0.88
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1203,
+		"taux": 0.8
+		}]
+	},{
+	"dep": "62",
+	"dep_nom": "PAS DE CALAIS",
+	"inscrits": 1093723,
+	"abstentions": 286319,
+	"votants": 807404,
+	"blancs nuls": 16751,
+	"exprimés": 790653,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 305816,
+		"taux": 38.68
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 194610,
+		"taux": 24.61
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 124741,
+		"taux": 15.78
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 40764,
+		"taux": 5.16
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 26146,
+		"taux": 3.31
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 25307,
+		"taux": 3.2
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 19295,
+		"taux": 2.44
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 17010,
+		"taux": 2.15
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 13970,
+		"taux": 1.77
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 11619,
+		"taux": 1.47
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 5887,
+		"taux": 0.74
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 5488,
+		"taux": 0.69
+		}]
+	},{
+	"dep": "63",
+	"dep_nom": "PUY DE DOME",
+	"inscrits": 468103,
+	"abstentions": 100869,
+	"votants": 367234,
+	"blancs nuls": 9647,
+	"exprimés": 357587,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 100134,
+		"taux": 28.0
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 78182,
+		"taux": 21.86
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 74534,
+		"taux": 20.84
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 20624,
+		"taux": 5.77
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 17352,
+		"taux": 4.85
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 17029,
+		"taux": 4.76
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 16136,
+		"taux": 4.51
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 12713,
+		"taux": 3.56
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 8216,
+		"taux": 2.3
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6922,
+		"taux": 1.94
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3189,
+		"taux": 0.89
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2556,
+		"taux": 0.71
+		}]
+	},{
+	"dep": "64",
+	"dep_nom": "PYRENEES ATLANTIQUES",
+	"inscrits": 519929,
+	"abstentions": 110134,
+	"votants": 409795,
+	"blancs nuls": 8305,
+	"exprimés": 401490,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 111610,
+		"taux": 27.8
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 76030,
+		"taux": 18.94
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 69768,
+		"taux": 17.38
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 48246,
+		"taux": 12.02
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 25877,
+		"taux": 6.45
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 19967,
+		"taux": 4.97
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 17166,
+		"taux": 4.28
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 10170,
+		"taux": 2.53
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 9276,
+		"taux": 2.31
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6721,
+		"taux": 1.67
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4982,
+		"taux": 1.24
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1677,
+		"taux": 0.42
+		}]
+	},{
+	"dep": "65",
+	"dep_nom": "HAUTES PYRENEES",
+	"inscrits": 177443,
+	"abstentions": 39595,
+	"votants": 137848,
+	"blancs nuls": 2960,
+	"exprimés": 134888,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 33692,
+		"taux": 24.98
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 29938,
+		"taux": 22.19
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 26449,
+		"taux": 19.61
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 14761,
+		"taux": 10.94
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 8714,
+		"taux": 6.46
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 4872,
+		"taux": 3.61
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4560,
+		"taux": 3.38
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4539,
+		"taux": 3.37
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3315,
+		"taux": 2.46
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2409,
+		"taux": 1.79
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1003,
+		"taux": 0.74
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 636,
+		"taux": 0.47
+		}]
+	},{
+	"dep": "66",
+	"dep_nom": "PYRENEES ORIENTALES",
+	"inscrits": 362076,
+	"abstentions": 87704,
+	"votants": 274372,
+	"blancs nuls": 5804,
+	"exprimés": 268568,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 87930,
+		"taux": 32.74
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 55169,
+		"taux": 20.54
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 51556,
+		"taux": 19.2
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 24782,
+		"taux": 9.23
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11690,
+		"taux": 4.35
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 8815,
+		"taux": 3.28
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 8588,
+		"taux": 3.2
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 6509,
+		"taux": 2.42
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 5209,
+		"taux": 1.94
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5013,
+		"taux": 1.87
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1995,
+		"taux": 0.74
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1312,
+		"taux": 0.49
+		}]
+	},{
+	"dep": "67",
+	"dep_nom": "BAS RHIN",
+	"inscrits": 778712,
+	"abstentions": 190224,
+	"votants": 588488,
+	"blancs nuls": 11769,
+	"exprimés": 576719,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 177069,
+		"taux": 30.7
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 145883,
+		"taux": 25.3
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 105055,
+		"taux": 18.22
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 40458,
+		"taux": 7.02
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 28573,
+		"taux": 4.95
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 24812,
+		"taux": 4.3
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 17009,
+		"taux": 2.95
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 14652,
+		"taux": 2.54
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 8348,
+		"taux": 1.45
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7015,
+		"taux": 1.22
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4158,
+		"taux": 0.72
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3687,
+		"taux": 0.64
+		}]
+	},{
+	"dep": "68",
+	"dep_nom": "HAUT RHIN",
+	"inscrits": 531738,
+	"abstentions": 137861,
+	"votants": 393877,
+	"blancs nuls": 8768,
+	"exprimés": 385109,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 107248,
+		"taux": 27.85
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 106937,
+		"taux": 27.77
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 66238,
+		"taux": 17.2
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 30284,
+		"taux": 7.86
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 18963,
+		"taux": 4.92
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 15994,
+		"taux": 4.15
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 13745,
+		"taux": 3.57
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11063,
+		"taux": 2.87
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4881,
+		"taux": 1.27
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4649,
+		"taux": 1.21
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2842,
+		"taux": 0.74
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2265,
+		"taux": 0.59
+		}]
+	},{
+	"dep": "69",
+	"dep_nom": "RHONE",
+	"inscrits": 1181226,
+	"abstentions": 255580,
+	"votants": 925646,
+	"blancs nuls": 16633,
+	"exprimés": 909013,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 278243,
+		"taux": 30.61
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 229036,
+		"taux": 25.2
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 150463,
+		"taux": 16.55
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 74168,
+		"taux": 8.16
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 51907,
+		"taux": 5.71
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 50263,
+		"taux": 5.53
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 17572,
+		"taux": 1.93
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 16487,
+		"taux": 1.81
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 15938,
+		"taux": 1.75
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 15895,
+		"taux": 1.75
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 5267,
+		"taux": 0.58
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3774,
+		"taux": 0.42
+		}]
+	},{
+	"dep": "70",
+	"dep_nom": "HAUTE SAONE",
+	"inscrits": 177715,
+	"abstentions": 39039,
+	"votants": 138676,
+	"blancs nuls": 3937,
+	"exprimés": 134739,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 46618,
+		"taux": 34.6
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 30204,
+		"taux": 22.42
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 21089,
+		"taux": 15.65
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 9675,
+		"taux": 7.18
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 6754,
+		"taux": 5.01
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4820,
+		"taux": 3.58
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 4292,
+		"taux": 3.19
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3640,
+		"taux": 2.7
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 2836,
+		"taux": 2.1
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2345,
+		"taux": 1.74
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1295,
+		"taux": 0.96
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1171,
+		"taux": 0.87
+		}]
+	},{
+	"dep": "71",
+	"dep_nom": "SAONE ET LOIRE",
+	"inscrits": 402992,
+	"abstentions": 95369,
+	"votants": 307623,
+	"blancs nuls": 8323,
+	"exprimés": 299300,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 82633,
+		"taux": 27.61
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 81970,
+		"taux": 27.39
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 52336,
+		"taux": 17.49
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 20686,
+		"taux": 6.91
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 15210,
+		"taux": 5.08
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 10730,
+		"taux": 3.59
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 10186,
+		"taux": 3.4
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7745,
+		"taux": 2.59
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7419,
+		"taux": 2.48
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6037,
+		"taux": 2.02
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2369,
+		"taux": 0.79
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1979,
+		"taux": 0.66
+		}]
+	},{
+	"dep": "72",
+	"dep_nom": "SARTHE",
+	"inscrits": 411308,
+	"abstentions": 105454,
+	"votants": 305854,
+	"blancs nuls": 8792,
+	"exprimés": 297062,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 83876,
+		"taux": 28.24
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 82234,
+		"taux": 27.68
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 54244,
+		"taux": 18.26
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 16218,
+		"taux": 5.46
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 15937,
+		"taux": 5.36
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 13541,
+		"taux": 4.56
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7546,
+		"taux": 2.54
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 6908,
+		"taux": 2.33
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6494,
+		"taux": 2.19
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5409,
+		"taux": 1.82
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2505,
+		"taux": 0.84
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2150,
+		"taux": 0.72
+		}]
+	},{
+	"dep": "73",
+	"dep_nom": "SAVOIE",
+	"inscrits": 320709,
+	"abstentions": 68929,
+	"votants": 251780,
+	"blancs nuls": 5422,
+	"exprimés": 246358,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 64689,
+		"taux": 26.26
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 56733,
+		"taux": 23.03
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 49858,
+		"taux": 20.24
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 18045,
+		"taux": 7.32
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 15642,
+		"taux": 6.35
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 13608,
+		"taux": 5.52
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8081,
+		"taux": 3.28
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6694,
+		"taux": 2.72
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5536,
+		"taux": 2.25
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4418,
+		"taux": 1.79
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1849,
+		"taux": 0.75
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1205,
+		"taux": 0.49
+		}]
+	},{
+	"dep": "74",
+	"dep_nom": "HAUTE SAVOIE",
+	"inscrits": 565665,
+	"abstentions": 129384,
+	"votants": 436281,
+	"blancs nuls": 9142,
+	"exprimés": 427139,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 130422,
+		"taux": 30.53
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 87744,
+		"taux": 20.54
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 78062,
+		"taux": 18.28
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 33353,
+		"taux": 7.81
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 29948,
+		"taux": 7.01
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 22349,
+		"taux": 5.23
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 14175,
+		"taux": 3.32
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 13371,
+		"taux": 3.13
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6606,
+		"taux": 1.55
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5997,
+		"taux": 1.4
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3232,
+		"taux": 0.76
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1880,
+		"taux": 0.44
+		}]
+	},{
+	"dep": "75",
+	"dep_nom": "PARIS",
+	"inscrits": 1368025,
+	"abstentions": 296668,
+	"votants": 1071357,
+	"blancs nuls": 16295,
+	"exprimés": 1055062,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 372820,
+		"taux": 35.34
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 317372,
+		"taux": 30.08
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 86088,
+		"taux": 8.16
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 80268,
+		"taux": 7.61
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 69564,
+		"taux": 6.59
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 58429,
+		"taux": 5.54
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 22901,
+		"taux": 2.17
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 17267,
+		"taux": 1.64
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 12139,
+		"taux": 1.15
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9591,
+		"taux": 0.91
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 5732,
+		"taux": 0.54
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2891,
+		"taux": 0.27
+		}]
+	},{
+	"dep": "76",
+	"dep_nom": "SEINE MARITIME",
+	"inscrits": 879252,
+	"abstentions": 222147,
+	"votants": 657105,
+	"blancs nuls": 14140,
+	"exprimés": 642965,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 179698,
+		"taux": 27.95
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 177806,
+		"taux": 27.65
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 136136,
+		"taux": 21.17
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 33361,
+		"taux": 5.19
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 24785,
+		"taux": 3.85
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 24281,
+		"taux": 3.78
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 19896,
+		"taux": 3.09
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 13588,
+		"taux": 2.11
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 12365,
+		"taux": 1.92
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 11139,
+		"taux": 1.73
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 5477,
+		"taux": 0.85
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 4433,
+		"taux": 0.69
+		}]
+	},{
+	"dep": "77",
+	"dep_nom": "SEINE ET MARNE",
+	"inscrits": 899303,
+	"abstentions": 223172,
+	"votants": 676131,
+	"blancs nuls": 15202,
+	"exprimés": 660929,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 170969,
+		"taux": 25.87
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 165208,
+		"taux": 25.0
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 155738,
+		"taux": 23.56
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 47893,
+		"taux": 7.25
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 36828,
+		"taux": 5.57
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 26718,
+		"taux": 4.04
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 15042,
+		"taux": 2.28
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 13797,
+		"taux": 2.09
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 12843,
+		"taux": 1.94
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 7853,
+		"taux": 1.19
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4600,
+		"taux": 0.7
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3440,
+		"taux": 0.52
+		}]
+	},{
+	"dep": "78",
+	"dep_nom": "YVELINES",
+	"inscrits": 961245,
+	"abstentions": 211708,
+	"votants": 749537,
+	"blancs nuls": 13031,
+	"exprimés": 736506,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 246062,
+		"taux": 33.41
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 168585,
+		"taux": 22.89
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 101398,
+		"taux": 13.77
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 64407,
+		"taux": 8.74
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 61296,
+		"taux": 8.32
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 40470,
+		"taux": 5.49
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 13687,
+		"taux": 1.86
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 13097,
+		"taux": 1.78
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 11721,
+		"taux": 1.59
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 9046,
+		"taux": 1.23
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3963,
+		"taux": 0.54
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2774,
+		"taux": 0.38
+		}]
+	},{
+	"dep": "79",
+	"dep_nom": "DEUX SEVRES",
+	"inscrits": 273214,
+	"abstentions": 59403,
+	"votants": 213811,
+	"blancs nuls": 6007,
+	"exprimés": 207804,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 68446,
+		"taux": 32.94
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 47903,
+		"taux": 23.05
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 39120,
+		"taux": 18.83
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 10074,
+		"taux": 4.85
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9257,
+		"taux": 4.45
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 8803,
+		"taux": 4.24
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7014,
+		"taux": 3.38
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4538,
+		"taux": 2.18
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4531,
+		"taux": 2.18
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4340,
+		"taux": 2.09
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2134,
+		"taux": 1.03
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1644,
+		"taux": 0.79
+		}]
+	},{
+	"dep": "80",
+	"dep_nom": "SOMME",
+	"inscrits": 410056,
+	"abstentions": 102687,
+	"votants": 307369,
+	"blancs nuls": 8451,
+	"exprimés": 298918,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 98024,
+		"taux": 32.79
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 83107,
+		"taux": 27.8
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 52343,
+		"taux": 17.51
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 16885,
+		"taux": 5.65
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 11380,
+		"taux": 3.81
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 8048,
+		"taux": 2.69
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 7706,
+		"taux": 2.58
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7371,
+		"taux": 2.47
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 5616,
+		"taux": 1.88
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3746,
+		"taux": 1.25
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2486,
+		"taux": 0.83
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2206,
+		"taux": 0.74
+		}]
+	},{
+	"dep": "81",
+	"dep_nom": "TARN",
+	"inscrits": 298178,
+	"abstentions": 62818,
+	"votants": 235360,
+	"blancs nuls": 5518,
+	"exprimés": 229842,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 56543,
+		"taux": 24.6
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 53925,
+		"taux": 23.46
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 48430,
+		"taux": 21.07
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 17010,
+		"taux": 7.4
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 15982,
+		"taux": 6.95
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 10014,
+		"taux": 4.36
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 8680,
+		"taux": 3.78
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5818,
+		"taux": 2.53
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 5313,
+		"taux": 2.31
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 5123,
+		"taux": 2.23
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1829,
+		"taux": 0.8
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1175,
+		"taux": 0.51
+		}]
+	},{
+	"dep": "82",
+	"dep_nom": "TARN ET GARONNE",
+	"inscrits": 188706,
+	"abstentions": 39625,
+	"votants": 149081,
+	"blancs nuls": 3261,
+	"exprimés": 145820,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 42183,
+		"taux": 28.93
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 31737,
+		"taux": 21.76
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 27881,
+		"taux": 19.12
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 11772,
+		"taux": 8.07
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9573,
+		"taux": 6.56
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 5994,
+		"taux": 4.11
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 4835,
+		"taux": 3.32
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3628,
+		"taux": 2.49
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3412,
+		"taux": 2.34
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3069,
+		"taux": 2.1
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1057,
+		"taux": 0.72
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 679,
+		"taux": 0.47
+		}]
+	},{
+	"dep": "83",
+	"dep_nom": "VAR",
+	"inscrits": 820904,
+	"abstentions": 211212,
+	"votants": 609692,
+	"blancs nuls": 10962,
+	"exprimés": 598730,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 183287,
+		"taux": 30.61
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 142335,
+		"taux": 23.77
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 89272,
+		"taux": 14.91
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 79329,
+		"taux": 13.25
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 28342,
+		"taux": 4.73
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 21044,
+		"taux": 3.51
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 17784,
+		"taux": 2.97
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 15286,
+		"taux": 2.55
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 10672,
+		"taux": 1.78
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5703,
+		"taux": 0.95
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3578,
+		"taux": 0.6
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2098,
+		"taux": 0.35
+		}]
+	},{
+	"dep": "84",
+	"dep_nom": "VAUCLUSE",
+	"inscrits": 411607,
+	"abstentions": 101650,
+	"votants": 309957,
+	"blancs nuls": 6092,
+	"exprimés": 303865,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 89413,
+		"taux": 29.43
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 66885,
+		"taux": 22.01
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 63049,
+		"taux": 20.75
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 30473,
+		"taux": 10.03
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 12128,
+		"taux": 3.99
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 11918,
+		"taux": 3.92
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9843,
+		"taux": 3.24
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6896,
+		"taux": 2.27
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 6247,
+		"taux": 2.06
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3769,
+		"taux": 1.24
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2023,
+		"taux": 0.67
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1221,
+		"taux": 0.4
+		}]
+	},{
+	"dep": "85",
+	"dep_nom": "VENDEE",
+	"inscrits": 550963,
+	"abstentions": 120547,
+	"votants": 430416,
+	"blancs nuls": 10707,
+	"exprimés": 419709,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 149587,
+		"taux": 35.64
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 97280,
+		"taux": 23.18
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 60524,
+		"taux": 14.42
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 25663,
+		"taux": 6.11
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 22534,
+		"taux": 5.37
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 19753,
+		"taux": 4.71
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 13039,
+		"taux": 3.11
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9664,
+		"taux": 2.3
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8153,
+		"taux": 1.94
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 7244,
+		"taux": 1.73
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3621,
+		"taux": 0.86
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2647,
+		"taux": 0.63
+		}]
+	},{
+	"dep": "86",
+	"dep_nom": "VIENNE",
+	"inscrits": 306011,
+	"abstentions": 68304,
+	"votants": 237707,
+	"blancs nuls": 6055,
+	"exprimés": 231652,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 67831,
+		"taux": 29.28
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 54214,
+		"taux": 23.4
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 49162,
+		"taux": 21.22
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 11939,
+		"taux": 5.15
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 10727,
+		"taux": 4.63
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9959,
+		"taux": 4.3
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7741,
+		"taux": 3.34
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 6412,
+		"taux": 2.77
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 5095,
+		"taux": 2.2
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 4542,
+		"taux": 1.96
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2315,
+		"taux": 1.0
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1715,
+		"taux": 0.74
+		}]
+	},{
+	"dep": "87",
+	"dep_nom": "HAUTE VIENNE",
+	"inscrits": 263742,
+	"abstentions": 55484,
+	"votants": 208258,
+	"blancs nuls": 6140,
+	"exprimés": 202118,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 54951,
+		"taux": 27.19
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 45357,
+		"taux": 22.44
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 43137,
+		"taux": 21.34
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 10796,
+		"taux": 5.34
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9973,
+		"taux": 4.93
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9544,
+		"taux": 4.72
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 8030,
+		"taux": 3.97
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7877,
+		"taux": 3.9
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5654,
+		"taux": 2.8
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 3555,
+		"taux": 1.76
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1787,
+		"taux": 0.88
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1457,
+		"taux": 0.72
+		}]
+	},{
+	"dep": "88",
+	"dep_nom": "VOSGES",
+	"inscrits": 277913,
+	"abstentions": 68914,
+	"votants": 208999,
+	"blancs nuls": 5305,
+	"exprimés": 203694,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 65646,
+		"taux": 32.23
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 51432,
+		"taux": 25.25
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 32655,
+		"taux": 16.03
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 13184,
+		"taux": 6.47
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9344,
+		"taux": 4.59
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7562,
+		"taux": 3.71
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 7203,
+		"taux": 3.54
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6152,
+		"taux": 3.02
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3847,
+		"taux": 1.89
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3114,
+		"taux": 1.53
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1986,
+		"taux": 0.97
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1569,
+		"taux": 0.77
+		}]
+	},{
+	"dep": "89",
+	"dep_nom": "YONNE",
+	"inscrits": 237957,
+	"abstentions": 57549,
+	"votants": 180408,
+	"blancs nuls": 3897,
+	"exprimés": 176511,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 55164,
+		"taux": 31.25
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 42617,
+		"taux": 24.14
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 31601,
+		"taux": 17.9
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 12941,
+		"taux": 7.33
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9322,
+		"taux": 5.28
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 5917,
+		"taux": 3.35
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 5356,
+		"taux": 3.03
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 4594,
+		"taux": 2.6
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 4023,
+		"taux": 2.28
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2286,
+		"taux": 1.3
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 1487,
+		"taux": 0.84
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1203,
+		"taux": 0.68
+		}]
+	},{
+	"dep": "90",
+	"dep_nom": "TERRITOIRE DE BELFORT",
+	"inscrits": 93724,
+	"abstentions": 22238,
+	"votants": 71486,
+	"blancs nuls": 1832,
+	"exprimés": 69654,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 19061,
+		"taux": 27.37
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 16768,
+		"taux": 24.07
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 14601,
+		"taux": 20.96
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 5583,
+		"taux": 8.02
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 3322,
+		"taux": 4.77
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 2798,
+		"taux": 4.02
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 2000,
+		"taux": 2.87
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 1821,
+		"taux": 2.61
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 1485,
+		"taux": 2.13
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 1052,
+		"taux": 1.51
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 603,
+		"taux": 0.87
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 560,
+		"taux": 0.8
+		}]
+	},{
+	"dep": "91",
+	"dep_nom": "ESSONNE",
+	"inscrits": 799500,
+	"abstentions": 192200,
+	"votants": 607300,
+	"blancs nuls": 12359,
+	"exprimés": 594941,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 167310,
+		"taux": 28.12
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 164503,
+		"taux": 27.65
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 105862,
+		"taux": 17.79
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 39284,
+		"taux": 6.6
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 33046,
+		"taux": 5.55
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 29562,
+		"taux": 4.97
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 15203,
+		"taux": 2.56
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 13480,
+		"taux": 2.27
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11610,
+		"taux": 1.95
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 7944,
+		"taux": 1.34
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 4306,
+		"taux": 0.72
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2831,
+		"taux": 0.48
+		}]
+	},{
+	"dep": "92",
+	"dep_nom": "HAUTS DE SEINE",
+	"inscrits": 997667,
+	"abstentions": 208790,
+	"votants": 788877,
+	"blancs nuls": 14135,
+	"exprimés": 774742,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 287494,
+		"taux": 37.11
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 199640,
+		"taux": 25.77
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 64812,
+		"taux": 8.37
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 62761,
+		"taux": 8.1
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 62231,
+		"taux": 8.03
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 47103,
+		"taux": 6.08
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 13170,
+		"taux": 1.7
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 11260,
+		"taux": 1.45
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 10518,
+		"taux": 1.36
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9743,
+		"taux": 1.26
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3704,
+		"taux": 0.48
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2306,
+		"taux": 0.3
+		}]
+	},{
+	"dep": "93",
+	"dep_nom": "SEINE SAINT-DENIS",
+	"inscrits": 793929,
+	"abstentions": 239927,
+	"votants": 554002,
+	"blancs nuls": 10851,
+	"exprimés": 543151,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 266632,
+		"taux": 49.09
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 110118,
+		"taux": 20.27
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 64543,
+		"taux": 11.88
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 27969,
+		"taux": 5.15
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 19352,
+		"taux": 3.56
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 17481,
+		"taux": 3.22
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 11642,
+		"taux": 2.14
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 6805,
+		"taux": 1.25
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 6300,
+		"taux": 1.16
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5890,
+		"taux": 1.08
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3663,
+		"taux": 0.67
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2756,
+		"taux": 0.51
+		}]
+	},{
+	"dep": "94",
+	"dep_nom": "VAL DE MARNE",
+	"inscrits": 796086,
+	"abstentions": 195409,
+	"votants": 600677,
+	"blancs nuls": 11619,
+	"exprimés": 589058,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 192427,
+		"taux": 32.67
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 171409,
+		"taux": 29.1
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 69599,
+		"taux": 11.82
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 43430,
+		"taux": 7.37
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 32522,
+		"taux": 5.52
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 31904,
+		"taux": 5.42
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 14954,
+		"taux": 2.54
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 9359,
+		"taux": 1.59
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 8944,
+		"taux": 1.52
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 8276,
+		"taux": 1.4
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3730,
+		"taux": 0.63
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2504,
+		"taux": 0.43
+		}]
+	},{
+	"dep": "95",
+	"dep_nom": "VAL D'OISE",
+	"inscrits": 733529,
+	"abstentions": 192853,
+	"votants": 540676,
+	"blancs nuls": 11091,
+	"exprimés": 529585,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 175666,
+		"taux": 33.17
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 138166,
+		"taux": 26.09
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 91081,
+		"taux": 17.2
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 37564,
+		"taux": 7.09
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 26403,
+		"taux": 4.99
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 20710,
+		"taux": 3.91
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 10060,
+		"taux": 1.9
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 9101,
+		"taux": 1.72
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 8996,
+		"taux": 1.7
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 6094,
+		"taux": 1.15
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3352,
+		"taux": 0.63
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 2392,
+		"taux": 0.45
+		}]
+	},{
+	"dep": "971",
+	"dep_nom": "GUADELOUPE",
+	"inscrits": 316023,
+	"abstentions": 174592,
+	"votants": 141431,
+	"blancs nuls": 6346,
+	"exprimés": 135085,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 75862,
+		"taux": 56.16
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 24204,
+		"taux": 17.92
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 18137,
+		"taux": 13.43
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 3979,
+		"taux": 2.95
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 3098,
+		"taux": 2.29
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 2266,
+		"taux": 1.68
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2114,
+		"taux": 1.56
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 1927,
+		"taux": 1.43
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1084,
+		"taux": 0.8
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 1033,
+		"taux": 0.76
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 713,
+		"taux": 0.53
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 668,
+		"taux": 0.49
+		}]
+	},{
+	"dep": "972",
+	"dep_nom": "MARTINIQUE",
+	"inscrits": 304594,
+	"abstentions": 174588,
+	"votants": 130006,
+	"blancs nuls": 7057,
+	"exprimés": 122949,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 65292,
+		"taux": 53.1
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 20043,
+		"taux": 16.3
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 16495,
+		"taux": 13.42
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4731,
+		"taux": 3.85
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 3935,
+		"taux": 3.2
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 3153,
+		"taux": 2.56
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2989,
+		"taux": 2.43
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 1978,
+		"taux": 1.61
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1447,
+		"taux": 1.18
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 1162,
+		"taux": 0.95
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 977,
+		"taux": 0.79
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 747,
+		"taux": 0.61
+		}]
+	},{
+	"dep": "973",
+	"dep_nom": "GUYANE",
+	"inscrits": 102993,
+	"abstentions": 65754,
+	"votants": 37239,
+	"blancs nuls": 1378,
+	"exprimés": 35861,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 18143,
+		"taux": 50.59
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 6334,
+		"taux": 17.66
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 5101,
+		"taux": 14.22
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 1573,
+		"taux": 4.39
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 997,
+		"taux": 2.78
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 940,
+		"taux": 2.62
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 717,
+		"taux": 2.0
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 535,
+		"taux": 1.49
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 516,
+		"taux": 1.44
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 462,
+		"taux": 1.29
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 297,
+		"taux": 0.83
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 246,
+		"taux": 0.69
+		}]
+	},{
+	"dep": "974",
+	"dep_nom": "LA REUNION",
+	"inscrits": 675539,
+	"abstentions": 313159,
+	"votants": 362380,
+	"blancs nuls": 15614,
+	"exprimés": 346766,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 139604,
+		"taux": 40.26
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 85770,
+		"taux": 24.73
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 62542,
+		"taux": 18.04
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 13070,
+		"taux": 3.77
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 9738,
+		"taux": 2.81
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 8338,
+		"taux": 2.4
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 7994,
+		"taux": 2.31
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 5549,
+		"taux": 1.6
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 4844,
+		"taux": 1.4
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 3538,
+		"taux": 1.02
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3074,
+		"taux": 0.89
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 2705,
+		"taux": 0.78
+		}]
+	},{
+	"dep": "976",
+	"dep_nom": "MAYOTTE",
+	"inscrits": 92187,
+	"abstentions": 55024,
+	"votants": 37163,
+	"blancs nuls": 2113,
+	"exprimés": 35050,
+	"candidats": [{
+		"nom": "Marine LE PEN",
+		"voix": 14958,
+		"taux": 42.68
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 8398,
+		"taux": 23.96
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 5936,
+		"taux": 16.94
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 2810,
+		"taux": 8.02
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 530,
+		"taux": 1.51
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 482,
+		"taux": 1.38
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 430,
+		"taux": 1.23
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 359,
+		"taux": 1.02
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 328,
+		"taux": 0.94
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 318,
+		"taux": 0.91
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 295,
+		"taux": 0.84
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 206,
+		"taux": 0.59
+		}]
+	},{
+	"dep": "988",
+	"dep_nom": "NOUVELLE CALEDONIE",
+	"inscrits": 218773,
+	"abstentions": 145807,
+	"votants": 72966,
+	"blancs nuls": 2466,
+	"exprimés": 70500,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 28561,
+		"taux": 40.51
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 13273,
+		"taux": 18.83
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 9711,
+		"taux": 13.77
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 6435,
+		"taux": 9.13
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4144,
+		"taux": 5.88
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 2697,
+		"taux": 3.83
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 2161,
+		"taux": 3.07
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 1031,
+		"taux": 1.46
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 963,
+		"taux": 1.37
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 565,
+		"taux": 0.8
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 560,
+		"taux": 0.79
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 399,
+		"taux": 0.57
+		}]
+	},{
+	"dep": "987",
+	"dep_nom": "POLYNESIE FRANCAISE",
+	"inscrits": 205576,
+	"abstentions": 142121,
+	"votants": 63455,
+	"blancs nuls": 3425,
+	"exprimés": 60030,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 24106,
+		"taux": 40.16
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 11705,
+		"taux": 19.5
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 7990,
+		"taux": 13.31
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 4725,
+		"taux": 7.87
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 4283,
+		"taux": 7.13
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 2150,
+		"taux": 3.58
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 1969,
+		"taux": 3.28
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 865,
+		"taux": 1.44
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 808,
+		"taux": 1.35
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 610,
+		"taux": 1.02
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 451,
+		"taux": 0.75
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 368,
+		"taux": 0.61
+		}]
+	},{
+	"dep": "975",
+	"dep_nom": "SAINT PIERRE ET MIQUELON",
+	"inscrits": 5045,
+	"abstentions": 2272,
+	"votants": 2773,
+	"blancs nuls": 72,
+	"exprimés": 2701,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 1105,
+		"taux": 40.91
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 534,
+		"taux": 19.77
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 459,
+		"taux": 16.99
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 116,
+		"taux": 4.29
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 108,
+		"taux": 4.0
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 82,
+		"taux": 3.04
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 80,
+		"taux": 2.96
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 75,
+		"taux": 2.78
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 51,
+		"taux": 1.89
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 50,
+		"taux": 1.85
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 22,
+		"taux": 0.81
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 19,
+		"taux": 0.7
+		}]
+	},{
+	"dep": "986",
+	"dep_nom": "WALLIS-ET-FUTUNA",
+	"inscrits": 9528,
+	"abstentions": 4125,
+	"votants": 5403,
+	"blancs nuls": 44,
+	"exprimés": 5359,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 2115,
+		"taux": 39.47
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 1354,
+		"taux": 25.27
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 579,
+		"taux": 10.8
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 501,
+		"taux": 9.35
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 244,
+		"taux": 4.55
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 118,
+		"taux": 2.2
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 118,
+		"taux": 2.2
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 98,
+		"taux": 1.83
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 78,
+		"taux": 1.46
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 72,
+		"taux": 1.34
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 48,
+		"taux": 0.9
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 34,
+		"taux": 0.63
+		}]
+	},{
+	"dep": "977-978",
+	"dep_nom": "SAINT-MARTIN/SAINT-BARTHELEMY",
+	"inscrits": 24414,
+	"abstentions": 15812,
+	"votants": 8602,
+	"blancs nuls": 234,
+	"exprimés": 8368,
+	"candidats": [{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 2354,
+		"taux": 28.13
+		},{
+		"nom": "Emmanuel MACRON",
+		"voix": 2070,
+		"taux": 24.74
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 1445,
+		"taux": 17.27
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 1107,
+		"taux": 13.23
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 354,
+		"taux": 4.23
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 339,
+		"taux": 4.05
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 247,
+		"taux": 2.95
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 208,
+		"taux": 2.49
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 92,
+		"taux": 1.1
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 63,
+		"taux": 0.75
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 48,
+		"taux": 0.57
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 41,
+		"taux": 0.49
+		}]
+	},{
+	"dep": "0",
+	"dep_nom": "FRANCAIS DE L'ETRANGER",
+	"inscrits": 1435746,
+	"abstentions": 931455,
+	"votants": 504291,
+	"blancs nuls": 5340,
+	"exprimés": 498951,
+	"candidats": [{
+		"nom": "Emmanuel MACRON",
+		"voix": 224957,
+		"taux": 45.09
+		},{
+		"nom": "Jean-Luc MÉLENCHON",
+		"voix": 109394,
+		"taux": 21.92
+		},{
+		"nom": "Éric ZEMMOUR",
+		"voix": 43252,
+		"taux": 8.67
+		},{
+		"nom": "Yannick JADOT",
+		"voix": 40774,
+		"taux": 8.17
+		},{
+		"nom": "Marine LE PEN",
+		"voix": 26380,
+		"taux": 5.29
+		},{
+		"nom": "Valérie PÉCRESSE",
+		"voix": 20956,
+		"taux": 4.2
+		},{
+		"nom": "Anne HIDALGO",
+		"voix": 12489,
+		"taux": 2.5
+		},{
+		"nom": "Nicolas DUPONT-AIGNAN",
+		"voix": 7074,
+		"taux": 1.42
+		},{
+		"nom": "Jean LASSALLE",
+		"voix": 5964,
+		"taux": 1.2
+		},{
+		"nom": "Fabien ROUSSEL",
+		"voix": 3266,
+		"taux": 0.65
+		},{
+		"nom": "Philippe POUTOU",
+		"voix": 3145,
+		"taux": 0.63
+		},{
+		"nom": "Nathalie ARTHAUD",
+		"voix": 1300,
+		"taux": 0.26
+		}]
+	}]}

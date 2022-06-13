@@ -9,6 +9,8 @@
       
       
       
+        <link rel="canonical" href="https://ntoulzac.gitlab.io/Cours-NSI-Terminale/">
+      
       <link rel="icon" href="assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
@@ -27,6 +29,17 @@
     
     
     
+    <!-- Load CDNs : Pyodide (Python in WASM), Ace (Editor) and JQuery (Terminal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.asm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-md5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/js/jquery.terminal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/css/jquery.terminal.min.css" rel="stylesheet">
+
+    
       
     
     
@@ -34,6 +47,10 @@
       <link rel="stylesheet" href="stylesheets/extra.css">
     
       <link rel="stylesheet" href="stylesheets/admon.css">
+    
+      <link rel="stylesheet" href="xtra/pyoditeur.css">
+    
+      <link rel="stylesheet" href="xtra/ajustements.css">
     
     
       
@@ -113,6 +130,53 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitLab
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -147,6 +211,19 @@
     </a>
     Cours de Terminale NSI
   </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitLab
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -379,7 +456,7 @@
   
   
     <li class="md-nav__item">
-      <a href="patience/" class="md-nav__link">
+      <a href="rech_textuelle/" class="md-nav__link">
         Recherche textuelle
       </a>
     </li>
@@ -424,7 +501,7 @@
   
   
     <li class="md-nav__item">
-      <a href="patience/" class="md-nav__link">
+      <a href="calculabilite/" class="md-nav__link">
         Calculabilité et décidabilité
       </a>
     </li>
@@ -442,10 +519,15 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
+    
+                
+                  <a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/tree/main/docs/index.md" title="Editer cette page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
                 
                 
-                <h1 id="cours-de-terminale-nsi">Cours de Terminale NSI</h1>
-<h2 id="programme-du-cours">Programme du cours</h2>
+                <h1 id="cours-de-terminale-nsi">Cours de Terminale NSI<a class="headerlink" href="#cours-de-terminale-nsi" title="Permanent link">⚓︎</a></h1>
+<h2 id="programme-du-cours">Programme du cours<a class="headerlink" href="#programme-du-cours" title="Permanent link">⚓︎</a></h2>
 <ol>
 <li><a href="https://ntoulzac.github.io/Cours-NSI-Terminale/api">Interfaces de programmation d'applications</a></li>
 <li><a href="https://ntoulzac.github.io/Cours-NSI-Terminale/recursivite">Récursivité</a></li>
@@ -462,9 +544,13 @@
 <li><a href="https://ntoulzac.github.io/Cours-NSI-Terminale/graphes_pond">Graphes pondérés</a></li>
 <li><em>Calculabilité et décidabilité</em></li>
 </ol>
-<h2 id="sujets-et-corriges-des-devoirs">Sujets et corrigés des devoirs</h2>
-<div class="tabbed-set" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Devoirs maison</label><div class="tabbed-content">
-<div class="tabbed-set" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Immeubles aléatoires</label><div class="tabbed-content">
+<h2 id="sujets-et-corriges-des-devoirs">Sujets et corrigés des devoirs<a class="headerlink" href="#sujets-et-corriges-des-devoirs" title="Permanent link">⚓︎</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Devoirs maison</label><label for="__tabbed_1_2">Devoirs surveillés</label><label for="__tabbed_1_3">Épreuves pratiques</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:5"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Immeubles aléatoires</label><label for="__tabbed_2_2">Séismes</label><label for="__tabbed_2_3">Traitement d'une image</label><label for="__tabbed_2_4">Casse-briques</label><label for="__tabbed_2_5">L-systèmes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="devoirs/immeubles_alea.ipynb">ici</a></p>
 </div>
@@ -472,7 +558,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/immeubles_alea_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Séismes</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/444c-50877" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/seismes.ipynb">ici</a></p>
 </div>
@@ -480,7 +566,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/seismes_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Traitement d'une image</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/d7e5-121089" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/traitement_image.ipynb">ici</a></p>
 </div>
@@ -488,7 +574,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/traitement_image_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4">Casse-briques</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="devoirs/casse_briques.ipynb">ici</a></p>
 </div>
@@ -496,7 +582,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/casse_briques_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_2_5" name="__tabbed_2" type="radio" /><label for="__tabbed_2_5">L-systèmes</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="devoirs/lsyst.zip">ici</a></p>
 </div>
@@ -506,8 +592,11 @@
 </div>
 </div>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Devoirs surveillés</label><div class="tabbed-content">
-<div class="tabbed-set" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">1</label><div class="tabbed-content">
+</div>
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="3:5"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">1</label><label for="__tabbed_3_2">2</label><label for="__tabbed_3_3">3</label><label for="__tabbed_3_4">Bac blanc</label><label for="__tabbed_3_5">5</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition joint">
 <p class="admonition-title">Sujet de la première partie à télécharger <a href="devoirs/ds1_p1.pdf">ici</a></p>
 </div>
@@ -518,7 +607,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/ds1.zip">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">2</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition joint">
 <p class="admonition-title">Sujet de la première partie à télécharger <a href="devoirs/ds2_p1.pdf">ici</a></p>
 </div>
@@ -529,7 +618,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/ds2.zip">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">3</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition joint">
 <p class="admonition-title">Sujet de la première partie à télécharger <a href="devoirs/ds3_p1.pdf">ici</a></p>
 </div>
@@ -540,7 +629,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/ds3.zip">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><label for="__tabbed_3_4">Bac blanc</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Sujet des exercices 2, 4 et 5 du sujet de remplacement Métropole juin 2022 (jour 2) à télécharger <a href="devoirs/bac_blanc.ipynb">ici</a></p>
 </div>
@@ -548,7 +637,7 @@
 <p class="admonition-title">Corrigé disponible <a href="devoirs/corr/bac_blanc_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_5" name="__tabbed_3" type="radio" /><label for="__tabbed_3_5">5</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition joint">
 <p class="admonition-title">Sujet de la première partie à télécharger <a href="devoirs/ds5_p1.pdf">ici</a></p>
 </div>
@@ -561,107 +650,112 @@
 </div>
 </div>
 </div>
-<input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><label for="__tabbed_1_3">Épreuves pratiques</label><div class="tabbed-content">
+</div>
+<div class="tabbed-block">
 <p>Les sujets de la banque nationale de sujets pour l'épreuve de mai 2022 sont publics
 et disponibles <a href="https://eduscol.education.fr/2661/banque-des-epreuves-pratiques-de-specialite-nsi">ici</a>.</p>
 <p>Les sujets des années précédentes sont présentés ci-dessous :</p>
-<div class="tabbed-set" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Session 2021</label><div class="tabbed-content">
-<div class="tabbed-set" data-tabs="5:20"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><label for="__tabbed_5_1">01</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Session 2021</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="tabbed-set tabbed-alternate" data-tabs="5:20"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><input id="__tabbed_5_5" name="__tabbed_5" type="radio" /><input id="__tabbed_5_6" name="__tabbed_5" type="radio" /><input id="__tabbed_5_7" name="__tabbed_5" type="radio" /><input id="__tabbed_5_8" name="__tabbed_5" type="radio" /><input id="__tabbed_5_9" name="__tabbed_5" type="radio" /><input id="__tabbed_5_10" name="__tabbed_5" type="radio" /><input id="__tabbed_5_11" name="__tabbed_5" type="radio" /><input id="__tabbed_5_12" name="__tabbed_5" type="radio" /><input id="__tabbed_5_13" name="__tabbed_5" type="radio" /><input id="__tabbed_5_14" name="__tabbed_5" type="radio" /><input id="__tabbed_5_15" name="__tabbed_5" type="radio" /><input id="__tabbed_5_16" name="__tabbed_5" type="radio" /><input id="__tabbed_5_17" name="__tabbed_5" type="radio" /><input id="__tabbed_5_18" name="__tabbed_5" type="radio" /><input id="__tabbed_5_19" name="__tabbed_5" type="radio" /><input id="__tabbed_5_20" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">01</label><label for="__tabbed_5_2">02</label><label for="__tabbed_5_3">03</label><label for="__tabbed_5_4">04</label><label for="__tabbed_5_5">05</label><label for="__tabbed_5_6">06</label><label for="__tabbed_5_7">07</label><label for="__tabbed_5_8">08</label><label for="__tabbed_5_9">09</label><label for="__tabbed_5_10">10</label><label for="__tabbed_5_11">11</label><label for="__tabbed_5_12">12</label><label for="__tabbed_5_13">16</label><label for="__tabbed_5_14">17</label><label for="__tabbed_5_15">18</label><label for="__tabbed_5_16">19</label><label for="__tabbed_5_17">20</label><label for="__tabbed_5_18">23</label><label for="__tabbed_5_19">26</label><label for="__tabbed_5_20">29</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/8e38-34785" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep01_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><label for="__tabbed_5_2">02</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/f105-34786" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep02_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><label for="__tabbed_5_3">03</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/076e-257237" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep03_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_4" name="__tabbed_5" type="radio" /><label for="__tabbed_5_4">04</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/8d44-257236" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep04_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_5" name="__tabbed_5" type="radio" /><label for="__tabbed_5_5">05</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/f083-257238" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep05_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_6" name="__tabbed_5" type="radio" /><label for="__tabbed_5_6">06</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/c26e-257239" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep06_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_7" name="__tabbed_5" type="radio" /><label for="__tabbed_5_7">07</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/927d-257240" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep07_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_8" name="__tabbed_5" type="radio" /><label for="__tabbed_5_8">08</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/b0b7-257241" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep08_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_9" name="__tabbed_5" type="radio" /><label for="__tabbed_5_9">09</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/4b82-257242" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep09_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_10" name="__tabbed_5" type="radio" /><label for="__tabbed_5_10">10</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/0475-257243" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep10_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_11" name="__tabbed_5" type="radio" /><label for="__tabbed_5_11">11</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/cd4d-257244" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep11_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_12" name="__tabbed_5" type="radio" /><label for="__tabbed_5_12">12</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/d4ab-257246" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep12_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_13" name="__tabbed_5" type="radio" /><label for="__tabbed_5_13">16</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/68e6-34764" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep16_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_14" name="__tabbed_5" type="radio" /><label for="__tabbed_5_14">17</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/f4fd-34765" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep17_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_15" name="__tabbed_5" type="radio" /><label for="__tabbed_5_15">18</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/21bd-34767" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep18_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_16" name="__tabbed_5" type="radio" /><label for="__tabbed_5_16">19</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/7f09-34768" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep19_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_17" name="__tabbed_5" type="radio" /><label for="__tabbed_5_17">20</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/30cc-34745" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep20_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_18" name="__tabbed_5" type="radio" /><label for="__tabbed_5_18">23</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/7a7c-34616" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep23_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_19" name="__tabbed_5" type="radio" /><label for="__tabbed_5_19">26</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/eade-34746" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep26_2021.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_5_20" name="__tabbed_5" type="radio" /><label for="__tabbed_5_20">29</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/88ec-34617" target="_blank">CAPYTALE</a> ou à télécharger <a href="devoirs/ep29_2021.ipynb">ici</a></p>
 </div>
@@ -671,7 +765,10 @@ et disponibles <a href="https://eduscol.education.fr/2661/banque-des-epreuves-pr
 </div>
 </div>
 </div>
-<h2 id="logiciels-a-installer">Logiciels à installer</h2>
+</div>
+</div>
+</div>
+<h2 id="logiciels-a-installer">Logiciels à installer<a class="headerlink" href="#logiciels-a-installer" title="Permanent link">⚓︎</a></h2>
 <div class="admonition étoile">
 <p class="admonition-title">Installation d'Anaconda</p>
 <p>La suite <em>Anaconda</em>, téléchargeable
@@ -681,6 +778,8 @@ l'éditeur de carnets <em>Jupyter</em> et l'éditeur de code <em>Spyder</em>.</p
 <p><img alt="Jeu de la Vie : Canon à planeurs de période 216" src="canon_quadruple216.gif" /></p>
                 
               
+    <script src="./js/ide.js"></script> 
+
               
                 
 
@@ -765,6 +864,10 @@ l'éditeur de carnets <em>Jupyter</em> et l'éditeur de code <em>Spyder</em>.</p
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="xtra/config.js"></script>
+      
+        <script src="xtra/interpreter.js"></script>
       
     
   </body>

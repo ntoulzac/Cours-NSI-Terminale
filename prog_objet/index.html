@@ -9,6 +9,8 @@
       
       
       
+        <link rel="canonical" href="https://ntoulzac.gitlab.io/Cours-NSI-Terminale/prog_objet/">
+      
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
@@ -27,6 +29,17 @@
     
     
     
+    <!-- Load CDNs : Pyodide (Python in WASM), Ace (Editor) and JQuery (Terminal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.asm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-md5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/js/jquery.terminal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/css/jquery.terminal.min.css" rel="stylesheet">
+
+    
       
     
     
@@ -34,6 +47,10 @@
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="../stylesheets/admon.css">
+    
+      <link rel="stylesheet" href="../xtra/pyoditeur.css">
+    
+      <link rel="stylesheet" href="../xtra/ajustements.css">
     
     
       
@@ -113,6 +130,53 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitLab
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -147,6 +211,19 @@
     </a>
     Cours de Terminale NSI
   </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitLab
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -386,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../patience/" class="md-nav__link">
+      <a href="../rech_textuelle/" class="md-nav__link">
         Recherche textuelle
       </a>
     </li>
@@ -431,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../patience/" class="md-nav__link">
+      <a href="../calculabilite/" class="md-nav__link">
         Calculabilité et décidabilité
       </a>
     </li>
@@ -449,9 +526,14 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
+    
+                
+                  <a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/tree/main/docs/prog_objet.md" title="Editer cette page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
                 
                 
-                <h1 id="chapitre-3-programmation-objet">Chapitre 3 : Programmation objet</h1>
+                <h1 id="chapitre-3-programmation-objet">Chapitre 3 : Programmation objet<a class="headerlink" href="#chapitre-3-programmation-objet" title="Permanent link">⚓︎</a></h1>
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/cours_03.ipynb">ici</a> (bientôt disponible)</p>
 </div>
@@ -476,7 +558,7 @@ d'un nombre ou d'un booléen...</li>
 </ul>
 <p>Le but de ce chapitre est d'apprendre à définir nos propres <em>types personnalisés</em>, appelés <strong>classes</strong>,
 dont nous pourrons décider de la structure et des utilisations possibles.</p>
-<h2 id="creation-dune-classe">Création d'une classe</h2>
+<h2 id="creation-dune-classe">Création d'une classe<a class="headerlink" href="#creation-dune-classe" title="Permanent link">⚓︎</a></h2>
 <p>On crée une classe appelée <code>Montre</code> en écrivant <code>class Montre:</code>. Par convention, les noms de classes
 sont de la forme <code>NomDeClasse</code>, avec une majuscule au début de chaque mot, sans espace entre les mots.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -499,7 +581,9 @@ its class) for modifying its state.</em></p>
 <p>On souhaite que les instances de la classe <code>Montre</code> possèdent trois attributs <code>h</code>, <code>m</code> et <code>s</code>.
 Pour cela, on définit une méthode, dite méthode <strong>constructeur</strong> et nommée <code>__init__</code>,
 qui est appelée automatiquement lors de la création d'une instance de la classe.</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Instanciation avec valeurs par défaut pour les attributs</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Instanciation avec valeurs par défaut pour les attributs</label><label for="__tabbed_1_2">Instanciation avec valeurs passées en arguments pour les attributs</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'initialisation des attributs peut se faire avec des valeurs par défaut, par exemple 0.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -523,7 +607,7 @@ qui est appelée automatiquement lors de la création d'une instance de la class
 comme ici). Il représente l'instance sur laquelle la méthode est appelée.</p>
 <p>Pour accéder à la valeur d'un attribut, la syntaxe à utiliser est <code>instance.attribut</code>.</p>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Instanciation avec valeurs passées en arguments pour les attributs</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'initialisation des attributs peut se faire avec des valeurs choisies au moment de la création
 de l'instance de classe.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -548,10 +632,13 @@ néanmoins que, lors de la création de l'instance <code>ma_montre</code>, seule
 à <code>h</code>, <code>m</code> et <code>s</code> sont passées en arguments.</p>
 </div>
 </div>
-<h2 id="definition-de-methodes">Définition de méthodes</h2>
+</div>
+<h2 id="definition-de-methodes">Définition de méthodes<a class="headerlink" href="#definition-de-methodes" title="Permanent link">⚓︎</a></h2>
 <p>On peut ajouter à la classe <code>Montre</code> la définition de méthodes dont le rôle est de permettre
 de modifier les instances de la classe.</p>
-<div class="tabbed-set" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Méthode <code>incrémenter</code></label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Méthode <code>incrémenter</code></label><label for="__tabbed_2_2">Méthode <code>avancer</code></label><label for="__tabbed_2_3">Méthode <code>synchroniser</code></label><label for="__tabbed_2_4">Méthode spéciale <code>__str__</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>Par exemple, le rôle de la méthode <code>incrémenter</code> est d'avancer la montre d'une seconde.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -601,7 +688,7 @@ l'attribut <code>s</code> est modifiée pour cette instance. La valeur des attri
 modifiée également.</p>
 <p>La syntaxe <code>instance.methode()</code> permet d'appeler une méthode qui ne prend pas d'argument en entrée (autre que <code>self</code>).</p>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Méthode <code>avancer</code></label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>Le rôle de la méthode <code>avancer</code> est d'avancer la montre de plusieurs secondes.</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -661,7 +748,7 @@ est appelée <code>n</code> fois pour cette instance elle-même (d'où la comman
 <p>La syntaxe <code>instance.methode(arguments)</code> permet d'appeler une méthode qui prend un ou plusieurs arguments
 en entrée (autres que <code>self</code>).</p>
 </div>
-<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Méthode <code>synchroniser</code></label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>La fonction <code>localtime</code> du module <code>time</code> permet de connaître l'heure locale au moment de l'appel de la fonction.
 L'objet renvoyé possède (entre autres) trois attributs <code>tm_hour</code>, <code>tm_min</code> et <code>tm_sec</code> qui donnent respectivement
 l'heure, les minutes et les secondes de l'heure locale.</p>
@@ -701,7 +788,7 @@ de mettre la montre à l'heure.</p>
 <p>Lorsque la méthode <code>synchroniser</code> est appelée pour une instance de la classe <code>Montre</code>, la valeur des attributs
 <code>h</code>, <code>m</code> et <code>s</code> est modifiée pour cette instance.</p>
 </div>
-<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4">Méthode spéciale <code>__str__</code></label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>Si on souhaite afficher à l'écran l'heure de la montre, on peut se demander ce que donnerait
 l'instruction <code>print(ma_montre)</code>.</p>
 <p>L'affichage obtenu <code>&lt;__main__.Montre object at 0x7f45dc1f9350&gt;</code> n'est pas lisible, hormis la
@@ -733,7 +820,8 @@ l'objet en définissant une méthode spéciale nommée <code>__str__</code>.</p>
 renvoyer une chaîne de caractères.</p>
 </div>
 </div>
-<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire</h2>
+</div>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Connaître le vocabulaire de la programmation objet, en particulier la notion de classe, d'instance,
 d'attribut et de méthode.</li>
@@ -742,8 +830,10 @@ d'attribut et de méthode.</li>
 la méthode <code>__init__</code>.</li>
 <li>Définir une méthode et comprendre l'utilisation du paramètre <code>self</code>.</li>
 </ul>
-<h2 id="exercices-et-activites">Exercices et activités</h2>
-<details class="exo"><summary>Exercices</summary><div class="tabbed-set" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Compte bancaire</label><div class="tabbed-content">
+<h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo"><summary>Exercices</summary><div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Compte bancaire</label><label for="__tabbed_3_2">Date</label><label for="__tabbed_3_3">Dominos</label><label for="__tabbed_3_4">Labyrinthe (bientôt disponible)</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/9f5b-97952" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_compte_bancaire.ipynb">ici</a></p>
 </div>
@@ -751,7 +841,7 @@ la méthode <code>__init__</code>.</li>
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_compte_bancaire_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Date</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/66a5-109785" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_date.ipynb">ici</a></p>
 </div>
@@ -759,7 +849,7 @@ la méthode <code>__init__</code>.</li>
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_date_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Dominos</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/bd52-124438" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_dominos.ipynb">ici</a></p>
 </div>
@@ -767,7 +857,7 @@ la méthode <code>__init__</code>.</li>
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_dominos_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><label for="__tabbed_3_4">Labyrinthe (bientôt disponible)</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/ex_labyrinthe.ipynb">ici</a></p>
 </div>
@@ -776,8 +866,11 @@ la méthode <code>__init__</code>.</li>
 </div>
 </div>
 </div>
+</div>
 </details>
-<details class="activité"><summary>Activités</summary><div class="tabbed-set" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><label for="__tabbed_4_1">Balle rebondissante</label><div class="tabbed-content">
+<details class="activité"><summary>Activités</summary><div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Balle rebondissante</label><label for="__tabbed_4_2">Ensembles de Mandelbrot et de Julia</label><label for="__tabbed_4_3">Fractions</label><label for="__tabbed_4_4">Paquet de cartes</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'objectif de l'activité est de faire rebondir une balle dans une fenêtre graphique.</p>
 <p><img alt="Balle rebondissante" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/balle.gif" style="border: 2px solid black;" width="50%" /></p>
 <div class="admonition jupyter">
@@ -788,7 +881,7 @@ la méthode <code>__init__</code>.</li>
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/act_balle_rebondissante_corr.zip">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><label for="__tabbed_4_2">Ensembles de Mandelbrot et de Julia</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'objectif de l'activité est de représenter des fractales célèbres : l'ensemble de Mandelbrot et les ensembles de Julia.</p>
 <p><img alt="Ensemble de Mandelbrot" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/mandelbrot.png" width="50%" /></p>
 <div class="admonition jupyter">
@@ -798,7 +891,7 @@ la méthode <code>__init__</code>.</li>
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/act_mandelbrot_julia_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><label for="__tabbed_4_3">Fractions</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'objectif de cette activité est de définir et d'utiliser une classe <code>Fraction</code> puis de travailler sur les fractions égyptiennes.</p>
 <p><img alt="Fractions égyptiennes" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/fractions_egyptiennes.jpg" width="50%" /></p>
 <div class="admonition jupyter">
@@ -808,7 +901,7 @@ la méthode <code>__init__</code>.</li>
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/act_fractions_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><label for="__tabbed_4_4">Paquet de cartes</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>(bientôt disponible)</p>
 <p><img alt="Paquet de cartes" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/prog_objet/images/paquet_cartes.png" width="50%" /></p>
 <div class="admonition jupyter">
@@ -819,9 +912,12 @@ la méthode <code>__init__</code>.</li>
 </div>
 </div>
 </div>
+</div>
 </details>
                 
               
+    <script src="../js/ide.js"></script> 
+
               
                 
 
@@ -921,6 +1017,10 @@ la méthode <code>__init__</code>.</li>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../xtra/config.js"></script>
+      
+        <script src="../xtra/interpreter.js"></script>
       
     
   </body>

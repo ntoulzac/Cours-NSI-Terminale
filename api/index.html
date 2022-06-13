@@ -9,6 +9,8 @@
       
       
       
+        <link rel="canonical" href="https://ntoulzac.gitlab.io/Cours-NSI-Terminale/api/">
+      
       <link rel="icon" href="../assets/images/favicon.png">
       <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
     
@@ -27,6 +29,17 @@
     
     
     
+    <!-- Load CDNs : Pyodide (Python in WASM), Ace (Editor) and JQuery (Terminal) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.4.12/ext-language_tools.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.js"></script>
+    <script src="https://cdn.jsdelivr.net/pyodide/v0.17.0/full/pyodide.asm.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js-md5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/js/jquery.terminal.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/jquery.terminal@2.23.0/css/jquery.terminal.min.css" rel="stylesheet">
+
+    
       
     
     
@@ -34,6 +47,10 @@
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="../stylesheets/admon.css">
+    
+      <link rel="stylesheet" href="../xtra/pyoditeur.css">
+    
+      <link rel="stylesheet" href="../xtra/ajustements.css">
     
     
       
@@ -113,6 +130,53 @@
     
     
     
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+      </label>
+      
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        
+<a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitLab
+  </div>
+</a>
+      </div>
     
   </nav>
   
@@ -147,6 +211,19 @@
     </a>
     Cours de Terminale NSI
   </label>
+  
+    <div class="md-nav__source">
+      
+<a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitLab
+  </div>
+</a>
+    </div>
   
   <ul class="md-nav__list" data-md-scrollfix>
     
@@ -386,7 +463,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../patience/" class="md-nav__link">
+      <a href="../rech_textuelle/" class="md-nav__link">
         Recherche textuelle
       </a>
     </li>
@@ -431,7 +508,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../patience/" class="md-nav__link">
+      <a href="../calculabilite/" class="md-nav__link">
         Calculabilité et décidabilité
       </a>
     </li>
@@ -449,9 +526,14 @@
           <div class="md-content" data-md-component="content">
             <article class="md-content__inner md-typeset">
               
+    
+                
+                  <a href="https://gitlab.com/ntoulzac/cours-nsi-terminale/tree/main/docs/api.md" title="Editer cette page" class="md-content__button md-icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25z"/></svg>
+                  </a>
                 
                 
-                <h1 id="chapitre-1-interfaces-de-programmation-dapplications">Chapitre 1 : Interfaces de programmation d'applications</h1>
+                <h1 id="chapitre-1-interfaces-de-programmation-dapplications">Chapitre 1 : Interfaces de programmation d'applications<a class="headerlink" href="#chapitre-1-interfaces-de-programmation-dapplications" title="Permanent link">⚓︎</a></h1>
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/cours_01.ipynb">ici</a></p>
 </div>
@@ -461,7 +543,7 @@
 <p>Une <strong>API</strong> (<em>Application Programming Interface</em>), ou une <strong>interface de programmation d’applications</strong>, est un ensemble de classes, fonctions, constantes grâce auquel un programme <em>fournisseur</em> met à disposition diverses fonctionnalités pour des programmes <em>consommateurs</em>.</p>
 <p>C'est le programme fournisseur qui définit de quelle façon les fonctionnalités sont mises à disposition des consommateurs, en imposant éventuellement un certain nombre de contraintes d'accès à l'API.</p>
 <p>On s'intéresse ici à la <em>Base Adresse Nationale</em> qui est une API gratuite du gouvernement français permettant d'obtenir un certain nombre d'informations à partir d'une adresse postale.</p>
-<h2 id="interrogation-de-lapi">Interrogation de l'API</h2>
+<h2 id="interrogation-de-lapi">Interrogation de l'API<a class="headerlink" href="#interrogation-de-lapi" title="Permanent link">⚓︎</a></h2>
 <p>On souhaite, grâce à l'API, obtenir des informations sur l'adresse postale du lycée Louis Armand. Pour interroger l'API, il suffit d'envoyer une requête GET à l'URL <a href="https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130" target="_blank">https://api-adresse.data.gouv.fr/search/?q=173-boulevard-de-strasbourg&amp;postcode=94130</a>. </p>
 <p>On remarque que l'adresse postale sur laquelle on souhaite interroger l'API est indiquée dans l'URL. La réponse renvoyée par l'API est la suivante :</p>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
@@ -530,9 +612,11 @@
 </div>
 <p>La fonction <code>get</code> du module <code>requests</code> permet d'envoyer une requête GET à l'URL spécifiée et ensuite de récupérer la réponse.</p>
 <p>La commande <code>reponse.json()</code> extrait de la réponse les données encodées dans le format JSON, qui est un format de données textuelles que l'on peut traiter comme s'il s'agissait d'un dictionnaire Python.</p>
-<h2 id="traitement-de-la-reponse-renvoyee-par-lapi">Traitement de la réponse renvoyée par l'API</h2>
+<h2 id="traitement-de-la-reponse-renvoyee-par-lapi">Traitement de la réponse renvoyée par l'API<a class="headerlink" href="#traitement-de-la-reponse-renvoyee-par-lapi" title="Permanent link">⚓︎</a></h2>
 <p>Il est possible de définir une fonction qui interroge l'API à partir d'une adresse postale au choix, passée en paramètre.</p>
-<div class="tabbed-set" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><label for="__tabbed_1_1">Première version : données complètes</label><div class="tabbed-content">
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Première version : données complètes</label><label for="__tabbed_1_2">Seconde version : données sélectionnées</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition fonc">
 <p class="admonition-title">Fonction <code>interroger_API_BAN</code></p>
 <details class="info"><summary>Interroge l'API <em>Base Adresse Nationale</em>.</summary><div class="admonition entrée">
@@ -570,7 +654,7 @@
 <p>L'utilisation d'une f-string pour l'écriture de l'URL permet d'y intégrer simplement et lisiblement les paramètres d'entrée de la fonction.</p>
 <p>Ici, la fonction renvoie l'ensemble des données récupérées via l'API. La plupart du temps, on souhaite néanmoins isoler les données qui nous intéressent et elles seules.</p>
 </div>
-<input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><label for="__tabbed_1_2">Seconde version : données sélectionnées</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition fonc">
 <p class="admonition-title">Fonction <code>interroger_API_BAN</code></p>
 <details class="info"><summary>Renvoie les coordonnées géographiques d'un lieu après interrogation de l'API <em>Base Adresse Nationale</em>.</summary><div class="admonition entrée">
@@ -621,14 +705,17 @@
 </ul>
 </div>
 </div>
-<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire</h2>
+</div>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Envoyer une requête à une API avec le module <code>requests</code>.</li>
 <li>Sélectionner des informations dans la réponse renvoyée par une API.</li>
 <li>Consulter la documentation d'une API.</li>
 </ul>
-<h2 id="exercices-et-activites">Exercices et activités</h2>
-<details class="exo"><summary>Exercices</summary><div class="tabbed-set" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><label for="__tabbed_2_1">Astéroïdes à surveiller</label><div class="tabbed-content">
+<h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo"><summary>Exercices</summary><div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Astéroïdes à surveiller</label><label for="__tabbed_2_2">Bulletin météo</label><label for="__tabbed_2_3">Composition des produits alimentaires</label><label for="__tabbed_2_4">Découpage administratif</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/9b7d-34563" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_asteroides.ipynb">ici</a></p>
 </div>
@@ -636,7 +723,7 @@
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_asteroides_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><label for="__tabbed_2_2">Bulletin météo</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/90ad-34553" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_bulletin_meteo.ipynb">ici</a></p>
 </div>
@@ -644,7 +731,7 @@
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_bulletin_meteo_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><label for="__tabbed_2_3">Composition des produits alimentaires</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/937b-34567" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_openfoodfacts.ipynb">ici</a></p>
 </div>
@@ -652,7 +739,7 @@
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/ex_openfoodfacts_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><label for="__tabbed_2_4">Découpage administratif</label><div class="tabbed-content">
+<div class="tabbed-block">
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à travailler sur le site <a href="https://capytale2.ac-paris.fr/web/code/6951-34569" target="_blank">CAPYTALE</a> ou à télécharger <a href="notebooks/ex_decoupage_admin.ipynb">ici</a></p>
 </div>
@@ -661,8 +748,11 @@
 </div>
 </div>
 </div>
+</div>
 </details>
-<details class="activité"><summary>Activités</summary><div class="tabbed-set" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Carte de vigilance météorologique</label><div class="tabbed-content">
+<details class="activité"><summary>Activités</summary><div class="tabbed-set tabbed-alternate" data-tabs="3:3"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Carte de vigilance météorologique</label><label for="__tabbed_3_2">Centres de vaccination anti-Covid</label><label for="__tabbed_3_3">Station spatiale internationale</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'objectif de l'activité est d'utiliser une API pour réaliser une carte de vigilance météorologique.</p>
 <p><img alt="Carte de vigilance météo du 26/12/1999" src="https://ntoulzac.github.io/Cours-NSI-Terminale/api/images/vigilance_1999-12-26.svg" style="display:inline-block; margin-left:5%" width="40%" />
 <img alt="Carte de vigilance météo du 27/12/1999" src="https://ntoulzac.github.io/Cours-NSI-Terminale/api/images/vigilance_1999-12-27.svg" style="display:inline-block; margin-left:10%" width="40%" /></p>
@@ -674,7 +764,7 @@
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/act_vigilance_meteo_corr.zip">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Centres de vaccination anti-Covid</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'objectif de l'activité est d'utiliser une API pour cartographier les
 centres de vaccination anti-Covid d'un département.</p>
 <p><img alt="Vaccination anti-Covid" class="center" src="https://cdn.radiofrance.fr/s3/cruiser-production/2020/11/1bad04b3-8d3c-4a95-b1ac-ea62195646c8/838_gettyimages-1252382017.jpg" width="50%" /></p>
@@ -685,7 +775,7 @@ centres de vaccination anti-Covid d'un département.</p>
 <p class="admonition-title">Corrigé disponible <a href="notebooks/corr/act_vaccination_corr.ipynb">ici</a></p>
 </div>
 </div>
-<input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><label for="__tabbed_3_3">Station spatiale internationale</label><div class="tabbed-content">
+<div class="tabbed-block">
 <p>L'objectif de l'activité est d'utiliser une API pour suivre les déplacements
 de la station spatiale internationale.</p>
 <p><img alt="Station spatiale internationale" class="center" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/ISS-56_International_Space_Station_fly-around_%2805%29.jpg/1024px-ISS-56_International_Space_Station_fly-around_%2805%29.jpg" width="50%" /></p>
@@ -697,9 +787,12 @@ de la station spatiale internationale.</p>
 </div>
 </div>
 </div>
+</div>
 </details>
                 
               
+    <script src="../js/ide.js"></script> 
+
               
                 
 
@@ -799,6 +892,10 @@ de la station spatiale internationale.</p>
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+        <script src="../xtra/config.js"></script>
+      
+        <script src="../xtra/interpreter.js"></script>
       
     
   </body>

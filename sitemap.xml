@@ -1,88 +1,98 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/abr/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/api/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/arbres/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/calculabilite/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/diviser/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/exemple/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/graphes/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/graphes_pond/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/listes/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/mise_au_point/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/modularite/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/patience/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/piles_files/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/prog_objet/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/rech_textuelle/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>None</loc>
-         <lastmod>2022-04-21</lastmod>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/recursivite/</loc>
+         <lastmod>2022-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/xtra/end_REM/</loc>
+         <lastmod>2022-06-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://ntoulzac.gitlab.io/Cours-NSI-Terminale/xtra/start_REM/</loc>
+         <lastmod>2022-06-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
