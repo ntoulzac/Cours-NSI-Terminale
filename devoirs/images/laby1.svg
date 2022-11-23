@@ -14,7 +14,7 @@
 <path d="M90.0,-10.0 L110.0,-10.0" stroke="black" stroke-width="1" />
 <path d="M90.0,-10.0 L90.0,-30.0" stroke="black" stroke-width="1" />
 <path d="M110.0,-10.0 L130.0,-10.0" stroke="black" stroke-width="1" />
-<path d="M110.0,-10.0 L110.0,-30.0" stroke="black" stroke-width="1" />
+<path d="M110.0,-10.0 L110.0,-30.0" stroke="red" stroke-width="5" />
 <path d="M130.0,-10.0 L150.0,-10.0" stroke="black" stroke-width="1" />
 <path d="M130.0,-10.0 L130.0,-30.0" stroke="black" stroke-width="1" />
 <path d="M150.0,-10.0 L170.0,-10.0" stroke="black" stroke-width="1" />
@@ -31,7 +31,7 @@
 <path d="M90.0,-30.0 L110.0,-30.0" stroke="black" stroke-width="1" />
 <path d="M90.0,-30.0 L90.0,-50.0" stroke="black" stroke-width="1" />
 <path d="M110.0,-30.0 L130.0,-30.0" stroke="black" stroke-width="1" />
-<path d="M110.0,-30.0 L110.0,-50.0" stroke="black" stroke-width="1" />
+<path d="M110.0,-30.0 L110.0,-50.0" stroke="red" stroke-width="5" />
 <path d="M130.0,-30.0 L150.0,-30.0" stroke="black" stroke-width="1" />
 <path d="M130.0,-30.0 L130.0,-50.0" stroke="black" stroke-width="1" />
 <path d="M150.0,-30.0 L170.0,-30.0" stroke="black" stroke-width="1" />
@@ -48,7 +48,7 @@
 <path d="M90.0,-50.0 L110.0,-50.0" stroke="black" stroke-width="1" />
 <path d="M90.0,-50.0 L90.0,-70.0" stroke="black" stroke-width="1" />
 <path d="M110.0,-50.0 L130.0,-50.0" stroke="black" stroke-width="1" />
-<path d="M110.0,-50.0 L110.0,-70.0" stroke="black" stroke-width="1" />
+<path d="M110.0,-50.0 L110.0,-70.0" stroke="red" stroke-width="5" />
 <path d="M130.0,-50.0 L150.0,-50.0" stroke="black" stroke-width="1" />
 <path d="M130.0,-50.0 L130.0,-70.0" stroke="black" stroke-width="1" />
 <path d="M150.0,-50.0 L170.0,-50.0" stroke="black" stroke-width="1" />
@@ -65,7 +65,7 @@
 <path d="M90.0,-70.0 L110.0,-70.0" stroke="black" stroke-width="1" />
 <path d="M90.0,-70.0 L90.0,-90.0" stroke="black" stroke-width="1" />
 <path d="M110.0,-70.0 L130.0,-70.0" stroke="black" stroke-width="1" />
-<path d="M110.0,-70.0 L110.0,-90.0" stroke="black" stroke-width="1" />
+<path d="M110.0,-70.0 L110.0,-90.0" stroke="red" stroke-width="5" />
 <path d="M130.0,-70.0 L150.0,-70.0" stroke="black" stroke-width="1" />
 <path d="M130.0,-70.0 L130.0,-90.0" stroke="black" stroke-width="1" />
 <path d="M150.0,-70.0 L170.0,-70.0" stroke="black" stroke-width="1" />
@@ -82,7 +82,7 @@
 <path d="M90.0,-90.0 L110.0,-90.0" stroke="black" stroke-width="1" />
 <path d="M90.0,-90.0 L90.0,-110.0" stroke="black" stroke-width="1" />
 <path d="M110.0,-90.0 L130.0,-90.0" stroke="black" stroke-width="1" />
-<path d="M110.0,-90.0 L110.0,-110.0" stroke="black" stroke-width="1" />
+<path d="M110.0,-90.0 L110.0,-110.0" stroke="red" stroke-width="5" />
 <path d="M130.0,-90.0 L150.0,-90.0" stroke="black" stroke-width="1" />
 <path d="M130.0,-90.0 L130.0,-110.0" stroke="black" stroke-width="1" />
 <path d="M150.0,-90.0 L170.0,-90.0" stroke="black" stroke-width="1" />
@@ -99,7 +99,7 @@
 <path d="M90.0,-110.0 L110.0,-110.0" stroke="black" stroke-width="1" />
 <path d="M90.0,-110.0 L90.0,-130.0" stroke="black" stroke-width="1" />
 <path d="M110.0,-110.0 L130.0,-110.0" stroke="black" stroke-width="1" />
-<path d="M110.0,-110.0 L110.0,-130.0" stroke="black" stroke-width="1" />
+<path d="M110.0,-110.0 L110.0,-130.0" stroke="red" stroke-width="5" />
 <path d="M130.0,-110.0 L150.0,-110.0" stroke="black" stroke-width="1" />
 <path d="M130.0,-110.0 L130.0,-130.0" stroke="black" stroke-width="1" />
 <path d="M150.0,-110.0 L170.0,-110.0" stroke="black" stroke-width="1" />
