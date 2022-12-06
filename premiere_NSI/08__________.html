@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Tableaux</title>
+<title>Flottants</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -14358,20 +14358,22 @@ $(document).ready(function () {
 </head>
 <body>
 	
-<div class="barre_de_menu">
-	<img id="logo" src="Images/logo.gif" >
-  <p class="important">Cours de NSI Première</p>
-  <a href="01.html">Constructions élémentaires</a>
-  <a href="02.html">Booléens</a>
-  <a href="03.html">Fonctions</a>
-  <a href="04.html">Chaînes de caractères</a>
-  <a href="05.html">Tableaux</a>
-  <a href="06.html">p-uplets et dictionnaires</a>
-  <a href="07.html">Tables de données</a>
-  <a href="08.html">Flottants</a>
-  <a href="09.html">Algorithmes classiques</a>
-  <a href="index.html">Index</a>
-</div>
+	
+	<div class="barre_de_menu">
+		<img id="logo" src="Images/logo.gif">
+		<p class="important">Cours de NSI Première</p>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/01.html">Constructions élémentaires</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/02.html">Booléens</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/03.html">Fonctions</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/04.html">Chaînes de caractères</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/05.html">Tableaux</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/06.html">p-uplets et dictionnaires</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/07.html">Tables de données</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/08.html">Flottants</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/09.html">Algorithmes classiques</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/index.html">Index</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/énoncés.html">Énoncés</a>
+	</div>
 
  <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
@@ -14379,7 +14381,7 @@ $(document).ready(function () {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Chapitre-5-:-Tableaux">Chapitre 5 : Tableaux<a class="anchor-link" href="#Chapitre-5-:-Tableaux">&#182;</a></h1><p><strong><em>Définition en extension, accès et modification de valeurs grâce à leur index, définition en compréhension, tris par sélection ou par insertion, tableaux à plusieurs dimensions</em></strong></p>
+<h1 id="Chapitre-8-:-Repr&#233;sentation-des-nombres-flottants">Chapitre 8 : Flottants<a class="anchor-link" href="#Chapitre-8-:-Repr&#233;sentation-des-nombres-flottants">&#182;</a></h1><p><strong><em>Ecriture binaire des flottants, problème du test d'égalité de deux flottants</em></strong></p>
 
 </div>
 </div>
@@ -14387,44 +14389,21 @@ $(document).ready(function () {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Partie-A---Notion-de-tableau">Partie A - Notion de tableau<a class="anchor-link" href="#Partie-A---Notion-de-tableau">&#182;</a></h2>
+<h2 id="Partie-A---Rappels-sur-l'&#233;criture-scientifique-des-nombres-d&#233;cimaux">Partie A - Rappels sur l'&#233;criture scientifique des nombres d&#233;cimaux<a class="anchor-link" href="#Partie-A---Rappels-sur-l'&#233;criture-scientifique-des-nombres-d&#233;cimaux">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="D&#233;finition-d'un-tableau-en-extension">D&#233;finition d'un tableau en extension<a class="anchor-link" href="#D&#233;finition-d'un-tableau-en-extension">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Un <strong>tableau</strong> permet de stocker en mémoire plusieurs valeurs dans une seule variable.</p>
-<p>Une façon de définir un tableau est d'indiquer <strong>entre crochets</strong> les différentes valeurs, séparées par des virgules. On parle alors de <strong>définition en extension</strong>.</p>
-<p><strong>(1)</strong> Donner la définition en extension d'un tableau <code>mois</code> contenant les noms des six premiers mois de l'année (sous forme de chaînes de caractères).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mois</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;janvier&#39;</span><span class="p">,</span> <span class="s1">&#39;février&#39;</span><span class="p">,</span> <span class="s1">&#39;mars&#39;</span><span class="p">,</span> <span class="s1">&#39;avril&#39;</span><span class="p">,</span> <span class="s1">&#39;mai&#39;</span><span class="p">,</span> <span class="s1">&#39;juin&#39;</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(2)</strong> Après avoir exécuté les deux cellules suivantes, déterminer quel est le rôle de la fonction <code>len</code>.</p>
+<p>L'écriture scientifique d'un nombre décimal est composée de trois parties :</p>
+<ul>
+<li>un <strong>signe</strong>, qui peut être plus ou moins,</li>
+<li>une <strong>mantisse</strong>, qui un nombre décimal compris entre 1 (inclus) et 10 (exclu),</li>
+<li>un <strong>exposant</strong>, qui est un nombre entier positif ou négatif.</li>
+</ul>
+<p>Par exemple, l'écriture scientifique du nombre 2020 est : $$+ 2,02 \times 10^3$$</p>
+<p>Le signe est plus, la mantisse est 2,02 et l'exposant est 3.</p>
 
 </div>
 </div>
@@ -14434,20 +14413,28 @@ $(document).ready(function () {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">jours</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;lundi&#39;</span><span class="p">,</span> <span class="s1">&#39;mardi&#39;</span><span class="p">,</span> <span class="s1">&#39;mercredi&#39;</span><span class="p">,</span> <span class="s1">&#39;jeudi&#39;</span><span class="p">,</span> <span class="s1">&#39;vendredi&#39;</span><span class="p">,</span> <span class="s1">&#39;samedi&#39;</span><span class="p">,</span> <span class="s1">&#39;dimanche&#39;</span><span class="p">]</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">2020</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+</div>
+<div id="index_affichage_ecriture_sc" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>En Python, une façon d'afficher l'écriture scientifique du nombre <code>n</code> est d'utiliser la commande suivante :</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">jours</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14460,15 +14447,13 @@ $(document).ready(function () {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[2]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>7</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.020000e+03
+</pre>
 </div>
-
 </div>
 
 </div>
@@ -14478,35 +14463,48 @@ $(document).ready(function () {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    La fonction <code>len</code> renvoie la <b>longueur</b> (c'est-à-dire le nombre d'éléments) du tableau qui est passé en paramètre.
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Acc&#232;s-aux-valeurs-gr&#226;ce-&#224;-leur-index">Acc&#232;s aux valeurs gr&#226;ce &#224; leur index<a class="anchor-link" href="#Acc&#232;s-aux-valeurs-gr&#226;ce-&#224;-leur-index">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Chaque valeur contenue dans un tableau est <strong>indexée par un entier</strong> supérieur ou égal à 0. Dans la mémoire de la machine, les valeurs sont stockées consécutivement. Pour accéder à la valeur de rang <code>n</code> d'un tableau <code>tab</code>, on utilise la notation <code>tab[n]</code>.</p>
-<p><strong>(3)</strong> Modifier le code la cellule suivante pour faire apparaître la liste des jours de la semaine allant du 13 au 20 juillet 1789 : lundi 13 juillet 1789, mardi 14 juillet 1789, <em>etc.</em>.</p>
+<p>La mantisse s'affiche par défaut avec six chiffres après la virgule, mais il est possible d'en afficher davantage ou moins.</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.2e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="c1"># 2 chiffres après la virgule pour la mantisse</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>2.02e+03
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">jours</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">jours</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="mi">13</span> <span class="o">+</span> <span class="n">k</span><span class="p">,</span> <span class="s1">&#39;juillet 1789&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.10e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="c1"># 10 chiffres après la virgule pour la mantisse</span>
 </pre></div>
 
     </div>
@@ -14523,13 +14521,7 @@ $(document).ready(function () {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>lundi 13 juillet 1789
-mardi 14 juillet 1789
-mercredi 15 juillet 1789
-jeudi 16 juillet 1789
-vendredi 17 juillet 1789
-samedi 18 juillet 1789
-dimanche 19 juillet 1789
+<pre>2.0200000000e+03
 </pre>
 </div>
 </div>
@@ -14541,17 +14533,17 @@ dimanche 19 juillet 1789
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Modification-des-valeurs-gr&#226;ce-&#224;-leur-index">Modification des valeurs gr&#226;ce &#224; leur index<a class="anchor-link" href="#Modification-des-valeurs-gr&#226;ce-&#224;-leur-index">&#182;</a></h3>
+<p><strong>Question 1 :</strong> Sans utiliser Python, donner l'écriture scientifique de la constante d'Avogadro <code>avog = 602214076000000000000000</code>. Vérifier ensuite votre résultat avec une ligne de code.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Pour modifier la valeur de rang <code>n</code> contenue dans le tableau <code>tab</code>, il suffit d'utiliser une affectation du type <code>tab[n] = nouvelle_valeur</code>.</p>
-<p>Mais si on tente d'accéder ou de modifier la <code>n</code>ème valeur d'un tableau qui ne contient pas au moins <code>n</code> valeurs, alors une erreur se produit.</p>
-<p><strong>(4)</strong> Ecrire des lignes de code permettant à un utilisateur de remplacer le nom de chaque jour de la semaine par son équivalent en anglais.</p>
-
+<div class="rq">
+    L'écriture scientifique de la constante d'Avogadro est $+ 6,02214076 \times 10^{23}$.
+    </div>
 </div>
 </div>
 </div>
@@ -14560,8 +14552,8 @@ dimanche 19 juillet 1789
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">jours</span><span class="p">)):</span>
-    <span class="n">jours</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s1">&#39;Comment dit-on &#39;</span> <span class="o">+</span> <span class="n">jours</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="s1">&#39; en anglais ? &#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">avog</span> <span class="o">=</span> <span class="mi">602214076000000000000000</span>
+<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.10e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">avog</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14578,44 +14570,7 @@ dimanche 19 juillet 1789
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Comment dit-on lundi en anglais ? monday
-Comment dit-on mardi en anglais ? tuesday
-Comment dit-on mercredi en anglais ? wednesday
-Comment dit-on jeudi en anglais ? thursday
-Comment dit-on vendredi en anglais ? friday
-Comment dit-on samedi en anglais ? saturday
-Comment dit-on dimanche en anglais ? sunday
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">jours</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[&#39;monday&#39;, &#39;tuesday&#39;, &#39;wednesday&#39;, &#39;thursday&#39;, &#39;friday&#39;, &#39;saturday&#39;, &#39;sunday&#39;]
+<pre>6.0221407600e+23
 </pre>
 </div>
 </div>
@@ -14627,36 +14582,33 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="D&#233;finition-d'un-tableau-en-compr&#233;hension">D&#233;finition d'un tableau en compr&#233;hension<a class="anchor-link" href="#D&#233;finition-d'un-tableau-en-compr&#233;hension">&#182;</a></h3>
+<p>On remarque qu'un nombre ne peut pas être écrit dans ce format : le nombre 0. En effet, la mantisse devrait être égale à 0, ce qui est exclu par définition.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Si on souhaite stocker dans un tableau les carrés des nombres entiers compris entre 0 et 10, on peut définir le tableau en extension :</p>
-
+<h2 id="Partie-B---Ecriture-binaire-des-nombres">Partie B - Ecriture binaire des nombres<a class="anchor-link" href="#Partie-B---Ecriture-binaire-des-nombres">&#182;</a></h2>
 </div>
 </div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">36</span><span class="p">,</span> <span class="mi">49</span><span class="p">,</span> <span class="mi">64</span><span class="p">,</span> <span class="mi">81</span><span class="p">,</span> <span class="mi">100</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On constate qu'une telle définition n'est pas pratique, voire impossible à mettre en oeuvre si le nombre de valeurs dans le tableau est grand.</p>
-<p>On utilise alors une autre façon de définir le tableau : la <strong>définition en compréhension</strong>, qui est basée sur la notion de <strong>boucle</strong>.</p>
+<h3 id="Rappel-concernant-les-nombres-entiers">Rappel concernant les nombres entiers<a class="anchor-link" href="#Rappel-concernant-les-nombres-entiers">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Donner l'écriture binaire d'un nombre entier, cela revient à écrire ce nombre sous la forme d'une somme de puissances positives de 2.</p>
+<p>Par exemple, pour le nombre 2020 : $$2020 = 1024 + 512 + 256 + 128 + 64 + 32 + 4$$ c'est-à-dire :
+$$2020 = 2^{10} + 2^9 + 2^8 + 2^7 + 2^6 + 2^5 + 2^2$$ et l'écriture binaire de 2020 est donc :
+$$2020 = (11111100100)_2$$</p>
+<p>On peut vérifier le résultat obtenu grâce à la fonction <code>bin</code>, qui renvoie l'écriture binaire sous la forme d'une chaîne de caractères qui commence par <code>0b</code> :</p>
 
 </div>
 </div>
@@ -14666,8 +14618,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span> <span class="c1"># le tableau est ici défini en compréhension</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">2020</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14684,7 +14635,7 @@ Comment dit-on dimanche en anglais ? sunday
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
+<pre>0b11111100100
 </pre>
 </div>
 </div>
@@ -14696,8 +14647,47 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Elle permet d'obtenir rapidement des tableaux qui contiennent de nombreuses valeurs.</p>
+<p><strong>Question 2 :</strong> Sans utiliser Python, donner l'écriture binaire des nombres 100 et 94130. Vérifier ensuite vos résultats avec deux lignes de code.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+    <i>Première méthode :</i> on connaît quelques puissances positives de 2 et on décompose simplement le nombre.
+<table>
+	         <tr>
+                <td><center>$2^{10}$</center></td>
+                               <td><center>$2^9$</center></td>
+                                <td><center>$2^8$</center></td>
+                                <td><center>$2^7$</center></td>
+                                <td><center>$2^6$</center></td>
+                                <td><center>$2^5$</center></td>
+                                <td><center>$2^4$</center></td>
+                                <td><center>$2^3$</center></td>
+                                <td><center>$2^2$</center></td>
+                                <td><center>$2^1$</center></td>
+                                <td><center>$2^0$</center></td>
+            </tr>
+            <tr>
+                                <td><center>$1024$</center></td>
+                                <td><center>$512$</center></td>
+                                <td><center>$256$</center></td>
+                                <td><center>$128$</center></td>
+                                <td><center>$64$</center></td>
+                                <td><center>$32$</center></td>
+                                <td><center>$16$</center></td>
+                                <td><center>$8$</center></td>
+                                <td><center>$4$</center></td>
+                                <td><center>$2$</center></td>
+                                <td><center>$1$</center></td>
+              </tr>
+        </table>
+
+   On obtient : $100 = 64 + 32 + 4 = 2^6 + 2^5 + 2^2 = (1100100)_2$.
+   </div>
 </div>
 </div>
 </div>
@@ -14706,8 +14696,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">101</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14724,7 +14713,7 @@ Comment dit-on dimanche en anglais ? sunday
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 1, 4, 9, 16, 25, 36, 49, 64, 81, 100, 121, 144, 169, 196, 225, 256, 289, 324, 361, 400, 441, 484, 529, 576, 625, 676, 729, 784, 841, 900, 961, 1024, 1089, 1156, 1225, 1296, 1369, 1444, 1521, 1600, 1681, 1764, 1849, 1936, 2025, 2116, 2209, 2304, 2401, 2500, 2601, 2704, 2809, 2916, 3025, 3136, 3249, 3364, 3481, 3600, 3721, 3844, 3969, 4096, 4225, 4356, 4489, 4624, 4761, 4900, 5041, 5184, 5329, 5476, 5625, 5776, 5929, 6084, 6241, 6400, 6561, 6724, 6889, 7056, 7225, 7396, 7569, 7744, 7921, 8100, 8281, 8464, 8649, 8836, 9025, 9216, 9409, 9604, 9801, 10000]
+<pre>0b1100100
 </pre>
 </div>
 </div>
@@ -14736,47 +14725,28 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(5)</strong> Définir un tableau contenant le cube de tous les entiers compris entre 0 et 20.</p>
-
+<div class="rq">
+    <i>Deuxième méthode :</i> On réalise des divisions euclidiennes successives par 2 :<br><br>
+   $$94130 = 2 \times 47065 + 0$$
+   $$47065 = 2 \times 23532 + 1$$
+   $$23532 = 2 \times 11766 + 0$$
+   $$11766 = 2 \times 5883 + 0$$
+   $$5883 = 2 \times 2941 + 1$$
+   $$2941 = 2 \times 1470 + 1$$
+   $$1470 = 2 \times 735 + 0$$
+   $$735 = 2 \times 367 + 1$$
+   $$367 = 2 \times 183 + 1$$
+   $$183 = 2 \times 91 + 1$$
+   $$91 = 2 \times 45 + 1$$
+   $$45 = 2 \times 22 + 1$$
+   $$22 = 2 \times 11 + 0$$
+   $$11 = 2 \times 5 + 1$$
+   $$5 = 2 \times 2 + 1$$
+   $$2 = 2 \times 1 + 0$$
+   $$1 = 2 \times 0 + 1$$
+<br> et l'écriture binaire du nombre correspond aux restes des divisions lus de bas en haut :
+   $94130 = (10110111110110010)_2$.
 </div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">([</span><span class="n">k</span><span class="o">**</span><span class="mi">3</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">21</span><span class="p">)])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 1, 8, 27, 64, 125, 216, 343, 512, 729, 1000, 1331, 1728, 2197, 2744, 3375, 4096, 4913, 5832, 6859, 8000]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(6)</strong> Définir en une seule ligne de code un tableau composé de 100 entiers tirés au hasard entre 0 et 255.</p>
-
 </div>
 </div>
 </div>
@@ -14785,9 +14755,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
-<span class="n">tab_alea</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tab_alea</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">94130</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14804,7 +14772,7 @@ Comment dit-on dimanche en anglais ? sunday
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[222, 213, 169, 160, 107, 155, 102, 87, 68, 98, 104, 204, 127, 126, 166, 0, 243, 239, 72, 131, 159, 232, 100, 129, 139, 104, 13, 47, 6, 220, 134, 100, 6, 157, 219, 238, 152, 196, 161, 181, 178, 63, 137, 239, 188, 101, 29, 158, 107, 117, 31, 167, 198, 237, 253, 248, 166, 20, 203, 78, 210, 132, 209, 170, 13, 118, 2, 102, 113, 47, 175, 219, 81, 25, 139, 78, 27, 231, 30, 112, 23, 222, 8, 40, 56, 38, 108, 46, 217, 19, 245, 193, 67, 161, 165, 132, 230, 133, 171, 181]
+<pre>0b10110111110110010
 </pre>
 </div>
 </div>
@@ -14816,9 +14784,190 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Il est également possible d'ajouter une <strong>condition</strong> à la définition en compréhension.</p>
-<p>Par exemple, pour obtenir le carré des nombres pairs compris entre 0 et 100, on écrit :</p>
+<h3 id="Ecriture-binaire-des-nombres-compris-entre-0-et-1">Ecriture binaire des nombres compris entre 0 et 1<a class="anchor-link" href="#Ecriture-binaire-des-nombres-compris-entre-0-et-1">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Le principe est le même pour obtenir l'écriture binaire des nombres à virgule. On s'autorise simplement d'utiliser aussi des puissances négatives de 2.</p>
+<p>Par exemple, pour le nombre 0,6875 : $$0,6875 = 0,5 + 0,125 + 0,0625$$ c'est-à-dire :
+$$0,6875 = 2^{-1} + 2^{-3} + 2^{-4}$$ et l'écriture binaire de 0,6875 est donc :
+$$0,6875 = (0,1011)_2$$</p>
+<p><strong>Question 3 :</strong> Donner l'écriture binaire des nombres 0,3125 et 0,515625.</p>
 
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+    <i>Première méthode :</i> on connaît quelques puissances négatives de 2 et on décompose simplement le nombre.    
+<table>         <tr>
+                <td><center>$2^{-1}$</center></td>
+                               <td><center>$2^{-2}$</center></td>
+                                <td><center>$2^{-3}$</center></td>
+                                <td><center>$2^{-4}$</center></td>
+                                <td><center>$2^{-5}$</center></td>
+            </tr>
+            <tr>
+                <td><center>$0,5$</center></td>
+                                <td><center>$0,25$</center></td>
+                                <td><center>$0,125$</center></td>
+                                <td><center>$0,0625$</center></td>
+                                <td><center>$0,03125$</center></td>
+    </tr>
+        </table>
+On obtient : $0,3125 = 0,25 + 0,0625 = 2^{-2} + 2^{-4} = (0,0101)_2$.<br>    
+<br>
+    <i>Deuxième méthode :</i> on réalise des multiplications successives par 2 :<br><br>
+$$0,515625 \times 2 = 1,03125$$
+  $$0,03125 \times 2 = 0,0625$$
+  $$0,0625 \times 2 = 0,125$$
+  $$0,125 \times 2 = 0,25$$
+  $$0,25 \times 2 = 0,5$$
+ $$0,5 \times 2 = 1,0$$<br>
+
+et la partie fractionnaire de l'écriture binaire du nombre correspond aux parties entières des produits lus de haut en bas :
+  $0,515625 = (0,100001)_2$.
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Remarquons que les nombres réels qui ont une écriture décimale infinie ont aussi une écriture binaire infinie. Par exemple :
+$$1/3 = 0,33333333... = (0,01010101...)_2$$</p>
+<p>Il existe par contre des nombres réels qui ont une écriture décimale finie mais qui ont une écriture binaire infinie. Par exemple :
+$$1/5 = 0,2 = (0,00110011...)_2$$</p>
+<p><strong>Question 4 :</strong> Donner les 10 premiers bits après la virgule de l'écriture binaire des nombres 0,1 et 0,3.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+On a vu que $0,2 = (0,001100110011...)_2$ et on sait que diviser un nombre par 2 revient, dans son écriture binaire,
+à décaler la virgule d'une position vers la gauche. On obtient $0,1 = (0,0001100110011...)_2$.<br>
+   Les 10 premiers bits après la virgule du nombre 0,1 sont donc <code>0001100110</code>.<br><br>
+    Pour obtenir l'écriture binaire de 0,3, on réalise des multiplications successives par 2 :<br><br>
+$$0,3 \times 2 = 0,6$$
+  $$0,6 \times 2 = 1,2$$
+  $$0,2 \times 2 = 0,4$$
+  $$0,4 \times 2 = 0,8$$
+  $$0,8 \times 2 = 1,6$$
+  $$0,6 \times 2 = 1,2$$
+  $$0,2 \times 2 = 0,4$$
+  $$0,4 \times 2 = 0,8$$
+  $$0,8 \times 2 = 1,6$$
+   $$...$$<br>
+
+et on obtient : $0,3 = (0,0100110011001...)_2$.<br>
+   Les 10 premiers bits après la virgule du nombre 0,3 sont donc <code>0100110011</code>.
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Partie-C---Repr&#233;sentation-des-flottants-en-machine-(norme-IEEE-754)">Partie C - Repr&#233;sentation des flottants en machine (norme IEEE 754)<a class="anchor-link" href="#Partie-C---Repr&#233;sentation-des-flottants-en-machine-(norme-IEEE-754)">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La norme informatique la plus couramment utilisée pour représenter les nombres flottants est la <strong>norme IEEE 754</strong> mise au point en 1985. Il s'agit d'une variante de l'écriture scientifique en base 2, dans laquelle la mantisse est un nombre compris entre 1 (inclus) et 2 (exclu).</p>
+<p>Les flottants peuvent être représentés sur 32 bits (format dit de <strong>simple précision</strong>) ou sur 64 bits (format dit de <strong>double précision</strong>).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div>
+            <table>
+            <tr>
+                <th><center>Format</center></th>
+                <th><center>Signe <code>s</code></center></th>
+                <th><center>Exposant <code>e</code></center></th>
+                <th><center>Mantisse <code>m</code></center></th>
+                <th><center>Total</center></th>
+            </tr>
+            <tr>
+                <td><center>simple précision</center></td>
+                <td><center>1 bit</center></td>
+                <td><center>8 bits</center></td> 
+                <td><center>23 bits</center></td>
+                <td><center>32 bits</center></td>
+            </tr>
+            <tr>
+                <td><center>double précision</center></td>
+                <td><center>1 bit</center></td>
+                <td><center>11 bits</center></td>
+                <td><center>52 bits</center></td>
+                <td><center>64 bits</center></td>
+            </tr>
+        </table>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Principe-de-la-repr&#233;sentation">Principe de la repr&#233;sentation<a class="anchor-link" href="#Principe-de-la-repr&#233;sentation">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Le bit le plus à gauche (bit de poids fort) correspond au signe du flottant :</p>
+<ul>
+<li><code>0</code> pour un flottant positif,</li>
+<li><code>1</code> pour un flottant négatif.</li>
+</ul>
+<p>Les 8 ou 11 bits suivants correspondent à l'exposant <code>e</code>. Comme <code>e</code> peut être positif ou négatif, on ne représente pas directement l'entier <code>e</code> mais :</p>
+<ul>
+<li>l'entier <code>e + 127</code> sur 8 bits pour le format simple précision,</li>
+<li>l'entier <code>e + 1023</code> sur 11 bits pour le format double précision.</li>
+</ul>
+<p>Les 23 ou 52 derniers bits correspondent à la mantisse <code>m</code>. Comme <code>m</code> est par définition compris entre 1 et 2, c'est uniquement la partie fractionnaire (partie située après la virgule) du nombre <code>m - 1</code> qui est représentée sur 23 ou 52 bits.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Représentons par exemple sur 32 bits le nombre flottant <code>-0,2</code>. Il est négatif donc le bit le plus à gauche de sa représentation est un <code>1</code>.</p>
+<p>De plus, nous avons vu précédemment que $0,2 = (0,00110011...)_2 = (1,10011001...)_2 \times 2^{-3}$. L'exposant <code>e</code> est donc -3 et la mantisse <code>m</code> est 1,10011001...</p>
+<p>On écrit sur 8 bits le nombre <code>e + 127</code> (c'est-à-dire 124) ce qui donne <code>01111100</code>.</p>
+<p>Enfin, on écrit sur 23 bits la partie fractionnaire de <code>m-1</code> (c'est-à-dire 0,10011001...) ce qui donne <code>10011001100110011001100(1)</code>, arrondi à <code>10011001100110011001101</code>.</p>
+<p>La représentation sur 32 bits obtenue pour le flottant <code>-0,2</code> est donc <code>1 01111100 10011001100110011001101</code>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">La fonction <code>float_bin32</code>, importée depuis le module <code>float_bin</code>, permet de vérifier le résultat obtenu :</div>
 </div>
 </div>
 </div>
@@ -14827,48 +14976,20 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">101</span><span class="p">)</span> <span class="k">if</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">2</span> <span class="o">==</span> <span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">float_bin</span> <span class="k">import</span> <span class="n">float_bin32</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 4, 16, 36, 64, 100, 144, 196, 256, 324, 400, 484, 576, 676, 784, 900, 1024, 1156, 1296, 1444, 1600, 1764, 1936, 2116, 2304, 2500, 2704, 2916, 3136, 3364, 3600, 3844, 4096, 4356, 4624, 4900, 5184, 5476, 5776, 6084, 6400, 6724, 7056, 7396, 7744, 8100, 8464, 8836, 9216, 9604, 10000]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(7)</strong> Définir un tableau contenant le cube de tous les entiers compris entre 0 et 20 et non multiples de 5.</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">k</span><span class="o">**</span><span class="mi">3</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">21</span><span class="p">)</span> <span class="k">if</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">5</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -14885,7 +15006,7 @@ Comment dit-on dimanche en anglais ? sunday
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[1, 8, 27, 64, 216, 343, 512, 729, 1331, 1728, 2197, 2744, 4096, 4913, 5832, 6859]
+<pre><span class="ansi-green-intense-fg ansi-bold">1</span><span class="ansi-red-intense-fg ansi-bold">01111100</span><span class="ansi-blue-intense-fg ansi-bold">10011001100110011001101</span>
 </pre>
 </div>
 </div>
@@ -14894,98 +15015,32 @@ Comment dit-on dimanche en anglais ? sunday
 </div>
 
 </div>
-<div id="index_divisibilite" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 5 :</strong> Quelle est la représentation des nombres <code>1.0</code> et <code>25.0</code> sur 32 bits ?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="rq">
-    La condition <code>k</code> est multiple de 5 s'écrit en Python <code>k % 5 == 0</code>, et donc la condition <code>k</code> n'est pas multiple de 5 s'écrit <code>k % 5 != 0</code>.
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pour définir, par exemple, un tableau qui contient 100 fois la valeur 0, on peut écrire :</p>
+    Remarquons d'abord que le flottant <code>1.0</code> est positif donc le bit
+    le plus à gauche de sa représentation est un <code>0</code>.<br>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">([</span><span class="mi">0</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">)])</span>
-</pre></div>
+   Ecrivons ensuite le nombre flottant <code>1.0</code> sous la forme $1,0 = +(1,0)_2 \times 2^0$.<br>
 
+L'exposant <code>e</code> est donc 0 et la mantisse <code>m</code> est 1,0.<br>
+
+On écrit sur 8 bits le nombre <code>e + 127</code> (c'est-à-dire 127) ce qui donne <code>01111111</code>.<br>
+
+Enfin, on écrit sur 23 bits la partie fractionnaire de <code>m-1</code> (c'est-à-dire 0,0) ce qui donne
+<code>00000000000000000000000</code>.<br>
+
+La représentation obtenue pour le nombre <code>1.0</code> est donc <code>0 01111111 00000000000000000000000</code>.
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>ou alors, de façon encore plus simple avec l'opérateur <code>*</code> :</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Enfin, l'opérateur <code>+</code> permet de concaténer (c'est-à-dire mettre bout à bout) plusieurs tableaux. Par exemple :</p>
-
 </div>
 </div>
 </div>
@@ -14994,7 +15049,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">([</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">5</span> <span class="o">+</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="p">[</span><span class="mi">5</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span> <span class="k">if</span> <span class="n">k</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">1.0</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -15011,7 +15066,7 @@ Comment dit-on dimanche en anglais ? sunday
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 0, 0, 0, 0, 1, 1, 1, 5, 10, 20, 25, 35, 40]
+<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">01111111</span><span class="ansi-blue-intense-fg ansi-bold">00000000000000000000000</span>
 </pre>
 </div>
 </div>
@@ -15023,7 +15078,61 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(8)</strong> En une seule ligne de code, définir le tableau <code>[0, 0, 0, 0, 4, 8, 12, 16, 20, ..., 92, 96, 100, 200, 400, 800, 1600, 3200, ..., 102400, 204800, 409600]</code>.</p>
+<div class="rq">
+    Remarquons d'abord que le flottant <code>25.0</code> est positif donc le bit le plus à gauche
+    de sa représentation est un <code>0</code>.<br>
+
+  Donnons ensuite son écriture binaire : $25,0 = (11001,0)_2$ puis son écriture scientifique binaire :
+
+  $25,0 = +(1,1001)_2 \times 2^4$.<br>
+
+L'exposant <code>e</code> est donc 4 et la mantisse <code>m</code> est 1,1001.<br>
+
+On écrit sur 8 bits le nombre <code>e + 127</code> (c'est-à-dire 131) ce qui donne <code>10000011</code>.<br>
+
+Enfin, on écrit sur 23 bits la partie fractionnaire de <code>m-1</code> (c'est-à-dire 0,1001) ce qui donne
+<code>10010000000000000000000</code>.<br>
+
+La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 10000011 10010000000000000000000</code>.
+    </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">25.0</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">10000011</span><span class="ansi-blue-intense-fg ansi-bold">10010000000000000000000</span>
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Nous avons dit que le nombre 0 n'a pas d'écriture scientifique. Il est par convention représenté par <code>0 00000000 00000000000000000000000</code>.</p>
 
 </div>
 </div>
@@ -15033,8 +15142,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">3</span> <span class="o">+</span> <span class="p">[</span><span class="mi">4</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">25</span><span class="p">)]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">100</span><span class="o">*</span><span class="mi">2</span><span class="o">**</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">13</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">0.0</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -15051,7 +15159,7 @@ Comment dit-on dimanche en anglais ? sunday
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[0, 0, 0, 0, 4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64, 68, 72, 76, 80, 84, 88, 92, 96, 100, 200, 400, 800, 1600, 3200, 6400, 12800, 25600, 51200, 102400, 204800, 409600]
+<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">00000000</span><span class="ansi-blue-intense-fg ansi-bold">00000000000000000000000</span>
 </pre>
 </div>
 </div>
@@ -15060,15 +15168,253 @@ Comment dit-on dimanche en anglais ? sunday
 </div>
 
 </div>
-<div id="index_append" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Remarquons enfin qu'en théorie la taille d'un tableau est fixée et ne peut pas être modifiée. En Python, les tableaux sont des tableaux dynamiques pour lesquels il est possible d'ajouter ou de retirer des éléments.</p>
-<ul>
-<li>Pour ajouter un élément à la fin du tableau <code>tab</code>, on utilise l'instruction <code>tab.append(element)</code>.</li>
-<li>Pour ajouter un élément au rang <code>n</code> dans le tableau <code>tab</code>, on utilise l'instruction <code>tab.insert(n, element)</code>.</li>
-<li>Pour supprimer l'élément de rang <code>n</code> dans le tableau <code>tab</code>, on utilise l'instruction <code>del tab[n]</code>.</li>
-</ul>
+<h2 id="Partie-D---Probl&#232;me-du-test-d'&#233;galit&#233;-de-deux-flottants">Partie D - Probl&#232;me du test d'&#233;galit&#233; de deux flottants<a class="anchor-link" href="#Partie-D---Probl&#232;me-du-test-d'&#233;galit&#233;-de-deux-flottants">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La représentation des nombres flottants en machine est <strong>approximative</strong>, ce qui entraîne des difficultés.</p>
+<p>Par exemple, les nombres 0,1 et 0,2 ont une écriture binaire infinie, d'où des problèmes d'arrondis éventuels.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.2</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.30000000000000004</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>C'est la raison pour laquelle il faut absolument éviter d'utiliser des conditions dans lesquelles on teste l'égalité entre deux flottants.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.2</span> <span class="o">==</span> <span class="mf">0.3</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Je sais compter !&#39;</span><span class="p">)</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Je ne sais pas compter ??&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Je ne sais pas compter ??
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+   Pour Python, la condition <code>0.1 + 0.2 == 0.3</code> est fausse à cause des problèmes d'arrondi induits par la représentation des flottants.
+    </div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 6 :</strong> Définir une fonction <code>pythagore</code> qui prend en paramètre d'entrée les longueurs <code>a</code>, <code>b</code> et <code>c</code> des trois côtés d'un triangle et qui renvoie <code>True</code> si le triangle est rectagle et <code>False</code> sinon. Penser à écrire la spécification de la fonction ainsi que des assertions permettant de vérifier que les arguments passés en paramètres d'entrée sont des nombres strictement positifs.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pythagore</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Détermine si un triangle de côtés a, b et c est rectangle ou pas</span>
+<span class="sd">    - Entrées : a, b, c (nombres)</span>
+<span class="sd">    - Sortie : (booléen)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">param</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être des nombres&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">param</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être strictement positifs&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="c1"># test de la fonction avec des entiers en entrée</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[17]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span> <span class="c1"># test de la fonction avec des flottants en entrée</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[18]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>True</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span> <span class="c1"># test de la fonction avec des flottants en entrée</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[19]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>False</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+   Les trois triangles sont pourtant bien rectangles... Mais la représentation approchée des flottants en mémoire ne permet pas d'obtenir un résultat correct sur le troisième test.
+    </div>
+</div>
+</div>
+</div>
+<div id="index_test_egalite_approchee" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On peut remplacer le test d'égalité <code>flottant1 == flottant2</code> par un test du type <code>abs(flottant1 - flottant2) &lt; 10**-n</code> qui est un <strong>test d'égalité approchée</strong> (avec <code>n</code> chiffres après la virgule de précision).</p>
 
 </div>
 </div>
@@ -15076,22 +15422,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Partie-B---Tri-d'un-tableau-par-s&#233;lection-ou-par-insertion">Partie B - Tri d'un tableau par s&#233;lection ou par insertion<a class="anchor-link" href="#Partie-B---Tri-d'un-tableau-par-s&#233;lection-ou-par-insertion">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Objectif">Objectif<a class="anchor-link" href="#Objectif">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Le but de cette partie est d'étudier deux algorithmes permettant de <strong>trier les élements d'un tableau du plus petit au plus grand</strong>. Les éléments peuvent être des nombres mais aussi, par exemple, des chaînes de caractères (ou tout autre objet dont le type possède un <em>ordre total</em>, c'est-à-dire un ordre pour lequel tout élément peut être comparé à tout autre élément).</p>
-<p><strong>(9)</strong> Ecrire la spécification de la fonction <code>est_trie</code> définie ci-dessous :</p>
+<p><strong>Question 7 :</strong> Modifier le code de la fonction <code>pythagore</code> pour remplacer le test d'égalité de deux flottants par un test d'agalité approchée (à 12 chiffres après la virgule de précision).</p>
 
 </div>
 </div>
@@ -15101,16 +15432,21 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">est_trie</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pythagore</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
     <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Vérifie si un tableau est trié dans l&#39;ordre croissant.</span>
-<span class="sd">    - Entrée : tab (tableau)</span>
-<span class="sd">    - Sortie : booléen (True si le tableau est trié, False sinon)</span>
+<span class="sd">    Détermine si un triangle de côtés a, b et c est rectangle ou pas</span>
+<span class="sd">    - Entrées : a, b, c (nombres)</span>
+<span class="sd">    - Sortie : (booléen)</span>
 <span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="k">if</span> <span class="n">tab</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">tab</span><span class="p">[</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">]:</span>
-            <span class="k">return</span> <span class="kc">False</span>
-    <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]:</span>
+        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">param</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
+            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être des nombres&#39;</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">param</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être strictement positifs&#39;</span><span class="p">)</span>
+    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">12</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">True</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="k">return</span> <span class="kc">False</span>
 </pre></div>
 
     </div>
@@ -15118,21 +15454,12 @@ Comment dit-on dimanche en anglais ? sunday
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Les tableaux suivants sont triés :</p>
-
-</div>
-</div>
-</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tableau_entiers</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
-<span class="n">est_trie</span><span class="p">(</span><span class="n">tableau_entiers</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15165,8 +15492,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tableau_flottants</span> <span class="o">=</span> <span class="p">[</span><span class="o">-</span><span class="mf">1.3</span><span class="p">,</span> <span class="o">-</span><span class="mf">1.0</span><span class="p">,</span> <span class="mf">0.001</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.15</span><span class="p">]</span>
-<span class="n">est_trie</span><span class="p">(</span><span class="n">tableau_flottants</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15199,8 +15525,7 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tableau_chaines</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;arbre&#39;</span><span class="p">,</span> <span class="s1">&#39;bonbon&#39;</span><span class="p">,</span> <span class="s1">&#39;bonjour&#39;</span><span class="p">,</span> <span class="s1">&#39;bouteille&#39;</span><span class="p">,</span> <span class="s1">&#39;bu&#39;</span><span class="p">]</span>
-<span class="n">est_trie</span><span class="p">(</span><span class="n">tableau_chaines</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15231,767 +15556,9 @@ Comment dit-on dimanche en anglais ? sunday
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Tri-par-s&#233;lection">Tri par s&#233;lection<a class="anchor-link" href="#Tri-par-s&#233;lection">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Le principe du <strong>tri par sélection</strong> est le suivant :</p>
-<ul>
-<li>parcourir le tableau de la gauche vers la droite, en définissant une partie gauche déjà triée et une partie droite pas encore triée, </li>
-<li>déterminer quel est le plus petit élément de la partie de droite, et l'échanger avec le premier élément de la partie de droite.</li>
-</ul>
-<p>De cette façon, la partie de gauche du tableau est triée en permanence, et les éléments y sont placés à leur position définitive.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/tri_selection.gif'>
-</div><center><i>En vert, la partie gauche du tableau est triée. En rouge, la partie droite a tous ses éléments plus grands que les éléments de la partie gauche.</i></center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class = 'rq3'>
-<p><b>Algorithme de tri par sélection</b></p>
-<p><b>Début</b></p>
-<p STYLE="padding:0 0 0 40px;"><code>n</code> ← longueur du tableau <code>tab</code></p>
-<p STYLE="padding:0 0 0 40px;">Pour <code>k</code> allant de 0 à (<code>n</code>-2) faire</p>
-<p STYLE="padding:0 0 0 80px;"><code>i</code> ← index du plus petit élement de <code>tab</code> dont l'index est compris entre <code>k</code> et (<code>n</code>-1)</p>
-<p STYLE="padding:0 0 0 80px;">Echanger le <code>k</code>ème élement et le <code>i</code>ème élement du tableau <code>tab</code></p>
-<p STYLE="padding:0 0 0 40px;">Fin Pour</p>
-<p><b>Fin</b></p>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(10)</strong> Ecrire une fonction <code>index_min</code> prenant en paramètres d'entrée un tableau <code>tab</code> et un entier <code>k</code> et renvoyant l'index du plus petit élement du tableau <code>tab</code> parmi les éléments dont l'index est supérieur ou égal à <code>k</code>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">index_min</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span> <span class="n">k</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Recherche quel est l&#39;index du plus petit élément du tableau tab ayant un index supérieur ou égal à k.</span>
-<span class="sd">    - Entrées : tab (tableau), k (entier)</span>
-<span class="sd">    - Sortie : m (entier)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">i_min</span> <span class="o">=</span> <span class="n">k</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">k</span> <span class="o">+</span> <span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)):</span>
-        <span class="k">if</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">tab</span><span class="p">[</span><span class="n">i_min</span><span class="p">]:</span>
-            <span class="n">i_min</span> <span class="o">=</span> <span class="n">i</span>
-    <span class="k">return</span> <span class="n">i_min</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>On peut alors définir la fonction <code>tri_selection</code> :</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Trie un tableau grâce à l&#39;algorithme de tri par sélection.</span>
-<span class="sd">    - Entrée : tab (tableau)</span>
-<span class="sd">    - Effet de bord : modification du tableau passé en paramètre d&#39;entrée</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
-        <span class="n">i</span> <span class="o">=</span> <span class="n">index_min</span><span class="p">(</span><span class="n">tab</span><span class="p">,</span> <span class="n">k</span><span class="p">)</span>
-        <span class="n">tab</span><span class="p">[</span><span class="n">k</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
-<span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tableau non trié : &#39;</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-<span class="n">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tableau trié     : &#39;</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Tableau non trié :  [36, 80, 91, 91, 85, 14, 73, 79, 0, 75, 61, 76, 0, 14, 84, 53, 88, 75, 83, 50]
-Tableau trié     :  [0, 0, 14, 14, 36, 50, 53, 61, 73, 75, 75, 76, 79, 80, 83, 84, 85, 88, 91, 91]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Tri-par-insertion">Tri par insertion<a class="anchor-link" href="#Tri-par-insertion">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Le principe du <strong>tri par insertion</strong> est le suivant :</p>
-<ul>
-<li>parcourir le tableau de la gauche vers la droite, en définissant une partie gauche déjà triée et une partie droite pas encore triée,</li>
-<li>déplacer le premier élément de la partie de droite au bon endroit dans la partie de gauche.</li>
-</ul>
-<p>De cette façon, la partie de gauche du tableau est triée en permanence mais les éléments n'y sont pas placés à leur position définitive.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/tri_insertion.gif'>
-</div><center><i>En vert, la partie gauche du tableau est triée. En rouge, le premier élément de la partie droite doit être inséré au bon endroit dans la partie gauche.</i></center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class = 'rq3'>
-    <p><b>Algorithme de tri par insertion</b></p>
-<p><b>Début</b></p>
-<p STYLE="padding:0 0 0 40px;"><code>n</code> ← longueur du tableau <code>tab</code></p>
-<p STYLE="padding:0 0 0 40px;">Pour <code>k</code> allant de <code>1</code> à (<code>n</code>-1) faire</p>
-<p STYLE="padding:0 0 0 80px;"><code>valeur</code> ← <code>tab[k]</code></p>
-<p STYLE="padding:0 0 0 80px;"><code>pos</code> ← <code>k</code></p>
-    <p STYLE="padding:0 0 0 80px;">Tant que <code>pos</code> &gt; 0 et <code>tab[pos - 1]</code> &gt; <code>valeur</code> faire</p>
-<p STYLE="padding:0 0 0 120px;"><code>tab[pos]</code> ← <code>tab[pos - 1]</code></p>
-<p STYLE="padding:0 0 0 120px;"><code>pos</code> ← <code>pos - 1</code></p>
-<p STYLE="padding:0 0 0 80px;">Fin Tant que</p>
-<p STYLE="padding:0 0 0 80px;"><code>tab[pos]</code> ← <code>valeur</code></p>
-<p STYLE="padding:0 0 0 40px;">Fin Pour</p>
-<p><b>Fin</b></p>
-    </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(11)</strong> Ecrire une fonction <code>tri_insertion</code> prenant en paramètre d'entrée un tableau <code>tab</code> et triant les éléments du tableau grâce à l'algorithme de tri par insertion.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">tri_insertion</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Trie un tableau grâce à l&#39;algorithme de tri par insertion.</span>
-<span class="sd">    - Entrée : tab (tableau)</span>
-<span class="sd">    - Effet de bord : modification du tableau passé en paramètre d&#39;entrée</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)):</span>
-        <span class="n">valeur</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
-        <span class="n">pos</span> <span class="o">=</span> <span class="n">k</span>
-        <span class="k">while</span> <span class="n">pos</span> <span class="o">&gt;</span> <span class="mi">0</span> <span class="ow">and</span> <span class="n">tab</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">valeur</span><span class="p">:</span>
-            <span class="n">tab</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">pos</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
-            <span class="n">pos</span> <span class="o">=</span> <span class="n">pos</span> <span class="o">-</span> <span class="mi">1</span>
-        <span class="n">tab</span><span class="p">[</span><span class="n">pos</span><span class="p">]</span> <span class="o">=</span> <span class="n">valeur</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tableau non trié : &#39;</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-<span class="n">tri_insertion</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Tableau trié     : &#39;</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Tableau non trié :  [76, 32, 14, 5, 83, 61, 91, 9, 8, 69, 14, 39, 88, 41, 56, 27, 53, 33, 36, 52]
-Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 69, 76, 83, 88, 91]
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Comparaison-de-l'efficacit&#233;-de-ces-deux-algorithmes-de-tri">Comparaison de l'efficacit&#233; de ces deux algorithmes de tri<a class="anchor-link" href="#Comparaison-de-l'efficacit&#233;-de-ces-deux-algorithmes-de-tri">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pour tester l'efficacité des algorithmes de tri par sélection et par insertion, on peut commencer par mesurer le temps qui leur est nécessaire pour trier des tableaux contenant de nombreux éléments. La fonction <code>time</code> du module <code>time</code> permet d'effectuer cette mesure.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">time</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Voici comment mesurer le temps que met l'ordinateur pour compter de 1 à 1000000 :</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tps_debut</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
-<span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="mi">1000000</span><span class="p">:</span>
-    <span class="n">i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span>
-<span class="n">tps_fin</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Temps d</span><span class="se">\&#39;</span><span class="s1">exécution :&#39;</span><span class="p">,</span> <span class="n">tps_fin</span> <span class="o">-</span> <span class="n">tps_debut</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Temps d&#39;exécution : 0.29955482482910156 s
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(12)</strong> Comparer le temps mis par chacun des deux algorithmes pour trier un tableau contenant 1000 valeurs, puis 2000 valeurs, puis 4000 valeurs :</p>
-<ul>
-<li>1er cas : les valeurs sont tirées au hasard,</li>
-<li>2ème cas : les valeurs sont rangées dans l'ordre décroissant,</li>
-<li>3ème cas : les valeurs sont rangées dans l'ordre croissant (le tableau est donc déjà trié).</li>
-</ul>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)]</span> <span class="c1"># 1000 éléments aléatoires dans un tableau</span>
-<span class="c1"># tab = [1000 - k for k in range(1000)] # 1000 éléments dans l&#39;ordre décroissant</span>
-<span class="c1"># tab = [k for k in range(1000)] # 1000 éléments dans l&#39;ordre croissant</span>
-
-<span class="n">tps_debut</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
-<span class="n">tri_selection</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-<span class="n">tps_fin</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
-
-<span class="n">duree_calcul</span> <span class="o">=</span> <span class="n">tps_fin</span> <span class="o">-</span> <span class="n">tps_debut</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Durée du tri par sélection pour 1000 éléments : &#39;</span><span class="p">,</span> <span class="n">duree_calcul</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Durée du tri par sélection pour 1000 éléments :  0.15228629112243652 s
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1000</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1000</span><span class="p">)]</span> <span class="c1"># 1000 éléments aléatoires dans un tableau</span>
-<span class="c1"># tab = [1000 - k for k in range(1000)] # 1000 éléments dans l&#39;ordre décroissant</span>
-<span class="c1"># tab = [k for k in range(1000)] # 1000 éléments dans l&#39;ordre croissant</span>
-
-<span class="n">tps_debut</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
-<span class="n">tri_insertion</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-<span class="n">tps_fin</span> <span class="o">=</span> <span class="n">time</span><span class="p">()</span>
-
-<span class="n">duree_calcul</span> <span class="o">=</span> <span class="n">tps_fin</span> <span class="o">-</span> <span class="n">tps_debut</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Durée du tri par insertion pour 1000 éléments : &#39;</span><span class="p">,</span> <span class="n">duree_calcul</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Durée du tri par insertion pour 1000 éléments :  0.14078068733215332 s
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-            <table align = "center">
-            <tr>
-                <th><center>1000 valeurs...</center></th>
-                <th><center>Tri par sélection</center></th>
-                <th><center>Tri par insertion</center></th>
-            </tr>
-            <tr>
-                <th><center>... tirées au hasard</center></th>
-                <td><center>0,13 s</center></td>
-                <td><center>0,15 s</center></td>                
-            </tr>
-            <tr>
-                <th><center>... dans l'ordre décroissant</center></th>
-                <td><center>0,15 s</center></td>
-                <td><center>0,34 s</center></td>                
-            </tr>
-            <tr>
-                <th><center>... dans l'ordre croissant</center></th>
-                <td><center> 0,13 s</center></td>
-                <td><center> 0,00 s</center></td>                
-            </tr>
-        </table>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-            <table align = "center">
-            <tr>
-                <th><center>2000 valeurs...</center></th>
-                <th><center>Tri par sélection</center></th>
-                <th><center>Tri par insertion</center></th>
-            </tr>
-            <tr>
-                <th><center>... tirées au hasard</center></th>
-                <td><center>0,56 s</center></td>
-                <td><center>0,54 s</center></td>                
-            </tr>
-            <tr>
-                <th><center>... dans l'ordre décroissant</center></th>
-                <td><center>0,57 s</center></td>
-                <td><center>1,03 s</center></td>                
-            </tr>
-            <tr>
-                <th><center>... dans l'ordre croissant</center></th>
-                <td><center>0,51 s</center></td>
-                <td><center>0,00 s</center></td>                
-            </tr>
-        </table>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-            <table align = "center">
-            <tr>
-                <th><center>4000 valeurs...</center></th>
-                <th><center>Tri par sélection</center></th>
-                <th><center>Tri par insertion</center></th>
-            </tr>
-            <tr>
-                <th><center>... tirées au hasard</center></th>
-                <td><center>2,06 s</center></td>
-                <td><center>2,82 s</center></td>                
-            </tr>
-            <tr>
-                <th><center>... dans l'ordre décroissant</center></th>
-                <td><center>2,10 s</center></td>
-                <td><center>5,09 s</center></td>                
-            </tr>
-            <tr>
-                <th><center>... dans l'ordre croissant</center></th>
-                <td><center>2,00 s</center></td>
-                <td><center>0,00 s</center></td>                
-            </tr>
-        </table>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
 <div class="rq">
-    Explications sur la notion de complexité... A ECRIRE !!!
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Partie-C---Tableaux-&#224;-plusieurs-dimensions">Partie C - Tableaux &#224; plusieurs dimensions<a class="anchor-link" href="#Partie-C---Tableaux-&#224;-plusieurs-dimensions">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Nous avons vu jusqu'à présent des tableaux contenant des valeurs de type entier ou de type chaîne de caractères, mais les valeurs peuvent en réalité être de n'importe quel type.</p>
-<p>En particulier, un tableau peut contenir des tableaux. On parle alors de <strong>tableau à deux dimensions</strong>.</p>
-<p>Par exemple, le tableau <code>union_europeenne</code> défini ci-dessous est un tableau à deux dimensions contenant 27 tableaux qui correspondent à chaque état-membre de l'UE. On stocke en mémoire l'équivalent d'un tableau composé de 27 lignes et 2 colonnes.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">union_europeenne</span> <span class="o">=</span> <span class="p">[</span>
-    <span class="p">[</span><span class="s1">&#39;Allemagne&#39;</span><span class="p">,</span> <span class="s1">&#39;Berlin&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Belgique&#39;</span><span class="p">,</span> <span class="s1">&#39;Bruxelles&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;France&#39;</span><span class="p">,</span> <span class="s1">&#39;Paris&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;Luxembourg&#39;</span><span class="p">,</span> <span class="s1">&#39;Luxembourg&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Italie&#39;</span><span class="p">,</span> <span class="s1">&#39;Rome&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Pays-Bas&#39;</span><span class="p">,</span> <span class="s1">&#39;Amsterdam&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;Danemark&#39;</span><span class="p">,</span> <span class="s1">&#39;Copenhague&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Irlande&#39;</span><span class="p">,</span> <span class="s1">&#39;Dublin&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Grèce&#39;</span><span class="p">,</span> <span class="s1">&#39;Athènes&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;Espagne&#39;</span><span class="p">,</span> <span class="s1">&#39;Madrid&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Portugal&#39;</span><span class="p">,</span> <span class="s1">&#39;Lisbonne&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Autriche&#39;</span><span class="p">,</span> <span class="s1">&#39;Vienne&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;Finlande&#39;</span><span class="p">,</span> <span class="s1">&#39;Helsinki&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Suède&#39;</span><span class="p">,</span> <span class="s1">&#39;Stockholm&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Chypre&#39;</span><span class="p">,</span> <span class="s1">&#39;Nicosie&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;Estonie&#39;</span><span class="p">,</span> <span class="s1">&#39;Tallinn&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Hongrie&#39;</span><span class="p">,</span> <span class="s1">&#39;Budapest&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Lettonie&#39;</span><span class="p">,</span> <span class="s1">&#39;Riga&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;Lituanie&#39;</span><span class="p">,</span> <span class="s1">&#39;Vilnius&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Malte&#39;</span><span class="p">,</span> <span class="s1">&#39;La Valette&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Pologne&#39;</span><span class="p">,</span> <span class="s1">&#39;Varsovie&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;République Tchèque&#39;</span><span class="p">,</span> <span class="s1">&#39;Prague&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Slovaquie&#39;</span><span class="p">,</span> <span class="s1">&#39;Bratislava&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Slovénie&#39;</span><span class="p">,</span> <span class="s1">&#39;Ljubljana&#39;</span><span class="p">],</span>
-    <span class="p">[</span><span class="s1">&#39;Bulgarie&#39;</span><span class="p">,</span> <span class="s1">&#39;Sofia&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Roumanie&#39;</span><span class="p">,</span> <span class="s1">&#39;Bucarest&#39;</span><span class="p">],</span> <span class="p">[</span><span class="s1">&#39;Croatie&#39;</span><span class="p">,</span> <span class="s1">&#39;Zagreb&#39;</span><span class="p">]</span>
-<span class="p">]</span>
-</pre></div>
-
+    Le test d'égalité <code>a**2 + b**2 == c**2</code> a été remplacé par le test d'égalité approchée <code>abs(a**2 + b**2 - c**2) &lt; 10**-12</code>.
     </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>L'élément du tableau <code>union_européenne</code> indexé par l'entier <code>2</code> est un tableau contenant des chaînes de caractères.</p>
-<p>Il correspond à la troisième ligne de <code>union_europeenne</code>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">union_europeenne</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[47]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>[&#39;France&#39;, &#39;Paris&#39;]</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Dans un tableau à deux dimensions, on utilise une <strong>double indexation</strong> pour accéder aux éléments du tableau . Le premier indice correspond au numéro de ligne (ici rang du pays dans le tableau <code>union_europeenne</code>) et le second au numéro de colonne (ici <code>0</code> pour le nom du pays et <code>1</code> pour sa capitale):</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">union_europeenne</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="s1">&#39;est la capitale de&#39;</span><span class="p">,</span> <span class="n">union_europeenne</span><span class="p">[</span><span class="mi">2</span><span class="p">][</span><span class="mi">0</span><span class="p">])</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Paris est la capitale de France
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(13)</strong> Afficher les capitales des pays de l'Union Européenne, séparées par des espaces.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">28</span><span class="p">):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">union_europeenne</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">1</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Berlin Bruxelles Paris Luxembourg Rome Amsterdam Copenhague Dublin Londres Athènes Madrid Lisbonne Vienne Helsinki Stockholm Nicosie Tallinn Budapest Riga Vilnius La Valette Varsovie Prague Bratislava Ljubljana Sofia Bucarest Zagreb </pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(14)</strong> Afficher la liste des pays de l'Union Européenne, séparés par des espaces.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">union_europeenne</span><span class="p">)):</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">union_europeenne</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Allemagne Belgique France Luxembourg Italie Pays-Bas Danemark Irlande Grèce Espagne Portugal Autriche Finlande Suède Chypre Estonie Hongrie Lettonie Lituanie Malte Pologne République Tchèque Slovaquie Slovénie Bulgarie Roumanie Croatie </pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">pays</span> <span class="ow">in</span> <span class="n">union_europeenne</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="n">pays</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39; &#39;</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Allemagne Belgique France Luxembourg Italie Pays-Bas Danemark Irlande Grèce Espagne Portugal Autriche Finlande Suède Chypre Estonie Hongrie Lettonie Lituanie Malte Pologne République Tchèque Slovaquie Slovénie Bulgarie Roumanie Croatie </pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-   L'exécution des deux cellules ci-dessus donne le même résultat, mais la boucle pour n'est pas utilisée de la même façon :
-    <ul>
-        <li>dans le premier cas, on <b>itère sur les index</b> des éléments du tableau,</li>
-        <li>dans le second cas, on <b>itère sur les éléments</b> du tableau, et <code>pays</code> remplace
-            <code>union_europeenne[k]</code>.</li>
-    </ul>
-</div>
 </div>
 </div>
 </div>
@@ -16007,20 +15574,14 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="rq2">
     <ul>
-        <li>Définir un tableau en extension.</li>
-        <li>Utiliser la fonction <code>len</code> pour déterminer le nombre d'éléments d'un tableau.</li>
-        <li>Accéder à, ou modifier, une valeur contenue dans un tableau, à partir de son index.</li>
-        <li>Eviter les erreurs en se souvenant que les index des éléments de <code>tableau</code> sont compris entre <code>0</code> et <code>len(tableau)-1</code>.</li>
-        <li>Définir un tableau en compréhension.</li>
-        <li>Utiliser les opérateurs <code>*</code> et <code>+</code> sur des tableaux.</li>
-        <li>Connaître le rôle des commandes <code>tab.append(elem)</code>, <code>tab.insert(n, elem)</code> et <code>del tab[n]</code>.</li>
-        <li>Connaître l'algorithme de tri par sélection.</li>
-        <li>Connaître l'algorithme de tri par insertion.</li>
-        <li>Savoir que l'algorithme de tri par sélection a une complexité quadratique dans tous les cas.</li>
-        <li>Savoir que l'algorithme de tri par insertion a une complexité quadratique dans le pire des cas, et une complexité linéaire dans le meilleur des cas.</li>
-        <li>Mesurer le temps d'exécution d'une partie de programme grâce à la fonction <code>time</code> du module <code>time</code>.</li>
-        <li>Définir un tableau à deux dimensions.</li>
-        <li>Utiliser la double indexation des éléments d'un tableau à deux dimensions pour accéder aux élements d'un tel tableau.</li>
+        <li>Donner l'écriture scientifique décimale d'un nombre.</li>
+        <li>Afficher l'écriture scientifique décimale d'un nombre <code>n</code> avec la commande <code>print("{:e}".format(n))</code></li>
+        <li>Déterminer l'écriture binaire d'un entier positif.</li>
+        <li>Afficher l'écriture binaire d'un entier avec la fonction <code>bin</code></li>
+        <li>Déterminer l'écriture binaire d'un nombre décimal positif.</li>
+        <li>Déterminer la représentation d'un nombre flottant sur 32 bits.</li>
+        <li>Retrouver un flottant à partir de sa représentation sur 32 bits.</li>
+        <li>Ne pas tester d'égalité sur les flottants, mais tester plutôt des égalités approchées.</li>
     </ul>
 </div>
 </div>
@@ -16043,44 +15604,41 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(1)</strong> Ecrire une fonction <code>tab_alea</code> qui prend en paramètre d'entrée un entier positif <code>n</code> et qui renvoie un tableau composé de <code>n</code> entiers tirés au hasard et compris entre 0 et 255.</p>
+<p>Donner la valeur décimale des nombres flottants dont la représentation sur 32 bits est :</p>
+<ul>
+<li><code>1 01111110 11110000000000000000000</code>,</li>
+</ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+    Remarquons d'abord que ce flottant est négatif puisque le bit le plus à gauche de sa représentation est un <code>1</code>.<br>
 
-<span class="k">def</span> <span class="nf">tab_alea</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Retourne un tableau composé de n entiers compris entre 0 et 255.</span>
-<span class="sd">    - Entrée : n (entier positif)</span>
-<span class="sd">    - Sortie : tab (tableau)</span>
-<span class="sd">    Attention : importer la fonction randint du module random </span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">int</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être entier&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">n</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être positif&#39;</span><span class="p">)</span>
-    <span class="k">return</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">)]</span>
-</pre></div>
+  Les 8 bits correspondant à l'exposant <code>e</code> sont <code>01111110</code>, qui est l'écriture binaire
+  de l'entier 126, égal à <code>e + 127</code>. L'exposant <code>e</code> est donc -1.<br>
 
+  Les 23 bits correspondant à la mantisse <code>m</code> sont <code>11110000000000000000000</code>.
+  La mantisse <code>m</code> est donc 1,1111.<br>
+
+On obtient l'écriture scientifique binaire : $-(1,1111)_2 \times 2^{-1}$ et donc l'écriture binaire : $-(0,11111)_2$.<br>
+
+Enfin $(0,11111)_2 = 2^{-1} + 2^{-2} + 2^{-3} + 2^{-4} + 2^{-5} = 0,96875$.<br>
+
+La représentation <code>1 01111110 11110000000000000000000</code> correspond donc au flottant <code>-0,96875</code>.
     </div>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mon_tableau</span> <span class="o">=</span> <span class="n">tab_alea</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mon_tableau</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="o">-</span><span class="mf">0.96875</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -16097,7 +15655,7 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[78, 174, 194, 84, 62, 11, 250, 223, 229, 248]
+<pre><span class="ansi-green-intense-fg ansi-bold">1</span><span class="ansi-red-intense-fg ansi-bold">01111110</span><span class="ansi-blue-intense-fg ansi-bold">11110000000000000000000</span>
 </pre>
 </div>
 </div>
@@ -16109,44 +15667,40 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(2)</strong> Ecrire une fonction <code>somme_des_valeurs</code> qui prend en paramètre d'entrée un tableau de valeurs entières et qui renvoie la somme de toutes les valeurs contenues dans le tableau.</p>
+<ul>
+<li><code>0 10000011 11100000000000000000000</code>.</li>
+</ul>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">somme_des_valeurs</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Calcule la somme des valeurs contenues dans un tableau.</span>
-<span class="sd">    - Entrée : tab (tableau composé d&#39;entiers)</span>
-<span class="sd">    - Sortie : somme (entier)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être un tableau&#39;</span><span class="p">)</span>
-    <span class="n">somme</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">for</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">tab</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">valeur</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">int</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être un tableau contenant des entiers&#39;</span><span class="p">)</span>
-        <span class="n">somme</span> <span class="o">=</span> <span class="n">somme</span> <span class="o">+</span> <span class="n">valeur</span>
-    <span class="k">return</span> <span class="n">somme</span>
-</pre></div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+    Remarquons d'abord que ce flottant est positif puisque le bit le plus à gauche de sa représentation est un <code>0</code>.<br>
 
+  Les 8 bits correspondant à l'exposant <code>e</code> sont <code>10000011</code>, qui est l'écriture binaire de l'entier 131,
+  égal à <code>e + 127</code>. L'exposant <code>e</code> est donc 4.<br>
+
+  Les 23 bits correspondant à la mantisse <code>m</code> sont <code>11100000000000000000000</code>.
+  La mantisse <code>m</code> est donc 1,111.<br>
+
+On obtient l'écriture scientifique binaire : $+(1,111)_2 \times 2^4$ et donc l'écriture binaire : $(11110)_2$.<br>
+
+Enfin $(11110)_2 = 2^{4} + 2^{3} + 2^{2} + 2^{1} = 30$.<br>
+
+La représentation <code>0 10000011 11100000000000000000000</code> correspond donc au flottant <code>30.0</code>.
     </div>
 </div>
 </div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">total</span> <span class="o">=</span> <span class="n">somme_des_valeurs</span><span class="p">(</span><span class="n">mon_tableau</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">total</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">30.0</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -16163,230 +15717,7 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1553
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(3)</strong> Utiliser la fonction <code>somme_des_valeurs</code> pour définir une fonction <code>valeur_moyenne</code> qui prend en paramètre d'entrée un tableau de valeurs entières et qui renvoie la moyenne des valeurs contenues dans le tableau.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">valeur_moyenne</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Calcule la valeur moyenne contenue dans un tableau.</span>
-<span class="sd">    - Entrée : tab (tableau composé d&#39;entiers)</span>
-<span class="sd">    - Sortie : (flottant)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">somme</span> <span class="o">=</span> <span class="n">somme_des_valeurs</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être un tableau non vide&#39;</span><span class="p">)</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="n">somme</span> <span class="o">/</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">moyenne</span> <span class="o">=</span> <span class="n">valeur_moyenne</span><span class="p">(</span><span class="n">mon_tableau</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">moyenne</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>117.7
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(4)</strong> Ecrire une fonction <code>valeur_maximale</code> qui prend en paramètre d'entrée un tableau de valeurs entières et qui renvoie la plus grande des valeurs contenues dans le tableau.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">valeur_maximale</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Détermine la plus grande des valeurs contenues dans un tableau.</span>
-<span class="sd">    - Entrée : tab (tableau composé d&#39;entiers)</span>
-<span class="sd">    - Sortie : maximum (entier)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">list</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être un tableau&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être un tableau non vide&#39;</span><span class="p">)</span>
-    <span class="n">maximum</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-    <span class="k">for</span> <span class="n">valeur</span> <span class="ow">in</span> <span class="n">tab</span><span class="p">:</span>
-        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">valeur</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">int</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;l</span><span class="se">\&#39;</span><span class="s1">argument doit être un tableau contenant des entiers&#39;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">valeur</span> <span class="o">&gt;</span> <span class="n">maximum</span><span class="p">:</span>
-            <span class="n">maximum</span> <span class="o">=</span> <span class="n">valeur</span> 
-    <span class="k">return</span> <span class="n">maximum</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">maxi</span> <span class="o">=</span> <span class="n">valeur_maximale</span><span class="p">(</span><span class="n">mon_tableau</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">maxi</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>232
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div id="index_algo_Knuth" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(5)</strong> Pour mélanger les valeurs contenues dans un tableau, on peut utiliser l'algorithme de Knuth (également appelé algorithme de Fisher-Yates) :</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class = 'rq3'>
-<p><b>Algorithme de Knuth ou de Fisher-Yates pour le mélange des éléments d'un tableau</b></p>
-<p><b>Début</b></p>
-<p STYLE="padding:0 0 0 40px;"><code>n</code> ← longueur du tableau <code>tab</code></p>
-<p STYLE="padding:0 0 0 40px;">Pour <code>i</code> allant de 0 à (<code>n</code>-2) faire</p>
-<p STYLE="padding:0 0 0 80px;"><code>j</code> ← entier aléatoire compris entre <code>i</code> et (<code>n</code>-1)</p>
-<p STYLE="padding:0 0 0 80px;">Echanger le <code>i</code>ème élement et le <code>j</code>ème élement du tableau <code>tab</code></p>
-<p STYLE="padding:0 0 0 40px;">Fin Pour</p>
-<p STYLE="padding:0 0 0 40px;">Retourner <code>tab</code></p>
-<p><b>Fin</b></p>
-    </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Ecrire une fonction <code>melange</code> prenant en paramètre d'entrée un tableau et renvoyant un tableau mélangé grâce à l'algorithme de Knuth.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
-
-<span class="k">def</span> <span class="nf">melange</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Mélange les valeurs contenues dans le tableau via l&#39;algorithme de Knuth.</span>
-<span class="sd">    - Entrée : tab (tableau de nombres)</span>
-<span class="sd">    - Sortie : tab (tableau)</span>
-<span class="sd">    Attention : importer la fonction randint du module random.</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-        <span class="n">j</span> <span class="o">=</span> <span class="n">randint</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-        <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">tab</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">tab</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mon_tableau</span> <span class="o">=</span> <span class="n">melange</span><span class="p">(</span><span class="n">mon_tableau</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mon_tableau</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[198, 33, 141, 8, 159, 101, 232, 2, 98, 205]
+<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">10000011</span><span class="ansi-blue-intense-fg ansi-bold">11100000000000000000000</span>
 </pre>
 </div>
 </div>
@@ -16402,292 +15733,25 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 </div>
 </div>
 </div>
-<div id=""index_animation_cases"" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Le but de cet exercice est d'afficher à l'écran des cases grises dans une fenêtre graphique <em>Pygame</em>.</p>
-<p>Exécuter la cellule suivante :</p>
+<p>Ecrire un programme qui, à partir du nombre <code>1.0</code>, le divise vingt fois de suite par 3 puis le multiplie vingt fois de suite par 3, et qui affiche enfin le résultat obtenu.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">cases_grises</span> <span class="k">import</span> <span class="o">*</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Deux fonctions <code>ouverture_fenetre</code> et <code>affichage_cases</code> sont maintenant disponibles en mémoire. On en donne un exemple d'utilisation dans la cellule suivante.</p>
-<p>La variable <code>tab</code> contient un tableau composé de 20 entiers compris entre 0 et 255. A chaque entier correspond une nuance de gris, foncée pour un entier proche de 0 et claire pour un entier proche de 255. En appelant successivement la fonction <code>ouverture_fenetre</code> et la procédure <code>affichage_cases</code>, on obtient un affichage à l'écran de cases dont la nuance de gris correspond aux valeurs stockées dans le tableau.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/cases_grises_0.png'>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">15</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">45</span><span class="p">,</span> <span class="mi">60</span><span class="p">,</span> <span class="mi">75</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">105</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">135</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">165</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">195</span><span class="p">,</span> <span class="mi">210</span><span class="p">,</span> <span class="mi">225</span><span class="p">,</span> <span class="mi">240</span><span class="p">,</span> <span class="mi">255</span><span class="p">,</span> <span class="mi">255</span><span class="p">]</span>
-
-<span class="n">fenetre</span> <span class="o">=</span> <span class="n">ouverture_fenetre</span><span class="p">()</span> <span class="c1"># la fonction ouverture_fenetre renvoie une variable fenetre</span>
-<span class="n">affichage_cases</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span> <span class="c1"># la procédure affichage_cases dessine des carrés gris dans la fenêtre</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(1)</strong> Modifier la définition du tableau <code>tab</code> dans le but d'obtenir les affichages ci-dessous :</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/cases_grises_1.png'>
-</div><center><i>Affichage 1 : toutes les cases sont de la même nuance, ni trop claire, ni trop foncée</i></center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Affichage 1</span>
-<span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">128</span><span class="p">]</span> <span class="o">*</span> <span class="mi">20</span>
-
-<span class="n">fenetre</span> <span class="o">=</span> <span class="n">ouverture_fenetre</span><span class="p">()</span>
-<span class="n">affichage_cases</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/cases_grises_2.png'>
-</div><center><i>Affichage 2 : les dix premières cases sont blanches, les dix dernières sont noires</i></center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Affichage 2</span>
-<span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span> <span class="o">+</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span>
-
-<span class="n">fenetre</span> <span class="o">=</span> <span class="n">ouverture_fenetre</span><span class="p">()</span>
-<span class="n">affichage_cases</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/cases_grises_3.png'>
-</div><center><i>Affichage 3 : les nuances de gris sont aléatoires</i></center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Affichage 3</span>
-<span class="kn">from</span> <span class="nn">random</span> <span class="k">import</span> <span class="n">randint</span>
-<span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">)]</span>
-
-<span class="n">fenetre</span> <span class="o">=</span> <span class="n">ouverture_fenetre</span><span class="p">()</span>
-<span class="n">affichage_cases</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/cases_grises_4.png'>
-</div><center><i>Affichage 4 : les cases sont de plus en plus foncées</i></center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Affichage 4</span>
-<span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">255</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">255</span> <span class="o">-</span> <span class="mi">15</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">18</span><span class="p">)]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span>
-
-<span class="n">fenetre</span> <span class="o">=</span> <span class="n">ouverture_fenetre</span><span class="p">()</span>
-<span class="n">affichage_cases</span><span class="p">(</span><span class="n">fenetre</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En réalisant plusieurs affichages successifs, on obtient une animation plutôt qu'une image statique. On peut utiliser la procédure <code>sleep</code> du module <code>time</code> pour faire en sorte qu'une pause de quelques millisecondes ait lieu entre les différents affichages.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">time</span> <span class="k">import</span> <span class="n">sleep</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fen</span> <span class="o">=</span> <span class="n">ouverture_fenetre</span><span class="p">()</span>
-<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">256</span><span class="p">,</span> <span class="mi">16</span><span class="p">):</span>
-    <span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span> <span class="o">+</span> <span class="p">[</span><span class="mi">255</span><span class="o">-</span><span class="n">i</span><span class="p">]</span><span class="o">*</span><span class="mi">10</span>
-    <span class="n">affichage_cases</span><span class="p">(</span><span class="n">fen</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span> <span class="c1"># Pause de 200 ms (soit 0.2 s) entre chaque affichage</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(2)</strong> Faire en sorte d'obtenir l'affichage ci-dessous :</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src='Images/cases_grises_5.gif'>
-</div><center><i>Affichage 5 : le dégradé de gris défile de droite à gauche de l'écran</i></center>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fen</span> <span class="o">=</span> <span class="n">ouverture_fenetre</span><span class="p">()</span>
-<span class="n">tab</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">15</span><span class="o">*</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">18</span><span class="p">)]</span> <span class="o">+</span> <span class="p">[</span><span class="mi">255</span><span class="p">]</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">100</span><span class="p">):</span>
-    <span class="n">tab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span> <span class="c1"># ajoute le premier élément du tableau à la fin du tableau</span>
-    <span class="k">del</span> <span class="n">tab</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="c1"># supprime le premier élément du tableau</span>
-    <span class="n">affichage_cases</span><span class="p">(</span><span class="n">fen</span><span class="p">,</span> <span class="n">tab</span><span class="p">)</span>
-    <span class="n">sleep</span><span class="p">(</span><span class="mf">0.2</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Pour fermer la fenêtre <em>Pygame</em>, il suffit d'exécuter la commande suivante :</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pygame</span><span class="o">.</span><span class="n">quit</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exercice-3">Exercice 3<a class="anchor-link" href="#Exercice-3">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(1)</strong> Définir en compréhension un tableau à deux dimensions <code>table_addition</code> contenant sur 11 lignes et 11 colonnes les valeurs de <code>i + j</code>, pour <code>i</code> et <code>j</code> compris entre <code>0</code> et <code>10</code>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table_addition</span> <span class="o">=</span> <span class="p">[[</span><span class="n">i</span> <span class="o">+</span> <span class="n">j</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">table_addition</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">1.0</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">3</span>
+<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -16704,7 +15768,7 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>[[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10], [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11], [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12], [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13], [4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14], [5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15], [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16], [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17], [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18], [9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19], [10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]]
+<pre>1.0000000000000004
 </pre>
 </div>
 </div>
@@ -16716,50 +15780,7 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Après avoir exécuté la cellule suivante, vous pouvez utiliser la fonction <code>affichage_table</code> qui prend en entrée un tableau à deux dimensions et qui l'affiche dans une fenêtre <em>Pygame</em>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">tables</span> <span class="k">import</span> <span class="n">affichage_table</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">affichage_table</span><span class="p">(</span><span class="n">table_addition</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-    <img src="Images/table_addition_sans_entetes.png" width = 400>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>(2)</strong> Modifier la définition de <code>table_addition</code> pour faire en sorte d'ajouter une ligne et une colonne d'en-tête. Le but est d'obtenir :</p>
+<p>Comment expliquer le résultat ?</p>
 
 </div>
 </div>
@@ -16767,48 +15788,17 @@ Tableau trié     :  [5, 8, 9, 14, 14, 27, 32, 33, 36, 39, 41, 52, 53, 56, 61, 6
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div>
-            <table class='sobre'>
-            <tr>
-                <td><img src="Images/table_addition.png" width = 400></td>
-                <td><img src="Images/table_multiplication.png" width = 400></td>
-            </tr>
-        </table>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table_addition</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;+&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]]</span> <span class="o">+</span> <span class="p">[[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">i</span> <span class="o">+</span> <span class="n">j</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span>
-<span class="n">affichage_table</span><span class="p">(</span><span class="n">table_addition</span><span class="p">)</span>
-</pre></div>
-
+<div class="rq">
+    Les opérations sur les flottants entraînent des erreurs d'arrondi qui expliquent que le résultat final ne soit pas exactement <code>1.0</code>.
     </div>
 </div>
 </div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table_multiplication</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;*&#39;</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">k</span> <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]]</span> <span class="o">+</span> <span class="p">[[</span><span class="n">i</span><span class="p">]</span> <span class="o">+</span> <span class="p">[</span><span class="n">i</span> <span class="o">*</span> <span class="n">j</span> <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">11</span><span class="p">)]</span>
-<span class="n">affichage_table</span><span class="p">(</span><span class="n">table_multiplication</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
 </div>
     </div>
   </div>
 </body>
 
  
+
+
 </html>

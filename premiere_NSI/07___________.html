@@ -2,7 +2,7 @@
 <html>
 <head><meta charset="utf-8" />
 
-<title>Flottants</title>
+<title>Tables de données</title>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
@@ -14359,28 +14359,29 @@ $(document).ready(function () {
 <body>
 	
 	
-<div class="barre_de_menu">
-	<img id="logo" src="Images/logo.gif" >
-  <p class="important">Cours de NSI Première</p>
-  <a href="01.html">Constructions élémentaires</a>
-  <a href="02.html">Booléens</a>
-  <a href="03.html">Fonctions</a>
-  <a href="04.html">Chaînes de caractères</a>
-  <a href="05.html">Tableaux</a>
-  <a href="06.html">p-uplets et dictionnaires</a>
-  <a href="07.html">Tables de données</a>
-  <a href="08.html">Flottants</a>
-  <a href="09.html">Algorithmes classiques</a>
-  <a href="index.html">Index</a>
-</div>
+	<div class="barre_de_menu">
+		<img id="logo" src="Images/logo.gif">
+		<p class="important">Cours de NSI Première</p>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/01.html">Constructions élémentaires</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/02.html">Booléens</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/03.html">Fonctions</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/04.html">Chaînes de caractères</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/05.html">Tableaux</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/06.html">p-uplets et dictionnaires</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/07.html">Tables de données</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/08.html">Flottants</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/09.html">Algorithmes classiques</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/index.html">Index</a>
+		<a href="https://ntoulzac.github.io/Cours-NSI-Terminale/premiere_NSI/énoncés.html">Énoncés</a>
+	</div>
 
- <div tabindex="-1" id="notebook" class="border-box-sizing">
+  <div tabindex="-1" id="notebook" class="border-box-sizing">
     <div class="container" id="notebook-container">
 
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Chapitre-8-:-Repr&#233;sentation-des-nombres-flottants">Chapitre 8 : Flottants<a class="anchor-link" href="#Chapitre-8-:-Repr&#233;sentation-des-nombres-flottants">&#182;</a></h1><p><strong><em>Ecriture binaire des flottants, problème du test d'égalité de deux flottants</em></strong></p>
+<h1 id="Chapitre-7-:-Tables-de-donn&#233;es">Chapitre 7 : Tables de donn&#233;es<a class="anchor-link" href="#Chapitre-7-:-Tables-de-donn&#233;es">&#182;</a></h1><p><strong><em>Importation d'une table depuis un fichier CSV, recherche dans une table, tri d'une table, fusion de tables</em></strong></p>
 
 </div>
 </div>
@@ -14388,21 +14389,91 @@ $(document).ready(function () {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Partie-A---Rappels-sur-l'&#233;criture-scientifique-des-nombres-d&#233;cimaux">Partie A - Rappels sur l'&#233;criture scientifique des nombres d&#233;cimaux<a class="anchor-link" href="#Partie-A---Rappels-sur-l'&#233;criture-scientifique-des-nombres-d&#233;cimaux">&#182;</a></h2>
+<h2 id="Partie-A---Repr&#233;sentation-de-donn&#233;es-en-tables">Partie A - Repr&#233;sentation de donn&#233;es en tables<a class="anchor-link" href="#Partie-A---Repr&#233;sentation-de-donn&#233;es-en-tables">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>L'écriture scientifique d'un nombre décimal est composée de trois parties :</p>
-<ul>
-<li>un <strong>signe</strong>, qui peut être plus ou moins,</li>
-<li>une <strong>mantisse</strong>, qui un nombre décimal compris entre 1 (inclus) et 10 (exclu),</li>
-<li>un <strong>exposant</strong>, qui est un nombre entier positif ou négatif.</li>
-</ul>
-<p>Par exemple, l'écriture scientifique du nombre 2020 est : $$+ 2,02 \times 10^3$$</p>
-<p>Le signe est plus, la mantisse est 2,02 et l'exposant est 3.</p>
+<p>Une  des  utilisations  principales  de  l’informatique  de  nos  jours  est  le  <strong>traitement  de  quantités  importantes  de  données</strong>  dans  des domaines très variés. Par exemple, un site de commerce en ligne peut avoir à gérer des bases de données pour des dizaines de milliers d’articles en vente, de clients, de commandes. Un hopital doit pouvoir accéder efficacement à tous les détails de traitements de ses patients, etc.</p>
+<p>Mais si les logiciels de traitement de base de données sont des programmes hautement spécialisés pour effectuer ce genre de tâches le plus efficacement possible, il est facile de mettre en œuvre les opérations de base dans un langage de programmation comme Python. C'est l'objectif de ce chapitre.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Format-CSV">Format CSV<a class="anchor-link" href="#Format-CSV">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Le <strong>format CSV</strong> (pour <em>comma separated values</em>, c'est-à-dire <em>valeurs séparées par des virgules</em>) est un format de fichier texte très pratique pour représenter des données structurées. Dans ce format, chaque ligne représente un <strong>enregistrement</strong> et chaque colonne représente un <strong>champ</strong> de l’enregistrement. Les champs sont séparés par une virgule, d’où le nom CSV.</p>
+<p>En pratique, on peut choisir le caractère utilisé pour  séparer  les  différents  champs  et  on  utilise  parfois, plutôt qu'une virgule,  un  point-virgule,  une  tabulation, deux  points ou une barre verticale.
+Nous pouvons enfin remarquer que la première ligne d’un tel fichier est généralement utilisée pour indiquer le <strong>nom des différents champs</strong>. Dans ce cas, le premier enregistrement apparaît sur la deuxième ligne du fichier et non sur la première.</p>
+<p>Dans tout ce chapitre, nous utiliserons les données contenues dans le fichier <code>prefectures.csv</code>, dont voici les 20 premières lignes :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><code>dep,ville,dep_nom,lat,long,CL_reg</code><br>
+<code>1,Bourg-en-Bresse,Ain,46.202500000000001,5.221944444444444,0</code><br>
+<code>2,Laon,Aisne,49.562222222222225,3.622500000000000,0</code><br>
+<code>3,Moulins,Allier,46.568333333333335,3.334444444444444,0</code><br>
+<code>4,Digne-les-Bains,Alpes-de-Haute-Provence,44.092222222222219,6.238055555555555,0</code><br>
+<code>5,Gap,Hautes-Alpes,44.557499999999997,6.076111111111111,0</code><br>
+<code>6,Nice,Alpes-Maritimes,43.696388888888890,7.275000000000000,0</code><br>
+<code>7,Privas,Ardèche,44.735277777777775,4.599444444444444,0</code><br>
+<code>8,Charleville-Mézières,Ardennes,49.761388888888888,4.720000000000000,0</code><br>
+<code>9,Foix,Ariège,42.967222222222219,1.605833333333333,0</code><br>
+<code>10,Troyes,Aube,48.297777777777775,4.078333333333333,0</code><br>
+<code>11,Carcassonne,Aude,43.214722222222221,2.353333333333333,0</code><br>
+<code>12,Rodez,Aveyron,44.349444444444444,2.574722222222222,0</code><br>
+<code>13,Marseille,Bouches-du-Rhône,43.290277777777774,5.380000000000000,1</code><br>
+<code>14,Caen,Calvados,49.180000000000000,-0.365277777777778,0</code><br>
+<code>15,Aurillac,Cantal,44.929166666666667,2.446944444444445,0</code><br>
+<code>16,Angoulême,Charente,45.645833333333336,0.156944444444444,0</code><br>
+<code>17,La Rochelle,Charente-Maritime,46.157499999999999,-1.157222222222222,0</code><br>
+<code>18,Bourges,Cher,47.081111111111113,2.395277777777778,0</code><br>
+<code>19,Tulle,Corrèze,45.271111111111111,1.768888888888889,0</code></p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 1 :</strong> Ouvrir avec un éditeur de texte le fichier <code>prefectures.csv</code> et décrire quel est le contenu du fichier. En particulier, quel est le nombre d'enregistrements, à quoi correspondent-ils, et quels en sont les différents champs ?</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+    Le fichier <code>prefectures.csv</code> est un fichier CSV contenant 101 enregistrements, qui correspondent aux 101 départements français. Chaque enregistrement est composé des champs <code>dep</code> (numéro du département), <code>ville</code> (nom de la ville préfecture), <code>dep_nom</code> (nom du département), <code>lat</code> et <code>long</code> (coordonnées géographiques de la préfecture) et <code>CL_reg</code>  (1 si la ville est chef-lieu de région et 0 sinon).</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Importation-d'une-table-depuis-un-fichier-CSV">Importation d'une table depuis un fichier CSV<a class="anchor-link" href="#Importation-d'une-table-depuis-un-fichier-CSV">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour pouvoir manipuler avec Python les données enregistrées dans le fichier CSV, il faut commencer par <strong>importer</strong> ces données et les <strong>stocker dans un tableau</strong>. Pour réaliser cette opération, on peut définir la fonction <code>importer_donnees</code> :</p>
 
 </div>
 </div>
@@ -14412,49 +14483,37 @@ $(document).ready(function () {
 <div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">n</span> <span class="o">=</span> <span class="mi">2020</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="k">def</span> <span class="nf">importer_donnees</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Importe les données contenues dans un fichier CSV et les retourne sous forme de tableau</span>
+<span class="sd">    - Entrée : nom_de_fichier (chaîne de caractères correspondant à un nom de fichier CSV)</span>
+<span class="sd">    - Sortie : tab (tableau de dictionnaires, correspondant aux enregistrements du fichier CSV)</span>
+<span class="sd">    Attention : les données importées sont de type chaîne de caractères</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="n">tab</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+        <span class="n">donnees</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictReader</span><span class="p">(</span><span class="n">fichier</span><span class="p">,</span> <span class="n">delimiter</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">enregistrement</span> <span class="ow">in</span> <span class="n">donnees</span><span class="p">:</span>
+            <span class="n">tab</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="nb">dict</span><span class="p">(</span><span class="n">enregistrement</span><span class="p">))</span>
+    <span class="k">return</span> <span class="n">tab</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-</div>
-<div id="index_affichage_ecriture_sc" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>En Python, une façon d'afficher l'écriture scientifique du nombre <code>n</code> est d'utiliser la commande suivante :</p>
-
-</div>
-</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pref</span> <span class="o">=</span> <span class="n">importer_donnees</span><span class="p">(</span><span class="s1">&#39;prefectures.csv&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2.020000e+03
-</pre>
-</div>
-</div>
-
 </div>
 </div>
 
@@ -14462,7 +14521,18 @@ $(document).ready(function () {
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>La mantisse s'affiche par défaut avec six chiffres après la virgule, mais il est possible d'en afficher davantage ou moins.</p>
+<div class="rq">
+    La commande <code>with open(nom_de_fichier, 'r', encoding = 'utf-8')</code>, déjà rencontrée dans le chapitre sur les chaînes de caractères, permet d'ouvrir le fichier en lecture en précisant que le texte est encodé au format UTF-8.<br>
+    La fonction <code>DictReader</code>, importée du module <code>csv</code>, récupère les données depuis le fichier CSV et les stocke dans la variable <code>donnees</code>, qui est un itérable dont les éléments sont des <i>dictionnaires ordonnés</i> (type particulier de dictionnaire). Le paramètre optionnel <code>delimiter</code> permet d'indiquer par quel caractère sont séparés les champs dans le fichier CSV.<br>
+    Les lignes 13 et 14 transforment l'itérable <code>donnees</code> en un tableau <code>tab</code>, et les dictionnaires ordonnés en simples dictionnaires.</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 2 :</strong> Ecrire la spécification de la fonction <code>importer_donnees</code>.</p>
+<p><strong>Question 3 :</strong> Après avoir exécuté la cellule suivante et affiché les cinq premiers éléments de <code>pref</code>, dire quel est le type de ces éléments.</p>
 
 </div>
 </div>
@@ -14472,7 +14542,8 @@ $(document).ready(function () {
 <div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.2e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="c1"># 2 chiffres après la virgule pour la mantisse</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -14489,7 +14560,11 @@ $(document).ready(function () {
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>2.02e+03
+<pre>{&#39;dep&#39;: &#39;1&#39;, &#39;ville&#39;: &#39;Bourg-en-Bresse&#39;, &#39;dep_nom&#39;: &#39;Ain&#39;, &#39;lat&#39;: &#39;46.202500000000001&#39;, &#39;long&#39;: &#39;5.221944444444444&#39;, &#39;CL_reg&#39;: &#39;0&#39;}
+{&#39;dep&#39;: &#39;2&#39;, &#39;ville&#39;: &#39;Laon&#39;, &#39;dep_nom&#39;: &#39;Aisne&#39;, &#39;lat&#39;: &#39;49.562222222222225&#39;, &#39;long&#39;: &#39;3.622500000000000&#39;, &#39;CL_reg&#39;: &#39;0&#39;}
+{&#39;dep&#39;: &#39;3&#39;, &#39;ville&#39;: &#39;Moulins&#39;, &#39;dep_nom&#39;: &#39;Allier&#39;, &#39;lat&#39;: &#39;46.568333333333335&#39;, &#39;long&#39;: &#39;3.334444444444444&#39;, &#39;CL_reg&#39;: &#39;0&#39;}
+{&#39;dep&#39;: &#39;4&#39;, &#39;ville&#39;: &#39;Digne-les-Bains&#39;, &#39;dep_nom&#39;: &#39;Alpes-de-Haute-Provence&#39;, &#39;lat&#39;: &#39;44.092222222222219&#39;, &#39;long&#39;: &#39;6.238055555555555&#39;, &#39;CL_reg&#39;: &#39;0&#39;}
+{&#39;dep&#39;: &#39;5&#39;, &#39;ville&#39;: &#39;Gap&#39;, &#39;dep_nom&#39;: &#39;Hautes-Alpes&#39;, &#39;lat&#39;: &#39;44.557499999999997&#39;, &#39;long&#39;: &#39;6.076111111111111&#39;, &#39;CL_reg&#39;: &#39;0&#39;}
 </pre>
 </div>
 </div>
@@ -14497,52 +14572,43 @@ $(document).ready(function () {
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+    <code>pref</code> est un tableau dont les éléments sont des dictionnaires. Tous les dictionnaires contenus dans <code>pref</code> ont les mêmes clés, à savoir <code>'dep'</code>, <code>'ville'</code>, <code>'dep_nom'</code>, <code>'lat'</code>, <code>'long'</code> et <code>'CL_reg'</code>.</div>
+</div>
+</div>
+</div>
+<div id="index_validation_données" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>On constate que, lors de l'importation, <strong>tous les champs sont des chaînes de caractères</strong>. Pour faire en sorte que la latitude et la longitude des différentes préfectures soit de type numérique, exécuter la cellule ci-dessous :</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.10e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n</span><span class="p">))</span> <span class="c1"># 10 chiffres après la virgule pour la mantisse</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">])</span>
+    <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;long&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;long&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>2.0200000000e+03
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Question 1 :</strong> Sans utiliser Python, donner l'écriture scientifique de la constante d'Avogadro <code>avog = 602214076000000000000000</code>. Vérifier ensuite votre résultat avec une ligne de code.</p>
+<p><strong>Question 4 :</strong> Ecrire des lignes de code permettant de faire en sorte que le champ <code>'CL_reg'</code> soit de type booléen.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    L'écriture scientifique de la constante d'Avogadro est $+ 6,02214076 \times 10^{23}$.
-    </div>
 </div>
 </div>
 </div>
@@ -14551,63 +14617,49 @@ $(document).ready(function () {
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">avog</span> <span class="o">=</span> <span class="mi">602214076000000000000000</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">&quot;</span><span class="si">{:.10e}</span><span class="s2">&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">avog</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;CL_reg&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;CL_reg&#39;</span><span class="p">]))</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>6.0221407600e+23
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>On remarque qu'un nombre ne peut pas être écrit dans ce format : le nombre 0. En effet, la mantisse devrait être égale à 0, ce qui est exclu par définition.</p>
-
+<div class="rq">
+    Après l'<b>importation</b> d'une table de données, cette étape de modification des types fait partie de ce que l'on appelle la <b>validation</b> des données. C'est une étape nécessaire pour pouvoir utiliser efficacement la table.</div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Partie-B---Ecriture-binaire-des-nombres">Partie B - Ecriture binaire des nombres<a class="anchor-link" href="#Partie-B---Ecriture-binaire-des-nombres">&#182;</a></h2>
+<h2 id="Partie-B---Recherche-dans-une-table">Partie B - Recherche dans une table<a class="anchor-link" href="#Partie-B---Recherche-dans-une-table">&#182;</a></h2>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Rappel-concernant-les-nombres-entiers">Rappel concernant les nombres entiers<a class="anchor-link" href="#Rappel-concernant-les-nombres-entiers">&#182;</a></h3>
+<p>Une fois que la table est stockée en mémoire sous la forme d'un tableau de dictionnaires, il est possible d'effectuer des recherches dans la table.</p>
+
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Donner l'écriture binaire d'un nombre entier, cela revient à écrire ce nombre sous la forme d'une somme de puissances positives de 2.</p>
-<p>Par exemple, pour le nombre 2020 : $$2020 = 1024 + 512 + 256 + 128 + 64 + 32 + 4$$ c'est-à-dire :
-$$2020 = 2^{10} + 2^9 + 2^8 + 2^7 + 2^6 + 2^5 + 2^2$$ et l'écriture binaire de 2020 est donc :
-$$2020 = (11111100100)_2$$</p>
-<p>On peut vérifier le résultat obtenu grâce à la fonction <code>bin</code>, qui renvoie l'écriture binaire sous la forme d'une chaîne de caractères qui commence par <code>0b</code> :</p>
+<h3 id="Affichage-de-donn&#233;es">Affichage de donn&#233;es<a class="anchor-link" href="#Affichage-de-donn&#233;es">&#182;</a></h3>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Par exemple, voici des lignes de code permettant d'afficher le nom des 101 départements français :</p>
 
 </div>
 </div>
@@ -14617,7 +14669,8 @@ $$2020 = (11111100100)_2$$</p>
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">2020</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14634,8 +14687,7 @@ $$2020 = (11111100100)_2$$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0b11111100100
-</pre>
+<pre>Ain  Aisne  Allier  Alpes-de-Haute-Provence  Hautes-Alpes  Alpes-Maritimes  Ardèche  Ardennes  Ariège  Aube  Aude  Aveyron  Bouches-du-Rhône  Calvados  Cantal  Charente  Charente-Maritime  Cher  Corrèze  Corse-du-Sud  Haute-Corse  Côte-d&#39;Or  Côtes-d&#39;Armor  Creuse  Dordogne  Doubs  Drôme  Eure  Eure-et-Loir  Finistère  Gard  Haute-Garonne  Gers  Gironde  Hérault  Ille-et-Vilaine  Indre  Indre-et-Loire  Isère  Jura  Landes  Loir-et-Cher  Loire  Haute-Loire  Loire-Atlantique  Loiret  Lot  Lot-et-Garonne  Lozère  Maine-et-Loire  Manche  Marne  Haute-Marne  Mayenne  Meurthe-et-Moselle  Meuse  Morbihan  Moselle  Nièvre  Nord  Oise  Orne  Pas-de-Calais  Puy-de-Dôme  Pyrénées-Atlantiques  Hautes-Pyrénées  Pyrénées-Orientales  Bas-Rhin  Haut-Rhin  Rhône  Haute-Saône  Saône-et-Loire  Sarthe  Savoie  Haute-Savoie  Paris  Seine-Maritime  Seine-et-Marne  Yvelines  Deux-Sèvres  Somme  Tarn  Tarn-et-Garonne  Var  Vaucluse  Vendée  Vienne  Haute-Vienne  Vosges  Yonne  Territoire de Belfort  Essonne  Hauts-de-Seine  Seine-Saint-Denis  Val-de-Marne  Val-d&#39;Oise  Guadeloupe  Martinique  Guyane  Réunion  Mayotte  </pre>
 </div>
 </div>
 
@@ -14646,47 +14698,8 @@ $$2020 = (11111100100)_2$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Question 2 :</strong> Sans utiliser Python, donner l'écriture binaire des nombres 100 et 94130. Vérifier ensuite vos résultats avec deux lignes de code.</p>
+<p><strong>Question 5 :</strong> Ecrire des lignes de code permettant d'afficher le nom des villes préfectures.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    <i>Première méthode :</i> on connaît quelques puissances positives de 2 et on décompose simplement le nombre.
-<table>
-	         <tr>
-                <td><center>$2^{10}$</center></td>
-                               <td><center>$2^9$</center></td>
-                                <td><center>$2^8$</center></td>
-                                <td><center>$2^7$</center></td>
-                                <td><center>$2^6$</center></td>
-                                <td><center>$2^5$</center></td>
-                                <td><center>$2^4$</center></td>
-                                <td><center>$2^3$</center></td>
-                                <td><center>$2^2$</center></td>
-                                <td><center>$2^1$</center></td>
-                                <td><center>$2^0$</center></td>
-            </tr>
-            <tr>
-                                <td><center>$1024$</center></td>
-                                <td><center>$512$</center></td>
-                                <td><center>$256$</center></td>
-                                <td><center>$128$</center></td>
-                                <td><center>$64$</center></td>
-                                <td><center>$32$</center></td>
-                                <td><center>$16$</center></td>
-                                <td><center>$8$</center></td>
-                                <td><center>$4$</center></td>
-                                <td><center>$2$</center></td>
-                                <td><center>$1$</center></td>
-              </tr>
-        </table>
-
-   On obtient : $100 = 64 + 32 + 4 = 2^6 + 2^5 + 2^2 = (1100100)_2$.
-   </div>
 </div>
 </div>
 </div>
@@ -14695,7 +14708,8 @@ $$2020 = (11111100100)_2$$</p>
 <div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">100</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14712,8 +14726,7 @@ $$2020 = (11111100100)_2$$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0b1100100
-</pre>
+<pre>Bourg-en-Bresse  Laon  Moulins  Digne-les-Bains  Gap  Nice  Privas  Charleville-Mézières  Foix  Troyes  Carcassonne  Rodez  Marseille  Caen  Aurillac  Angoulême  La Rochelle  Bourges  Tulle  Ajaccio  Bastia  Dijon  Saint-Brieuc  Guéret  Périgueux  Besançon  Valence  Évreux  Chartres  Quimper  Nîmes  Toulouse  Auch  Bordeaux  Montpellier  Rennes  Châteauroux  Tours  Grenoble  Lons-le-Saunier  Mont-de-Marsan  Blois  Saint-Étienne  Le Puy-en-Velay  Nantes  Orléans  Cahors  Agen  Mende  Angers  Saint-Lô  Châlons-en-Champagne  Chaumont  Laval  Nancy  Bar-le-Duc  Vannes  Metz  Nevers  Lille  Beauvais  Alençon  Arras  Clermont-Ferrand  Pau  Tarbes  Perpignan  Strasbourg  Colmar  Lyon  Vesoul  Mâcon  Le Mans  Chambéry  Annecy  Paris  Rouen  Melun  Versailles  Niort  Amiens  Albi  Montauban  Toulon  Avignon  La Roche-sur-Yon  Poitiers  Limoges  Épinal  Auxerre  Belfort  Évry  Nanterre  Bobigny  Créteil  Pontoise  Basse-Terre  Fort-de-France  Cayenne  Saint-Denis  Mamoudzou  </pre>
 </div>
 </div>
 
@@ -14724,28 +14737,8 @@ $$2020 = (11111100100)_2$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    <i>Deuxième méthode :</i> On réalise des divisions euclidiennes successives par 2 :<br><br>
-   $$94130 = 2 \times 47065 + 0$$
-   $$47065 = 2 \times 23532 + 1$$
-   $$23532 = 2 \times 11766 + 0$$
-   $$11766 = 2 \times 5883 + 0$$
-   $$5883 = 2 \times 2941 + 1$$
-   $$2941 = 2 \times 1470 + 1$$
-   $$1470 = 2 \times 735 + 0$$
-   $$735 = 2 \times 367 + 1$$
-   $$367 = 2 \times 183 + 1$$
-   $$183 = 2 \times 91 + 1$$
-   $$91 = 2 \times 45 + 1$$
-   $$45 = 2 \times 22 + 1$$
-   $$22 = 2 \times 11 + 0$$
-   $$11 = 2 \times 5 + 1$$
-   $$5 = 2 \times 2 + 1$$
-   $$2 = 2 \times 1 + 0$$
-   $$1 = 2 \times 0 + 1$$
-<br> et l'écriture binaire du nombre correspond aux restes des divisions lus de bas en haut :
-   $94130 = (10110111110110010)_2$.
-</div>
+<p><strong>Question 6 :</strong> Ecrire des lignes de code permettant d'afficher le nom des départements dont la préfecture contient la lettre X.</p>
+
 </div>
 </div>
 </div>
@@ -14754,7 +14747,9 @@ $$2020 = (11111100100)_2$$</p>
 <div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="nb">bin</span><span class="p">(</span><span class="mi">94130</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="s1">&#39;x&#39;</span> <span class="ow">in</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">():</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14771,8 +14766,7 @@ $$2020 = (11111100100)_2$$</p>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>0b10110111110110010
-</pre>
+<pre>Ariège  Dordogne  Eure  Gironde  Indre  Yonne  </pre>
 </div>
 </div>
 
@@ -14783,190 +14777,8 @@ $$2020 = (11111100100)_2$$</p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Ecriture-binaire-des-nombres-compris-entre-0-et-1">Ecriture binaire des nombres compris entre 0 et 1<a class="anchor-link" href="#Ecriture-binaire-des-nombres-compris-entre-0-et-1">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Le principe est le même pour obtenir l'écriture binaire des nombres à virgule. On s'autorise simplement d'utiliser aussi des puissances négatives de 2.</p>
-<p>Par exemple, pour le nombre 0,6875 : $$0,6875 = 0,5 + 0,125 + 0,0625$$ c'est-à-dire :
-$$0,6875 = 2^{-1} + 2^{-3} + 2^{-4}$$ et l'écriture binaire de 0,6875 est donc :
-$$0,6875 = (0,1011)_2$$</p>
-<p><strong>Question 3 :</strong> Donner l'écriture binaire des nombres 0,3125 et 0,515625.</p>
+<p><strong>Question 7 :</strong> Ecrire des lignes de code permettant d'afficher les préfectures dont la latitude est comprise entre 44° et 46° et dont la longitude est comprise entre 2° et 4°.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    <i>Première méthode :</i> on connaît quelques puissances négatives de 2 et on décompose simplement le nombre.    
-<table>         <tr>
-                <td><center>$2^{-1}$</center></td>
-                               <td><center>$2^{-2}$</center></td>
-                                <td><center>$2^{-3}$</center></td>
-                                <td><center>$2^{-4}$</center></td>
-                                <td><center>$2^{-5}$</center></td>
-            </tr>
-            <tr>
-                <td><center>$0,5$</center></td>
-                                <td><center>$0,25$</center></td>
-                                <td><center>$0,125$</center></td>
-                                <td><center>$0,0625$</center></td>
-                                <td><center>$0,03125$</center></td>
-    </tr>
-        </table>
-On obtient : $0,3125 = 0,25 + 0,0625 = 2^{-2} + 2^{-4} = (0,0101)_2$.<br>    
-<br>
-    <i>Deuxième méthode :</i> on réalise des multiplications successives par 2 :<br><br>
-$$0,515625 \times 2 = 1,03125$$
-  $$0,03125 \times 2 = 0,0625$$
-  $$0,0625 \times 2 = 0,125$$
-  $$0,125 \times 2 = 0,25$$
-  $$0,25 \times 2 = 0,5$$
- $$0,5 \times 2 = 1,0$$<br>
-
-et la partie fractionnaire de l'écriture binaire du nombre correspond aux parties entières des produits lus de haut en bas :
-  $0,515625 = (0,100001)_2$.
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Remarquons que les nombres réels qui ont une écriture décimale infinie ont aussi une écriture binaire infinie. Par exemple :
-$$1/3 = 0,33333333... = (0,01010101...)_2$$</p>
-<p>Il existe par contre des nombres réels qui ont une écriture décimale finie mais qui ont une écriture binaire infinie. Par exemple :
-$$1/5 = 0,2 = (0,00110011...)_2$$</p>
-<p><strong>Question 4 :</strong> Donner les 10 premiers bits après la virgule de l'écriture binaire des nombres 0,1 et 0,3.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-On a vu que $0,2 = (0,001100110011...)_2$ et on sait que diviser un nombre par 2 revient, dans son écriture binaire,
-à décaler la virgule d'une position vers la gauche. On obtient $0,1 = (0,0001100110011...)_2$.<br>
-   Les 10 premiers bits après la virgule du nombre 0,1 sont donc <code>0001100110</code>.<br><br>
-    Pour obtenir l'écriture binaire de 0,3, on réalise des multiplications successives par 2 :<br><br>
-$$0,3 \times 2 = 0,6$$
-  $$0,6 \times 2 = 1,2$$
-  $$0,2 \times 2 = 0,4$$
-  $$0,4 \times 2 = 0,8$$
-  $$0,8 \times 2 = 1,6$$
-  $$0,6 \times 2 = 1,2$$
-  $$0,2 \times 2 = 0,4$$
-  $$0,4 \times 2 = 0,8$$
-  $$0,8 \times 2 = 1,6$$
-   $$...$$<br>
-
-et on obtient : $0,3 = (0,0100110011001...)_2$.<br>
-   Les 10 premiers bits après la virgule du nombre 0,3 sont donc <code>0100110011</code>.
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Partie-C---Repr&#233;sentation-des-flottants-en-machine-(norme-IEEE-754)">Partie C - Repr&#233;sentation des flottants en machine (norme IEEE 754)<a class="anchor-link" href="#Partie-C---Repr&#233;sentation-des-flottants-en-machine-(norme-IEEE-754)">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La norme informatique la plus couramment utilisée pour représenter les nombres flottants est la <strong>norme IEEE 754</strong> mise au point en 1985. Il s'agit d'une variante de l'écriture scientifique en base 2, dans laquelle la mantisse est un nombre compris entre 1 (inclus) et 2 (exclu).</p>
-<p>Les flottants peuvent être représentés sur 32 bits (format dit de <strong>simple précision</strong>) ou sur 64 bits (format dit de <strong>double précision</strong>).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div>
-            <table>
-            <tr>
-                <th><center>Format</center></th>
-                <th><center>Signe <code>s</code></center></th>
-                <th><center>Exposant <code>e</code></center></th>
-                <th><center>Mantisse <code>m</code></center></th>
-                <th><center>Total</center></th>
-            </tr>
-            <tr>
-                <td><center>simple précision</center></td>
-                <td><center>1 bit</center></td>
-                <td><center>8 bits</center></td> 
-                <td><center>23 bits</center></td>
-                <td><center>32 bits</center></td>
-            </tr>
-            <tr>
-                <td><center>double précision</center></td>
-                <td><center>1 bit</center></td>
-                <td><center>11 bits</center></td>
-                <td><center>52 bits</center></td>
-                <td><center>64 bits</center></td>
-            </tr>
-        </table>
-</div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Principe-de-la-repr&#233;sentation">Principe de la repr&#233;sentation<a class="anchor-link" href="#Principe-de-la-repr&#233;sentation">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Le bit le plus à gauche (bit de poids fort) correspond au signe du flottant :</p>
-<ul>
-<li><code>0</code> pour un flottant positif,</li>
-<li><code>1</code> pour un flottant négatif.</li>
-</ul>
-<p>Les 8 ou 11 bits suivants correspondent à l'exposant <code>e</code>. Comme <code>e</code> peut être positif ou négatif, on ne représente pas directement l'entier <code>e</code> mais :</p>
-<ul>
-<li>l'entier <code>e + 127</code> sur 8 bits pour le format simple précision,</li>
-<li>l'entier <code>e + 1023</code> sur 11 bits pour le format double précision.</li>
-</ul>
-<p>Les 23 ou 52 derniers bits correspondent à la mantisse <code>m</code>. Comme <code>m</code> est par définition compris entre 1 et 2, c'est uniquement la partie fractionnaire (partie située après la virgule) du nombre <code>m - 1</code> qui est représentée sur 23 ou 52 bits.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Exemple">Exemple<a class="anchor-link" href="#Exemple">&#182;</a></h3>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>Représentons par exemple sur 32 bits le nombre flottant <code>-0,2</code>. Il est négatif donc le bit le plus à gauche de sa représentation est un <code>1</code>.</p>
-<p>De plus, nous avons vu précédemment que $0,2 = (0,00110011...)_2 = (1,10011001...)_2 \times 2^{-3}$. L'exposant <code>e</code> est donc -3 et la mantisse <code>m</code> est 1,10011001...</p>
-<p>On écrit sur 8 bits le nombre <code>e + 127</code> (c'est-à-dire 124) ce qui donne <code>01111100</code>.</p>
-<p>Enfin, on écrit sur 23 bits la partie fractionnaire de <code>m-1</code> (c'est-à-dire 0,10011001...) ce qui donne <code>10011001100110011001100(1)</code>, arrondi à <code>10011001100110011001101</code>.</p>
-<p>La représentation sur 32 bits obtenue pour le flottant <code>-0,2</code> est donc <code>1 01111100 10011001100110011001101</code>.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">La fonction <code>float_bin32</code>, importée depuis le module <code>float_bin</code>, permet de vérifier le résultat obtenu :</div>
 </div>
 </div>
 </div>
@@ -14975,20 +14787,9 @@ et on obtient : $0,3 = (0,0100110011001...)_2$.<br>
 <div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">float_bin</span> <span class="k">import</span> <span class="n">float_bin32</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="mi">44</span> <span class="o">&lt;=</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">46</span> <span class="ow">and</span> <span class="mi">2</span> <span class="o">&lt;=</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;long&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15005,7 +14806,64 @@ et on obtient : $0,3 = (0,0100110011001...)_2$.<br>
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">1</span><span class="ansi-red-intense-fg ansi-bold">01111100</span><span class="ansi-blue-intense-fg ansi-bold">10011001100110011001101</span>
+<pre>Rodez  Aurillac  Le Puy-en-Velay  Mende  Clermont-Ferrand  </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 8 :</strong> Ecrire des lignes de code permettant d'afficher le nom et les coordonnées géographiques des 18 capitales de région (arrondies à deux chiffres après la virgule).</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;CL_reg&#39;</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;;&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;long&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Marseille : 43.29 ; 5.38
+Ajaccio : 41.92 ; 8.74
+Dijon : 47.32 ; 5.04
+Toulouse : 43.6 ; 1.45
+Bordeaux : 44.84 ; -0.59
+Rennes : 48.11 ; -1.67
+Nantes : 47.22 ; -1.55
+Orléans : 47.9 ; 1.91
+Lille : 50.63 ; 3.06
+Strasbourg : 48.59 ; 7.75
+Lyon : 45.76 ; 4.84
+Paris : 48.86 ; 2.35
+Rouen : 49.45 ; 1.08
+Basse-Terre : 15.99 ; -61.72
+Fort-de-France : 14.61 ; -61.07
+Cayenne : 4.94 ; -52.33
+Saint-Denis : -20.88 ; 55.45
+Mamoudzou : -12.78 ; 45.23
 </pre>
 </div>
 </div>
@@ -15017,29 +14875,15 @@ et on obtient : $0,3 = (0,0100110011001...)_2$.<br>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Question 5 :</strong> Quelle est la représentation des nombres <code>1.0</code> et <code>25.0</code> sur 32 bits ?</p>
-
+<h3 id="Comptage-de-donn&#233;es">Comptage de donn&#233;es<a class="anchor-link" href="#Comptage-de-donn&#233;es">&#182;</a></h3>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    Remarquons d'abord que le flottant <code>1.0</code> est positif donc le bit
-    le plus à gauche de sa représentation est un <code>0</code>.<br>
+<p><strong>Question 9 :</strong> Ecrire des lignes de code permettant compter le nombre de villes préfectures situées à l'ouest du méridien de Greenwich, c'est-à-dire dont la longitude est négative.</p>
 
-   Ecrivons ensuite le nombre flottant <code>1.0</code> sous la forme $1,0 = +(1,0)_2 \times 2^0$.<br>
-
-L'exposant <code>e</code> est donc 0 et la mantisse <code>m</code> est 1,0.<br>
-
-On écrit sur 8 bits le nombre <code>e + 127</code> (c'est-à-dire 127) ce qui donne <code>01111111</code>.<br>
-
-Enfin, on écrit sur 23 bits la partie fractionnaire de <code>m-1</code> (c'est-à-dire 0,0) ce qui donne
-<code>00000000000000000000000</code>.<br>
-
-La représentation obtenue pour le nombre <code>1.0</code> est donc <code>0 01111111 00000000000000000000000</code>.
-    </div>
 </div>
 </div>
 </div>
@@ -15048,7 +14892,11 @@ La représentation obtenue pour le nombre <code>1.0</code> est donc <code>0 0111
 <div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">1.0</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">cpt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;long&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">cpt</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Il y a&#39;</span><span class="p">,</span> <span class="n">cpt</span><span class="p">,</span> <span class="s1">&#39;préfectures à l</span><span class="se">\&#39;</span><span class="s1">ouest du méridien de Greenwich.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15065,7 +14913,7 @@ La représentation obtenue pour le nombre <code>1.0</code> est donc <code>0 0111
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">01111111</span><span class="ansi-blue-intense-fg ansi-bold">00000000000000000000000</span>
+<pre>Il y a 18 préfectures à l&#39;ouest du méridien de Greenwich.
 </pre>
 </div>
 </div>
@@ -15077,23 +14925,8 @@ La représentation obtenue pour le nombre <code>1.0</code> est donc <code>0 0111
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    Remarquons d'abord que le flottant <code>25.0</code> est positif donc le bit le plus à gauche
-    de sa représentation est un <code>0</code>.<br>
+<p><strong>Question 10 :</strong> Ecrire des lignes de code permettant compter le nombre de villes préfectures situées au nord de Paris.</p>
 
-  Donnons ensuite son écriture binaire : $25,0 = (11001,0)_2$ puis son écriture scientifique binaire :
-
-  $25,0 = +(1,1001)_2 \times 2^4$.<br>
-
-L'exposant <code>e</code> est donc 4 et la mantisse <code>m</code> est 1,1001.<br>
-
-On écrit sur 8 bits le nombre <code>e + 127</code> (c'est-à-dire 131) ce qui donne <code>10000011</code>.<br>
-
-Enfin, on écrit sur 23 bits la partie fractionnaire de <code>m-1</code> (c'est-à-dire 0,1001) ce qui donne
-<code>10010000000000000000000</code>.<br>
-
-La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 10000011 10010000000000000000000</code>.
-    </div>
 </div>
 </div>
 </div>
@@ -15102,7 +14935,15 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">25.0</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">k</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">while</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">]</span> <span class="o">!=</span> <span class="s1">&#39;Paris&#39;</span><span class="p">:</span>
+    <span class="n">k</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="n">long_Paris</span> <span class="o">=</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span>
+<span class="n">cpt</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">long_Paris</span><span class="p">:</span>
+        <span class="n">cpt</span> <span class="o">+=</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Il y a&#39;</span><span class="p">,</span> <span class="n">cpt</span><span class="p">,</span> <span class="s1">&#39;préfectures au nord de Paris.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15119,7 +14960,7 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">10000011</span><span class="ansi-blue-intense-fg ansi-bold">10010000000000000000000</span>
+<pre>Il y a 15 préfectures au nord de Paris.
 </pre>
 </div>
 </div>
@@ -15131,7 +14972,16 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Nous avons dit que le nombre 0 n'a pas d'écriture scientifique. Il est par convention représenté par <code>0 00000000 00000000000000000000000</code>.</p>
+<h2 id="Partie-C---Tri-d'une-table">Partie C - Tri d'une table<a class="anchor-link" href="#Partie-C---Tri-d'une-table">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Pour exploiter les données, il peut être intéressant de les trier. Une utilisation possible est l’obtention du classement des entrées selon tel ou tel critère.</p>
+<p>On ne peut pas directement trier le tableau <code>pref</code>. Il faut indiquer selon quels critères on veut effectuer ce tri. Pour cela, on commence par définir une fonction qui renvoie la valeur utilisée pour le tri.</p>
+<p>Concrètement, si on souhaite trier la table <code>pref</code> en fonction de la latitude de la ville préfecture, on commence par définir la fonction suivante :</p>
 
 </div>
 </div>
@@ -15141,44 +14991,24 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">0.0</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_latitude</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne la valeur associée à la clé &#39;lat&#39; dans le dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;lat&#39;)</span>
+<span class="sd">    - Sortie : (nombre)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">00000000</span><span class="ansi-blue-intense-fg ansi-bold">00000000000000000000000</span>
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Partie-D---Probl&#232;me-du-test-d'&#233;galit&#233;-de-deux-flottants">Partie D - Probl&#232;me du test d'&#233;galit&#233; de deux flottants<a class="anchor-link" href="#Partie-D---Probl&#232;me-du-test-d'&#233;galit&#233;-de-deux-flottants">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>La représentation des nombres flottants en machine est <strong>approximative</strong>, ce qui entraîne des difficultés.</p>
-<p>Par exemple, les nombres 0,1 et 0,2 ont une écriture binaire infinie, d'où des problèmes d'arrondis éventuels.</p>
+<p>Pour trier la table, il suffit alors d'utiliser la commande <code>.sort()</code> avec le paramètre optionnel <code>key</code> égal à la fonction de tri définie précédemment :</p>
 
 </div>
 </div>
@@ -15188,30 +15018,10 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.2</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pref</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="n">cle_latitude</span><span class="p">)</span>
 </pre></div>
 
     </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[14]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>0.30000000000000004</pre>
-</div>
-
-</div>
-
 </div>
 </div>
 
@@ -15219,7 +15029,7 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>C'est la raison pour laquelle il faut absolument éviter d'utiliser des conditions dans lesquelles on teste l'égalité entre deux flottants.</p>
+<p>On peut alors afficher la liste des préfectures dans l'ordre croissant de leur latitude, c'est-à-dire du sud au nord :</p>
 
 </div>
 </div>
@@ -15229,10 +15039,8 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">if</span> <span class="mf">0.1</span> <span class="o">+</span> <span class="mf">0.2</span> <span class="o">==</span> <span class="mf">0.3</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Je sais compter !&#39;</span><span class="p">)</span>
-<span class="k">else</span><span class="p">:</span>
-    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Je ne sais pas compter ??&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15249,8 +15057,7 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>Je ne sais pas compter ??
-</pre>
+<pre>Saint-Denis  Mamoudzou  Cayenne  Fort-de-France  Basse-Terre  Ajaccio  Perpignan  Bastia  Foix  Toulon  Carcassonne  Tarbes  Marseille  Pau  Toulouse  Montpellier  Auch  Nice  Nîmes  Mont-de-Marsan  Albi  Avignon  Montauban  Digne-les-Bains  Agen  Rodez  Cahors  Mende  Gap  Privas  Bordeaux  Aurillac  Valence  Le Puy-en-Velay  Périgueux  Grenoble  Tulle  Saint-Étienne  Chambéry  Angoulême  Lyon  Clermont-Ferrand  Limoges  Annecy  La Rochelle  Guéret  Bourg-en-Bresse  Mâcon  Niort  Moulins  Poitiers  La Roche-sur-Yon  Lons-le-Saunier  Châteauroux  Nevers  Bourges  Nantes  Besançon  Dijon  Tours  Angers  Blois  Vesoul  Belfort  Vannes  Auxerre  Orléans  Quimper  Le Mans  Laval  Colmar  Rennes  Chaumont  Épinal  Troyes  Alençon  Chartres  Saint-Brieuc  Melun  Strasbourg  Évry  Nancy  Bar-le-Duc  Créteil  Versailles  Paris  Nanterre  Bobigny  Châlons-en-Champagne  Évreux  Pontoise  Saint-Lô  Metz  Caen  Beauvais  Rouen  Laon  Charleville-Mézières  Amiens  Arras  Lille  </pre>
 </div>
 </div>
 
@@ -15258,19 +15065,10 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+<div id="index_reverse" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-   Pour Python, la condition <code>0.1 + 0.2 == 0.3</code> est fausse à cause des problèmes d'arrondi induits par la représentation des flottants.
-    </div>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Question 6 :</strong> Définir une fonction <code>pythagore</code> qui prend en paramètre d'entrée les longueurs <code>a</code>, <code>b</code> et <code>c</code> des trois côtés d'un triangle et qui renvoie <code>True</code> si le triangle est rectagle et <code>False</code> sinon. Penser à écrire la spécification de la fonction ainsi que des assertions permettant de vérifier que les arguments passés en paramètres d'entrée sont des nombres strictement positifs.</p>
+<p>Si l'on préfère afficher les villes du nord au sud, et donc par ordre décroissant des latitudes, on rajoute à la commande <code>.sort()</code> le paramètre optionnel <code>reverse</code> :</p>
 
 </div>
 </div>
@@ -15280,21 +15078,7 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pythagore</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Détermine si un triangle de côtés a, b et c est rectangle ou pas</span>
-<span class="sd">    - Entrées : a, b, c (nombres)</span>
-<span class="sd">    - Sortie : (booléen)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">param</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être des nombres&#39;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">param</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être strictement positifs&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">==</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pref</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="n">cle_latitude</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15307,7 +15091,8 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span> <span class="c1"># test de la fonction avec des entiers en entrée</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15320,27 +15105,43 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Lille  Arras  Amiens  Charleville-Mézières  Laon  Rouen  Beauvais  Caen  Metz  Saint-Lô  Pontoise  Évreux  Châlons-en-Champagne  Bobigny  Nanterre  Paris  Versailles  Créteil  Bar-le-Duc  Nancy  Évry  Strasbourg  Melun  Saint-Brieuc  Chartres  Alençon  Troyes  Épinal  Chaumont  Rennes  Colmar  Laval  Le Mans  Quimper  Orléans  Auxerre  Vannes  Belfort  Vesoul  Blois  Angers  Tours  Dijon  Besançon  Nantes  Bourges  Nevers  Châteauroux  Lons-le-Saunier  La Roche-sur-Yon  Poitiers  Moulins  Niort  Mâcon  Bourg-en-Bresse  Guéret  La Rochelle  Annecy  Limoges  Clermont-Ferrand  Lyon  Angoulême  Chambéry  Saint-Étienne  Tulle  Grenoble  Périgueux  Le Puy-en-Velay  Valence  Aurillac  Bordeaux  Privas  Gap  Mende  Cahors  Rodez  Agen  Digne-les-Bains  Montauban  Avignon  Albi  Mont-de-Marsan  Nîmes  Nice  Auch  Montpellier  Toulouse  Pau  Marseille  Tarbes  Carcassonne  Toulon  Foix  Bastia  Perpignan  Ajaccio  Basse-Terre  Fort-de-France  Cayenne  Mamoudzou  Saint-Denis  </pre>
 </div>
-
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 11 :</strong> Ecrire des lignes de code permettant d'afficher les préfectures françaises d'ouest en est.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">3.0</span><span class="p">,</span> <span class="mf">4.0</span><span class="p">,</span> <span class="mf">5.0</span><span class="p">)</span> <span class="c1"># test de la fonction avec des flottants en entrée</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_longitude</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne la valeur associée à la clé &#39;long&#39; dans le dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;long&#39;)</span>
+<span class="sd">    - Sortie : (nombre)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;long&#39;</span><span class="p">]</span>
+
+<span class="n">pref</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="n">cle_longitude</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15353,27 +15154,36 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Basse-Terre  Fort-de-France  Cayenne  Quimper  Saint-Brieuc  Vannes  Rennes  Nantes  La Roche-sur-Yon  La Rochelle  Saint-Lô  Laval  Bordeaux  Angers  Mont-de-Marsan  Niort  Pau  Caen  Tarbes  Alençon  Angoulême  Le Mans  Poitiers  Auch  Agen  Tours  Périgueux  Rouen  Évreux  Limoges  Blois  Montauban  Cahors  Toulouse  Chartres  Foix  Châteauroux  Tulle  Guéret  Orléans  Beauvais  Pontoise  Versailles  Albi  Nanterre  Amiens  Paris  Carcassonne  Bourges  Évry  Aurillac  Bobigny  Créteil  Rodez  Melun  Arras  Perpignan  Lille  Clermont-Ferrand  Nevers  Moulins  Mende  Auxerre  Laon  Montpellier  Le Puy-en-Velay  Troyes  Nîmes  Châlons-en-Champagne  Saint-Étienne  Privas  Charleville-Mézières  Avignon  Mâcon  Lyon  Valence  Dijon  Chaumont  Bar-le-Duc  Bourg-en-Bresse  Marseille  Lons-le-Saunier  Grenoble  Chambéry  Toulon  Besançon  Gap  Annecy  Vesoul  Metz  Nancy  Digne-les-Bains  Épinal  Belfort  Nice  Colmar  Strasbourg  Ajaccio  Bastia  Mamoudzou  Saint-Denis  </pre>
 </div>
-
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 12 :</strong> Ecrire des lignes de code permettant d'afficher les capitales régionales françaises du nord au sud.</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span> <span class="c1"># test de la fonction avec des flottants en entrée</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pref</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="n">key</span> <span class="o">=</span> <span class="n">cle_latitude</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;CL_reg&#39;</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15386,42 +15196,22 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>False</pre>
-</div>
-
-</div>
-
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Lille  Rouen  Paris  Strasbourg  Rennes  Orléans  Dijon  Nantes  Lyon  Bordeaux  Toulouse  Marseille  Ajaccio  Basse-Terre  Fort-de-France  Cayenne  Mamoudzou  Saint-Denis  </pre>
 </div>
 </div>
 
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div>
+
+</div>
+<div id="index_sorted" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-   Les trois triangles sont pourtant bien rectangles... Mais la représentation approchée des flottants en mémoire ne permet pas d'obtenir un résultat correct sur le troisième test.
-    </div>
-</div>
-</div>
-</div>
-<div id="index_test_egalite_approchee" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>On peut remplacer le test d'égalité <code>flottant1 == flottant2</code> par un test du type <code>abs(flottant1 - flottant2) &lt; 10**-n</code> qui est un <strong>test d'égalité approchée</strong> (avec <code>n</code> chiffres après la virgule de précision).</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p><strong>Question 7 :</strong> Modifier le code de la fonction <code>pythagore</code> pour remplacer le test d'égalité de deux flottants par un test d'agalité approchée (à 12 chiffres après la virgule de précision).</p>
+<p>En utilisant la commande <code>.sort()</code>, nous avons modifié la table <code>pref</code> en mémoire : l'index de chaque dictionnaire a été modifié dans le tableau <code>pref</code>. Si on souhaite garder intact la table initiale, il faut utiliser la fonction <code>sorted()</code> à la place de la commande <code>.sort()</code> :</p>
 
 </div>
 </div>
@@ -15431,21 +15221,14 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">pythagore</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">):</span>
-    <span class="sd">&quot;&quot;&quot;</span>
-<span class="sd">    Détermine si un triangle de côtés a, b et c est rectangle ou pas</span>
-<span class="sd">    - Entrées : a, b, c (nombres)</span>
-<span class="sd">    - Sortie : (booléen)</span>
-<span class="sd">    &quot;&quot;&quot;</span>
-    <span class="k">for</span> <span class="n">param</span> <span class="ow">in</span> <span class="p">[</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">c</span><span class="p">]:</span>
-        <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">param</span><span class="p">)</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="nb">int</span><span class="p">,</span> <span class="nb">float</span><span class="p">]:</span>
-            <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être des nombres&#39;</span><span class="p">)</span>
-        <span class="k">if</span> <span class="n">param</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s1">&#39;les arguments doivent être strictement positifs&#39;</span><span class="p">)</span>
-    <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">a</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="n">b</span><span class="o">**</span><span class="mi">2</span> <span class="o">-</span> <span class="n">c</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="o">**-</span><span class="mi">12</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">True</span>
-    <span class="k">else</span><span class="p">:</span>
-        <span class="k">return</span> <span class="kc">False</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pref</span> <span class="o">=</span> <span class="n">importer_donnees</span><span class="p">(</span><span class="s1">&#39;prefectures.csv&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;lat&#39;</span><span class="p">])</span>
+    <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;long&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;long&#39;</span><span class="p">])</span>
+    <span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;CL_reg&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">bool</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;CL_reg&#39;</span><span class="p">]))</span>
+
+<span class="n">pref2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pref</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_latitude</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15458,7 +15241,8 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15471,15 +15255,12 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Bourg-en-Bresse  Laon  Moulins  Digne-les-Bains  Gap  Nice  Privas  Charleville-Mézières  Foix  Troyes  Carcassonne  Rodez  Marseille  Caen  Aurillac  Angoulême  La Rochelle  Bourges  Tulle  Ajaccio  Bastia  Dijon  Saint-Brieuc  Guéret  Périgueux  Besançon  Valence  Évreux  Chartres  Quimper  Nîmes  Toulouse  Auch  Bordeaux  Montpellier  Rennes  Châteauroux  Tours  Grenoble  Lons-le-Saunier  Mont-de-Marsan  Blois  Saint-Étienne  Le Puy-en-Velay  Nantes  Orléans  Cahors  Agen  Mende  Angers  Saint-Lô  Châlons-en-Champagne  Chaumont  Laval  Nancy  Bar-le-Duc  Vannes  Metz  Nevers  Lille  Beauvais  Alençon  Arras  Clermont-Ferrand  Pau  Tarbes  Perpignan  Strasbourg  Colmar  Lyon  Vesoul  Mâcon  Le Mans  Chambéry  Annecy  Paris  Rouen  Melun  Versailles  Niort  Amiens  Albi  Montauban  Toulon  Avignon  La Roche-sur-Yon  Poitiers  Limoges  Épinal  Auxerre  Belfort  Évry  Nanterre  Bobigny  Créteil  Pontoise  Basse-Terre  Fort-de-France  Cayenne  Saint-Denis  Mamoudzou  </pre>
 </div>
-
 </div>
 
 </div>
@@ -15491,7 +15272,8 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">0.3</span><span class="p">,</span> <span class="mf">0.4</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref2</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15504,27 +15286,43 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Lille  Arras  Amiens  Charleville-Mézières  Laon  Rouen  Beauvais  Caen  Metz  Saint-Lô  Pontoise  Évreux  Châlons-en-Champagne  Bobigny  Nanterre  Paris  Versailles  Créteil  Bar-le-Duc  Nancy  Évry  Strasbourg  Melun  Saint-Brieuc  Chartres  Alençon  Troyes  Épinal  Chaumont  Rennes  Colmar  Laval  Le Mans  Quimper  Orléans  Auxerre  Vannes  Belfort  Vesoul  Blois  Angers  Tours  Dijon  Besançon  Nantes  Bourges  Nevers  Châteauroux  Lons-le-Saunier  La Roche-sur-Yon  Poitiers  Moulins  Niort  Mâcon  Bourg-en-Bresse  Guéret  La Rochelle  Annecy  Limoges  Clermont-Ferrand  Lyon  Angoulême  Chambéry  Saint-Étienne  Tulle  Grenoble  Périgueux  Le Puy-en-Velay  Valence  Aurillac  Bordeaux  Privas  Gap  Mende  Cahors  Rodez  Agen  Digne-les-Bains  Montauban  Avignon  Albi  Mont-de-Marsan  Nîmes  Nice  Auch  Montpellier  Toulouse  Pau  Marseille  Tarbes  Carcassonne  Toulon  Foix  Bastia  Perpignan  Ajaccio  Basse-Terre  Fort-de-France  Cayenne  Mamoudzou  Saint-Denis  </pre>
 </div>
-
 </div>
 
 </div>
 </div>
 
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 13 :</strong> Ecrire des lignes de code permettant d'afficher les noms des départements français dans l'ordre alphabétique, sans modifier la table <code>pref</code> :</p>
+
+</div>
+</div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
 <div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pythagore</span><span class="p">(</span><span class="mf">0.03</span><span class="p">,</span> <span class="mf">0.04</span><span class="p">,</span> <span class="mf">0.05</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_dep_nom</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne la valeur associée à la clé &#39;dep_nom&#39; dans le dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;dep_nom&#39;)</span>
+<span class="sd">    - Sortie : (chaîne de caractères)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="n">pref2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pref</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_dep_nom</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref2</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15537,15 +15335,61 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt"></div>
 
 
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>True</pre>
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Ain  Aisne  Allier  Alpes-de-Haute-Provence  Alpes-Maritimes  Ardennes  Ardèche  Ariège  Aube  Aude  Aveyron  Bas-Rhin  Bouches-du-Rhône  Calvados  Cantal  Charente  Charente-Maritime  Cher  Corrèze  Corse-du-Sud  Creuse  Côte-d&#39;Or  Côtes-d&#39;Armor  Deux-Sèvres  Dordogne  Doubs  Drôme  Essonne  Eure  Eure-et-Loir  Finistère  Gard  Gers  Gironde  Guadeloupe  Guyane  Haut-Rhin  Haute-Corse  Haute-Garonne  Haute-Loire  Haute-Marne  Haute-Savoie  Haute-Saône  Haute-Vienne  Hautes-Alpes  Hautes-Pyrénées  Hauts-de-Seine  Hérault  Ille-et-Vilaine  Indre  Indre-et-Loire  Isère  Jura  Landes  Loir-et-Cher  Loire  Loire-Atlantique  Loiret  Lot  Lot-et-Garonne  Lozère  Maine-et-Loire  Manche  Marne  Martinique  Mayenne  Mayotte  Meurthe-et-Moselle  Meuse  Morbihan  Moselle  Nièvre  Nord  Oise  Orne  Paris  Pas-de-Calais  Puy-de-Dôme  Pyrénées-Atlantiques  Pyrénées-Orientales  Rhône  Réunion  Sarthe  Savoie  Saône-et-Loire  Seine-et-Marne  Seine-Maritime  Seine-Saint-Denis  Somme  Tarn  Tarn-et-Garonne  Territoire de Belfort  Val-d&#39;Oise  Val-de-Marne  Var  Vaucluse  Vendée  Vienne  Vosges  Yonne  Yvelines  </pre>
+</div>
 </div>
 
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 14 :</strong> Ecrire des lignes de code permettant d'afficher les préfectures dans l'ordre alphabétique, sans modifier la table <code>pref</code> :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_ville</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne la valeur associée à la clé &#39;ville&#39; dans le dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;ville&#39;)</span>
+<span class="sd">    - Sortie : (chaîne de caractères)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;ville&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+
+<span class="n">pref2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pref</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_ville</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref2</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Agen  Ajaccio  Albi  Alençon  Amiens  Angers  Angoulême  Annecy  Arras  Auch  Aurillac  Auxerre  Avignon  Bar-le-Duc  Basse-Terre  Bastia  Beauvais  Belfort  Besançon  Blois  Bobigny  Bordeaux  Bourg-en-Bresse  Bourges  Caen  Cahors  Carcassonne  Cayenne  Chambéry  Charleville-Mézières  Chartres  Chaumont  Châlons-en-Champagne  Châteauroux  Clermont-Ferrand  Colmar  Créteil  Digne-les-Bains  Dijon  Foix  Fort-de-France  Gap  Grenoble  Guéret  La Roche-sur-Yon  La Rochelle  Laon  Laval  Le Mans  Le Puy-en-Velay  Lille  Limoges  Lons-le-Saunier  Lyon  Mamoudzou  Marseille  Melun  Mende  Metz  Mont-de-Marsan  Montauban  Montpellier  Moulins  Mâcon  Nancy  Nanterre  Nantes  Nevers  Nice  Niort  Nîmes  Orléans  Paris  Pau  Perpignan  Poitiers  Pontoise  Privas  Périgueux  Quimper  Rennes  Rodez  Rouen  Saint-Brieuc  Saint-Denis  Saint-Lô  Saint-Étienne  Strasbourg  Tarbes  Toulon  Toulouse  Tours  Troyes  Tulle  Valence  Vannes  Versailles  Vesoul  Épinal  Évreux  Évry  </pre>
+</div>
 </div>
 
 </div>
@@ -15556,10 +15400,316 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="rq">
-    Le test d'égalité <code>a**2 + b**2 == c**2</code> a été remplacé par le test d'égalité approchée <code>abs(a**2 + b**2 - c**2) &lt; 10**-12</code>.
+    On rencontre ici une difficulté : les villes dont la première lettre porte un accent ne sont pas classées correctement. La raison est que le classement des chaînes de caractère se fait suivant l'ordre lexicographique, dans lequel les caractères sont classés en fonction de leur code Unicode : d'abord les majuscules, puis les minuscules, puis les lettres accentuées... Une façon de contourner le problème est de retirer les accents et les majuscules dans la chaîne retournée par <code>cle_ville</code>.</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">ascii</span><span class="p">(</span><span class="n">phrase</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Transforme une chaîne de caractères en enlevant majuscules et accents.</span>
+<span class="sd">    - Entrée : phrase (chaîne de caractères)</span>
+<span class="sd">    - Sortie : nouvelle_phrase (chaîne de caractères)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">if</span> <span class="nb">type</span><span class="p">(</span><span class="n">phrase</span><span class="p">)</span> <span class="o">!=</span> <span class="nb">str</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">TypeError</span><span class="p">(</span><span class="s1">&#39;l\'argument doit être une chaîne de caractères&#39;</span><span class="p">)</span>
+    <span class="n">nouvelle_phrase</span> <span class="o">=</span> <span class="s1">&#39;&#39;</span>
+    <span class="k">for</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="n">phrase</span><span class="p">:</span>
+        <span class="n">lettre</span> <span class="o">=</span> <span class="n">lettre</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s1">&#39;àâä&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;a&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s1">&#39;éèêë&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;e&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s1">&#39;îï&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;i&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s1">&#39;ôö&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;o&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="ow">in</span> <span class="s1">&#39;ùûü&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;u&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39;ÿ&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;y&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39;ç&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;c&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39;æ&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;ae&#39;</span>
+        <span class="k">elif</span> <span class="n">lettre</span> <span class="o">==</span> <span class="s1">&#39;œ&#39;</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="s1">&#39;oe&#39;</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">nouvelle_phrase</span> <span class="o">+=</span> <span class="n">lettre</span>
+    <span class="k">return</span> <span class="n">nouvelle_phrase</span>
+
+<span class="k">def</span> <span class="nf">cle_ville</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne la valeur associée à la clé &#39;ville&#39; dans le dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;ville&#39;)</span>
+<span class="sd">    - Sortie : (chaîne de caractères)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">ascii</span><span class="p">(</span><span class="n">d</span><span class="p">[</span><span class="s1">&#39;ville&#39;</span><span class="p">])</span>
+
+<span class="n">pref2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">pref</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_ville</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pref2</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">pref2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
+</pre></div>
+
     </div>
 </div>
 </div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Agen  Ajaccio  Albi  Alençon  Amiens  Angers  Angoulême  Annecy  Arras  Auch  Aurillac  Auxerre  Avignon  Bar-le-Duc  Basse-Terre  Bastia  Beauvais  Belfort  Besançon  Blois  Bobigny  Bordeaux  Bourg-en-Bresse  Bourges  Caen  Cahors  Carcassonne  Cayenne  Châlons-en-Champagne  Chambéry  Charleville-Mézières  Chartres  Châteauroux  Chaumont  Clermont-Ferrand  Colmar  Créteil  Digne-les-Bains  Dijon  Épinal  Évreux  Évry  Foix  Fort-de-France  Gap  Grenoble  Guéret  La Roche-sur-Yon  La Rochelle  Laon  Laval  Le Mans  Le Puy-en-Velay  Lille  Limoges  Lons-le-Saunier  Lyon  Mâcon  Mamoudzou  Marseille  Melun  Mende  Metz  Mont-de-Marsan  Montauban  Montpellier  Moulins  Nancy  Nanterre  Nantes  Nevers  Nice  Nîmes  Niort  Orléans  Paris  Pau  Périgueux  Perpignan  Poitiers  Pontoise  Privas  Quimper  Rennes  Rodez  Rouen  Saint-Brieuc  Saint-Denis  Saint-Étienne  Saint-Lô  Strasbourg  Tarbes  Toulon  Toulouse  Tours  Troyes  Tulle  Valence  Vannes  Versailles  Vesoul  </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Partie-D---Fusion-de-deux-tables">Partie D - Fusion de deux tables<a class="anchor-link" href="#Partie-D---Fusion-de-deux-tables">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Le fichier <code>population.csv</code> (créé à partir de données récoltées sur le site de l'INSEE) contient la population estimée de chaque département français au 1er janvier 2020, ainsi que la répartition de cette population par tranche d'âge :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div>
+            <table align = "center">
+            <tr>
+                <th><center>Tranche</center></th>
+                <th><center>Population</center></th>
+            </tr>
+            <tr>
+                <td><center>A</center></td>
+                <td><center>0 à 19 ans</center></td>
+            </tr>
+            <tr>
+                <td><center>B</center></td>
+                <td><center>20 à 39 ans</center></td>
+            </tr>
+            <tr>
+                <td><center>C</center></td>
+                <td><center>40 à 59 ans</center></td>
+            </tr>
+            <tr>
+                <td><center>D</center></td>
+                <td><center>60 à 74 ans</center></td>
+            </tr>
+            <tr>
+                <td><center>E</center></td>
+                <td><center>plus de 75 ans</center></td>
+            </tr>
+        </table>
+</div>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p><strong>Question 15 :</strong> Ecrire des lignes de code permettant d'importer les données du fichier <code>population.csv</code> dans un tableau <code>pop</code> composé de dictionnaires. Les populations seront stockées sous forme d'entiers.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">pop</span> <span class="o">=</span> <span class="n">importer_donnees</span><span class="p">(</span><span class="s1">&#39;population.csv&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">pop</span><span class="p">)):</span>
+    <span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popA&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popA&#39;</span><span class="p">])</span>
+    <span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popB&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popB&#39;</span><span class="p">])</span>
+    <span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popC&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popC&#39;</span><span class="p">])</span>
+    <span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popD&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popD&#39;</span><span class="p">])</span>
+    <span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popE&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popE&#39;</span><span class="p">])</span>
+    <span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="n">pop</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div id="index_jointure" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Puisque les deux tables <code>pref</code> et <code>pop</code> possèdent en commun le champ <code>dep</code>, il semble intéressant de pouvoir créer une table unique regroupant les données présentes dans chacune des deux tables. On parle de <strong>jointure</strong> des deux tables.</p>
+<p>On commence par créer une fonction <code>fusion</code> dont le rôle est de fusionner deux dictionnaires en un seul :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">fusion</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Fusionne deux dictionnaires</span>
+<span class="sd">    - Entrées : d1 (dictionnaire contenant les clés &#39;dep&#39;, &#39;dep_nom&#39;, &#39;ville&#39;, &#39;lat&#39; et &#39;long&#39;)</span>
+<span class="sd">                d2 (dictionnaire contenant les clés &#39;dep&#39;, &#39;popA&#39;, &#39;popB&#39;, &#39;popC&#39;, &#39;popD&#39;, &#39;popE&#39; et &#39;pop&#39;)</span>
+<span class="sd">    - Sortie : (dictionnaire unique contenant toutes les clés citées précédemment)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="p">{</span><span class="s1">&#39;dep&#39;</span> <span class="p">:</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;dep&#39;</span><span class="p">],</span> <span class="s1">&#39;dep_nom&#39;</span> <span class="p">:</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="s1">&#39;ville&#39;</span> <span class="p">:</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;ville&#39;</span><span class="p">],</span> <span class="s1">&#39;lat&#39;</span> <span class="p">:</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;lat&#39;</span><span class="p">],</span> <span class="s1">&#39;long&#39;</span> <span class="p">:</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;long&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;popA&#39;</span> <span class="p">:</span> <span class="n">d2</span><span class="p">[</span><span class="s1">&#39;popA&#39;</span><span class="p">],</span> <span class="s1">&#39;popB&#39;</span> <span class="p">:</span> <span class="n">d2</span><span class="p">[</span><span class="s1">&#39;popB&#39;</span><span class="p">],</span> <span class="s1">&#39;popC&#39;</span> <span class="p">:</span> <span class="n">d2</span><span class="p">[</span><span class="s1">&#39;popC&#39;</span><span class="p">],</span> <span class="s1">&#39;popD&#39;</span> <span class="p">:</span> <span class="n">d2</span><span class="p">[</span><span class="s1">&#39;popD&#39;</span><span class="p">],</span> <span class="s1">&#39;popE&#39;</span> <span class="p">:</span> <span class="n">d2</span><span class="p">[</span><span class="s1">&#39;popE&#39;</span><span class="p">],</span>
+           <span class="s1">&#39;pop&#39;</span> <span class="p">:</span> <span class="n">d2</span><span class="p">[</span><span class="s1">&#39;pop&#39;</span><span class="p">]}</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>La jointure des deux tables d'effectue alors à l'aide d'une double boucle :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">d1</span> <span class="ow">in</span> <span class="n">pref</span><span class="p">:</span>
+    <span class="k">for</span> <span class="n">d2</span> <span class="ow">in</span> <span class="n">pop</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">d1</span><span class="p">[</span><span class="s1">&#39;dep&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">d2</span><span class="p">[</span><span class="s1">&#39;dep&#39;</span><span class="p">]:</span>
+            <span class="n">table</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">fusion</span><span class="p">(</span><span class="n">d1</span><span class="p">,</span> <span class="n">d2</span><span class="p">))</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Voici les cinq premiers éléments de la table ainsi obtenue :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>{&#39;dep&#39;: &#39;1&#39;, &#39;dep_nom&#39;: &#39;Ain&#39;, &#39;ville&#39;: &#39;Bourg-en-Bresse&#39;, &#39;lat&#39;: 46.2025, &#39;long&#39;: 5.221944444444444, &#39;popA&#39;: 167666, &#39;popB&#39;: 151084, &#39;popC&#39;: 179469, &#39;popD&#39;: 104453, &#39;popE&#39;: 54283, &#39;pop&#39;: 656955}
+{&#39;dep&#39;: &#39;2&#39;, &#39;dep_nom&#39;: &#39;Aisne&#39;, &#39;ville&#39;: &#39;Laon&#39;, &#39;lat&#39;: 49.562222222222225, &#39;long&#39;: 3.6225, &#39;popA&#39;: 129852, &#39;popB&#39;: 114042, &#39;popC&#39;: 135164, &#39;popD&#39;: 98046, &#39;popE&#39;: 48946, &#39;pop&#39;: 526050}
+{&#39;dep&#39;: &#39;3&#39;, &#39;dep_nom&#39;: &#39;Allier&#39;, &#39;ville&#39;: &#39;Moulins&#39;, &#39;lat&#39;: 46.568333333333335, &#39;long&#39;: 3.334444444444444, &#39;popA&#39;: 66659, &#39;popB&#39;: 61490, &#39;popC&#39;: 85304, &#39;popD&#39;: 72079, &#39;popE&#39;: 45783, &#39;pop&#39;: 331315}
+{&#39;dep&#39;: &#39;4&#39;, &#39;dep_nom&#39;: &#39;Alpes-de-Haute-Provence&#39;, &#39;ville&#39;: &#39;Digne-les-Bains&#39;, &#39;lat&#39;: 44.09222222222222, &#39;long&#39;: 6.238055555555555, &#39;popA&#39;: 34281, &#39;popB&#39;: 30814, &#39;popC&#39;: 43423, &#39;popD&#39;: 35681, &#39;popE&#39;: 20998, &#39;pop&#39;: 165197}
+{&#39;dep&#39;: &#39;5&#39;, &#39;dep_nom&#39;: &#39;Hautes-Alpes&#39;, &#39;ville&#39;: &#39;Gap&#39;, &#39;lat&#39;: 44.5575, &#39;long&#39;: 6.076111111111111, &#39;popA&#39;: 30280, &#39;popB&#39;: 27715, &#39;popC&#39;: 37829, &#39;popD&#39;: 29047, &#39;popE&#39;: 16885, &#39;pop&#39;: 141756}
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<div class="rq">
+    On constate que chaque élément de <code>table</code> est un dictionnaire possédant à la fois les clés issues des enregistrements du tableau <code>pref</code> et du tableau <code>pop</code>.</div>
+</div>
+</div>
+</div>
+<div id="index_exporter_table" class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Il est enfin possible d'enregistrer la nouvelle table dans un ficher CSV, grâce à la fonction suivante :</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="k">def</span> <span class="nf">exporter_donnees</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">,</span> <span class="n">tab</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Exporte les données de tab vers un fichier CSV</span>
+<span class="sd">    - Entrée : nom_de_fichier (chaîne de caractères correspondant à un nom de fichier CSV), tab (tableau de dictionnaires)</span>
+<span class="sd">    - Effet de bord : écriture dans un fichier texte</span>
+<span class="sd">    Attention : le fichier texte est écrasé, son contenu précédent est effacé</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+        <span class="n">donnees</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">fichier</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;dep&#39;</span><span class="p">,</span> <span class="s1">&#39;dep_nom&#39;</span><span class="p">,</span> <span class="s1">&#39;ville&#39;</span><span class="p">,</span> <span class="s1">&#39;lat&#39;</span><span class="p">,</span> <span class="s1">&#39;long&#39;</span><span class="p">,</span> <span class="s1">&#39;popA&#39;</span><span class="p">,</span> <span class="s1">&#39;popB&#39;</span><span class="p">,</span> <span class="s1">&#39;popC&#39;</span><span class="p">,</span>
+                                           <span class="s1">&#39;popD&#39;</span><span class="p">,</span> <span class="s1">&#39;popE&#39;</span><span class="p">,</span> <span class="s1">&#39;pop&#39;</span><span class="p">],</span> <span class="n">delimiter</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+        <span class="n">donnees</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span> <span class="c1"># Ecriture des clés sur la première ligne du fichier CSV</span>
+        <span class="n">donnees</span><span class="o">.</span><span class="n">writerows</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="c1"># Ecriture des enregistrements à partir de la deuxième ligne du fichier CSV</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">exporter_donnees</span><span class="p">(</span><span class="s1">&#39;nouveau.csv&#39;</span><span class="p">,</span> <span class="n">table</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
@@ -15573,14 +15723,15 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="text_cell_render border-box-sizing rendered_html">
 <div class="rq2">
     <ul>
-        <li>Donner l'écriture scientifique décimale d'un nombre.</li>
-        <li>Afficher l'écriture scientifique décimale d'un nombre <code>n</code> avec la commande <code>print("{:e}".format(n))</code></li>
-        <li>Déterminer l'écriture binaire d'un entier positif.</li>
-        <li>Afficher l'écriture binaire d'un entier avec la fonction <code>bin</code></li>
-        <li>Déterminer l'écriture binaire d'un nombre décimal positif.</li>
-        <li>Déterminer la représentation d'un nombre flottant sur 32 bits.</li>
-        <li>Retrouver un flottant à partir de sa représentation sur 32 bits.</li>
-        <li>Ne pas tester d'égalité sur les flottants, mais tester plutôt des égalités approchées.</li>
+        <li>Importer une table de données depuis un fichier CSV, et stocker le résultat sous forme de tableau de dictionnaires.</li>
+        <li>Valider les données, c'est-à-dire modifier leur type pour les rendre utilisables.</li>
+        <li>Afficher des données sélectionnées dans une table.</li>
+        <li>Compter des données sélectionnées dans une table.</li>
+        <li>Définir une fonction de tri utilisable comme argument de la commande <code>.sort()</code> ou de la fonction <code>sorted</code>.</li>
+        <li>Utiliser le paramètre <code>reverse</code> pour effectuer un tri dans l'ordre décroissant.</li>
+        <li>Choisir entre la commande <code>.sort()</code> et la fonction <code>sorted</code> en fonction du contexte.</li>
+        <li>Fusionner les données contenues dans deux tables.</li>
+        <li>Exporter les données dans un fichier CSV.</li>
     </ul>
 </div>
 </div>
@@ -15603,41 +15754,20 @@ La représentation obtenue pour le nombre <code>25.0</code> est donc <code>0 100
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Donner la valeur décimale des nombres flottants dont la représentation sur 32 bits est :</p>
-<ul>
-<li><code>1 01111110 11110000000000000000000</code>,</li>
-</ul>
+<p>Ecrire des lignes de code permettant de calculer la population française totale estimée au 1er janvier 2020.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    Remarquons d'abord que ce flottant est négatif puisque le bit le plus à gauche de sa représentation est un <code>1</code>.<br>
-
-  Les 8 bits correspondant à l'exposant <code>e</code> sont <code>01111110</code>, qui est l'écriture binaire
-  de l'entier 126, égal à <code>e + 127</code>. L'exposant <code>e</code> est donc -1.<br>
-
-  Les 23 bits correspondant à la mantisse <code>m</code> sont <code>11110000000000000000000</code>.
-  La mantisse <code>m</code> est donc 1,1111.<br>
-
-On obtient l'écriture scientifique binaire : $-(1,1111)_2 \times 2^{-1}$ et donc l'écriture binaire : $-(0,11111)_2$.<br>
-
-Enfin $(0,11111)_2 = 2^{-1} + 2^{-2} + 2^{-3} + 2^{-4} + 2^{-5} = 0,96875$.<br>
-
-La représentation <code>1 01111110 11110000000000000000000</code> correspond donc au flottant <code>-0,96875</code>.
-    </div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="o">-</span><span class="mf">0.96875</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">population_totale</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)):</span>
+    <span class="n">population_totale</span> <span class="o">+=</span> <span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;L</span><span class="se">\&#39;</span><span class="s1">INSEE estime que la population française totale au 1er janvier 2020 est de&#39;</span><span class="p">,</span> <span class="n">population_totale</span><span class="p">,</span> <span class="s1">&#39;hab.&#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15654,7 +15784,7 @@ La représentation <code>1 01111110 11110000000000000000000</code> correspond do
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">1</span><span class="ansi-red-intense-fg ansi-bold">01111110</span><span class="ansi-blue-intense-fg ansi-bold">11110000000000000000000</span>
+<pre>L&#39;INSEE estime que la population française totale au 1er janvier 2020 est de 67063703 hab.
 </pre>
 </div>
 </div>
@@ -15666,40 +15796,28 @@ La représentation <code>1 01111110 11110000000000000000000</code> correspond do
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<ul>
-<li><code>0 10000011 11100000000000000000000</code>.</li>
-</ul>
+<p>Ecrire des lignes de code permettant d'afficher la liste des dix départements les plus peuplés et leur population, par ordre décroissant de population.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    Remarquons d'abord que ce flottant est positif puisque le bit le plus à gauche de sa représentation est un <code>0</code>.<br>
-
-  Les 8 bits correspondant à l'exposant <code>e</code> sont <code>10000011</code>, qui est l'écriture binaire de l'entier 131,
-  égal à <code>e + 127</code>. L'exposant <code>e</code> est donc 4.<br>
-
-  Les 23 bits correspondant à la mantisse <code>m</code> sont <code>11100000000000000000000</code>.
-  La mantisse <code>m</code> est donc 1,111.<br>
-
-On obtient l'écriture scientifique binaire : $+(1,111)_2 \times 2^4$ et donc l'écriture binaire : $(11110)_2$.<br>
-
-Enfin $(11110)_2 = 2^{4} + 2^{3} + 2^{2} + 2^{1} = 30$.<br>
-
-La représentation <code>0 10000011 11100000000000000000000</code> correspond donc au flottant <code>30.0</code>.
-    </div>
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">float_bin32</span><span class="p">(</span><span class="mf">30.0</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_pop</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne la valeur associée à la clé &#39;pop&#39; dans le dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;pop&#39;)</span>
+<span class="sd">    - Sortie : (entier)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span>
+
+<span class="n">table2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_pop</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -15716,7 +15834,238 @@ La représentation <code>0 10000011 11100000000000000000000</code> correspond do
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre><span class="ansi-green-intense-fg ansi-bold">0</span><span class="ansi-red-intense-fg ansi-bold">10000011</span><span class="ansi-blue-intense-fg ansi-bold">11100000000000000000000</span>
+<pre>Nord : 2588988
+Paris : 2148271
+Bouches-du-Rhône : 2034469
+Rhône : 1876051
+Seine-Saint-Denis : 1670149
+Gironde : 1633440
+Hauts-de-Seine : 1613762
+Pas-de-Calais : 1452778
+Yvelines : 1448625
+Loire-Atlantique : 1437137
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ecrire des lignes de code permettant d'afficher la liste des dix départements dont la proportion de moins de 20 ans est la plus forte, puis la liste des dix départements pour lesquels cette proportion est la plus faible.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_taux_jeunes</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne le taux de moins de 20 ans calculé avec les données du dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins les clés &#39;popA&#39; et &#39;pop&#39;)</span>
+<span class="sd">    - Sortie : (nombre flottant)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;popA&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span>
+
+<span class="n">table2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_taux_jeunes</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popA&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mayotte : 53.76 %
+Guyane : 41.52 %
+Réunion : 29.79 %
+Seine-Saint-Denis : 29.04 %
+Val-d&#39;Oise : 28.64 %
+Seine-et-Marne : 27.54 %
+Essonne : 27.31 %
+Yvelines : 26.63 %
+Nord : 26.09 %
+Oise : 26.03 %
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popA&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Creuse : 17.86 %
+Lot : 18.4 %
+Cantal : 18.61 %
+Dordogne : 18.71 %
+Paris : 18.93 %
+Nièvre : 19.13 %
+Corse-du-Sud : 19.47 %
+Hautes-Pyrénées : 19.77 %
+Gers : 19.78 %
+Indre : 19.78 %
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ecrire des lignes de code permettant d'afficher la liste des dix départements dont la proportion de plus de 75 ans est la plus forte, puis la liste des dix départements pour lesquels cette proportion est la plus faible.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_taux_seniors</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne le taux de plus de 75 ans calculé avec les données du dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins les clés &#39;popE&#39; et &#39;pop&#39;)</span>
+<span class="sd">    - Sortie : (nombre flottant)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;popE&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span>
+
+<span class="n">table2</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">table</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_taux_seniors</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popE&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Lot : 14.89 %
+Creuse : 14.68 %
+Nièvre : 14.4 %
+Dordogne : 14.16 %
+Cantal : 14.14 %
+Gers : 14.02 %
+Indre : 14.0 %
+Aveyron : 13.97 %
+Allier : 13.82 %
+Corrèze : 13.62 %
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="o">-</span><span class="mi">11</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;dep_nom&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;popE&#39;</span><span class="p">]</span> <span class="o">/</span> <span class="n">table2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;pop&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Mayotte : 0.87 %
+Guyane : 2.1 %
+Seine-Saint-Denis : 5.01 %
+Réunion : 5.21 %
+Val-d&#39;Oise : 6.01 %
+Seine-et-Marne : 6.46 %
+Essonne : 7.12 %
+Val-de-Marne : 7.13 %
+Oise : 7.41 %
+Nord : 7.58 %
 </pre>
 </div>
 </div>
@@ -15735,22 +16084,45 @@ La représentation <code>0 10000011 11100000000000000000000</code> correspond do
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Ecrire un programme qui, à partir du nombre <code>1.0</code>, le divise vingt fois de suite par 3 puis le multiplie vingt fois de suite par 3, et qui affiche enfin le résultat obtenu.</p>
+<p>Le fichier <code>emissions_CO2.csv</code> (créé à partir de données récoltées sur le site de la Banque mondiale) contient les quantités de CO2, en tonnes par habitant, émises par chaque pays de l'Union Européenne, pour les années 2000 et 2010.</p>
+<p>Ecrire des lignes de code permettant d'importer les données du fichier. Les quantités de CO2 émises seront stockées sous forme de nombre flottant.</p>
 
 </div>
 </div>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">x</span> <span class="o">=</span> <span class="mf">1.0</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">/</span> <span class="mi">3</span>
-<span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">20</span><span class="p">):</span>
-    <span class="n">x</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="mi">3</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">co2</span> <span class="o">=</span> <span class="n">importer_donnees</span><span class="p">(</span><span class="s1">&#39;emissions_CO2.csv&#39;</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">co2</span><span class="p">)):</span>
+    <span class="n">co2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2000&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">co2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2000&#39;</span><span class="p">])</span>
+    <span class="n">co2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2010&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">co2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2010&#39;</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ecrire des lignes de code permettant d'afficher la liste des pays de l'UE qui ont diminué leurs émissions de CO2 par habitant entre 2000 et 2010.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">co2</span><span class="p">)):</span>
+    <span class="k">if</span> <span class="n">co2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2010&#39;</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">co2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2000&#39;</span><span class="p">]:</span>
+        <span class="nb">print</span><span class="p">(</span><span class="n">co2</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;nom_pays&#39;</span><span class="p">],</span> <span class="n">end</span> <span class="o">=</span> <span class="s1">&#39;  &#39;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15767,7 +16139,107 @@ La représentation <code>0 10000011 11100000000000000000000</code> correspond do
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>1.0000000000000004
+<pre>Belgique  Chypre  République tchèque  Allemagne  Danemark  Espagne  France  Grèce  Hongrie  Irlande  Italie  Portugal  Roumanie  Suède  </pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ecrire des lignes de code permettant d'afficher le nom des cinq pays qui émettent le plus de CO2 par habitant en 2010, puis le nom des cinq pays qui en émettent le moins.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_emission_2010</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne la valeur associée à la clé &#39;em_2010&#39; dans le dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;em_2010&#39;)</span>
+<span class="sd">    - Sortie : (nombre flottant)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;em_2010&#39;</span><span class="p">]</span>
+
+<span class="n">table</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">co2</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_emission_2010</span><span class="p">,</span> <span class="n">reverse</span> <span class="o">=</span> <span class="kc">True</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">5</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;nom_pays&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2010&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;t/hab.&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Luxembourg : 21.64 t/hab.
+Estonie : 13.6 t/hab.
+Finlande : 11.58 t/hab.
+Pays-Bas : 11.02 t/hab.
+République tchèque : 10.65 t/hab.
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;nom_pays&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2010&#39;</span><span class="p">],</span> <span class="mi">2</span><span class="p">),</span> <span class="s1">&#39;t/hab.&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Lettonie : 3.85 t/hab.
+Roumanie : 3.92 t/hab.
+Lituanie : 4.35 t/hab.
+Portugal : 4.55 t/hab.
+Croatie : 4.7 t/hab.
 </pre>
 </div>
 </div>
@@ -15779,19 +16251,151 @@ La représentation <code>0 10000011 11100000000000000000000</code> correspond do
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>Comment expliquer le résultat ?</p>
+<p>Ecrire des lignes de code permettant d'afficher, pour chaque pays, le taux d'évolution de ses émissions de CO2 par habitant entre 2000 et 2010. Les pays seront classés de celui qui a le taux d'évolution le plus négatif à celui qui a le taux d'évolution le plus positif.</p>
+<p>On rappelle qu'un taux d'évolution se calcule avec la formule suivante : <code>taux_evolution = (valeur_finale - valeur_initiale) / valeur_initiale</code>.</p>
 
 </div>
 </div>
 </div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<div class="rq">
-    Les opérations sur les flottants entraînent des erreurs d'arrondi qui expliquent que le résultat final ne soit pas exactement <code>1.0</code>.
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)):</span>
+    <span class="n">taux_evolution</span> <span class="o">=</span> <span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2010&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2000&#39;</span><span class="p">])</span> <span class="o">/</span> <span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;em_2000&#39;</span><span class="p">]</span>
+    <span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;taux_evol&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">taux_evolution</span>
+</pre></div>
+
     </div>
 </div>
 </div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">cle_taux_evolution</span><span class="p">(</span><span class="n">d</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Retourne le taux d&#39;évolution des émissions de CO2 entre 2000 et 2010 calculé avec les données du dictionnaire d</span>
+<span class="sd">    - Entrée : d (dictionnaire contenant au moins la clé &#39;taux_evol&#39;)</span>
+<span class="sd">    - Sortie : (nombre flottant)</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">return</span> <span class="n">d</span><span class="p">[</span><span class="s1">&#39;taux_evol&#39;</span><span class="p">]</span>
+
+<span class="n">table</span> <span class="o">=</span> <span class="nb">sorted</span><span class="p">(</span><span class="n">co2</span><span class="p">,</span> <span class="n">key</span> <span class="o">=</span> <span class="n">cle_taux_evolution</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">table</span><span class="p">)):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;nom_pays&#39;</span><span class="p">],</span> <span class="s1">&#39;:&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">table</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="s1">&#39;taux_evol&#39;</span><span class="p">]</span> <span class="o">*</span> <span class="mi">100</span><span class="p">,</span> <span class="mi">1</span><span class="p">),</span> <span class="s1">&#39;%&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Portugal : -25.3 %
+Espagne : -19.9 %
+Irlande : -18.9 %
+Italie : -13.6 %
+Danemark : -12.5 %
+République tchèque : -11.8 %
+Grèce : -11.1 %
+Belgique : -9.4 %
+France : -8.7 %
+Hongrie : -8.1 %
+Allemagne : -8.1 %
+Chypre : -5.7 %
+Roumanie : -2.9 %
+Suède : -0.3 %
+Slovaquie : 0.9 %
+Pays-Bas : 1.1 %
+Slovénie : 3.4 %
+Autriche : 3.8 %
+Pologne : 6.3 %
+Croatie : 8.5 %
+Bulgarie : 12.0 %
+Finlande : 14.3 %
+Luxembourg : 14.6 %
+Malte : 16.7 %
+Lituanie : 25.1 %
+Estonie : 27.9 %
+Lettonie : 43.5 %
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Ecrire des lignes de code permettant de stocker dans un nouveau fichier CSV la liste des pays de l'UE et leur taux d'évolution des émissions de CO2 par habitant.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">csv</span>
+
+<span class="k">def</span> <span class="nf">exporter_donnees</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">,</span> <span class="n">tab</span><span class="p">):</span>
+    <span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    Exporte les données de tab vers un fichier CSV</span>
+<span class="sd">    - Entrée : nom_de_fichier (chaîne de caractères correspondant à un nom de fichier CSV), tab (tableau de dictionnaires)</span>
+<span class="sd">    - Effet de bord : écriture dans un fichier texte</span>
+<span class="sd">    Attention : le fichier texte est écrasé, son contenu précédent est effacé</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+    <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="n">nom_de_fichier</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">encoding</span> <span class="o">=</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">fichier</span><span class="p">:</span>
+        <span class="n">donnees</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">DictWriter</span><span class="p">(</span><span class="n">fichier</span><span class="p">,</span> <span class="p">[</span><span class="s1">&#39;nom_pays&#39;</span><span class="p">,</span> <span class="s1">&#39;em_2000&#39;</span><span class="p">,</span> <span class="s1">&#39;em_2010&#39;</span><span class="p">,</span> <span class="s1">&#39;taux_evol&#39;</span><span class="p">],</span> <span class="n">delimiter</span> <span class="o">=</span> <span class="s1">&#39;,&#39;</span><span class="p">)</span>
+        <span class="n">donnees</span><span class="o">.</span><span class="n">writeheader</span><span class="p">()</span> <span class="c1"># Ecriture des clés sur la première ligne du fichier CSV</span>
+        <span class="n">donnees</span><span class="o">.</span><span class="n">writerows</span><span class="p">(</span><span class="n">tab</span><span class="p">)</span> <span class="c1"># Ecriture des enregistrements à partir de la deuxième ligne du fichier CSV</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">exporter_donnees</span><span class="p">(</span><span class="s1">&#39;nouveau_CO2.csv&#39;</span><span class="p">,</span> <span class="n">table</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
 </div>
     </div>
   </div>
