@@ -9,8 +9,13 @@
       
       
       
+        <link rel="prev" href="../api/">
+      
+      
+        <link rel="next" href="../prog_objet/">
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
@@ -18,12 +23,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c4a75a56.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
-        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
       
+      
+
     
     
     
@@ -41,7 +47,6 @@
       
     
     
-    
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="../stylesheets/admon.css">
@@ -50,10 +55,11 @@
     
       <link rel="stylesheet" href="../xtra/ajustements.css">
     
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-
+    
     
     
   </head>
@@ -69,9 +75,8 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -88,9 +93,12 @@
       
     </div>
     
+    
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href=".." title="Cours de Terminale NSI" class="md-header__button md-logo" aria-label="Cours de Terminale NSI" data-md-component="logo">
       
@@ -98,7 +106,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -120,7 +128,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
@@ -129,22 +136,21 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Recherche">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -155,7 +161,7 @@
           <div class="md-search-result__meta">
             Initialisation de la recherche
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -240,7 +246,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
@@ -256,7 +262,6 @@
       </a>
       
         
-
 
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
@@ -529,13 +534,15 @@
             
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
     
-                
-                
-                <h1 id="chapitre-2-recursivite">Chapitre 2 : Récursivité<a class="headerlink" href="#chapitre-2-recursivite" title="Permanent link">⚓︎</a></h1>
+                  
+
+
+<h1 id="chapitre-2-recursivite">Chapitre 2 : Récursivité<a class="headerlink" href="#chapitre-2-recursivite" title="Permanent link">⚓︎</a></h1>
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/cours_02.ipynb">ici</a></p>
 </div>
@@ -547,7 +554,9 @@
 <code>somme</code> qui calcule la somme des entiers compris entre <code>a</code> et <code>b</code>.</p>
 <div class="admonition fonc">
 <p class="admonition-title">Fonction <code>somme</code></p>
-<details class="info"><summary>Détermine la somme des entiers compris entre <code>a</code> et <code>b</code>.</summary><div class="admonition entrée">
+<details class="info">
+<summary>Détermine la somme des entiers compris entre <code>a</code> et <code>b</code>.</summary>
+<div class="admonition entrée">
 <p class="admonition-title">Entrées</p>
 <ul>
 <li><code>a</code> : entier</li>
@@ -561,22 +570,23 @@
 </ul>
 </div>
 </details>
-<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Version itérative</label><label for="__tabbed_1_2">Version récursive</label></div>
+<details class="python" open="open">
+<summary>Implémentation</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Version itérative</label><label for="__tabbed_1_2">Version récursive</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Une première façon de faire est d'utiliser une boucle pour :
 on obtient une <strong>version itérative</strong> de la fonction.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">somme</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">somme</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="n">total</span> <span class="o">=</span> <span class="mi">0</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">total</span> <span class="o">=</span> <span class="n">total</span> <span class="o">+</span> <span class="n">k</span>
     <span class="k">return</span> <span class="n">total</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
 <p>Une autre façon de faire est de constater qu'il y a deux cas à envisager :</p>
@@ -588,19 +598,18 @@ On renvoie donc sa valeur.</li>
 des entiers compris entre <code>a+1</code> et <code>b</code>, on y ajoute la valeur
 de <code>a</code> et on renvoie le total.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">somme</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">somme</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">a</span> <span class="o">==</span> <span class="n">b</span><span class="p">:</span>
         <span class="n">total</span> <span class="o">=</span> <span class="n">a</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">total</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">somme</span><span class="p">(</span><span class="n">a</span><span class="o">+</span><span class="mi">1</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">total</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Ainsi définie, la fonction est une fonction récursive parce
 qu'elle s'appelle elle-même dans le cas où <code>a</code> est différent de <code>b</code>.</p>
 </div>
@@ -621,7 +630,9 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 1 et <code>n</code>.</p>
 <div class="admonition fonc">
 <p class="admonition-title">Fonction <code>factorielle</code></p>
-<details class="info"><summary>Détermine le produit des entiers compris entre 1 et <code>n</code>.</summary><div class="admonition entrée">
+<details class="info">
+<summary>Détermine le produit des entiers compris entre 1 et <code>n</code>.</summary>
+<div class="admonition entrée">
 <p class="admonition-title">Entrée</p>
 <ul>
 <li><code>n</code> : entier strictement positif</li>
@@ -634,20 +645,21 @@ une fonction <code>factorielle</code> qui calcule le produit des entiers compris
 </ul>
 </div>
 </details>
-<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Version itérative</label><label for="__tabbed_2_2">Version récursive</label></div>
+<details class="python" open="open">
+<summary>Implémentation</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Version itérative</label><label for="__tabbed_2_2">Version récursive</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">factorielle</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">factorielle</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="n">fac</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">fac</span> <span class="o">=</span> <span class="n">k</span> <span class="o">*</span> <span class="n">fac</span>
     <span class="k">return</span> <span class="n">fac</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
 <p>Pour l'écriture de la fonction récursive, deux cas à sont envisager :</p>
@@ -659,19 +671,18 @@ On renvoie donc sa valeur. C'est le <em>cas de base</em>.</li>
 des entiers compris entre 1 et <code>n-1</code>, on multiplie le résultat
 par la valeur de <code>n</code> et on renvoie le total. C'est le <em>cas récursif</em>.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
-<span class="normal">6</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">factorielle</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">factorielle</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
         <span class="n">fac</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="n">fac</span> <span class="o">=</span> <span class="n">n</span> <span class="o">*</span> <span class="n">factorielle</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
     <span class="k">return</span> <span class="n">fac</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
@@ -682,7 +693,9 @@ par la valeur de <code>n</code> et on renvoie le total. C'est le <em>cas récurs
 souhaite définir une fonction <code>puissance</code> qui calcule <code>x</code> puissance <code>n</code>.</p>
 <div class="admonition fonc">
 <p class="admonition-title">Fonction <code>puissance</code></p>
-<details class="info"><summary>Détermine la valeur de <code>x</code> puissance <code>n</code>.</summary><div class="admonition entrée">
+<details class="info">
+<summary>Détermine la valeur de <code>x</code> puissance <code>n</code>.</summary>
+<div class="admonition entrée">
 <p class="admonition-title">Entrées</p>
 <ul>
 <li><code>x</code> : entier ou flottant</li>
@@ -696,20 +709,21 @@ souhaite définir une fonction <code>puissance</code> qui calcule <code>x</code>
 </ul>
 </div>
 </details>
-<details class="python" open="open"><summary>Implémentation</summary><div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Version itérative</label><label for="__tabbed_3_2">Version récursive</label></div>
+<details class="python" open="open">
+<summary>Implémentation</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Version itérative</label><label for="__tabbed_3_2">Version récursive</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="n">val</span> <span class="o">=</span> <span class="mi">1</span>
     <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="n">n</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
         <span class="n">val</span> <span class="o">=</span> <span class="n">x</span> <span class="o">*</span> <span class="n">val</span>
     <span class="k">return</span> <span class="n">val</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 <div class="tabbed-block">
 <p>Pour l'écriture de la fonction récursive, deux cas à sont envisager :</p>
@@ -720,17 +734,16 @@ C'est le <em>cas de base</em>.</li>
 <span class="arithmatex">\(x^{n-1}\)</span>, on multiplie le résultat par la valeur de <code>x</code> et on renvoie le total.
 C'est le <em>cas récursif</em>.</li>
 </ul>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
         <span class="k">return</span> <span class="mi">1</span>
     <span class="k">else</span><span class="p">:</span>
         <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </div>
 </div>
 </div>
@@ -739,7 +752,7 @@ C'est le <em>cas récursif</em>.</li>
 <h2 id="pile-dappels-recursifs">Pile d'appels récursifs<a class="headerlink" href="#pile-dappels-recursifs" title="Permanent link">⚓︎</a></h2>
 <p>Si on effectue l'appel <code>puissance(2, 3)</code>, on peut représenter la pile des quatre appels
 de la fonction <code>puissance</code>, et les paramètres correspondant à chaque appel, sous la forme d'un arbre.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
@@ -747,7 +760,7 @@ de la fonction <code>puissance</code>, et les paramètres correspondant à chaqu
 <span class="normal">6</span>
 <span class="normal">7</span>
 <span class="normal">8</span>
-<span class="normal">9</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">)</span>
     <span class="o">|</span>
     <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
                    <span class="o">|</span>
@@ -756,26 +769,22 @@ de la fonction <code>puissance</code>, et les paramètres correspondant à chaqu
                                   <span class="k">return</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">puissance</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
                                                  <span class="o">|</span>
                                                  <span class="k">return</span> <span class="mi">1</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Le nombre d'appels simultanés de fonctions est limité. On peut en connaître le nombre maximal
 grâce à la fonction <code>getrecursionlimit</code> du module <code>sys</code>.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">getrecursionlimit</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">getrecursionlimit</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">getrecursionlimit</span><span class="p">())</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Une erreur apparaît si on essaie de réaliser plus d'appels récursifs que la limite autorisée.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="ne">RecursionError</span><span class="p">:</span> <span class="n">maximum</span> <span class="n">recursion</span> <span class="n">depth</span> <span class="n">exceeded</span> <span class="ow">in</span> <span class="n">comparison</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="ne">RecursionError</span><span class="p">:</span> <span class="n">maximum</span> <span class="n">recursion</span> <span class="n">depth</span> <span class="n">exceeded</span> <span class="ow">in</span> <span class="n">comparison</span>
+</code></pre></div></td></tr></table></div>
 <p>La limite du nombre d'appels simultanés de fonctions peut être modifiée grâce à la fonction
 <code>setrecursionlimit</code>du module <code>sys</code>.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">setrecursionlimit</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">sys</span> <span class="kn">import</span> <span class="n">setrecursionlimit</span>
 <span class="n">setrecursionlimit</span><span class="p">(</span><span class="mi">4000</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Il faut néanmoins être raisonnable en cas de modification de cette limite, car un nombre excessif
 de récursions provoque le plantage du programme à cause d'une erreur de débordement de pile d'exécution
 (<em>stack overflow</em>).</p>
@@ -792,7 +801,9 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 
 <div class="admonition fonc">
 <p class="admonition-title">Procédure <code>solution_hanoi</code></p>
-<details class="info"><summary>Affiche les mouvements à effectuer pour résoudre le problème des tours de Hanoï à  <code>n</code> disques.</summary><div class="admonition entrée">
+<details class="info">
+<summary>Affiche les mouvements à effectuer pour résoudre le problème des tours de Hanoï à  <code>n</code> disques.</summary>
+<div class="admonition entrée">
 <p class="admonition-title">Entrées</p>
 <ul>
 <li><code>n</code> : entier positif (nombre de disques)</li>
@@ -803,17 +814,18 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 </div>
 <p><em>Effet de bord :</em> affichage de texte à l'écran</p>
 </details>
-<details class="python" open="open"><summary>Implémentation</summary><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<details class="python" open="open">
+<summary>Implémentation</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">def</span> <span class="nf">solution_hanoi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">depart</span><span class="p">,</span> <span class="n">intermediaire</span><span class="p">,</span> <span class="n">arrivee</span><span class="p">):</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">solution_hanoi</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">depart</span><span class="p">,</span> <span class="n">intermediaire</span><span class="p">,</span> <span class="n">arrivee</span><span class="p">):</span>
     <span class="k">if</span> <span class="n">n</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
         <span class="n">solution_hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">depart</span><span class="p">,</span> <span class="n">arrivee</span><span class="p">,</span> <span class="n">intermediaire</span><span class="p">)</span>
         <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Déplacer un disque de </span><span class="si">{</span><span class="n">depart</span><span class="si">}</span><span class="s2"> vers </span><span class="si">{</span><span class="n">arrivee</span><span class="si">}</span><span class="s2">.&quot;</span><span class="p">)</span>
         <span class="n">solution_hanoi</span><span class="p">(</span><span class="n">n</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">intermediaire</span><span class="p">,</span> <span class="n">depart</span><span class="p">,</span> <span class="n">arrivee</span><span class="p">)</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 </details>
 </div>
 <p>Le cas de base est celui où il n'y a aucun disque : on ne fait rien du tout.</p>
@@ -824,28 +836,29 @@ un minimum de coups, tout en respectant les règles suivantes :</p>
 <li>on déplace récursivement <code>n-1</code> disques de la tour <code>intermediaire</code> vers la tour <code>arrivee</code>.</li>
 </ul>
 <p>L'appel <code>hanoi(3, 'GAUCHE', 'CENTRE', 'DROITE')</code> entraîne les sept affichages suivants :</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
-<span class="normal">7</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>Déplacer un disque de GAUCHE vers DROITE.
+<span class="normal">7</span></pre></div></td><td class="code"><div><pre><span></span><code>Déplacer un disque de GAUCHE vers DROITE.
 Déplacer un disque de GAUCHE vers CENTRE.
 Déplacer un disque de DROITE vers CENTRE.
 Déplacer un disque de GAUCHE vers DROITE.
 Déplacer un disque de CENTRE vers GAUCHE.
 Déplacer un disque de CENTRE vers DROITE.
 Déplacer un disque de GAUCHE vers DROITE.
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Écrire une fonction récursive, en identifiant le(s) cas de base et le(s) cas récursif(s).</li>
 <li>Dessiner un arbre d'appels récursifs.</li>
 </ul>
 <h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
-<details class="exo"><summary>Exercices</summary><div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Algorithme d'Euclide</label><label for="__tabbed_4_2">Décomposition d'un entier...</label><label for="__tabbed_4_3">Exponentiation rapide</label><label for="__tabbed_4_4">Palindromes</label><label for="__tabbed_4_5">Suite de Fibonacci</label></div>
+<details class="exo">
+<summary>Exercices</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:5"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><input id="__tabbed_4_5" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Algorithme d'Euclide</label><label for="__tabbed_4_2">Décomposition d'un entier...</label><label for="__tabbed_4_3">Exponentiation rapide</label><label for="__tabbed_4_4">Palindromes</label><label for="__tabbed_4_5">Suite de Fibonacci</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition jupyter">
@@ -890,7 +903,9 @@ Déplacer un disque de GAUCHE vers DROITE.
 </div>
 </div>
 </details>
-<details class="activité"><summary>Activités</summary><div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Cercles tangents</label><label for="__tabbed_5_2">Fractales</label><label for="__tabbed_5_3">Le compte est bon !</label></div>
+<details class="activité">
+<summary>Activités</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="5:3"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><input id="__tabbed_5_2" name="__tabbed_5" type="radio" /><input id="__tabbed_5_3" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">Cercles tangents</label><label for="__tabbed_5_2">Fractales</label><label for="__tabbed_5_3">Le compte est bon !</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>L'objectif de l'activité d'écrire des procédures récursives pour dessiner des figures géométriques avec le module <code>turtle</code>.</p>
@@ -928,91 +943,57 @@ Déplacer un disque de GAUCHE vers DROITE.
 <p><center><iframe src="https://www.youtube.com/embed/JtqmDZrpfCA" allowfullscreen="yes" width="400" height="300" frameborder="0"></iframe><br><br>L'<i>exposition d'estampes de M. C. Escher est une lithographie de 1956 qui représente un homme dans une gallerie
     en train de regarder le dessin d'un port à l'intérieur duquel on apperçoit la gallerie où l'homme se trouve.</i>
 </center></p>
+
+
+
+
+
                 
-              
     <script src="../js/ide.js"></script> 
 
-              
-                
-
-
-              
-            </article>
-          </div>
+              </article>
+            </div>
+          
+          
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Retour en haut de la page
-          </a>
+          </button>
         
       </main>
       
-        
-<footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
-      
-        
-        <a href="../api/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Interfaces de programmation d&#39;applications" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              Interfaces de programmation d'applications
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../prog_objet/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Programmation objet" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Programmation objet
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
+        <footer class="md-footer">
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            N. Toulzac, Lycée Louis Armand (Nogent-sur-Marne) 2021-2022
-          </div>
-        
-        
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-            Material for MkDocs
-          </a>
-        
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      N. Toulzac, Lycée Louis Armand (Nogent-sur-Marne) 2021-2022
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
-  <div class="md-footer-social">
+        <div class="md-social">
+  
     
-      
-      
-      <a href="mailto:toulzac.nsi@gmail.com" target="_blank" rel="noopener" title="" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2 12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg>
-      </a>
     
-  </div>
-
+    
+    
+    <a href="mailto:toulzac.nsi@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -1021,10 +1002,11 @@ Déplacer un disque de GAUCHE vers DROITE.
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "toc.integrate", "header.autohide"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "toc.integrate", "header.autohide"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       

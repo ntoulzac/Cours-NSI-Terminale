@@ -9,8 +9,13 @@
       
       
       
+        <link rel="prev" href="../recursivite/">
+      
+      
+        <link rel="next" href="../mise_au_point/">
+      
       <link rel="icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-7.3.6">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.1.3">
     
     
       
@@ -18,12 +23,13 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.a57b2b03.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.c4a75a56.min.css">
       
         
-        <link rel="stylesheet" href="../assets/stylesheets/palette.3f5d1f46.min.css">
-        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.a0c5b2b5.min.css">
       
+      
+
     
     
     
@@ -41,7 +47,6 @@
       
     
     
-    
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
       <link rel="stylesheet" href="../stylesheets/admon.css">
@@ -50,10 +55,11 @@
     
       <link rel="stylesheet" href="../xtra/ajustements.css">
     
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-
+    
     
     
   </head>
@@ -69,9 +75,8 @@
     <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red">
   
     
-    <script>function __prefix(e){return new URL("..",location).pathname+"."+e}function __get(e,t=localStorage){return JSON.parse(t.getItem(__prefix(e)))}</script>
     
-      <script>var palette=__get("__palette");if(null!==palette&&"object"==typeof palette.color)for(var key in palette.color)document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
     
     <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
@@ -88,9 +93,12 @@
       
     </div>
     
+    
       
 
-<header class="md-header" data-md-component="header">
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="En-tête">
     <a href=".." title="Cours de Terminale NSI" class="md-header__button md-logo" aria-label="Cours de Terminale NSI" data-md-component="logo">
       
@@ -98,7 +106,7 @@
 
     </a>
     <label class="md-header__button md-icon" for="__drawer">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2z"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
     </label>
     <div class="md-header__title" data-md-component="header-title">
       <div class="md-header__ellipsis">
@@ -120,7 +128,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
           <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="red"  aria-hidden="true"  type="radio" name="__palette" id="__palette_1">
           
         
@@ -129,22 +136,21 @@
     
     
       <label class="md-header__button md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
       </label>
-      
-<div class="md-search" data-md-component="search" role="dialog">
+      <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
       <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
       <label class="md-search__icon md-icon" for="__search">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
       </label>
-      <nav class="md-search__options" aria-label="Search">
+      <nav class="md-search__options" aria-label="Recherche">
         
-        <button type="reset" class="md-search__icon md-icon" aria-label="Effacer" tabindex="-1">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41z"/></svg>
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
         </button>
       </nav>
       
@@ -155,7 +161,7 @@
           <div class="md-search-result__meta">
             Initialisation de la recherche
           </div>
-          <ol class="md-search-result__list"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
         </div>
       </div>
     </div>
@@ -255,7 +261,7 @@
   
     <li class="md-nav__item md-nav__item--active">
       
-      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
         
@@ -271,7 +277,6 @@
       </a>
       
         
-
 
 <nav class="md-nav md-nav--secondary" aria-label="Table des matières">
   
@@ -495,13 +500,15 @@
             
             
           
-          <div class="md-content" data-md-component="content">
-            <article class="md-content__inner md-typeset">
-              
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
     
-                
-                
-                <h1 id="chapitre-3-programmation-objet">Chapitre 3 : Programmation objet<a class="headerlink" href="#chapitre-3-programmation-objet" title="Permanent link">⚓︎</a></h1>
+                  
+
+
+<h1 id="chapitre-3-programmation-objet">Chapitre 3 : Programmation objet<a class="headerlink" href="#chapitre-3-programmation-objet" title="Permanent link">⚓︎</a></h1>
 <div class="admonition jupyter">
 <p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="notebooks/cours_03.ipynb">ici</a> (bientôt disponible)</p>
 </div>
@@ -526,16 +533,14 @@ dont nous pourrons décider de la structure et des utilisations possibles.</p>
 <h2 id="creation-dune-classe">Création d'une classe<a class="headerlink" href="#creation-dune-classe" title="Permanent link">⚓︎</a></h2>
 <p>On crée une classe appelée <code>Montre</code> en écrivant <code>class Montre:</code>. Par convention, les noms de classes
 sont de la forme <code>NomDeClasse</code>, avec une majuscule au début de chaque mot, sans espace entre les mots.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
-    <span class="sd">&quot;&quot;&quot;Pour l&#39;instant, la classe est vide et ne sert à rien...&quot;&quot;&quot;</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;Pour l&#39;instant, la classe est vide et ne sert à rien...&quot;&quot;&quot;</span>
+</code></pre></div></td></tr></table></div>
 <p>On peut désormais créer une variable <code>ma_montre</code> de "type" <code>Montre</code>. Plus précisément, on dit que <code>ma_montre</code>
 est une <strong>instance</strong> de la classe <code>Montre</code>.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">ma_montre</span> <span class="o">=</span> <span class="n">Montre</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">ma_montre</span> <span class="o">=</span> <span class="n">Montre</span><span class="p">()</span>
+</code></pre></div></td></tr></table></div>
 <p>L'intérêt d'une classe est que ses instances peuvent posséder des <strong>attributs</strong>, qui permettent de stocker
 des données, et des <strong>méthodes</strong>, qui permettent de modifier ces données.</p>
 <p>La partie de la documentation officielle de Python qui traite des classes commence comme ceci :</p>
@@ -550,23 +555,22 @@ qui est appelée automatiquement lors de la création d'une instance de la class
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>L'initialisation des attributs peut se faire avec des valeurs par défaut, par exemple 0.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs à la valeur par défaut 0.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs à la valeur par défaut 0.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="mi">0</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="mi">0</span>
 
 <span class="n">ma_montre</span> <span class="o">=</span> <span class="n">Montre</span><span class="p">()</span> <span class="c1"># création d&#39;une instance de la classe Montre</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>La première ligne d'une méthode est semblable à celle d'une fonction : <code>def nom_methode(parametres):</code>.</p>
 <p>Le paramètre <code>self</code> est toujours le premier paramètre d'entrée d'une méthode (et c'est parfois le seul,
 comme ici). Il représente l'instance sur laquelle la méthode est appelée.</p>
@@ -575,23 +579,22 @@ comme ici). Il représente l'instance sur laquelle la méthode est appelée.</p>
 <div class="tabbed-block">
 <p>L'initialisation des attributs peut se faire avec des valeurs choisies au moment de la création
 de l'instance de classe.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
 <span class="normal">3</span>
 <span class="normal">4</span>
 <span class="normal">5</span>
 <span class="normal">6</span>
 <span class="normal">7</span>
-<span class="normal">8</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+<span class="normal">8</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
 
 <span class="n">ma_montre</span> <span class="o">=</span> <span class="n">Montre</span><span class="p">(</span><span class="mi">13</span><span class="p">,</span> <span class="mi">30</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span> <span class="c1"># création d&#39;une instance de la classe Montre</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>La méthode <code>__init__</code> possède ici quatre paramètres d'entrée, le premier étant <code>self</code>. On remarque
 néanmoins que, lors de la création de l'instance <code>ma_montre</code>, seules trois valeurs (qui correspondent
 à <code>h</code>, <code>m</code> et <code>s</code> sont passées en arguments.</p>
@@ -605,7 +608,7 @@ de modifier les instances de la classe.</p>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>Par exemple, le rôle de la méthode <code>incrémenter</code> est d'avancer la montre d'une seconde.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -625,15 +628,15 @@ de modifier les instances de la classe.</p>
 <span class="normal">18</span>
 <span class="normal">19</span>
 <span class="normal">20</span>
-<span class="normal">21</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+<span class="normal">21</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
 
     <span class="k">def</span> <span class="nf">incrementer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Avance la montre d&#39;une seconde.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Avance la montre d&#39;une seconde.&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">&lt;</span> <span class="mi">59</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
@@ -646,8 +649,7 @@ de modifier les instances de la classe.</p>
                     <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">+=</span> <span class="mi">1</span>
                 <span class="k">else</span><span class="p">:</span>
                     <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Lorsque la méthode <code>incrementer</code> est appelée pour une instance de la classe <code>Montre</code>, la valeur de
 l'attribut <code>s</code> est modifiée pour cette instance. La valeur des attributs <code>m</code> et <code>h</code> peut être
 modifiée également.</p>
@@ -655,7 +657,7 @@ modifiée également.</p>
 </div>
 <div class="tabbed-block">
 <p>Le rôle de la méthode <code>avancer</code> est d'avancer la montre de plusieurs secondes.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -680,15 +682,15 @@ modifiée également.</p>
 <span class="normal">23</span>
 <span class="normal">24</span>
 <span class="normal">25</span>
-<span class="normal">26</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+<span class="normal">26</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
 
     <span class="k">def</span> <span class="nf">incrementer</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Avance la montre d&#39;une seconde.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Avance la montre d&#39;une seconde.&quot;&quot;&quot;</span>
         <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">&lt;</span> <span class="mi">59</span><span class="p">:</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">+=</span> <span class="mi">1</span>
         <span class="k">else</span><span class="p">:</span>
@@ -703,11 +705,10 @@ modifiée également.</p>
                     <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="mi">0</span>
 
     <span class="k">def</span> <span class="nf">avancer</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">n</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Avance la montre de n secondes.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Avance la montre de n secondes.&quot;&quot;&quot;</span>
         <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">incrementer</span><span class="p">()</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Lorsque la méthode <code>avancer</code> est appelée pour une instance de la classe <code>Montre</code>, la méthode <code>incrementer</code>
 est appelée <code>n</code> fois pour cette instance elle-même (d'où la commande <code>self.incrementer()</code>.</p>
 <p>La syntaxe <code>instance.methode(arguments)</code> permet d'appeler une méthode qui prend un ou plusieurs arguments
@@ -719,7 +720,7 @@ L'objet renvoyé possède (entre autres) trois attributs <code>tm_hour</code>, <
 l'heure, les minutes et les secondes de l'heure locale.</p>
 <p>On peut ajouter à la définition de la classe <code>Montre</code> une méthode <code>synchroniser</code> dont le rôle est
 de mettre la montre à l'heure.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -733,23 +734,22 @@ de mettre la montre à l'heure.</p>
 <span class="normal">12</span>
 <span class="normal">13</span>
 <span class="normal">14</span>
-<span class="normal">15</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">localtime</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">time</span> <span class="kn">import</span> <span class="n">localtime</span>
 
 <span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
 
     <span class="k">def</span> <span class="nf">synchroniser</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Synchronise la montre à l&#39;heure locale du moment de l&#39;appel.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Synchronise la montre à l&#39;heure locale du moment de l&#39;appel.&quot;&quot;&quot;</span>
         <span class="n">heure_locale</span> <span class="o">=</span> <span class="n">localtime</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">heure_locale</span><span class="o">.</span><span class="n">tm_hour</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">heure_locale</span><span class="o">.</span><span class="n">tm_min</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">heure_locale</span><span class="o">.</span><span class="n">tm_sec</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>Lorsque la méthode <code>synchroniser</code> est appelée pour une instance de la classe <code>Montre</code>, la valeur des attributs
 <code>h</code>, <code>m</code> et <code>s</code> est modifiée pour cette instance.</p>
 </div>
@@ -760,7 +760,7 @@ l'instruction <code>print(ma_montre)</code>.</p>
 référence au fait que <code>ma_montre</code> est un objet de "type" <code>Montre</code>.</p>
 <p>Il est néanmoins possible de faire apparaître un affichage personnalisé beaucoup plus lisible de 
 l'objet en définissant une méthode spéciale nommée <code>__str__</code>.</p>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
 <span class="normal"> 4</span>
@@ -769,18 +769,17 @@ l'objet en définissant une méthode spéciale nommée <code>__str__</code>.</p>
 <span class="normal"> 7</span>
 <span class="normal"> 8</span>
 <span class="normal"> 9</span>
-<span class="normal">10</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Montre</span><span class="p">:</span>
     <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">h</span><span class="p">,</span> <span class="n">m</span><span class="p">,</span> <span class="n">s</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Méthode constructeur initialisant les attributs aux valeurs h, m, s passées en argument.&quot;&quot;&quot;</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">h</span> <span class="o">=</span> <span class="n">h</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">m</span> <span class="o">=</span> <span class="n">m</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">s</span> <span class="o">=</span> <span class="n">s</span>
 
     <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-        <span class="sd">&quot;&quot;&quot;Affiche l&#39;heure de la montre au format HH:MM:SS.&quot;&quot;&quot;</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;Affiche l&#39;heure de la montre au format HH:MM:SS.&quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">h</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">m</span><span class="si">}</span><span class="s2">:</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">s</span><span class="si">}</span><span class="s2">&quot;</span>
-</code></pre></div>
-</td></tr></table>
+</code></pre></div></td></tr></table></div>
 <p>La méthode spéciale <code>__str__</code> est crée pour être appelée par la fonction <code>print</code>. Elle doit donc
 renvoyer une chaîne de caractères.</p>
 </div>
@@ -796,7 +795,9 @@ la méthode <code>__init__</code>.</li>
 <li>Définir une méthode et comprendre l'utilisation du paramètre <code>self</code>.</li>
 </ul>
 <h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
-<details class="exo"><summary>Exercices</summary><div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Compte bancaire</label><label for="__tabbed_3_2">Date</label><label for="__tabbed_3_3">Dominos</label><label for="__tabbed_3_4">Labyrinthe (bientôt disponible)</label></div>
+<details class="exo">
+<summary>Exercices</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:4"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><input id="__tabbed_3_3" name="__tabbed_3" type="radio" /><input id="__tabbed_3_4" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">Compte bancaire</label><label for="__tabbed_3_2">Date</label><label for="__tabbed_3_3">Dominos</label><label for="__tabbed_3_4">Labyrinthe (bientôt disponible)</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition jupyter">
@@ -833,7 +834,9 @@ la méthode <code>__init__</code>.</li>
 </div>
 </div>
 </details>
-<details class="activité"><summary>Activités</summary><div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Balle rebondissante</label><label for="__tabbed_4_2">Ensembles de Mandelbrot et de Julia</label><label for="__tabbed_4_3">Fractions</label><label for="__tabbed_4_4">Paquet de cartes</label></div>
+<details class="activité">
+<summary>Activités</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="4:4"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><input id="__tabbed_4_2" name="__tabbed_4" type="radio" /><input id="__tabbed_4_3" name="__tabbed_4" type="radio" /><input id="__tabbed_4_4" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Balle rebondissante</label><label for="__tabbed_4_2">Ensembles de Mandelbrot et de Julia</label><label for="__tabbed_4_3">Fractions</label><label for="__tabbed_4_4">Paquet de cartes</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>L'objectif de l'activité est de faire rebondir une balle dans une fenêtre graphique.</p>
@@ -879,91 +882,57 @@ la méthode <code>__init__</code>.</li>
 </div>
 </div>
 </details>
+
+
+
+
+
                 
-              
     <script src="../js/ide.js"></script> 
 
-              
-                
-
-
-              
-            </article>
-          </div>
+              </article>
+            </div>
+          
+          
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"/></svg>
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Retour en haut de la page
-          </a>
+          </button>
         
       </main>
       
-        
-<footer class="md-footer">
-  
-    <nav class="md-footer__inner md-grid" aria-label="Pied de page">
-      
-        
-        <a href="../recursivite/" class="md-footer__link md-footer__link--prev" aria-label="Précédent: Récursivité" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Précédent
-              </span>
-              Récursivité
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../mise_au_point/" class="md-footer__link md-footer__link--next" aria-label="Suivant: Mise au point de programmes" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Suivant
-              </span>
-              Mise au point de programmes
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
+        <footer class="md-footer">
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-footer-copyright">
-        
-          <div class="md-footer-copyright__highlight">
-            N. Toulzac, Lycée Louis Armand (Nogent-sur-Marne) 2021-2022
-          </div>
-        
-        
-          Made with
-          <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
-            Material for MkDocs
-          </a>
-        
-        
-      </div>
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      N. Toulzac, Lycée Louis Armand (Nogent-sur-Marne) 2021-2022
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
       
-  <div class="md-footer-social">
+        <div class="md-social">
+  
     
-      
-      
-      <a href="mailto:toulzac.nsi@gmail.com" target="_blank" rel="noopener" title="" class="md-footer-social__link">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M476 3.2 12.5 270.6c-18.1 10.4-15.8 35.6 2.2 43.2L121 358.4l287.3-253.2c5.5-4.9 13.3 2.6 8.6 8.3L176 407v80.5c0 23.6 28.5 32.9 42.5 15.8L282 426l124.6 52.2c14.2 6 30.4-2.9 33-18.2l72-432C515 7.8 493.3-6.8 476 3.2z"/></svg>
-      </a>
     
-  </div>
-
+    
+    
+    <a href="mailto:toulzac.nsi@gmail.com" target="_blank" rel="noopener" title="" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M498.1 5.6c10.1 7 15.4 19.1 13.5 31.2l-64 416c-1.5 9.7-7.4 18.2-16 23s-18.9 5.4-28 1.6L284 427.7l-68.5 74.1c-8.9 9.7-22.9 12.9-35.2 8.1S160 493.2 160 480v-83.6c0-4 1.5-7.8 4.2-10.7l167.6-182.9c5.8-6.3 5.6-16-.4-22s-15.7-6.4-22-.7L106 360.8l-88.3-44.2C7.1 311.3.3 300.7 0 288.9s5.9-22.8 16.1-28.7l448-256c10.7-6.1 23.9-5.5 34 1.4z"/></svg>
+    </a>
+  
+</div>
+      
     </div>
   </div>
 </footer>
@@ -972,10 +941,11 @@ la méthode <code>__init__</code>.</li>
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "toc.integrate", "header.autohide"], "translations": {"clipboard.copy": "Copier dans le presse-papier", "clipboard.copied": "Copi\u00e9 dans le presse-papier", "search.config.lang": "fr", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Rechercher", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.term.missing": "Non trouv\u00e9", "select.version.title": "S\u00e9lectionner la version"}, "search": "../assets/javascripts/workers/search.fcfe8b6d.min.js", "version": null}</script>
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.top", "toc.integrate", "header.autohide"], "search": "../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.b1047164.min.js"></script>
+      <script src="../assets/javascripts/bundle.efa0ade1.min.js"></script>
       
         <script src="../javascripts/config.js"></script>
       
