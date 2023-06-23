@@ -6052,8 +6052,8 @@
 		"taux": 0.49
 		}]
 	},{
-	"dep": "0",
-	"dep_nom": "FRANCAIS DE L'ETRANGER",
+	"dep": "00",
+        "dep_nom": "FRANCAIS DE L'ETRANGER",
 	"inscrits": 1435746,
 	"abstentions": 931455,
 	"votants": 504291,
