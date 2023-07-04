@@ -324,3 +324,27 @@
   -webkit-mask-image: var(--md-admonition-icon--étoile);
           mask-image: var(--md-admonition-icon--étoile);
 }
+
+:root {
+  --md-admonition-icon--danger: url('data:image/svg+xml;charset=utf-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="32" height="176" x="240" y="176" fill="var(--ci-primary-color, currentColor)" class="ci-primary"/>
+  <rect width="32" height="32" x="240" y="384" fill="var(--ci-primary-color, currentColor)" class="ci-primary"/>
+  <path fill="var(--ci-primary-color, currentColor)" d="M274.014,16H237.986L16,445.174V496H496V445.174ZM464,464H48V452.959L256,50.826,464,452.959Z" class="ci-primary"/>
+</svg>')
+}
+.md-typeset .admonition.danger,
+.md-typeset details.danger {
+  border-color: rgb(255, 255, 0);
+}
+.md-typeset .danger > .admonition-title,
+.md-typeset .danger > summary {
+  background-color: rgba(255, 255, 0, 0.25);
+  border-color: rgb(255, 255, 0);
+}
+.md-typeset .danger > .admonition-title::before,
+.md-typeset .danger > summary::before {
+  background-color: rgb(255, 255, 0);
+  animation: battement 2000ms infinite;
+  -webkit-mask-image: var(--md-admonition-icon--étoile);
+          mask-image: var(--md-admonition-icon--étoile);
+}
