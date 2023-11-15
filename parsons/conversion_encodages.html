@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+            <script type="text/javascript" async="" src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/analytics.js"></script>
+            <script type="text/javascript" async="" src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/js"></script>
+            <script async="" src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/js_002"></script>
+            <script>
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'UA-137952594-1');
+            </script>
+        <link href="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/parsons.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/prettify.css">
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/prettify.min.js"></script>
+    </head>
+    <body>  
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/jquery.min.js"></script>
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/jquery-ui.min.js"></script>
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/jquery.ui.touch-punch.min.js"></script>
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/underscore-min.js"></script>
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/list.min.js"></script>
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/parsons.js"></script>
+        <script src="https://ntoulzac.github.io/Cours-NSI-Premiere/javascripts/Parsons/lis.js"></script>
+        <script>
+               var initial = atob("ZGVmIGNvbnZlcnRpcihub21fZmljaCk6DQogICAgd2l0aCBvcGVuKG5vbV9maWNoLCAiciIsIGVuY29kaW5nPSJsYXRpbi0xIikgYXMgZjoNCiAgICB3aXRoIG9wZW4obm9tX2ZpY2gsICJ3IiwgZW5jb2Rpbmc9ImxhdGluLTEiKSBhcyBmOiAjZGlzdHJhY3Rvcg0KICAgICAgICBjaGFpbmUgPSBmLnJlYWQoKQ0KICAgICAgICBmLnJlYWQoY2hhaW5lKSAjZGlzdHJhY3Rvcg0KICAgIHdpdGggb3Blbihub21fZmljaCwgInciLCBlbmNvZGluZz0idXRmLTgiKSBhcyBmOg0KICAgIHdpdGggb3Blbihub21fZmljaCwgInIiLCBlbmNvZGluZz0idXRmLTgiKSBhcyBmOiAjZGlzdHJhY3Rvcg0KICAgICAgICBmLndyaXRlKGNoYWluZSkNCiAgICAgICAgY2hhaW5lID0gZi53cml0ZSgpICNkaXN0cmFjdG9y");
+     function displayErrors(fb) {
+            if(fb.errors.length > 0) {
+                alert(fb.errors[0]);
+            }
+        } 
+
+        $(document).ready(function(){
+            var parson = new ParsonsWidget({
+                'sortableId': 'sortable',
+                'trashId': 'sortableTrash',
+                'max_wrong_lines': 10,
+                'feedback_cb' : displayErrors
+            });
+            parson.init(initial);
+            parson.shuffleLines();
+            $("#newInstanceLink").click(function(event){
+                event.preventDefault();
+                parson.shuffleLines();
+            });
+            $("#feedbackLink").click(function(event){
+                event.preventDefault();
+                parson.getFeedback();
+            });
+        });
+        </script>
+        <div id="sortableTrash" class="sortable-code">
+ 
+        </div>
+        <div id="sortable" class="sortable-code">
+            <p>... pour les placer ici.</p>
+            <ul id="ul-sortable" class="ui-sortable output"></ul>
+        </div>
+        <div style="clear:both;"></div>
+        <p>
+            <input id="newInstanceLink" value="Nouvel essai" type="button">
+            <input id="feedbackLink" value="Vérifier la réponse" type="button">
+        </p>
+    </body>
+</html>
