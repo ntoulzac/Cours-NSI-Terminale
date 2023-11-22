@@ -80,7 +80,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#macro-rendering-error" class="md-skip">
+        <a href="#titre" class="md-skip">
           Aller au contenu
         </a>
       
@@ -457,34 +457,65 @@
                   
 
 
-<h1 id="macro-rendering-error"><em>Macro Rendering Error</em><a class="headerlink" href="#macro-rendering-error" title="Permanent link">⚓︎</a></h1>
-<p><strong>UndefinedError</strong>: 'IDE' is undefined</p>
-<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
-<span class="normal"> 2</span>
-<span class="normal"> 3</span>
-<span class="normal"> 4</span>
-<span class="normal"> 5</span>
-<span class="normal"> 6</span>
-<span class="normal"> 7</span>
-<span class="normal"> 8</span>
-<span class="normal"> 9</span>
-<span class="normal">10</span>
-<span class="normal">11</span>
-<span class="normal">12</span>
-<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code>Traceback (most recent call last):
-  File &quot;C:\Users\Nicolas\AppData\Local\Programs\Python\Python311\Lib\site-packages\mkdocs_macros\plugin.py&quot;, line 480, in render
-    return md_template.render(**page_variables)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File &quot;C:\Users\Nicolas\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py&quot;, line 1301, in render
-    self.environment.handle_exception()
-  File &quot;C:\Users\Nicolas\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\environment.py&quot;, line 936, in handle_exception
-    raise rewrite_traceback_stack(source=source)
-  File &quot;&lt;template&gt;&quot;, line 49, in top-level template code
-  File &quot;C:\Users\Nicolas\AppData\Local\Programs\Python\Python311\Lib\site-packages\jinja2\utils.py&quot;, line 83, in from_obj
-    if hasattr(obj, &quot;jinja_pass_arg&quot;):
-       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-jinja2.exceptions.UndefinedError: &#39;IDE&#39; is undefined
+<h1 id="titre">Titre<a class="headerlink" href="#titre" title="Permanent link">⚓︎</a></h1>
+<h2 id="sous-titre">Sous titre<a class="headerlink" href="#sous-titre" title="Permanent link">⚓︎</a></h2>
+<div class="admonition joint">
+<p class="admonition-title">Document joint</p>
+</div>
+<div class="admonition exo">
+<p class="admonition-title">Exercice</p>
+</div>
+<div class="admonition exo2">
+<p class="admonition-title">Exercice supplémentaire</p>
+</div>
+<div class="admonition activité">
+<p class="admonition-title">Activité</p>
+<p>Bla bla bla bla bla...</p>
+<details class="solution">
+<summary>Solution</summary>
+<p>Réponses au problème....</p>
+</details>
+</div>
+<div class="admonition important">
+<p class="admonition-title">A retenir</p>
+</div>
+<div class="admonition feuille">
+<p class="admonition-title">Sur le cahier</p>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">Erreur</p>
+</div>
+<div class="admonition étoile">
+<p class="admonition-title">Important !</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">digraph</span><span class="w"> </span><span class="nt">G</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="na">rankdir</span><span class="p">=</span><span class="s">LR</span>
+<span class="w">    </span><span class="nt">Earth</span><span class="w"> </span><span class="p">[</span><span class="na">peripheries</span><span class="p">=</span><span class="m">2</span><span class="p">]</span>
+<span class="w">    </span><span class="nt">Mars</span>
+<span class="w">    </span><span class="nt">Earth</span><span class="w"> </span><span class="o">-&gt;</span><span class="w"> </span><span class="nt">Mars</span>
+<span class="p">}</span>
 </code></pre></div></td></tr></table></div>
+</div>
+<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Une tâche à cocher</li>
+<li class="task-list-item"><input type="checkbox" checked/> Une tâche cochée<ul class="task-list">
+<li class="task-list-item"><input type="checkbox"/> Toto</li>
+<li class="task-list-item"><input type="checkbox" checked/> Toto</li>
+</ul>
+</li>
+</ul>
+<dl>
+<dt><strong>Titre 1</strong></dt>
+<dd>Définition 1</dd>
+<dt><strong>Titre 2</strong></dt>
+<dd>Définition 2</dd>
+</dl>
+<h2 id="exemple-avec-pyodide">Exemple avec pyodide<a class="headerlink" href="#exemple-avec-pyodide" title="Permanent link">⚓︎</a></h2>
+<p>{{ IDE('exemple') }}</p>
 
 
 
