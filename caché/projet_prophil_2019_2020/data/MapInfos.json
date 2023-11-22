@@ -1,0 +1,15 @@
+[
+null,
+{"id":1,"expanded":true,"name":"Salle de Classe","order":2,"parentId":9,"scrollX":499,"scrollY":433},
+{"id":2,"expanded":true,"name":"Villa de M-A","order":8,"parentId":0,"scrollX":651,"scrollY":371},
+{"id":3,"expanded":true,"name":"Allée","order":9,"parentId":2,"scrollX":651,"scrollY":2029},
+null,
+null,
+null,
+{"id":7,"expanded":true,"name":"Le Banquet","order":3,"parentId":1,"scrollX":651,"scrollY":425},
+{"id":8,"expanded":true,"name":"Bibliotèque","order":4,"parentId":7,"scrollX":499,"scrollY":433},
+{"id":9,"expanded":true,"name":"début","order":1,"parentId":0,"scrollX":659,"scrollY":371},
+{"id":10,"expanded":true,"name":"Cuisine","order":5,"parentId":7,"scrollX":651,"scrollY":445},
+{"id":11,"expanded":false,"name":"Jardin","order":6,"parentId":7,"scrollX":651,"scrollY":371},
+{"id":12,"expanded":false,"name":"Portail","order":7,"parentId":7,"scrollX":517,"scrollY":425}
+]
