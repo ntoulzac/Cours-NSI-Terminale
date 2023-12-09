@@ -327,9 +327,81 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Modularité
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Modularité
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-utilisation-dune-bibliotheque" class="md-nav__link">
+    Partie A - Utilisation d'une bibliothèque
+  </a>
+  
+    <nav class="md-nav" aria-label="Partie A - Utilisation d'une bibliothèque">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#installation-dun-module" class="md-nav__link">
+    Installation d'un module
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#importation-dun-module" class="md-nav__link">
+    Importation d'un module
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-documentation-dun-module" class="md-nav__link">
+    Partie B - Documentation d'un module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices-et-activites" class="md-nav__link">
+    Exercices et activités
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -472,14 +544,115 @@
 
 
 <h1 id="chapitre-7-modularite">Chapitre 7 : Modularité<a class="headerlink" href="#chapitre-7-modularite" title="Permanent link">⚓︎</a></h1>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/07_modularite.zip">(énoncé)</a></p>
+<h2 id="partie-a-utilisation-dune-bibliotheque">Partie A - Utilisation d'une bibliothèque<a class="headerlink" href="#partie-a-utilisation-dune-bibliotheque" title="Permanent link">⚓︎</a></h2>
+<p>Lorsqu'on écrit des programmes en Python, un certain nombre de fonctions sont reconnues automatiquement par l'interpréteur : il s'agit des <strong>fonctions natives</strong> du langage (<em>built-in functions</em>). On y trouve, par exemple, les fonctions <code>input</code> et <code>print</code> mais aussi <code>len</code>, <code>range</code>, <code>sorted</code>, etc. La liste est disponible <a href="https://docs.python.org/fr/3/library/functions.html#built-in-funcs">ici</a>.</p>
+<p>D'autres fonctions très classiques font partie de la <strong>bibliothèque standard</strong> : il s'agit des fonctions disponibles par défaut mais qui doivent être importées depuis un module complémentaire. On y trouve, par exemple, les fonctions <code>randint</code> du module <code>random</code>, les fonctions du module graphique <code>turtle</code> ou du module <code>tkinter</code>, ou encore les fonctions du module <code>csv</code> vues en classe de Première.</p>
+<p>Enfin, de nombreuses autres bibliothèques sont téléchargeables en ligne, en particulier via le <strong>Python Package Index</strong> ou <a href="https://pypi.org/"><strong>PyPI</strong></a>. On y trouve, par exemple, le module <code>tutormagic</code> ou les bibliothèques <code>pygame</code> et <code>Pillow</code> (<code>PIL</code>).</p>
+<p>Le but de cette partie est d'étudier comment s'utilise un module complémentaire ou une bibliothèque.</p>
+<p>Nous en profiterons pour développer notre connaissance du module <code>folium</code>, qui permet de générer des cartes interactives.</p>
+<h3 id="installation-dun-module">Installation d'un module<a class="headerlink" href="#installation-dun-module" title="Permanent link">⚓︎</a></h3>
+<p>Pour installer le module <code>folium</code>, qui ne fait pas partie de la bibliothèque standard mais qui est disponible via le <em>PyPI</em>, on peut exécuter le code ci-dessous dans une cellule de carnet <em>Jupyter</em>.</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span>
+<span class="err">!</span><span class="p">{</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">}</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">folium</span>
+</code></pre></div></td></tr></table></div>
+<h3 id="importation-dun-module">Importation d'un module<a class="headerlink" href="#importation-dun-module" title="Permanent link">⚓︎</a></h3>
+<p>Pour importer l'ensemble des constantes, fonctions et classes du module <code>folium</code> et donc les rendre utilisables, on utilise la ligne de code :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">folium</span>
+</code></pre></div></td></tr></table></div>
+<p>On accède alors aux différents objets importés grâce à la syntaxe <code>folium.nom_objet</code>.</p>
+<p>Lorsque le nom du module est long, il est possible de lui donner un <strong>alias</strong> lors de l'importation, en écrivant <code>import folium as f</code> par exemple. Dans ce cas, les objects importés sont accessibles sous le nom <code>f.nom_objet</code>.</p>
+<p>Il existe une autre façon d'importer le contenu d'un module, avec l'instruction <code>from module import ...</code> :</p>
+<ul>
+<li><code>from module import Classe, fonction, CONSTANTE</code> permet d'importer quelques classes, fonctions, constantes depuis le module. Elles sont accessibles directement par leur nom, qui n'a pas à être précédé par le nom du <code>module</code>,</li>
+<li><code>from module import *</code> permet d'importer toutes les classes, fonctions, constantes depuis le module. Elles sont accessibles directement par leur nom, qui n'a pas à être précédé par le nom du <code>module</code>. Cette façon d'importer est déconseillée car des fonctions provenant de modules différents peuvent porter le même nom.</li>
+</ul>
+<h2 id="partie-b-documentation-dun-module">Partie B - Documentation d'un module<a class="headerlink" href="#partie-b-documentation-dun-module" title="Permanent link">⚓︎</a></h2>
+<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+<p>La documentation obtenue donne accès à l'<strong>interface</strong> du module. Elle explique le rôle global du module et liste les classes, les fonctions, les constantes mises à disposition de l'utilisateur par le concepteur du module ainsi que leurs spécifications.</p>
+<p>L'interface doit permettre de se servir du module sans avoir à réfléchir à la manière dont les classes et les fonctions ont été implémentées.</p>
+<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<ul>
+<li>Installer un module via le <em>Python Package Index</em>.</li>
+<li>Importer un module.</li>
+<li>Afficher la documentation d'un module.</li>
+<li>Faire la différence entre les fonctionnalités présentes dans l'interface et celles qui sont uniquement internes au module.</li>
+<li>Ecrire un module ainsi que sa documentation et celle des fonctions et procédures qu'il contient.</li>
+</ul>
+<h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Brins d'ADN</label><label for="__tabbed_1_2">Données EXIF</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_brins_adn.ipynb">ici</a></p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/07_modularite_corrigé.zip">(corrigé)</a></p>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_brins_adn_corr.ipynb">ici</a></p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_donnees_exif.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_donnees_exif_corr.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="activité">
+<summary>Activités</summary>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span></pre></div></td><td class="code"><div><pre><span></span><code>=== &quot;Documentation d&#39;un module&quot;
+
+!!! jupyter &quot;Carnet *Jupyter* à télécharger [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/act_documentation_labyrinthe.ipynb)&quot;
+
+!!! solution &quot;Corrigé disponible [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/act_documentation_labyrinthe_corr.ipynb)&quot;
+
+=== &quot;Module `folium`&quot;
+
+!!! jupyter &quot;Carnet *Jupyter* à télécharger [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/act_folium.ipynb)&quot;
+
+!!! solution &quot;Corrigé disponible [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/act_folium_corr.ipynb)&quot;
+
+=== &quot;Sept merveilles du monde&quot;
+
+!!! jupyter &quot;Carnet *Jupyter* à télécharger [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/act_sept_merveilles.ipynb)&quot;
+
+!!! solution &quot;Corrigé disponible [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/act_sept_merveilles_corr.ipynb)&quot;
+
+=== &quot;Voyage en France&quot;
+
+!!! jupyter &quot;Carnet *Jupyter* à télécharger [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/act_voyage.ipynb)&quot;
+
+!!! solution &quot;Corrigé disponible [ici](https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/act_voyage_corr.ipynb)&quot;
+</code></pre></div></td></tr></table></div>
+</details>
 
 
 

@@ -9,16 +9,11 @@ def _triplet_vers_angle(triplet, direction):
     else:
         return angle
 
-def donnees_exif(emplacement_image, type_emplacement):
+def donnees_exif(emplacement_image):
     """
     Spécification à écrire...
     """
-    if type_emplacement == 'local':
-        image = Image.open(emplacement_image)
-    elif type_emplacement == 'url':
-        image = Image.open(get(emplacement_image, stream=True).raw)
-    else:
-        raise ValueError('Le paramètre type_emplacement est à chosir parmi "local" et "url"')
+    image = Image.open(get(emplacement_image, stream=True).raw)
     largeur, hauteur = image.size
     image.verify()
     exif = image._getexif()
@@ -40,5 +35,4 @@ def donnees_exif(emplacement_image, type_emplacement):
 if __name__ == '__main__':
     for k in range(16):
         url_image = f"https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/images/EXIF/{k}.jpg"
-        print(f"PHOTO {k}")
-        print(extraire_donnees_GPS(url_image, 'url'))
+        print(f"PHOTO {k} :", donnees_exif(url_image))

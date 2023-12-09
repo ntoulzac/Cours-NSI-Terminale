@@ -32,13 +32,13 @@ def _itineraire_IGN(dep, arr):
   
 def creer_carte():
     pass
-	
+
 def enregistrer_carte(carte, nom_de_fichier):
     pass
 
 def placer_marqueur(carte, lieu):
-    pass	
-		
+    pass
+
 def tracer_itineraire(carte, depart, arrivee):
     pass
 
