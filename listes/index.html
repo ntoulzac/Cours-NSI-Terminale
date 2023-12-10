@@ -297,9 +297,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Listes chaînées
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Listes chaînées
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#notion-de-liste-chainee" class="md-nav__link">
+    Notion de liste chaînée
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#implementation-avec-deux-classes-maillon-et-liste" class="md-nav__link">
+    Implémentation avec deux classes Maillon et Liste
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices-et-activites" class="md-nav__link">
+    Exercices et activités
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -472,14 +517,274 @@
 
 
 <h1 id="chapitre-5-listes-chainees">Chapitre 5 : Listes chaînées<a class="headerlink" href="#chapitre-5-listes-chainees" title="Permanent link">⚓︎</a></h1>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees.ipynb">(énoncé)</a></p>
+<h2 id="notion-de-liste-chainee">Notion de liste chaînée<a class="headerlink" href="#notion-de-liste-chainee" title="Permanent link">⚓︎</a></h2>
+<p>Une <strong>liste (simplement) chaînée</strong> est une structure de données représentant un ensemble ordonné d'éléments qui sont stockés en mémoire sous la forme de maillons (ou de cellules).</p>
+<p>Si une liste chaînée est vide, son unique maillon est remplacé par <code>None</code>. Sinon son maillon contient :
+- une <strong>valeur</strong> appelée la <strong>tête</strong> de la liste,
+- un <strong>pointeur</strong> vers une <strong>liste chaînée</strong> (éventuellement vide) appelée la <strong>queue</strong> de la liste.</p>
+<p>On donne ci-dessous une représentation schématique d'une liste chaînée <code>L</code> :</p>
+<p><img alt="Représentation d'une liste chaînée" src="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/images/liste1.png" /></p>
+<h2 id="implementation-avec-deux-classes-maillon-et-liste">Implémentation avec deux classes <code>Maillon</code> et <code>Liste</code><a class="headerlink" href="#implementation-avec-deux-classes-maillon-et-liste" title="Permanent link">⚓︎</a></h2>
+<p>On donne une implémentation des listes chaînées à partir de deux classes <code>Maillon</code> et <code>Liste</code> :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span>
+<span class="normal">30</span>
+<span class="normal">31</span>
+<span class="normal">32</span>
+<span class="normal">33</span>
+<span class="normal">34</span>
+<span class="normal">35</span>
+<span class="normal">36</span>
+<span class="normal">37</span>
+<span class="normal">38</span>
+<span class="normal">39</span>
+<span class="normal">40</span>
+<span class="normal">41</span>
+<span class="normal">42</span>
+<span class="normal">43</span>
+<span class="normal">44</span>
+<span class="normal">45</span>
+<span class="normal">46</span>
+<span class="normal">47</span>
+<span class="normal">48</span>
+<span class="normal">49</span>
+<span class="normal">50</span>
+<span class="normal">51</span>
+<span class="normal">52</span>
+<span class="normal">53</span>
+<span class="normal">54</span>
+<span class="normal">55</span>
+<span class="normal">56</span>
+<span class="normal">57</span>
+<span class="normal">58</span>
+<span class="normal">59</span>
+<span class="normal">60</span>
+<span class="normal">61</span>
+<span class="normal">62</span>
+<span class="normal">63</span>
+<span class="normal">64</span>
+<span class="normal">65</span>
+<span class="normal">66</span>
+<span class="normal">67</span>
+<span class="normal">68</span>
+<span class="normal">69</span>
+<span class="normal">70</span>
+<span class="normal">71</span>
+<span class="normal">72</span>
+<span class="normal">73</span>
+<span class="normal">74</span>
+<span class="normal">75</span>
+<span class="normal">76</span>
+<span class="normal">77</span>
+<span class="normal">78</span>
+<span class="normal">79</span>
+<span class="normal">80</span>
+<span class="normal">81</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span> <span class="nc">Maillon</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">tete</span><span class="p">,</span> <span class="n">queue</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Crée une instance de la classe Maillon.</span>
+<span class="sd">        - Entrées : tete (type quelconque), queue (instance de la classe Liste)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">tete</span> <span class="o">=</span> <span class="n">tete</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">queue</span> <span class="o">=</span> <span class="n">queue</span>
+
+<span class="k">class</span> <span class="nc">Liste</span><span class="p">:</span>
+<span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">maillon</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Crée une instance de la classe Liste.</span>
+<span class="sd">        - Entrée : maillon (instance de la classe Maillon, ou None pour créer une liste vide)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">maillon</span> <span class="o">=</span> <span class="n">maillon</span>
+
+    <span class="k">def</span> <span class="nf">est_vide</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Détermine si la liste est vide.</span>
+<span class="sd">        - Sortie : (booléen, True si la liste est vide, False sinon)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">maillon</span> <span class="ow">is</span> <span class="kc">None</span>
+
+    <span class="k">def</span> <span class="nf">tete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Renvoie la première valeur de la liste.</span>
+<span class="sd">        - Sortie : None si la liste est vide, sinon la valeur située à l&#39;indice 0 dans la liste</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">est_vide</span><span class="p">():</span>
+            <span class="k">return</span> <span class="kc">None</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">maillon</span><span class="o">.</span><span class="n">tete</span>
+
+    <span class="k">def</span> <span class="nf">queue</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Renvoie la queue de la liste, c&#39;est-à-dire la liste privée de son premier maillon.</span>
+<span class="sd">        - Sortie : (instance de la classe Liste)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">est_vide</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;la liste est vide&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">maillon</span><span class="o">.</span><span class="n">queue</span>
+
+    <span class="k">def</span> <span class="nf">nb_elements</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Compte le nombre d&#39;éléments de la liste.</span>
+<span class="sd">        - Sortie : (entier, nombre de valeurs présentes dans la liste)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">est_vide</span><span class="p">():</span>
+            <span class="k">return</span> <span class="mi">0</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="n">liste</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span>
+            <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">liste</span><span class="o">.</span><span class="n">nb_elements</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">inserer_en_tete</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">elem</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Insère un maillon en début de liste.</span>
+<span class="sd">        - Entrée : elem (type quelconque)</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">maillon</span> <span class="o">=</span> <span class="n">Maillon</span><span class="p">(</span><span class="n">elem</span><span class="p">,</span> <span class="n">Liste</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">maillon</span><span class="p">))</span>
+
+    <span class="k">def</span> <span class="nf">supprimer_en_tete</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Supprime un maillon en début de liste.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">est_vide</span><span class="p">():</span>
+            <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&quot;la liste est vide&quot;</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">maillon</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span><span class="o">.</span><span class="n">maillon</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Permet l&#39;affichage des éléments de la liste via un appel à la fonction print.</span>
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="n">chaine</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+        <span class="n">liste</span> <span class="o">=</span> <span class="bp">self</span>
+        <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">nb_elements</span><span class="p">()):</span>
+            <span class="n">chaine</span> <span class="o">=</span> <span class="n">chaine</span> <span class="o">+</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">liste</span><span class="o">.</span><span class="n">tete</span><span class="p">()</span><span class="si">}</span><span class="s2">  &quot;</span>
+            <span class="n">liste</span> <span class="o">=</span> <span class="n">liste</span><span class="o">.</span><span class="n">queue</span><span class="p">()</span>
+        <span class="k">return</span> <span class="n">chaine</span>
+</code></pre></div></td></tr></table></div>
+<p>Avec cette implémentation, une liste vide se définit de la façon suivante :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">liste_vide</span> <span class="o">=</span> <span class="n">Liste</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">L1</span> <span class="o">=</span> <span class="n">Liste</span><span class="p">(</span><span class="n">Maillon</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">Liste</span><span class="p">(</span><span class="n">Maillon</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span> <span class="n">Liste</span><span class="p">(</span><span class="n">Maillon</span><span class="p">(</span><span class="mi">6</span><span class="p">,</span> <span class="n">Liste</span><span class="p">(</span><span class="kc">None</span><span class="p">)))))))</span>
+
+<span class="n">L2</span> <span class="o">=</span> <span class="n">Liste</span><span class="p">(</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">L2</span><span class="o">.</span><span class="n">inserer_en_tete</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">L2</span><span class="o">.</span><span class="n">inserer_en_tete</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">L2</span><span class="o">.</span><span class="n">inserer_en_tete</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>Les listes <code>L1</code> et <code>L2</code> définies ci-dessus se représentent ainsi :</p>
+<p><img alt="Représentation d'une liste chaînée" src="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/images/liste2.png" /></p>
+<p><img alt="Représentation d'une liste chaînée" src="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/images/liste3.png" /></p>
+<h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:5"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Conversion tableau - liste</label><label for="__tabbed_1_2">Liste d'entiers</label><label for="__tabbed_1_3">Listes identiques</label><label for="__tabbed_1_4">Occurrences</label><label for="__tabbed_1_5">Tri par insertion</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_tableau_liste.ipynb">ici</a></p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/05_listes_chainees_corrigé.ipynb">(corrigé)</a></p>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_tableau_liste_corr.ipynb">ici</a></p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_liste_entiers.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_liste_entiers_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_identiques.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_identiques_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_occurrences.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_occurrences_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_tri_insertion.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_tri_insertion_corr.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="activité">
+<summary>Activités</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Concaténation</label><label for="__tabbed_2_2">Insertion et suppression</label><label for="__tabbed_2_3">Méthode <code>__getitem__</code></label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/notebooks/act_concatenation.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/notebooks/corr/act_concatenation_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/notebooks/act_insertion_suppression.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/notebooks/corr/act_insertion_suppression_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/notebooks/act_getitem.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/listes/notebooks/corr/act_getitem_corr.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
 
 
 
