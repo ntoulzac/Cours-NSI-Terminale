@@ -342,9 +342,54 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Piles et files
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Piles et files
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#partie-a-piles" class="md-nav__link">
+    Partie A - Piles
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-b-files" class="md-nav__link">
+    Partie B - Files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices-et-activites" class="md-nav__link">
+    Exercices et activités
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -472,14 +517,109 @@
 
 
 <h1 id="chapitre-8-piles-et-files">Chapitre 8 : Piles et files<a class="headerlink" href="#chapitre-8-piles-et-files" title="Permanent link">⚓︎</a></h1>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/08_piles_files.zip">(énoncé)</a></p>
+<h2 id="partie-a-piles">Partie A - Piles<a class="headerlink" href="#partie-a-piles" title="Permanent link">⚓︎</a></h2>
+<p>On définit une classe <code>Pile</code> dont les instances possèdent :
+- une méthode constructeur qui permet de <strong>créer une pile vide</strong>,
+- une méthode <code>est_vide</code> qui <strong>renvoit</strong> <code>True</code> <strong>si la pile est vide</strong> et <code>False</code> sinon,
+- une méthode <code>empiler</code> qui <strong>ajoute au sommet de la pile</strong> la valeur passée en argument,
+- une méthode <code>depiler</code> qui <strong>retire du sommet de la pile</strong> une valeur et qui la renvoie,
+- une méthode <code>__str__</code> qui permet l'affichage de la pile à l'écran.</p>
+<p>Dans une pile (<em>stack</em> en anglais), les éléments sont retirés dans l'ordre inverse où ils sont ajoutés. On dit que le dernier entré est le premier sorti : <em>last in, first out</em> ou <strong>LIFO</strong>.</p>
+<h2 id="partie-b-files">Partie B - Files<a class="headerlink" href="#partie-b-files" title="Permanent link">⚓︎</a></h2>
+<p>On définit une classe <code>File</code> dont les instances possèdent :
+- une méthode constructeur qui permet de <strong>créer une file vide</strong>,
+- une méthode <code>est_vide</code> qui <strong>renvoit</strong> <code>True</code> <strong>si la file est vide</strong> et <code>False</code> sinon,
+- une méthode <code>enfiler</code> qui <strong>ajoute à la fin de la file</strong> (en queue de file) la valeur passée en argument,
+- une méthode <code>defiler</code> qui <strong>retire du début de la file</strong> (en tête de file) une valeur et qui la renvoie,
+- une méthode <code>__str__</code> qui permet l'affichage de la file à l'écran.</p>
+<p>Dans une file (<em>queue</em>), les éléments sont retirés dans l'ordre où ils sont ajoutés. On dit que le premier entré est le premier sorti : <em>first in, first out</em> ou <strong>FIFO</strong>.</p>
+<h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="exo">
+<summary>Exercices</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:6"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><input id="__tabbed_1_4" name="__tabbed_1" type="radio" /><input id="__tabbed_1_5" name="__tabbed_1" type="radio" /><input id="__tabbed_1_6" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Classe <code>Pile</code></label><label for="__tabbed_1_2">Classe <code>File</code></label><label for="__tabbed_1_3">File définie avec deux piles</label><label for="__tabbed_1_4">Inversion d'une file</label><label for="__tabbed_1_5">Eléments pairs et impairs</label><label for="__tabbed_1_6">Parenthésage</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/ex_classe_pile.ipynb">ici</a></p>
 </div>
-<div class="admonition joint">
-<p class="admonition-title">Documents à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/autres_chapitres/08_piles_files_corrigé.zip">(corrigé)</a></p>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/corr/ex_classe_pile_corr.ipynb">ici</a></p>
 </div>
-<p>Page en construction...</p>
-<p><img alt="All good things to those who wait" class="center" src="https://www.faxesfromuncledale.com/wp-content/uploads/Wait.gif" width="50%" /></p>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/ex_classe_file.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/corr/ex_classe_file_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/ex_file_deux_piles.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/corr/ex_file_deux_piles_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/ex_inversion_file.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/corr/ex_inversion_file_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/ex_pairs_impairs.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/corr/ex_pairs_impairs_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/ex_parenthesage.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/corr/ex_parenthesage_corr.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
+<details class="activité">
+<summary>Activités</summary>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Calculs en notation polonaise inverse</label><label for="__tabbed_2_2">Problème de Josèphe</label><label for="__tabbed_2_3">Patience des usagers au guichet</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/act_calculatrice_npi.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/api/notebooks/corr/act_calculatrice_npi_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/act_josephe.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/api/notebooks/corr/act_josephe_corr.ipynb">ici</a></p>
+</div>
+</div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/notebooks/act_patience.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/api/notebooks/corr/act_patience_corr.ipynb">ici</a></p>
+</div>
+</div>
+</div>
+</div>
+</details>
 <p>Un <em>petit</em> labyrinthe en cadeau :</p>
 <p><img alt="Labyrinthe" class="center" src="https://ntoulzac.github.io/Cours-NSI-Terminale/piles_files/images/laby.svg" width="80%" /></p>
 <p>Entrez en bas à gauche et sortez en haut à droite !</p>
