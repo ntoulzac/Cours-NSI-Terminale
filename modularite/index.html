@@ -352,35 +352,22 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#partie-a-utilisation-dune-bibliotheque" class="md-nav__link">
-    Partie A - Utilisation d'une bibliothèque
+  <a href="#partie-a-utilisation-dun-module" class="md-nav__link">
+    Partie A - Utilisation d'un module
   </a>
-  
-    <nav class="md-nav" aria-label="Partie A - Utilisation d'une bibliothèque">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#installation-dun-module" class="md-nav__link">
-    Installation d'un module
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#importation-dun-module" class="md-nav__link">
-    Importation d'un module
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#partie-b-documentation-dun-module" class="md-nav__link">
-    Partie B - Documentation d'un module
+  <a href="#partie-b-installation-et-importation-dun-module" class="md-nav__link">
+    Partie B - Installation et importation d'un module
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#partie-c-documentation-dun-module" class="md-nav__link">
+    Partie C - Documentation d'un module
   </a>
   
 </li>
@@ -544,19 +531,16 @@
 
 
 <h1 id="chapitre-7-modularite">Chapitre 7 : Modularité<a class="headerlink" href="#chapitre-7-modularite" title="Permanent link">⚓︎</a></h1>
-<h2 id="partie-a-utilisation-dune-bibliotheque">Partie A - Utilisation d'une bibliothèque<a class="headerlink" href="#partie-a-utilisation-dune-bibliotheque" title="Permanent link">⚓︎</a></h2>
+<h2 id="partie-a-utilisation-dun-module">Partie A - Utilisation d'un module<a class="headerlink" href="#partie-a-utilisation-dun-module" title="Permanent link">⚓︎</a></h2>
 <p>Lorsqu'on écrit des programmes en Python, un certain nombre de fonctions sont reconnues automatiquement par l'interpréteur : il s'agit des <strong>fonctions natives</strong> du langage (<em>built-in functions</em>). On y trouve, par exemple, les fonctions <code>input</code> et <code>print</code> mais aussi <code>len</code>, <code>range</code>, <code>sorted</code>, etc. La liste est disponible <a href="https://docs.python.org/fr/3/library/functions.html#built-in-funcs">ici</a>.</p>
 <p>D'autres fonctions très classiques font partie de la <strong>bibliothèque standard</strong> : il s'agit des fonctions disponibles par défaut mais qui doivent être importées depuis un module complémentaire. On y trouve, par exemple, les fonctions <code>randint</code> du module <code>random</code>, les fonctions du module graphique <code>turtle</code> ou du module <code>tkinter</code>, ou encore les fonctions du module <code>csv</code> vues en classe de Première.</p>
 <p>Enfin, de nombreuses autres bibliothèques sont téléchargeables en ligne, en particulier via le <strong>Python Package Index</strong> ou <a href="https://pypi.org/"><strong>PyPI</strong></a>. On y trouve, par exemple, le module <code>tutormagic</code> ou les bibliothèques <code>pygame</code> et <code>Pillow</code> (<code>PIL</code>).</p>
-<p>Le but de cette partie est d'étudier comment s'utilise un module complémentaire ou une bibliothèque.</p>
-<p>Nous en profiterons pour développer notre connaissance du module <code>folium</code>, qui permet de générer des cartes interactives.</p>
-<h3 id="installation-dun-module">Installation d'un module<a class="headerlink" href="#installation-dun-module" title="Permanent link">⚓︎</a></h3>
-<p>Pour installer le module <code>folium</code>, qui ne fait pas partie de la bibliothèque standard mais qui est disponible via le <em>PyPI</em>, on peut exécuter le code ci-dessous dans une cellule de carnet <em>Jupyter</em>.</p>
+<h2 id="partie-b-installation-et-importation-dun-module">Partie B - Installation et importation d'un module<a class="headerlink" href="#partie-b-installation-et-importation-dun-module" title="Permanent link">⚓︎</a></h2>
+<p>Pour installer un module qui ne fait pas partie de la bibliothèque standard mais qui est disponible via le <em>PyPI</em>, comme par exemple le module <code>folium</code> qui permet de créer des cartes interactives, on peut exécuter le code ci-dessous dans une cellule de carnet <em>Jupyter</em> :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">sys</span>
 <span class="err">!</span><span class="p">{</span><span class="n">sys</span><span class="o">.</span><span class="n">executable</span><span class="p">}</span> <span class="o">-</span><span class="n">m</span> <span class="n">pip</span> <span class="n">install</span> <span class="n">folium</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="importation-dun-module">Importation d'un module<a class="headerlink" href="#importation-dun-module" title="Permanent link">⚓︎</a></h3>
 <p>Pour importer l'ensemble des constantes, fonctions et classes du module <code>folium</code> et donc les rendre utilisables, on utilise la ligne de code :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">folium</span>
 </code></pre></div></td></tr></table></div>
@@ -567,11 +551,12 @@
 <li><code>from module import Classe, fonction, CONSTANTE</code> permet d'importer quelques classes, fonctions, constantes depuis le module. Elles sont accessibles directement par leur nom, qui n'a pas à être précédé par le nom du <code>module</code>,</li>
 <li><code>from module import *</code> permet d'importer toutes les classes, fonctions, constantes depuis le module. Elles sont accessibles directement par leur nom, qui n'a pas à être précédé par le nom du <code>module</code>. Cette façon d'importer est déconseillée car des fonctions provenant de modules différents peuvent porter le même nom.</li>
 </ul>
-<h2 id="partie-b-documentation-dun-module">Partie B - Documentation d'un module<a class="headerlink" href="#partie-b-documentation-dun-module" title="Permanent link">⚓︎</a></h2>
-<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
-<p>La documentation obtenue donne accès à l'<strong>interface</strong> du module. Elle explique le rôle global du module et liste les classes, les fonctions, les constantes mises à disposition de l'utilisateur par le concepteur du module ainsi que leurs spécifications.</p>
-<p>L'interface doit permettre de se servir du module sans avoir à réfléchir à la manière dont les classes et les fonctions ont été implémentées.</p>
-<p>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+<h2 id="partie-c-documentation-dun-module">Partie C - Documentation d'un module<a class="headerlink" href="#partie-c-documentation-dun-module" title="Permanent link">⚓︎</a></h2>
+<p>On accède à la documentation d'un module importé via la commande :</p>
+<div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">help</span><span class="p">(</span><span class="n">module</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
+<p>La documentation obtenue donne accès à l'<strong>interface</strong> du module. Elle explique le rôle global du module et donne la liste des classes, des fonctions et procédures, des constantes mises à disposition de l'utilisateur ou de l'utilisatrice par le concepteur ou la conceptrice du module. Elle affiche également leurs spécifications.</p>
+<p>L'interface doit permettre de se servir du module sans avoir à s'interroger sur la manière dont les classes, fonctions et procédures sont implémentées.</p>
 <h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
 <ul>
 <li>Installer un module via le <em>Python Package Index</em>.</li>
