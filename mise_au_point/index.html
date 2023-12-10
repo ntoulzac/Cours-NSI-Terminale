@@ -314,6 +314,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#partie-b-messages-derreur" class="md-nav__link">
+    Partie B - Messages d'erreur
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercices-et-activites" class="md-nav__link">
     Exercices et activités
   </a>
@@ -547,7 +554,7 @@
             <span class="n">plus_petit</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
         <span class="k">if</span> <span class="n">tab</span><span class="p">[</span><span class="n">k</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">plus_grand</span><span class="p">:</span>
             <span class="n">plus_grand</span> <span class="o">=</span> <span class="n">tab</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
-    <span class="k">return</span> <span class="n">plus_petit</span><span class="p">,</span> <span class="n">plus</span> <span class="n">grand</span>
+    <span class="k">return</span> <span class="n">plus_petit</span><span class="p">,</span> <span class="n">plus_grand</span>
 </code></pre></div></td></tr></table></div>
 <p>Pour vérifier que la fonction a le bon comportement, on effectue une série de tests. Par exemple,</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -594,7 +601,14 @@
 <span class="normal">19</span>
 <span class="normal">20</span>
 <span class="normal">21</span>
-<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">min_et_max</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
+<span class="normal">22</span>
+<span class="normal">23</span>
+<span class="normal">24</span>
+<span class="normal">25</span>
+<span class="normal">26</span>
+<span class="normal">27</span>
+<span class="normal">28</span>
+<span class="normal">29</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span> <span class="nf">min_et_max</span><span class="p">(</span><span class="n">tab</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Retourne la plus petite et la plus grande valeur d&#39;un tableau.</span>
 <span class="sd">    - Entrée : tab (tableau non vide)</span>
@@ -612,8 +626,15 @@
 <span class="sd">    &gt;&gt;&gt; min_et_max(T)</span>
 <span class="sd">    (-10000, 10000)</span>
 
+<span class="sd">    &gt;&gt;&gt; min_et_max(&quot;tableau&quot;)</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    TypeError: l&#39;argument doit être un tableau</span>
 
-
+<span class="sd">    &gt;&gt;&gt; min_et_max([])</span>
+<span class="sd">    Traceback (most recent call last):</span>
+<span class="sd">        ...</span>
+<span class="sd">    ValueError: l&#39;argument doit être un tableau non vide</span>
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="c1"># Code de la fonction...</span>
 </code></pre></div></td></tr></table></div>
@@ -627,6 +648,8 @@
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="n">dt</span><span class="o">.</span><span class="n">run_docstring_examples</span><span class="p">(</span><span class="n">min_et_max</span><span class="p">,</span> <span class="nb">globals</span><span class="p">(),</span> <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <p>Il est également possible de tester l'ensemble des doctests présents dans un fichier ou dans un carnet <em>Jupyter</em>. Il suffit pour cela d'appeler la fonction <code>testmod</code> du module <code>doctest</code> sans aucun argument (sauf le paramètre optionnel <code>verbose</code>).</p>
+<h2 id="partie-b-messages-derreur">Partie B - Messages d'erreur<a class="headerlink" href="#partie-b-messages-derreur" title="Permanent link">⚓︎</a></h2>
+<p>(voir activité "Messages d'erreur classiques")</p>
 <h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
 <details class="exo">
 <summary>Exercices</summary>
