@@ -1,3 +1,5 @@
+"""Ce module permet de représenter sur une carte de France un lieu ou des itinéraires à partir d'adresses."""
+
 import requests
 import geodaisy.converters as conv
 import folium
@@ -31,19 +33,54 @@ def _itineraire_IGN(dep, arr):
     return {"distance" : distance, "duree" : duree, "geojson" : geojson}
   
 def creer_carte():
-    pass
-
+    """
+    Crée une carte folium centrée sur le centre de l'Hexagone (point de coordonnées (46.513°N ; 2.576°E))
+    avec un niveau de zoom égal à 6.
+    - Sortie : (variable contenant la carte)
+    """
+    return folium.Map(location=[46.513, 2.576], tiles="OpenStreetMap", zoom_start=6)
+	
 def enregistrer_carte(carte, nom_de_fichier):
-    pass
+    """
+    Enregistre la carte dans un fichier HTML.
+    - Entrées : carte (variable contenant une carte folium), nom_de_fichier (chaîne de caractères)
+    - Effet de bord : enregistrement dans un fichier HTML
+    """
+    carte.save(f"{nom_de_fichier}.html")
 
 def placer_marqueur(carte, lieu):
-    pass
-
+    """
+    Place un marqueur sur la carte au lieu demandé.
+    - Entrées : carte (variable contenant une carte folium),
+                lieu (couple au format (adresse, code_postal), où adresse est une chaîne et code_postal un entier)
+    - Sortie : carte (variable contenant une carte folium)
+    """
+    folium.Marker(_coord_BAN(lieu)).add_to(carte)
+    return carte	
+		
 def tracer_itineraire(carte, depart, arrivee):
-    pass
+    """
+    Représente sur la carte l'itinéaire le plus rapide entre depart et arrivee.
+    - Entrées : carte (variable contenant une carte folium),
+                depart, arrivee (couples au format (adresse, code_postal), où adresse est une chaîne et code_postal un entier)
+    - Sortie : carte (variable contenant une carte folium)
+    """
+    carte = placer_marqueur(carte, depart)
+    carte = placer_marqueur(carte, arrivee)
+    geojson = _itineraire_IGN(_coord_BAN(depart), _coord_BAN(arrivee))["geojson"]
+    folium.GeoJson(geojson).add_to(carte)
+    return carte
 
 def tracer_itineraire_multiple(carte, lieux):
-    pass
+    """
+    Représente sur la carte l'itinéaire le plus rapide entre plusieurs lieux successifs.
+    - Entrées : carte (variable contenant une carte folium),
+                lieux (tableau contenant des couples au format (adresse, code_postal), où adresse est une chaîne et code_postal un entier)
+    - Sortie : carte (variable contenant une carte folium)
+    """
+    for k in range(len(lieux)-1):
+        carte = tracer_itineraire(carte, lieux[k], lieux[k+1])
+    return carte
 
 if __name__ == "__main__":
     depart = ("16 avenue Henri Mondor", 15000)

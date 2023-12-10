@@ -20,17 +20,6 @@ _COULEURS = [BLANC, NOIR]
 ROUGE = (255, 0, 0)
 BLEU = (0, 0, 255)
 
-from PIL import Image
-from random import shuffle
-import pygame
-from pygame.locals import QUIT as _QUIT, KEYDOWN as _KEYDOWN, K_UP as _K_UP, K_DOWN as _K_DOWN, K_LEFT as _K_LEFT, K_RIGHT as _K_RIGHT
-
-NOIR = (0, 0, 0)
-BLANC = (255, 255, 255)
-_COULEURS = [BLANC, NOIR]
-ROUGE = (255, 0, 0)
-BLEU = (0, 0, 255)
-
 class Labyrinthe:
     """
     Classe permettant de créer un labyrinthe aléatoire.
@@ -192,22 +181,39 @@ class FenetreLaby:
         self.afficher_pion(pion)
 
 class Pion:
+    """
+    Classe permettant de créer et déplacer un pion dans un labyrinthe.
+    """
     def __init__(self, pos, couleur=ROUGE):
+        """
+        Crée un pion à une position donnée et dans une couleur donnée.
+        - Entrées : pos (couple d'entiers au format (ligne, colonne)),
+                    couleur (triplet d'entiers au format (R, V, B))
+        """
         self.pos = pos
         self.couleur = couleur
         
     def est_positionne_sur(self, pos):
+        """
+        Détermine si le pion est à une position donnée.
+        - Entrée : pos (couple d'entiers au format (ligne, colonne))
+        - Sortie : (booléen)
+        """
         return self.pos == pos
-
+            
     def deplacer(self, laby, direction):
+        """
+        Déplace le pion dans une direction donnée.
+        - Entrées : laby (instance de la classe Labyrinthe), direction (chaîne de caractères)
+        """
         L, C = self.pos
-        if direction == "gauche":
+        if direction == "gauche" and C > 0 and laby.grille[L][C-1] == 0:
             self.pos = (L, C-1)
-        elif direction == "droite":
+        elif direction == "droite" and C < laby.nb_c-1 and laby.grille[L][C+1] == 0:
             self.pos = (L, C+1)
-        elif direction == "haut":
+        elif direction == "haut" and L > 0 and laby.grille[L-1][C] == 0:
             self.pos = (L-1, C)
-        elif direction == "bas":
+        elif direction == "bas" and L < laby.nb_l-1 and laby.grille[L+1][C] == 0:
             self.pos = (L+1, C)
 
 if __name__ == "__main__":

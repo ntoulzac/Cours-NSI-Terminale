@@ -534,7 +534,7 @@
 <h2 id="partie-a-utilisation-dun-module">Partie A - Utilisation d'un module<a class="headerlink" href="#partie-a-utilisation-dun-module" title="Permanent link">⚓︎</a></h2>
 <p>Lorsqu'on écrit des programmes en Python, un certain nombre de fonctions sont reconnues automatiquement par l'interpréteur : il s'agit des <strong>fonctions natives</strong> du langage (<em>built-in functions</em>). On y trouve, par exemple, les fonctions <code>input</code> et <code>print</code> mais aussi <code>len</code>, <code>range</code>, <code>sorted</code>, etc. La liste est disponible <a href="https://docs.python.org/fr/3/library/functions.html#built-in-funcs">ici</a>.</p>
 <p>D'autres fonctions très classiques font partie de la <strong>bibliothèque standard</strong> : il s'agit des fonctions disponibles par défaut mais qui doivent être importées depuis un module complémentaire. On y trouve, par exemple, les fonctions <code>randint</code> du module <code>random</code>, les fonctions du module graphique <code>turtle</code> ou du module <code>tkinter</code>, ou encore les fonctions du module <code>csv</code> vues en classe de Première.</p>
-<p>Enfin, de nombreuses autres bibliothèques sont téléchargeables en ligne, en particulier via le <strong>Python Package Index</strong> ou <a href="https://pypi.org/"><strong>PyPI</strong></a>. On y trouve, par exemple, le module <code>tutormagic</code> ou les bibliothèques <code>pygame</code> et <code>Pillow</code> (<code>PIL</code>).</p>
+<p>Enfin, de nombreuses autres bibliothèques sont téléchargeables en ligne, en particulier via le <a href="https://pypi.org/"><strong><em>Python Package Index</em></strong></a> ou <strong><em>PyPI</em></strong>. On y trouve, par exemple, le module <code>tutormagic</code> ou les bibliothèques <code>pygame</code> et <code>Pillow</code> (<code>PIL</code>).</p>
 <h2 id="partie-b-installation-et-importation-dun-module">Partie B - Installation et importation d'un module<a class="headerlink" href="#partie-b-installation-et-importation-dun-module" title="Permanent link">⚓︎</a></h2>
 <p>Pour installer un module qui ne fait pas partie de la bibliothèque standard mais qui est disponible via le <em>PyPI</em>, comme par exemple le module <code>folium</code> qui permet de créer des cartes interactives, on peut exécuter le code ci-dessous dans une cellule de carnet <em>Jupyter</em> :</p>
 <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -563,12 +563,12 @@
 <li>Importer un module.</li>
 <li>Afficher la documentation d'un module.</li>
 <li>Faire la différence entre les fonctionnalités présentes dans l'interface et celles qui sont uniquement internes au module.</li>
-<li>Ecrire un module ainsi que sa documentation et celle des fonctions et procédures qu'il contient.</li>
+<li>Regrouper des classes, fonctions, procédures, constantes dans un module et écrire sa documentation.</li>
 </ul>
 <h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
 <details class="exo">
 <summary>Exercices</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Brins d'ADN</label><label for="__tabbed_1_2">Données EXIF</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:3"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><input id="__tabbed_1_3" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">Brins d'ADN</label><label for="__tabbed_1_2">Données EXIF</label><label for="__tabbed_1_3">Sept merveilles du monde</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition jupyter">
@@ -586,12 +586,20 @@
 <p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_donnees_exif_corr.ipynb">ici</a></p>
 </div>
 </div>
+<div class="tabbed-block">
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/ex_sept_merveilles.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/ex_sept_merveilles_corr.ipynb">ici</a></p>
+</div>
+</div>
 </div>
 </div>
 </details>
 <details class="activité">
 <summary>Activités</summary>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:4"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><input id="__tabbed_2_4" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Documentation d'un module</label><label for="__tabbed_2_2">Module <code>folium</code></label><label for="__tabbed_2_3">Sept merveilles du monde</label><label for="__tabbed_2_4">Voyage en France</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:3"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><input id="__tabbed_2_3" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Documentation d'un module</label><label for="__tabbed_2_2">Module <code>folium</code></label><label for="__tabbed_2_3">Voyage en France</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
 <div class="admonition jupyter">
@@ -607,14 +615,6 @@
 </div>
 <div class="admonition solution">
 <p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/act_folium_corr.ipynb">ici</a></p>
-</div>
-</div>
-<div class="tabbed-block">
-<div class="admonition jupyter">
-<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/act_sept_merveilles.ipynb">ici</a></p>
-</div>
-<div class="admonition solution">
-<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/modularite/notebooks/corr/act_sept_merveilles_corr.ipynb">ici</a></p>
 </div>
 </div>
 <div class="tabbed-block">

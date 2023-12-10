@@ -4,14 +4,17 @@ from PIL.ExifTags import TAGS
 
 def _triplet_vers_angle(triplet, direction):
     angle = triplet[0] + triplet[1]/60 + triplet[2]/3600
-    if direction in "SW:
+    if direction in "SW":
         return -angle
     else:
         return angle
 
 def donnees_exif(emplacement_image):
     """
-    Spécification à écrire...
+    Extrait des données de géolocalisation contenues dans un fichier image,
+    ainsi que les dimensions de l'image.
+    - Entrées : emplacement_image (chaîne de caractères)
+    - Sortie : (dictionnaire contenant les clés "lat", "long", "alt", "orient", "larg", "haut")
     """
     image = Image.open(get(emplacement_image, stream=True).raw)
     largeur, hauteur = image.size
