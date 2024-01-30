@@ -4,7 +4,7 @@ from PIL.ExifTags import TAGS
 
 def _triplet_vers_angle(triplet, direction):
     angle = triplet[0] + triplet[1]/60 + triplet[2]/3600
-    if direction in "SW:
+    if direction in "SW":
         return -angle
     else:
         return angle
