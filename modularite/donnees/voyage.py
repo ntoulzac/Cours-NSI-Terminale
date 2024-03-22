@@ -1,5 +1,4 @@
 import requests
-import geodaisy.converters as conv
 import folium
 
 def _coord_BAN(lieu):
@@ -23,11 +22,11 @@ def _itineraire_IGN(dep, arr):
                                                "duree" (durée du trajet)
                                                "geojson" (représentation de l'itinéraire au format GeoJSON)
     """
-    reponse = requests.get(f"http://wxs.ign.fr/choisirgeoportail/itineraire/rest/route.json?origin={dep[1]},{dep[0]}&destination={arr[1]},{arr[0]}&method=TIME&graphName=Voiture")
+    reponse = requests.get(f"https://wxs.ign.fr/calcul/geoportail/itineraire/rest/1.0.0/route?resource=bdtopo-osrm&start={dep[1]}%2C{dep[0]}&end={arr[1]}%2C{arr[0]}&profile=car&optimization=fastest&constraints=%7B%22constraintType%22%3A%22banned%22%2C%22key%22%3A%22wayType%22%2C%22operator%22%3A%22%3D%22%2C%22value%22%3A%22autoroute%22%7D&getSteps=true&getBbox=true&distanceUnit=kilometer&timeUnit=hour&crs=EPSG%3A4326")
     reponse = reponse.json()
-    distance = round(float(reponse["distanceMeters"]))
-    duree = round(float(reponse["durationSeconds"]))
-    geojson = conv.wkt_to_geojson(reponse["geometryWkt"])
+    distance = round(float(reponse["distance"]))
+    duree = round(float(reponse["duration"]))
+    geojson = reponse["geometry"]
     return {"distance" : distance, "duree" : duree, "geojson" : geojson}
   
 def creer_carte():
