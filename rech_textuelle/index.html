@@ -387,9 +387,61 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Recherche textuelle
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         Recherche textuelle
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#premier-algorithme-dit-naif" class="md-nav__link">
+    Premier algorithme, dit naïf
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#algorithme-de-boyer-moore-horspool" class="md-nav__link">
+    Algorithme de Boyer-Moore-Horspool
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ce-quil-faut-savoir-et-savoir-faire" class="md-nav__link">
+    Ce qu'il faut savoir et savoir faire
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercices-et-activites" class="md-nav__link">
+    Exercices et activités
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -472,6 +524,126 @@
 
 
 <h1 id="chapitre-11-recherche-textuelle">Chapitre 11 : Recherche textuelle<a class="headerlink" href="#chapitre-11-recherche-textuelle" title="Permanent link">⚓︎</a></h1>
+<p>Le but de ce chapitre est d'écrire des algorithmes qui permettent de savoir si un mot ou un groupe de mots est présent dans un texte ou, de façon plus générale, si un <strong>motif</strong> est présent dans une <strong>chaîne de caractères</strong>.</p>
+<p>Dans tout le chapitre, on note <span class="arithmatex">\(m\)</span> la longueur du motif recherché et <span class="arithmatex">\(c\)</span> la longueur de la chaîne dans laquelle on recherche.</p>
+<p>Si <span class="arithmatex">\(m \gt c\)</span>, il est évident que le motif ne peut pas apparaître dans la chaîne.</p>
+<p>En général, <span class="arithmatex">\(m\)</span> est très inférieur à <span class="arithmatex">\(c\)</span>. En effet, le motif recherché est généralement composé de quelques caractères, ou de quelques dizaines de caractères au maximum. La chaîne dans laquelle on recherche, en revanche, peut être composée de milliers de caractères.</p>
+<details class="exo">
+<summary>Exercice : Correspondance entre motif et chaîne</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/ex_correspondance.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/corr/ex_correspondance_corr.ipynb">ici</a></p>
+</div>
+</details>
+<h2 id="premier-algorithme-dit-naif">Premier algorithme, dit naïf<a class="headerlink" href="#premier-algorithme-dit-naif" title="Permanent link">⚓︎</a></h2>
+<p><img alt="Animation recherche naive" src="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/images/algo_naif.gif" /></p>
+<div class="admonition fonc">
+<p class="admonition-title">Algorithme naïf de recherche de la présence d'un <code>motif</code> dans une <code>chaine</code></p>
+<details class="info">
+<summary>Détermine si un <code>motif</code> est présent dans une <code>chaine</code></summary>
+<div class="admonition entrée">
+<p class="admonition-title">Entrées</p>
+<p><code>motif</code> : chaîne de caractères</p>
+<p><code>chaine</code> : chaîne de caractères</p>
+</div>
+<div class="admonition sortie">
+<p class="admonition-title">Sortie</p>
+<p>booléen (Vrai si le <code>motif</code> est présent dans la <code>chaine</code>, Faux sinon)</p>
+</div>
+</details>
+<p><div>
+<p><b></b></p>
+<p><b>Début</b></p>
+<p STYLE="padding:0 0 0 40px;"><code>c</code> ← longueur de la <code>chaine</code></p>
+<p STYLE="padding:0 0 0 40px;"><code>m</code> ← longueur du <code>motif</code></p>
+<p STYLE="padding:0 0 0 40px;"><code>k</code> ← 0</p>
+<p STYLE="padding:0 0 0 40px;">Tant que <code>k</code> &lt;= (<code>c</code> - <code>m</code>) faire</p>
+<p STYLE="padding:0 0 0 80px;">Si le <code>motif</code> correspond aux caractères de la <code>chaine</code> entre l'indice <code>k</code> et l'indice (<code>k</code> + <code>m</code> - 1) alors</p>
+<p STYLE="padding:0 0 0 120px;">Renvoyer Vrai</p>
+<p STYLE="padding:0 0 0 80px;">Fin Si</p>
+<p STYLE="padding:0 0 0 80px;"><code>k</code> ← <code>k</code> + 1</p>
+<p STYLE="padding:0 0 0 40px;">Fin Pour</p>
+<p STYLE="padding:0 0 0 40px;">Renvoyer Faux</p>
+<p><b>Fin</b></p>
+</div></p>
+</div>
+<details class="exo">
+<summary>Exercice : Algorithme naïf</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/ex_algo_naif.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/corr/ex_algo_naif_corr.ipynb">ici</a></p>
+</div>
+</details>
+<h2 id="algorithme-de-boyer-moore-horspool">Algorithme de Boyer-Moore-Horspool<a class="headerlink" href="#algorithme-de-boyer-moore-horspool" title="Permanent link">⚓︎</a></h2>
+<p><img alt="Animation Boyer-Moore-Horspool" src="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/images/algo_horspool.gif" /></p>
+<div class="admonition fonc">
+<p class="admonition-title">Algorithme de Boyer-Moore-Horspool</p>
+<details class="info">
+<summary>Détermine si un <code>motif</code> est présent dans une <code>chaine</code></summary>
+<div class="admonition entrée">
+<p class="admonition-title">Entrées</p>
+<p><code>motif</code> : chaîne de caractères</p>
+<p><code>chaine</code> : chaîne de caractères</p>
+</div>
+<div class="admonition sortie">
+<p class="admonition-title">Sortie</p>
+<p>booléen (Vrai si le <code>motif</code> est présent dans la <code>chaine</code>, Faux sinon)</p>
+</div>
+</details>
+<p><div>
+<p><b></b></p>
+<p><b>Début</b></p>
+<p STYLE="padding:0 0 0 40px;"><code>decalage</code> ← dictionnaire de décalages obtenu par prétraitement du <code>motif</code></p>
+<p STYLE="padding:0 0 0 40px;"><code>c</code> ← longueur de la <code>chaine</code></p>
+<p STYLE="padding:0 0 0 40px;"><code>m</code> ← longueur du <code>motif</code></p>
+<p STYLE="padding:0 0 0 40px;"><code>k</code> ← 0</p>
+<p STYLE="padding:0 0 0 40px;">Tant que <code>k</code> &lt;= (<code>c</code> - <code>m</code>) faire</p>
+<p STYLE="padding:0 0 0 80px;">Si le <code>motif</code> correspond aux caractères de la <code>chaine</code> entre l'indice (<code>k</code> + <code>m</code> - 1) et l'indice <code>k</code> alors</p>
+<p STYLE="padding:0 0 0 120px;">Renvoyer Vrai</p>
+<p STYLE="padding:0 0 0 80px;">Fin Si</p>
+<p STYLE="padding:0 0 0 80px;">Si <code>chaine[k + m - 1]</code> est une clé du dictionnaire <code>decalage</code> alors</p>
+<p STYLE="padding:0 0 0 120px;"><code>k</code> ← <code>k</code> + <code>decalage[chaine[k + m - 1]]</code></p>
+<p STYLE="padding:0 0 0 80px;">Sinon</p>
+<p STYLE="padding:0 0 0 120px;"><code>k</code> ← <code>k</code> + <code>m</code></p>
+<p STYLE="padding:0 0 0 80px;">Fin Si</p>
+<p STYLE="padding:0 0 0 40px;">Fin Pour</p>
+<p STYLE="padding:0 0 0 40px;">Renvoyer Faux</p>
+<p><b>Fin</b></p>
+</div></p>
+</div>
+<details class="exo">
+<summary>Exercice : Algorithme de Boyer-Moore-Horspool</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/ex_algo_boyer_moore_horspool.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/corr/ex_algo_boyer_moore_horspool_corr.ipynb">ici</a></p>
+</div>
+</details>
+<h2 id="ce-quil-faut-savoir-et-savoir-faire">Ce qu'il faut savoir et savoir faire<a class="headerlink" href="#ce-quil-faut-savoir-et-savoir-faire" title="Permanent link">⚓︎</a></h2>
+<h2 id="exercices-et-activites">Exercices et activités<a class="headerlink" href="#exercices-et-activites" title="Permanent link">⚓︎</a></h2>
+<details class="activité">
+<summary>Activité : Nombre de comparaisons nécessaires</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/act_nombre_comparaisons.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/corr/act_nombre_comparaisons_corr.ipynb">ici</a></p>
+</div>
+</details>
+<details class="activité">
+<summary>Activité : Occurrences d'un motif</summary>
+<div class="admonition jupyter">
+<p class="admonition-title">Carnet <em>Jupyter</em> à télécharger <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/act_occurrences.ipynb">ici</a></p>
+</div>
+<div class="admonition solution">
+<p class="admonition-title">Corrigé disponible <a href="https://ntoulzac.github.io/Cours-NSI-Terminale/rech_textuelle/notebooks/corr/act_occurrences_corr.ipynb">ici</a></p>
+</div>
+</details>
 
 
 
