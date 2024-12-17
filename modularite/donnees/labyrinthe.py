@@ -6,7 +6,7 @@ Il met à disposition trois classes :
     - une classe FenetreLaby, qui permet de gérer une fenêtre Pygame pour l'affichage d'un labyrinthe à l'écran,
     - une classe Pion, qui permet de gérer les déplacements et l'affichage d'un pion dansun labyrinthe.
 
-Version de janvier 2024
+Version de décembre 2024
 """
 
 from PIL import Image
